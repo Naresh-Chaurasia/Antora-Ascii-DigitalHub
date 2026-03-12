@@ -1,0 +1,6 @@
+name: my-component
+title: My Component
+version: 1.0
+nav:
+  - modules/ROOT/nav.adoc
+start_page: ROOT:index.adoc

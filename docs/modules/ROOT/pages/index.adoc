@@ -1,0 +1,11 @@
+= Home
+
+This is a minimal Antora component.
+
+== Section One
+
+Some content here.
+
+== Section Two
+
+More content.
