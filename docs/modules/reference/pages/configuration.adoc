@@ -1,0 +1,17 @@
+= Configuration Reference
+
+This page is a small reference stub to demonstrate cross-references.
+
+== Configuration Keys
+
+| Key | Description |
+|-----|-------------|
+| `project.name` | Project name |
+| `project.version` | Project version |
+| `build.output` | Output directory |
+| `dev.port` | Dev server port |
+
+== Related Topics
+
+* xref:advanced:configuration.adoc[Advanced Configuration]
+* xref:getting-started:installation.adoc[Installation Guide]

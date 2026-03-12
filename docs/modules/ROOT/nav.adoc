@@ -1,1 +1,23 @@
 * xref:index.adoc[Home]
+
+.Getting Started
+* xref:getting-started:introduction.adoc[Introduction]
+* xref:getting-started:setup/prerequisites.adoc[Prerequisites]
+* xref:getting-started:setup/install.adoc[Install]
+* xref:getting-started:installation.adoc[Installation (Full)]
+* xref:getting-started:first-project.adoc[Your First Project]
+* xref:getting-started:concepts/antora-terminology.adoc[Antora Terminology]
+
+.Advanced Topics
+* xref:advanced:index.adoc[Advanced Overview]
+* xref:advanced:configuration.adoc[Advanced Configuration]
+* xref:advanced:deployment.adoc[Deployment Options]
+* xref:advanced:how-to/add-a-page.adoc[How to Add a Page]
+* xref:advanced:some-page.adoc[Some Page]
+
+.Reference
+* xref:reference:api.adoc[API Reference]
+* xref:reference:cli.adoc[CLI Reference]
+* xref:reference:downloads.adoc[Downloads]
+* xref:reference:configuration.adoc[Configuration Reference]
+* xref:reference:glossary/terms.adoc[Glossary]

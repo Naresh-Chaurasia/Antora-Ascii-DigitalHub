@@ -1,0 +1,4 @@
+[NOTE]
+====
+This is an important note that can be included in multiple pages throughout the documentation.
+====

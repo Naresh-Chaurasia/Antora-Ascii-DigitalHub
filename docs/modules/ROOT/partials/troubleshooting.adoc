@@ -1,0 +1,55 @@
+== Common Issues
+
+=== Build Fails
+
+If the build process fails, try these steps:
+
+. Clear cache: `ourtool cache clear`
+. Check dependencies: `npm install`
+. Verify configuration: `ourtool config list`
+. Rebuild: `ourtool build --verbose`
+
+=== Server Won't Start
+
+If the development server won't start:
+
+. Check port availability: `lsof -i :3000`
+. Try different port: `ourtool serve --port 3001`
+. Check firewall settings
+. Verify network configuration
+
+=== Performance Issues
+
+For slow build times:
+
+. Enable caching in configuration
+. Use incremental builds
+. Optimize images and assets
+. Consider using SSD storage
+
+=== Permission Errors
+
+If you encounter permission errors:
+
+. Check file permissions: `ls -la`
+. Fix ownership: `sudo chown -R $USER:$USER .`
+. Verify directory permissions
+. Check umask settings
+
+=== Plugin Errors
+
+When plugins cause issues:
+
+. List installed plugins: `ourtool plugin list`
+. Update plugins: `ourtool plugin update --all`
+. Remove problematic plugins: `ourtool plugin uninstall plugin-name`
+. Check plugin compatibility
+
+== Getting Help
+
+If you need additional help:
+
+* Check the xref:reference:api.adoc[API Reference]
+* Visit our link:https://example.com/support[Support Page]
+* Join our link:https://example.com/community[Community Forum]
+* Report issues on link:https://github.com/ourtool/issues[GitHub]

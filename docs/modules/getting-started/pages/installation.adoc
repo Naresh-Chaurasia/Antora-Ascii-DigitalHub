@@ -1,0 +1,65 @@
+= Installation Guide
+
+This guide walks you through the installation process step by step.
+
+== System Requirements
+
+* Operating System: Windows 10+, macOS 10.14+, or Linux
+* RAM: Minimum 4GB, recommended 8GB
+* Storage: 500MB free space
+* Network: Internet connection for downloads
+
+== Installation Methods
+
+=== Method 1: Download Installer
+
+The easiest way to install is using our installer:
+
+. Go to the xref:reference:downloads.adoc[Downloads] page
+. Download the appropriate installer for your OS
+. Run the installer and follow the prompts
+. Restart your computer
+
+=== Method 2: Package Manager
+
+For advanced users, you can use package managers:
+
+[source,bash]
+----
+# macOS with Homebrew
+brew install our-tool
+
+# Ubuntu/Debian
+sudo apt-get install our-tool
+
+# Windows with Chocolatey
+choco install our-tool
+----
+
+=== Method 3: Manual Installation
+
+If you prefer manual installation:
+
+. Download the source code
+. Extract to a directory
+. Run the build script
+. Add to PATH
+
+== Verification
+
+After installation, verify it's working:
+
+[source,bash]
+----
+our-tool --version
+----
+
+You should see version information displayed.
+
+== Troubleshooting
+
+include::ROOT:partial$troubleshooting.adoc[]
+
+== Next Steps
+
+Once installed, check out xref:first-project.adoc[Your First Project].

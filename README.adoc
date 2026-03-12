@@ -1,0 +1,189 @@
+= Antora Documentation Site
+:toc: right
+:toclevels: 5
+:sectnums:
+:sectnumlevels: 5
+
+This repository is a minimal Antora site plus a few sample modules/pages to help you learn Antora structure.
+
+== Quick start
+
+[source,bash]
+----
+npm install
+npm run build
+python3 -m http.server 8080 --directory build/site
+----
+
+Open:
+
+* http://localhost:8080
+
+== What Antora generates (URL mapping)
+
+A page stored at:
+
+* `docs/modules/<module>/pages/<path>/<page>.adoc`
+
+is published to:
+
+* `/<component>/<version>/<module>/<path>/<page>.html`
+
+In this repo:
+
+* *Component*: `my-component` (from `docs/antora.yml`)
+* *Version*: `1` (because `version: 1.0` becomes `1` in the output)
+
+Example:
+
+* Source: `docs/modules/getting-started/pages/setup/install.adoc`
+* URL: `http://localhost:8080/my-component/1/getting-started/setup/install.html`
+
+== Repository layout
+
+* *Playbook*: `antora-playbook.yml`
+* *Component descriptor*: `docs/antora.yml`
+* *Modules*: `docs/modules/`
+* *Navigation (sidebar)*: `docs/modules/ROOT/nav.adoc`
+* *Generated site*: `build/site/`
+
+== Antora concepts (in plain words)
+
+* *Component*: A set of docs that belong together (and can be versioned). In this repo the component lives under `docs/`.
+* *Module*: A sub-area inside a component (example modules here: `getting-started`, `advanced`, `reference`).
+* *Page*: A single `.adoc` file under `pages/`.
+* *Nav*: The left sidebar, configured in `docs/modules/ROOT/nav.adoc`.
+
+== Common tasks
+
+=== Add a new page
+
+. Create a page under the right module:
++
+** `docs/modules/<module>/pages/<page>.adoc`
+
+. Add it to the nav (so it appears in the sidebar):
++
+** `docs/modules/ROOT/nav.adoc`
+
+. Rebuild:
++
+[source,bash]
+----
+npm run build
+----
+
+=== Add a new module (detailed)
+
+A *module* is just a folder under `docs/modules/`.
+
+==== 1) Create the module folder
+
+Example module name: `howtos`
+
+Create:
+
+* `docs/modules/howtos/pages/`
+
+Optional (but common):
+
+* `docs/modules/howtos/examples/`
+* `docs/modules/howtos/assets/images/`
+* `docs/modules/howtos/attachments/`
+
+==== 2) Create an `index.adoc` (recommended)
+
+Create:
+
+* `docs/modules/howtos/pages/index.adoc`
+
+Example content:
+
+[source,asciidoc]
+----
+= How-tos
+
+This is the landing page for the howtos module.
+
+* xref:add-feature.adoc[Add a Feature]
+----
+
+==== 3) Add another page
+
+Create:
+
+* `docs/modules/howtos/pages/add-feature.adoc`
+
+Example content:
+
+[source,asciidoc]
+----
+= Add a Feature
+
+Back to xref:index.adoc[How-tos].
+----
+
+==== 4) Add the module pages to the sidebar nav
+
+Edit:
+
+* `docs/modules/ROOT/nav.adoc`
+
+Add something like:
+
+[source,asciidoc]
+----
+.How-tos
+* xref:howtos:index.adoc[Overview]
+* xref:howtos:add-feature.adoc[Add a Feature]
+----
+
+Notes:
+
+* `xref:howtos:add-feature.adoc[...]` means:
+** `howtos` is the *module name*
+** `add-feature.adoc` is a file under `docs/modules/howtos/pages/`
+* If your page is in a subfolder under `pages/`, include the path:
+** `docs/modules/howtos/pages/setup/install.adoc`
+** `xref:howtos:setup/install.adoc[Install]`
+
+==== 5) Build and view
+
+[source,bash]
+----
+npm run build
+python3 -m http.server 8080 --directory build/site
+----
+
+Open:
+
+* `http://localhost:8080/my-component/1/howtos/index.html`
+
+=== Cross references (xrefs)
+
+* Same module:
+** `xref:some-page.adoc[Some Page]`
+* Different module:
+** `xref:getting-started:first-project.adoc[Your First Project]`
+
+=== Includes (partials)
+
+Partials in this repo live here:
+
+* `docs/modules/ROOT/partials/`
+
+Include them from any page using:
+
+[source,asciidoc]
+----
+include::ROOT:partial$note.adoc[]
+include::ROOT:partial$troubleshooting.adoc[]
+----
+
+== Where to look in this repo for examples
+
+* *Nav file*: `docs/modules/ROOT/nav.adoc`
+* *A module landing page*: `docs/modules/advanced/pages/index.adoc`
+* *Pages in subfolders*:
+** `docs/modules/getting-started/pages/setup/prerequisites.adoc`
+** `docs/modules/reference/pages/glossary/terms.adoc`

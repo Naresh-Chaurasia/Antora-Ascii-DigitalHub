@@ -1,0 +1,99 @@
+= Your First Project
+
+Let's create your first project step by step.
+
+== Creating a New Project
+
+Start by creating a new project directory:
+
+[source,bash]
+----
+mkdir my-first-project
+cd my-first-project
+----
+
+Initialize the project:
+
+[source,bash]
+----
+our-tool init
+----
+
+This creates the basic project structure:
+
+[source,text]
+----
+my-first-project/
+├── config/
+├── src/
+├── tests/
+└── README.md
+----
+
+== Project Configuration
+
+Open `config/settings.yml` to configure your project:
+
+[source,yaml]
+----
+project:
+  name: My First Project
+  version: 1.0.0
+  
+build:
+  output: dist/
+  minify: true
+  
+features:
+  - analytics
+  - caching
+----
+
+== Adding Content
+
+Create your first content file:
+
+[source,bash]
+----
+touch src/hello.txt
+echo "Hello, World!" > src/hello.txt
+----
+
+== Building the Project
+
+Build your project:
+
+[source,bash]
+----
+our-tool build
+----
+
+This creates the output in the `dist/` directory.
+
+== Running the Project
+
+Start the development server:
+
+[source,bash]
+----
+our-tool serve
+----
+
+Now visit `http://localhost:3000` to see your project!
+
+== Common Commands
+
+| Command | Description |
+|---------|-------------|
+| `our-tool build` | Build the project |
+| `our-tool serve` | Start development server |
+| `our-tool test` | Run tests |
+| `our-tool deploy` | Deploy to production |
+
+== Next Steps
+
+Congratulations! You've created your first project. Now explore:
+
+* xref:advanced:configuration.adoc[Advanced Configuration]
+* xref:advanced:deployment.adoc[Deployment Options]
+* xref:reference:api.adoc[API Reference]

@@ -1,0 +1,358 @@
+= CLI Reference
+
+This module provides comprehensive command-line interface documentation.
+
+== Installation
+
+Install the CLI tool:
+
+[source,bash]
+----
+# Using npm
+npm install -g @ourtool/cli
+
+# Using yarn
+yarn global add @ourtool/cli
+
+# Using Homebrew (macOS)
+brew install ourtool
+
+# Using Chocolatey (Windows)
+choco install ourtool
+----
+
+== Basic Usage
+
+=== Help
+
+Get help for any command:
+
+[source,bash]
+----
+ourtool --help
+ourtool build --help
+ourtool serve --help
+----
+
+=== Version
+
+Check version:
+
+[source,bash]
+----
+ourtool --version
+ourtool -v
+----
+
+== Core Commands
+
+=== ourtool init
+
+Initialize a new project:
+
+[source,bash]
+----
+ourtool init [project-name]
+----
+
+Options:
+
+| Option | Description | Default |
+|--------|-------------|---------|
+| `--template` | Template to use | `default` |
+| `--force` | Overwrite existing files | `false` |
+| `--verbose` | Verbose output | `false` |
+
+Examples:
+
+[source,bash]
+----
+# Create new project
+ourtool init my-project
+
+# Use specific template
+ourtool init my-project --template react
+
+# Force overwrite
+ourtool init my-project --force
+----
+
+=== ourtool build
+
+Build the project:
+
+[source,bash]
+----
+ourtool build [options]
+----
+
+Options:
+
+| Option | Description | Default |
+|--------|-------------|---------|
+| `--output` | Output directory | `dist` |
+| `--minify` | Minify output | `true` |
+| `--sourcemap` | Generate sourcemaps | `false` |
+| `--watch` | Watch for changes | `false` |
+| `--verbose` | Verbose output | `false` |
+
+Examples:
+
+[source,bash]
+----
+# Basic build
+ourtool build
+
+# Custom output directory
+ourtool build --output build
+
+# Development build with sourcemaps
+ourtool build --minify false --sourcemap true
+
+# Watch mode
+ourtool build --watch
+----
+
+=== ourtool serve
+
+Start development server:
+
+[source,bash]
+----
+ourtool serve [options]
+----
+
+Options:
+
+| Option | Description | Default |
+|--------|-------------|---------|
+| `--port` | Server port | `3000` |
+| `--host` | Server host | `localhost` |
+| `--open` | Open browser | `true` |
+| `--livereload` | Live reload | `true` |
+| `--verbose` | Verbose output | `false` |
+
+Examples:
+
+[source,bash]
+----
+# Start server
+ourtool serve
+
+# Custom port
+ourtool serve --port 8080
+
+# Don't open browser
+ourtool serve --open false
+
+# External access
+ourtool serve --host 0.0.0.0
+----
+
+=== ourtool test
+
+Run tests:
+
+[source,bash]
+----
+ourtool test [options]
+----
+
+Options:
+
+| Option | Description | Default |
+|--------|-------------|---------|
+| `--watch` | Watch mode | `false` |
+| `--coverage` | Generate coverage | `false` |
+| `--reporter` | Test reporter | `spec` |
+| `--verbose` | Verbose output | `false` |
+
+Examples:
+
+[source,bash]
+----
+# Run tests
+ourtool test
+
+# Watch mode
+ourtool test --watch
+
+# With coverage
+ourtool test --coverage
+
+# Different reporter
+ourtool test --reporter jest
+----
+
+=== ourtool deploy
+
+Deploy project:
+
+[source,bash]
+----
+ourtool deploy [options]
+----
+
+Options:
+
+| Option | Description | Default |
+|--------|-------------|---------|
+| `--target` | Deployment target | `production` |
+| `--dry-run` | Dry run mode | `false` |
+| `--force` | Force deployment | `false` |
+| `--verbose` | Verbose output | `false` |
+
+Examples:
+
+[source,bash]
+----
+# Deploy to production
+ourtool deploy
+
+# Deploy to staging
+ourtool deploy --target staging
+
+# Dry run
+ourtool deploy --dry-run
+----
+
+== Advanced Commands
+
+=== ourtool config
+
+Manage configuration:
+
+[source,bash]
+----
+# Get config value
+ourtool config get key
+
+# Set config value
+ourtool config set key value
+
+# List all config
+ourtool config list
+
+# Delete config value
+ourtool config delete key
+----
+
+=== ourtool plugin
+
+Manage plugins:
+
+[source,bash]
+----
+# List plugins
+ourtool plugin list
+
+# Install plugin
+ourtool plugin install plugin-name
+
+# Uninstall plugin
+ourtool plugin uninstall plugin-name
+
+# Update plugin
+ourtool plugin update plugin-name
+----
+
+=== ourtool cache
+
+Manage cache:
+
+[source,bash]
+----
+# Clear cache
+ourtool cache clear
+
+# Cache size
+ourtool cache size
+
+# Cache info
+ourtool cache info
+----
+
+== Configuration Files
+
+=== Global Config
+
+Global configuration at `~/.ourtool/config.yml`:
+
+[source,yaml]
+----
+# Default settings
+default:
+  template: default
+  author: "Your Name"
+
+# Plugin settings
+plugins:
+  - analytics
+  - seo
+
+# Registry settings
+registry:
+  url: https://registry.ourtool.com
+  token: your-token
+----
+
+=== Project Config
+
+Project configuration at `ourtool.yml`:
+
+[source,yaml]
+----
+# Project metadata
+project:
+  name: my-project
+  version: 1.0.0
+  description: "My awesome project"
+
+# Build settings
+build:
+  output: dist
+  minify: true
+  sourcemap: false
+
+# Dev server settings
+dev:
+  port: 3000
+  open: true
+  livereload: true
+
+# Plugin configuration
+plugins:
+  analytics:
+    tracking_id: GA-XXXXXXX
+  seo:
+    sitemap: true
+----
+
+== Environment Variables
+
+| Variable | Description | Example |
+|----------|-------------|---------|
+| `OURTOOL_CONFIG` | Config file path | `~/.ourtool/custom.yml` |
+| `OURTOOL_CACHE_DIR` | Cache directory | `/tmp/ourtool-cache` |
+| `OURTOOL_REGISTRY_TOKEN` | Registry token | `your-token` |
+| `OURTOOL_VERBOSE` | Verbose output | `true` |
+
+== Exit Codes
+
+| Code | Description |
+|------|-------------|
+| `0` | Success |
+| `1` | General error |
+| `2` | Invalid usage |
+| `3` | Network error |
+| `4` | File not found |
+| `5` | Permission denied |
+
+== Troubleshooting
+
+include::ROOT:partial$troubleshooting.adoc[]
+
+== Related Topics
+
+* xref:getting-started:installation.adoc[Installation Guide]
+* xref:advanced:configuration.adoc[Advanced Configuration]

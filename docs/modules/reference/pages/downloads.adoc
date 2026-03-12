@@ -1,0 +1,260 @@
+= Downloads
+
+This page provides download links and installation options.
+
+== Official Downloads
+
+=== Stable Releases
+
+Download the latest stable release:
+
+| Platform | Download | Size | Checksum |
+|----------|----------|------|----------|
+| Windows x64 | link:https://releases.example.com/windows-x64.exe[Windows Installer] | 45 MB | SHA256: `abc123...` |
+| macOS x64 | link:https://releases.example.com/macos-x64.dmg[macOS DMG] | 52 MB | SHA256: `def456...` |
+| Linux x64 | link:https://releases.example.com/linux-x64.tar.gz[Linux Tarball] | 41 MB | SHA256: `ghi789...` |
+
+=== Development Builds
+
+Development builds are available for testing:
+
+| Platform | Download | Updated |
+|----------|----------|---------|
+| Windows x64 | link:https://ci.example.com/windows-x64.exe[Latest Build] | 2 hours ago |
+| macOS x64 | link:https://ci.example.com/macos-x64.dmg[Latest Build] | 2 hours ago |
+| Linux x64 | link:https://ci.example.com/linux-x64.tar.gz[Latest Build] | 2 hours ago |
+
+== Package Managers
+
+=== npm
+
+[source,bash]
+----
+# Latest stable
+npm install -g @ourtool/cli
+
+# Development version
+npm install -g @ourtool/cli@next
+
+# Specific version
+npm install -g @ourtool/cli@1.2.3
+----
+
+=== Homebrew (macOS)
+
+[source,bash]
+----
+# Stable version
+brew install ourtool
+
+# Development version
+brew install ourtool --HEAD
+
+# Update
+brew upgrade ourtool
+----
+
+=== Chocolatey (Windows)
+
+[source,powershell]
+----
+# Stable version
+choco install ourtool
+
+# Development version
+choco install ourtool --pre
+
+# Update
+choco upgrade ourtool
+----
+
+=== Scoop (Windows)
+
+[source,powershell]
+----
+# Add bucket
+scoop bucket add ourtool https://github.com/ourtool/scoop
+
+# Install
+scoop install ourtool
+
+# Update
+scoop update ourtool
+----
+
+=== APT (Ubuntu/Debian)
+
+[source,bash]
+----
+# Add repository
+curl -fsSL https://packages.example.com/apt/gpg | sudo apt-key add -
+echo "deb https://packages.example.com/apt stable main" | sudo tee /etc/apt/sources.list.d/ourtool.list
+
+# Install
+sudo apt update
+sudo apt install ourtool
+
+# Update
+sudo apt update && sudo apt upgrade ourtool
+----
+
+=== YUM/DNF (RHEL/CentOS/Fedora)
+
+[source,bash]
+----
+# Add repository
+sudo rpm --import https://packages.example.com/rpm/gpg
+sudo tee /etc/yum.repos.d/ourtool.repo > /dev/null <<EOF
+[ourtool]
+name=OurTool Repository
+baseurl=https://packages.example.com/rpm/stable/\$basearch
+gpgcheck=1
+gpgkey=https://packages.example.com/rpm/gpg
+EOF
+
+# Install
+sudo yum install ourtool
+
+# Update
+sudo yum update ourtool
+----
+
+=== Docker
+
+[source,bash]
+----
+# Pull image
+docker pull ourtool/cli:latest
+
+# Run container
+docker run -it ourtool/cli:latest
+
+# Mount current directory
+docker run -it -v $(pwd):/workspace ourtool/cli:latest
+----
+
+=== Docker Compose
+
+[source,yaml]
+----
+version: '3.8'
+services:
+  ourtool:
+    image: ourtool/cli:latest
+    volumes:
+      - .:/workspace
+    working_dir: /workspace
+    command: serve --port 3000 --host 0.0.0.0
+    ports:
+      - "3000:3000"
+----
+
+== Verification
+
+After downloading, verify the integrity of the file:
+
+=== Verify Checksum
+
+[source,bash]
+----
+# Calculate SHA256
+sha256sum ourtool-linux-x64.tar.gz
+
+# Compare with expected
+echo "abc123... ourtool-linux-x64.tar.gz" | sha256sum -c -
+----
+
+=== Verify Signature
+
+[source,bash]
+----
+# Import GPG key
+gpg --import ourtool-public-key.asc
+
+# Verify signature
+gpg --verify ourtool-linux-x64.tar.gz.sig ourtool-linux-x64.tar.gz
+----
+
+== System Requirements
+
+=== Minimum Requirements
+
+| Platform | OS Version | RAM | Storage | Node.js |
+|----------|------------|-----|---------|---------|
+| Windows | Windows 10+ | 4 GB | 500 MB | 14.0+ |
+| macOS | macOS 10.14+ | 4 GB | 500 MB | 14.0+ |
+| Linux | Ubuntu 18.04+ | 4 GB | 500 MB | 14.0+ |
+
+=== Recommended Requirements
+
+| Platform | OS Version | RAM | Storage | Node.js |
+|----------|------------|-----|---------|---------|
+| Windows | Windows 11 | 8 GB | 1 GB | 18.0+ |
+| macOS | macOS 12+ | 8 GB | 1 GB | 18.0+ |
+| Linux | Ubuntu 20.04+ | 8 GB | 1 GB | 18.0+ |
+
+== Release Channels
+
+=== Stable
+
+Stable releases are recommended for production use:
+
+* Regular release schedule (every 6 weeks)
+* Thoroughly tested
+* Long-term support (12 months)
+* Backported security fixes
+
+=== Beta
+
+Beta releases for early adopters:
+
+* Released every 2 weeks
+* Feature-complete but may have bugs
+* No long-term support
+* Feedback encouraged
+
+=== Alpha
+
+Alpha releases for developers and testers:
+
+* Released as needed
+* Experimental features
+* May be unstable
+* Not for production use
+
+== Release History
+
+=== Version 1.2.3 (Current)
+
+* Fixed: Build performance regression
+* Added: New plugin system
+* Changed: Updated default theme
+* Security: Fixed dependency vulnerabilities
+
+=== Version 1.2.2
+
+* Fixed: Memory leak in serve mode
+* Added: Custom CSS support
+* Changed: Improved error messages
+
+=== Version 1.2.1
+
+* Fixed: Windows installer issue
+* Added: Live reload improvements
+* Changed: Updated documentation
+
+=== Version 1.2.0
+
+* Added: Plugin system
+* Added: Theme support
+* Changed: New configuration format
+* Deprecated: Old CLI options
+
+== Troubleshooting
+
+include::ROOT:partial$troubleshooting.adoc[]
+
+== Related Topics
+
+* xref:getting-started:installation.adoc[Installation Guide]
+* xref:cli.adoc[CLI Reference]
