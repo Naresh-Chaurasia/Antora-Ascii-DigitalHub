@@ -1,7 +1,7 @@
 = Ballet
 
-image::./../../assets/images/ballet/demi-plie.jpg[demi-plie,window=_blank]
+image::../assets/images/ballet/demi-plie.jpg[demi-plie,window=_blank]
 
 ---
 
-image::./../../assets/images/ballet/grand-plie.jpg[grand-plie,window=_blank]
+image::../assets/images/ballet/grand-plie.jpg[grand-plie,window=_blank]
