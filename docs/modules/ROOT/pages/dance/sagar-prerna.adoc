@@ -5,6 +5,20 @@
 * [x] This page will only contain Marius&Elena
 * [x] Easiest and long term solution will be to copy and paste the content from here to Anki
 
+##################################################
+
+---
+
+=== Intermediate Batch
+
+* [ ] Hop
+* [ ] Sweep
+* [ ] Delay
+* [ ] Double Tap
+* [ ] Side Step (Heel Toe)
+* [ ] Madrid (Heel Toe)
+
+
 ---
 
 * Wave 1 | Wave 2
