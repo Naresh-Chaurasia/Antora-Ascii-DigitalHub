@@ -62,6 +62,7 @@
 * xref:dance/musicality.adoc[Musicality]
 * xref:dance/practice-drills.adoc[Practice Drills]
 * xref:dance/sagar-prerna.adoc[Sagar & Prerna]
+* xref:dance/ballet.adoc[Ballet]
 
 .Books
 * xref:books/index.adoc[Overview]
