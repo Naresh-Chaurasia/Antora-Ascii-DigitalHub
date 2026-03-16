@@ -898,7 +898,7 @@ IMPORTANT: Create a simple MCP Server and run it locally. Open inspector with to
 * [ ] Claude: We want claude to run `mcp dev weather.py`
 
 
-=== Integration with Claude
+*#Integration with Claude#*
 
 * Code 
 
@@ -931,7 +931,7 @@ IMPORTANT: Create a simple MCP Server and run it locally. Open inspector with to
 
 ---
 
-=== Integration with VS Vode
+*#Integration with VS Vode#*
 
 * Visual Studio Code
 * Continue Extension
@@ -1000,7 +1000,12 @@ In this setup:
 
 ---
 
-=== 4). MCP Server
+*#4). MCP Server#*
+
+
+`mcp install weather.py`: It will install in claude. #Pending#
+
+---
 
 Both commands start your *MCP server*, but in *different modes*.
 
@@ -1361,6 +1366,37 @@ This setup enables:
 * Custom Python tools callable by LLMs
 
 This forms a complete local MCP development environment.
+
+---
+
+##################################################
+
+=== 23. Connect an MCP Client to an MCP Server locally built
+
+* I am inside client folder, and doing all this.
+
+[source, shell]
+----
+uv init
+
+uv venv
+
+source ./venv/bin/activate
+
+uv add "mcp[cli]"
+
+uv run client_weather.py
+
+uv run client_airbnb.py
+
+----
+
+* Calling Weather / Airbnb with my own client 
+
+---
+
+##################################################
+
 
 == Glossary
 
