@@ -11,10 +11,6 @@ fi
 echo "Build completed."
 sleep 1
 
-echo "Clearing previous changes..."
-sleep 1
-clear
-
 echo "Starting deployment process..."
 sleep 1
 
