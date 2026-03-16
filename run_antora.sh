@@ -1,9 +1,22 @@
-echo "Starting deployment process..."
+echo "Building the site using npm..."
+npm run build
+sleep 1
+
+# Check if build failed
+if [ $? -ne 0 ]; then
+  echo "Build failed. Terminating process."
+  exit 1
+fi
+
+echo "Build completed."
 sleep 1
 
 echo "Clearing previous changes..."
 sleep 1
 clear
+
+echo "Starting deployment process..."
+sleep 1
 
 echo "Adding all files to git staging..."
 sleep 1
@@ -23,12 +36,8 @@ echo "Pushing changes to origin main..."
 git push origin main
 
 sleep 1
-echo "Building the site using npm..."
-npm run build
+echo "https://naresh-chaurasia.github.io/Antora-Ascii-DigitalHub/my-component/1/index.html"
 
 sleep 1
 echo "Starting local server at http://localhost:8080 ..."
 python3 -m http.server 8080 --directory build/site
-
-sleep 1
-echo "Process completed."
