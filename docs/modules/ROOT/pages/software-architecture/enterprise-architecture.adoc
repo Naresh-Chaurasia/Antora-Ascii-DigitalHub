@@ -1,0 +1,3 @@
+= Enterprise Architecture
+
+A short placeholder page for enterprise architecture (capabilities, governance, standards, roadmaps).

@@ -1,0 +1,338 @@
+= MCP - Yash Thakker
+:toc: right
+:toclevels: 5
+:sectnums: 1
+:sectnumlevels: 1
+
+== Context Switching
+
+TIP: TIP
+
+IMPORTANT: IMPORTANT
+
+CAUTION: CAUTION
+
+WARNING: WARNING
+
+* https://github.com/whyashthakker/mcp-projects/tree/main
+
+== Section 1
+
+=== Why Anthropic Built MCP?
+
+* Model Context Protocol (MCP)
+** Introduced by Anthropic on November 25, 2024
+** A protocol that allows AI models to interact with external systems and tools
+** Designed to make AI models more practical and usable in real-world applications
+
+* Key Purpose of MCP
+** Enable AI models to use real tools
+** Provide secure and controlled access to external systems and data
+
+* Problem Before MCP
+** Developers needed to build custom connectors for every integration
+*** Example systems: GitHub, Jira, Slack, Notion
+** Switching AI models required rewriting integration code
+** Each application required separate integrations and maintenance
+
+* How MCP Solves the Problem
+** Provides a standard interface for connecting AI models to tools
+** Developers build integrations once through MCP servers
+** Any compatible model (for example Claude) can use those tools
+*** Eliminates the need to rewrite connectors for different models
+
+* Reason 1: Giving AI Models Real Tool-Using Power
+** Traditional LLMs operate mainly on static training data
+*** They cannot directly access real-time systems or external APIs
+** MCP enables models to interact with live systems and services
+*** Models can read MCP server documentation
+*** Models can determine which methods to call to access services
+** Enables real-time capabilities
+*** Fetch live information
+*** Perform actions in external systems
+
+* Examples of Real-Time Use Cases
+** Access API documentation through MCP servers
+** Retrieve live data from collaboration platforms like Slack
+** Build systems such as
+*** Attendance monitoring systems
+*** Project monitoring systems
+*** Custom enterprise applications
+
+* Reason 2: Security and Controlled Access
+** Organizations are concerned about data leakage and privacy
+** MCP introduces boundaries for AI system access
+
+** Administrators can control: #LLM talks to these systems via MCP. So we can control what LLM can access, what tools it can use, what operations it can perform#
+
+*** Which systems the AI model can access
+*** What tools the AI model can use
+*** What type of operations the AI model can perform
+
+** Example Access Control
+*** Allow AI to connect to systems like GitHub or Jira
+*** Restrict access to sensitive customer or proprietary data
+
+* Benefits for Organizations
+** Provides controlled automation
+** Reduces risk of exposing sensitive internal systems
+** Allows companies to safely integrate AI into workflows
+
+* Industry Adoption
+** Early adopters include companies like Block and Apollo
+** Developer platforms such as Replit are building tools based on MCP
+** Large technology companies including Google and Microsoft have shown interest
+
+* Open Source Ecosystem
+** MCP framework is open source
+** Developers can access the code and build extensions
+** A growing community contributes tools, servers, and integrations
+
+* Why Not Just Use Agents
+** Agents often require duplicated integrations across applications
+*** The same function must be implemented in multiple systems
+** Each app requires redeployment of those integrations
+
+** MCP simplifies integration
+*** Define configuration once on an MCP server
+*** Multiple AI agents can use the same tools and integrations
+*** Makes connecting AI systems to applications easier and scalable
+
+* Strategic Importance
+** Helps AI systems interact with external tools and services
+** Enables automation across enterprise systems
+** Provides a standardized way for AI agents to access external capabilities
+** Understanding MCP fundamentals helps developers stay ahead in AI integration and automation systems
+
+##################################################
+
+---
+
+=== Core Components of MCP
+
+* Core Components of Model Context Protocol (MCP)
+** MCP is built around three main components
+*** Client
+*** Server
+*** Capabilities
+
+* Client
+** A client is any application or system that wants to use tools through MCP
+** In AI systems, the client is usually the AI model or assistant
+*** Example: Anthropic’s Claude acting as the client
+
+** Responsibilities of the Client
+*** Initiates requests to external tools and services
+*** Requests actions or data through the MCP protocol
+
+** Example
+*** AI assistant wants to fetch repository issues from GitHub
+*** The client sends a request through MCP
+*** MCP forwards the request to the appropriate server
+
+** Key Principle
+*** The client does not need to understand the internal implementation of the tool
+*** It only needs to follow the MCP standard protocol
+
+* Server
+** A server is any system or service that provides functionality or data to the client
+
+** Examples of Servers
+*** GitHub API
+*** Slack integration
+*** Weather data services
+*** Document platforms like Notion
+
+** Responsibilities of the Server
+*** Receive requests through MCP
+*** Execute the requested operation
+*** Return the result to the client
+
+** Example
+*** Client requests the latest issue from a GitHub repository
+*** The GitHub API server processes the request
+*** The result is returned through MCP to the client
+
+** Key Principle
+*** The server handles the business logic of interacting with the external system
+
+* Capabilities
+** Capabilities represent actions that a server can perform for a client
+** A capability is similar to a predefined function or operation
+
+** Example Capabilities
+*** Create issue in GitHub
+*** Send message through Slack
+*** Update a document in Notion
+
+** Purpose of Capabilities
+*** Provide a standardized way to interact with tools
+*** Hide the complexity of underlying APIs
+
+** Key Principle
+*** Clients request capabilities instead of calling raw APIs
+
+* Interaction Flow Between Client, Server, and Capabilities
+** Step 1: Client decides to perform an action
+*** Example: update a document in Notion
+
+** Step 2: Client sends a request through MCP
+*** Request specifies the capability needed
+*** Includes required input data
+
+** Step 3: MCP routes the request to the correct server
+
+** Step 4: Server executes the capability
+*** Example: update the document in Notion
+
+** Step 5: Server sends the response back through MCP
+
+** Step 6: Client receives the result and responds to the user
+
+* Benefits of This Architecture
+** Simplifies integration between AI models and external systems
+** Clients do not need to know internal API structures
+** Servers encapsulate the business logic
+** Capabilities provide standardized actions
+
+* Real-World Example
+** Block (formerly Square) uses MCP internally
+
+** Use Case
+*** Internal AI agents interact with multiple tools and services
+*** Automate tasks such as internal data management or transaction processing
+
+** Advantages
+*** No need for custom integrations for every new system
+*** Agents simply request capabilities
+*** Servers execute operations and return results
+
+* Overall Impact of MCP
+** Creates a standardized communication layer between AI models and external systems
+** Makes it easier to build powerful AI assistants
+** Enables scalable automation across many tools and services
+** Allows organizations to control which capabilities AI models can access
+
+##################################################
+
+---
+
+
+== Section 2
+
+* https://pypi.org/project/mcp/
+
+=== Building MCP Server - Calculator
+
+----
+# Initialize a new Python project using uv (modern Python package manager)
+# Creates: pyproject.toml, .venv directory, and basic project structure
+uv init mcp-1
+
+# Change into the newly created project directory
+# All subsequent commands will run from within this directory
+cd mcp-1
+
+# Add the MCP (Model Context Protocol) package with CLI support
+# [cli] extras include command-line tools for MCP server management
+# This installs: mcp package with additional CLI utilities
+uv add "mcp[cli]"
+
+# Run the MCP CLI to verify installation and access MCP commands
+# This activates the MCP command-line interface within the virtual environment
+# You can now use 'mcp install', 'mcp run', etc.
+uv run mcp
+
+# Install/register your MCP server with Claude Desktop
+# This command:
+# 1. Parses your server.py file to extract metadata (server name, transport, etc.)
+# 2. Generates the appropriate command configuration for your server type
+# 3. Updates ~/Library/Application Support/Claude/claude_desktop_config.json
+# 4. Adds your server to the mcpServers section so Claude can discover and use it
+# Replace /path/to/server.py with your actual server file path
+mcp install /path/to/server.py
+----
+
+##################################################
+
+---
+
+
+#*Server Components*#
+
+*Tools*
+
+- `add(a: int, b: int)` - Mathematical addition function
+
+*Resources*  
+
+- `greeting://\{name\}` - Dynamic personalized greeting resource
+
+*Prompts*  
+
+- `greet_user(name, style)` - Greeting prompt templates
+  - Styles: friendly, formal, casual
+
+##################################################
+
+---
+
+*Registration Process*
+
+*How `mcp install` Works*
+
+1. **Parses server file** to extract metadata
+   - Server name: `FastMCP("Demo", ...)` → "Demo"
+   - Transport type: `streamable-http`
+   - Dependencies and imports
+
+2. **Determines execution strategy**
+   - Detects Python FastMCP server
+   - Generates: `uv run --with mcp[cli] mcp run /path/to/server.py`
+
+3. **Updates configuration**
+   - Reads: `~/Library/Application Support/Claude/claude_desktop_config.json`
+   - Adds server entry under `mcpServers`
+   - Writes back to config file
+
+
+##################################################
+
+---
+
+
+----
+{
+  "mcpServers": {
+    "Demo": {
+      "command": "/Users/nareshchaurasia/.local/bin/uv",
+      "args": [
+        "run",
+        "--with", 
+        "mcp[cli]",
+        "mcp",
+        "run",
+        "/path/to/server.py"
+      ]
+    }
+  }
+}
+----
+
+*How Claude Finds the Server*
+
+1. Claude Desktop reads config on startup
+2. Sees "Demo" server entry
+3. Executes the configured command
+4. Establishes MCP protocol communication
+5. Makes tools/resources/prompts available
+
+*Key Points*
+
+- `mcp install` automatically handles configuration
+- No manual JSON editing required
+- Server name comes from `FastMCP("Demo", ...)`
+- Transport type affects how server communicates
+- Config location is platform-specific (macOS: `~/Library/Application Support/Claude/`)
+
+

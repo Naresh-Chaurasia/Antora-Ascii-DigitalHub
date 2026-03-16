@@ -1,0 +1,3 @@
+= Technology Books
+
+Notes and summaries from technology books covering software development, AI, machine learning, cloud computing, and emerging tech trends.

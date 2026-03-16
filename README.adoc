@@ -47,12 +47,46 @@ Example:
 * *Navigation (sidebar)*: `docs/modules/ROOT/nav.adoc`
 * *Generated site*: `build/site/`
 
+== Current modules in this repository
+
+* *getting-started* - Basic setup and introduction
+* *advanced* - In-depth topics and configuration
+* *reference* - Technical references and API documentation
+* *spring-microservices* - Spring-based microservices topics
+* *ai-llm-engineering* - AI and LLM development topics
+* *software-architecture* - System design and architecture patterns
+* *automation-testing* - Test automation frameworks and tools
+* *productivity* - Personal productivity systems and workflows
+* *soft-skills* - Communication, emotional intelligence, leadership, and interpersonal skills
+* *dance* - Dance techniques and practice drills
+* *books* - Book summaries, reviews, and reading lists
+
 == Antora concepts (in plain words)
 
 * *Component*: A set of docs that belong together (and can be versioned). In this repo the component lives under `docs/`.
 * *Module*: A sub-area inside a component (example modules here: `getting-started`, `advanced`, `reference`).
 * *Page*: A single `.adoc` file under `pages/`.
 * *Nav*: The left sidebar, configured in `docs/modules/ROOT/nav.adoc`.
+
+== Adding new content
+
+The repository now includes comprehensive documentation across multiple knowledge areas:
+
+**Knowledge Areas:**
+- Technical skills and frameworks
+- Soft skills development
+- Book library and reviews
+- Dance learning resources
+
+**File Organization:**
+- Each module has its own folder under `docs/modules/`
+- Navigation is centrally managed in `docs/modules/ROOT/nav.adoc`
+- Images should be placed in `docs/modules/ROOT/assets/images/`
+
+**Quick Start:**
+1. Create new `.adoc` files in appropriate module folders
+2. Add entries to `docs/modules/ROOT/nav.adoc`
+3. Run `npm run build` to generate the site
 
 == Common tasks
 

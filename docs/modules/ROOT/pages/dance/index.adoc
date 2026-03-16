@@ -1,0 +1,3 @@
+= Dance
+
+A structured set of notes and placeholders for dance topics and practice.

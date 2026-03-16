@@ -1,0 +1,828 @@
+= Learn Agentic AI – Build Multi-Agent Automation Workflows
+:toc: right
+:toclevels: 5
+:sectnums: 1
+:sectnumlevels: 1
+
+== Context Switching
+
+* [ ] Where is my code locally and on git.
+* [ ] Where did i leave off last time?
+* [ ] What was the task i was working on?
+* [ ] Where to start and How to Start when I come back?
+
+== Course Agenda
+
+NOTE: What is Covered.
+
+* [ ] Get a detailed understanding of LLMs, AI Agents, MCP, Multi-Agent Systems, and Agentic AI
+* [ ] Build Multi Agentic workflows using Microsoft AutoGen Framework
+* [ ] Develop Specialized Agents such as Jira Agent for Bug analysis, Playwright Agent for browser Automation, API Agent for testing, DB Agent for data analysis
+* [ ] Build intelligent, autonomous AI agents that collaborate, self-correct, and execute complex tasks without constant human intervention
+* [ ] Understand the power of Context Engineering to enable AI agents to work effectively toward defined goals
+* [ ] Gain a thorough understanding of AutoGen framework concepts including Assistant Agents, human-in-the-loop collaboration, termination strategies, and state-savin
+* [ ] Build an Agent Factory design pattern to create reusable specialized agents for multi-purpose use
+* [ ] Get in-depth knowledge of MCPs and how their configurations are defined for real-world applications
+
+##############################################
+
+== So Far, What I have Done
+
+* [x] Calling Playwright MCP Server to automate browser tasks, using Claude
+* [x] Calling MySQL MCP Server to interact with MySQL databases, using Claude
+* [x] Calling Postman MCP Server to interact with APIs, using Claude. Claude reads the Postman collection and executes the API calls.
+* [x] Writing to excel files using Claude
+* [x] Some Python Agents + Termination Conditions + AutoGen Framework
+* [x] Round Robin Agentic AI using Python + AutoGen Framework
+* [x] Select Agent based on Task Type using Python + AutoGen Framework
+* [x] Browser + Playwright Automation using Python + AutoGen Framework
+
+
+##############################################
+
+== Prompts
+
+----
+# Navigate to https://naresh-chaurasia.github.io/connect2naresh/python/python/ and click on link Mock Interview Preparation
+
+# How many users are in selenium.users
+
+# Can you read attached postman collection to understand the api contract and get student with id 1
+----
+
+---
+
+##############################################
+
+== mysql_mcp_server
+
+* /Users/nareshchaurasia/Library/Logs/Claude
+* /Users/nareshchaurasia/Library/Application Support/Claude
+* https://github.com/microsoft/playwright-mcp
+* https://github.com/designcomputer/mysql_mcp_server
+* https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem
+
+##############################################
+
+---
+
+== Configuration
+
+* /Users/nareshchaurasia/Library/Application Support/Claude/claude_desktop_config.json
+
+*Working JSON*
+
+----
+{
+    "mcpServers": {
+        "playwright": {
+            "command": "npx",
+            "args": [
+                "@playwright/mcp@latest"
+            ]
+        },
+        "mysql": {
+            "command": "/opt/homebrew/bin/uv",
+            "args": [
+                "--directory",
+                "/opt/anaconda3/lib/python3.12/site-packages",
+                "run",
+                "/opt/anaconda3/bin/mysql_mcp_server"
+            ],
+            "env": {
+                "MYSQL_HOST": "localhost",
+                "MYSQL_PORT": "3306",
+                "MYSQL_USER": "root",
+                "MYSQL_PASSWORD": "password",
+                "MYSQL_DATABASE": "selenium"
+            }
+        }
+    }
+}
+----
+
+
+##############################################
+
+---
+
+
+*Installing mysql_mcp_server*
+
+----
+
+ps aux | grep mysql_mcp_server
+
+brew install uv
+
+uv pip install mysql-mcp-server
+Using Python 3.12.7 environment at: /opt/anaconda3
+Audited 1 package in 161ms
+
+
+uv run python -m pip show mysql-mcp-server
+Name: mysql_mcp_server
+Version: 0.2.2
+Summary: A Model Context Protocol (MCP) server that enables secure interaction with MySQL databases. This server allows AI assistants to list tables, read data, and execute SQL queries through a controlled interface, making database exploration and analysis safer and more structured.
+Home-page:
+Author:
+Author-email: "Dana K. Williams" <dana_w@designcomputer.com>
+License:
+Location: /opt/anaconda3/lib/python3.12/site-packages
+Requires: mcp, mysql-connector-python
+----
+
+
+##############################################
+
+=== MySql
+
+
+
+##############################################
+
+
+
+##############################################
+
+== Section 1
+
+=== 3. Transition from LLM -> AI Agents. Where AI Agent shines?
+
+
+* Transition from LLMs to AI Agents
+** LLMs mainly generate text responses based on training data.
+** AI agents go beyond text generation and can perform real-world or system actions.
+
+* Limitation of LLMs
+** LLMs respond based on patterns learned from massive training datasets.
+** They cannot directly perform actions like:
+*** Connecting to a database
+*** Automating a browser
+*** Calling backend APIs
+*** Editing files or code
+** They can only explain *how* to do these tasks, not execute them.
+
+* What AI Agents Do
+** AI agents can perform actions on behalf of the user.
+** They combine:
+*** LLM intelligence (the brain)
+*** Tools and integrations (hands and legs)
+** This allows them to:
+*** Access systems
+*** Retrieve data
+*** Perform tasks automatically
+
+* Passport Application Analogy
+** Using an LLM
+*** You ask how to apply for a passport.
+*** The LLM gives instructions:
+**** Required documents
+**** Website links
+**** Step-by-step process
+*** You must perform all steps yourself.
+
+** Using an Agent
+*** Similar to a real-world passport agent.
+*** The agent:
+**** Collects your documents
+**** Fills forms
+**** Books appointments
+**** Guides you through submission
+*** The agent performs tasks on your behalf.
+
+* Core Idea of AI Agents
+** AI agents are not separate from LLMs.
+** The LLM is still the core brain.
+** Additional capabilities are added through tools.
+
+* Role of Tools in AI Agents
+** Tools give agents the ability to act.
+** Examples of tools:
+*** Database connectors
+*** Browser automation
+*** API integrations
+*** Code editing tools
+*** Reporting or visualization tools
+
+** Without tools:
+*** The system behaves like a normal LLM.
+*** It only knows information but cannot act.
+
+* Brain and Hands Analogy
+** LLM = Brain
+*** Understands problems
+*** Generates reasoning and solutions
+
+** Tools = Hands
+*** Execute actions
+*** Interact with systems
+*** Modify data or code
+
+** #AI Agent = Brain + Hands#
+*** Understands tasks
+*** Decides actions
+*** Executes them automatically
+
+* Examples of AI Agent Tasks
+** Book a flight to Paris
+*** Opens browser
+*** Navigates to travel websites
+*** Searches flights
+*** Books tickets
+
+** Fix a bug in a repository
+*** Reads codebase
+*** Identifies faulty lines
+*** Edits files
+*** Writes corrected code
+
+** Generate monthly sales report
+*** Connects to database
+*** Queries sales data
+*** Processes results
+*** Generates charts or reports
+
+* Decision Making Capability
+** Agents can take autonomous decisions.
+** They analyze the environment and choose actions.
+** They execute multiple steps to achieve a goal.
+
+* Definition of an AI Agent
+** An AI agent is an autonomous system that:
+*** Understands user goals
+*** Takes decisions
+*** Uses tools
+*** Performs actions
+*** Produces results automatically
+
+* Importance of Tool Integration
+** Tools are what make agents powerful.
+** They extend LLM capability into real-world systems.
+** Proper tool connection is required to activate agent abilities.
+
+* Next Concept: MCP (Model Context Protocol)
+** MCP provides a standardized way to connect tools to AI agents.
+** It enables agents to interact with systems and perform actions.
+** Understanding MCP is essential before building AI agents.
+
+* Learning Path
+** Understand LLM fundamentals
+** Understand AI agent architecture
+** Learn how tools integrate with agents
+** Learn MCP
+** Build single agents
+** Build multi-agent systems
+
+---
+
+##############################################
+
+== Section 2
+
+=== 5. What is MCP? How this MCP help an LLM to be super powerful
+
+* Building an AI Agent Using MCP Servers
+** Goal is to convert plain English instructions into automated business workflows
+** Automation includes browser actions, database queries, API calls, and file operations
+** Achieved by combining Large Language Models with MCP servers
+
+* Example Automation Workflow
+** User provides plain English prompt describing the task
+** Agent performs end-to-end automation without writing code
+*** Query database for registration data
+*** Fill registration form in web browser
+*** Call REST API to verify registration
+*** Store results in Excel file
+*** Complete login automation
+
+* Role of Large Language Models (LLMs)
+** LLMs process user prompts and understand intent
+** They generate reasoning and decide which actions are needed
+** However, LLMs cannot directly access systems
+*** Cannot query databases
+*** Cannot automate browsers
+*** Cannot call APIs
+*** Cannot access local files
+
+* Need for MCP (Model Context Protocol)
+** MCP connects LLMs with external systems and tools
+** Provides context that LLMs normally lack
+** Enables LLMs to interact with real-world resources
+
+* Definition of MCP
+** Open protocol that standardizes how applications provide context to LLMs
+** Enables AI systems to interact with external tools and data sources
+** Works similarly to a universal connector like USB-C for AI systems
+
+* Context Problem Without MCP
+** LLMs cannot answer questions about private data
+*** Example: "Total number of orders in my database"
+** Reason: LLM has no access to internal systems
+** MCP bridges this gap by connecting LLMs to resources
+
+* MCP Architecture
+** MCP Client
+*** Interface used by users (e.g., Claude, ChatGPT, Gemini)
+** MCP Server
+*** Middle layer connecting LLMs to external systems
+** External Resources
+*** Databases
+*** Browsers
+*** File systems
+*** APIs
+
+* How MCP Works
+** User asks a question to the LLM
+** LLM interprets the intent using natural language understanding
+** LLM communicates with MCP server using standardized protocol
+** MCP server calls tool functions
+** Tool functions interact with external systems
+** Results are returned to the LLM and presented to the user
+
+* Tool Functions in MCP Servers
+** MCP servers expose tools (functions) that LLMs can use
+** Each tool performs a specific operation
+*** Execute SQL query
+*** Navigate browser
+*** Click elements
+*** Read files
+*** Call APIs
+** LLM selects the correct tool based on description
+
+* Example: Database Query with MCP
+** LLM receives question about customer orders
+** LLM checks available MCP tools
+** It finds tool "execute_sql"
+** LLM first inspects database structure
+*** Tables
+*** Columns
+*** Relationships
+** LLM generates appropriate SQL query
+** MCP executes query and returns results
+
+* Example: Browser Automation with MCP
+** Browser automation MCP server exposes functions
+*** browser_navigate
+*** browser_click
+*** browser_type
+*** browser_go_back
+** LLM chooses functions based on user instruction
+*** Example prompt: "Go to a website and run smoke test"
+** MCP executes browser automation steps
+
+* MCP Server Configuration
+** MCP servers are connected using simple configuration
+** Typically done through a JSON configuration file
+** Only a few lines are required
+** Once configured, LLM automatically detects available tools
+
+* Multiple MCP Servers Can Be Connected
+** Database MCP server
+** Browser automation MCP server
+** File system MCP server
+** API testing MCP server
+** Excel manipulation MCP server
+
+* Key Capability Enabled by MCP
+** Plain English instructions trigger complex workflows
+** AI agent decides which tools to use
+** Actions executed automatically across systems
+
+* AI Agent Architecture
+** LLM = reasoning engine (brain)
+** MCP tools = execution capabilities (hands)
+** Together they create a functional AI agent
+
+* Practical Example Workflow
+** Retrieve user data from database
+** Fill web registration form
+** Verify success through API
+** Store results in Excel
+** Perform browser automation tests
+
+* Key Insight
+** AI agents are created by combining
+*** LLM reasoning
+*** MCP tool integrations
+** LLM decides what to do
+** MCP tools perform the actual actions
+
+* Future Learning Focus
+** Understanding MCP concepts deeply
+** Learning how MCP tools connect to agents
+** Building multi-agent systems using MCP
+** Creating automated workflows using AI agents
+
+---
+
+##############################################
+
+=== 7. Build Agent which automates web browser using Playwright/Selenium MCP Servers
+
+
+* MCP client is required to interact with MCP servers
+** The client is the interface where users give instructions to the LLM
+** Examples of MCP clients
+*** *Claude Desktop*
+*** *VSCode*
+*** Cursor
+*** GitHub Copilot
+** Any client can be used because the underlying MCP concept remains the same
+
+* Claude Desktop is recommended for beginners
+** It provides a simple UI to send prompts and see results
+** It supports direct integration with MCP servers
+** Users can download it based on their operating system
+
+* MCP servers extend the capabilities of an LLM
+** Each MCP server provides specific functionality
+** Examples
+*** Browser automation
+*** API testing
+*** Database access
+** Multiple MCP servers can be configured together
+
+* Browser automation can be performed using MCP servers
+** Playwright MCP server
+** Selenium MCP server
+*** Both internally use their respective automation frameworks
+*** The goal is not test automation but end-to-end process automation
+
+* Plain English instructions can trigger automated actions
+** Example instruction: navigate to a website
+** The LLM interprets the instruction and selects the appropriate MCP server
+** No manual coding or rule mapping is required
+
+* MCP server configuration is defined in a JSON file
+** The configuration contains commands to start the MCP server
+** Example structure
+*** A parent key for MCP servers
+*** Individual entries for each server
+*** Command and arguments used to start the server
+
+* The LLM checks the configuration file to find available MCP servers
+** It does not search the internet for MCP servers
+** It only uses servers listed in the local config.json
+
+* When a user sends a prompt, the LLM follows a decision process
+** Understand the intent of the instruction
+** Identify the appropriate MCP server
+** Start the server if required
+** Select the correct tool from that server
+
+* MCP servers expose multiple tools (functions)
+** Example Playwright tools
+*** browser_navigate
+*** browser_click
+*** browser_back
+*** browser_forward
+** The LLM selects the correct tool based on the user instruction
+
+* Example workflow: navigate to a website
+** User sends instruction in plain English
+*** “Navigate to RahulShettyAcademy.com”
+** LLM determines the required tool
+*** browser_navigate
+** LLM prepares parameters
+*** URL of the website
+** Request is sent to the Playwright MCP server
+
+* MCP protocol is used for communication
+** The LLM converts plain English into the protocol format
+** It sends the tool name and parameters to the MCP server
+
+* The MCP server performs the actual action
+** It receives the tool request
+** It invokes the browser automation framework
+** The browser opens and navigates to the requested page
+
+* Example workflow: clicking an element
+** User instruction: click a link
+** LLM identifies the required tool
+*** browser_click
+** LLM determines parameters
+*** Target element
+*** Selector or XPath
+** The MCP server performs the click in the browser
+
+* Some operations require additional context
+** Example: clicking an element requires page inspection
+** LLM may request a page snapshot or DOM structure
+** It analyzes the page to identify the correct element
+
+* MCP servers must run locally
+** The client machine runs the MCP server process
+** Commands in config.json start the server locally
+** Example command
+*** npx playwright/mcp@latest
+
+* Node.js must be installed for Playwright MCP
+** The server is started using the npx command
+** Without Node.js the MCP server cannot start
+
+* Steps to configure Playwright MCP server
+** Open Claude Desktop settings
+** Go to Developer section
+** Edit the config.json file
+** Add MCP server configuration
+** Save the file
+** Restart Claude Desktop
+
+* After restart the client detects MCP tools
+** Previously no tools were available
+** After configuration the system shows multiple tools
+** Example: Playwright exposes around 14 tools
+
+* The LLM can now execute browser automation
+** It can navigate pages
+** Click elements
+** Upload files
+** Interact with the browser through available tools
+
+* Security prompts may appear during execution
+** The system asks permission before running tools
+** Users can allow or deny actions
+** Some tools can bypass repeated prompts
+
+* Example automation flow demonstrated
+** Navigate to a website
+** Open the client page
+** Click the “Register here” link
+** The browser automatically performs these actions
+
+* The LLM can analyze the page content
+** It identifies form fields automatically
+** It suggests filling the registration form
+
+* Next step: integrate database MCP server
+** The registration form requires data
+** Data will be fetched from a SQL database
+** SQL MCP server will supply the data
+** Data will then be used to fill the form automatically
+
+* Overall architecture of MCP workflow
+** User provides plain English instructions
+** LLM interprets the instruction
+** LLM selects appropriate MCP server and tool
+** MCP protocol sends structured requests
+** MCP server performs the actual operation on the system
+
+
+##############################################
+
+---
+
+== Section 3
+
+=== 12. Disadvantages of having Single Agent - and how Multi Agent fixes the problem
+
+* A single AI agent can use multiple MCP tools to perform different tasks
+  ** The large language model acts as the brain of the agent
+  ** The agent can handle browser automation, database queries, API calls, and file system access
+
+* Single-agent architecture creates too many responsibilities for one agent
+  ** One agent must manage many different capabilities
+  *** Browser automation
+  *** Database access
+  *** API communication
+  *** File handling
+
+* This creates a “jack of all trades, master of none” situation
+  ** The agent can do many tasks
+  ** But it may not perform any single task optimally
+
+* Tool complexity increases in a single-agent system
+  ** One agent may have many tools connected
+  ** Example comparison
+  *** One agent with 20 tools
+  *** Four agents with 5 tools each
+  ** Managing fewer tools per agent is simpler
+
+* Single-agent systems become hard to manage and debug
+  ** Similar to writing an entire application in one file
+  ** Similar to placing 100 automation test cases in one test file
+
+* *Tasks in a single-agent system usually run sequentially*
+  ** One task must finish before the next begins
+  ** This creates bottlenecks and delays
+
+* Multi-agent systems solve these problems
+  ** Instead of one general agent, multiple specialized agents are created
+
+* Each agent focuses on a specific capability
+  ** Database agent
+  *** Responsible for database queries and data retrieval
+  ** API agent
+  *** Handles API communication
+  ** Excel or file agent
+  *** Manages spreadsheets or file operations
+
+* Specialized agents improve results
+  ** Each agent becomes an expert in its domain
+  ** Coordination between agents leads to better outcomes
+
+* *Multi-agent systems allow parallel processing*
+  ** Different agents can work simultaneously
+  *** One agent gathers data
+  *** Another agent processes the data
+
+* Multi-agent systems are easier to maintain
+  ** Changes in one agent do not affect others
+  ** Example
+  *** Updating API agent prompts does not affect the database agent
+
+* Multi-agent systems improve scalability
+  ** New capabilities can be added by introducing new agents
+  ** Agents can be removed if not needed
+
+* Multi-agent systems help control cost
+  ** Each agent uses the LLM brain and consumes tokens
+  ** Removing unnecessary agents reduces token usage and cost
+
+* Multi-agent architecture is preferred for structured workflows
+  ** Specialized agents collaborate
+  ** Each agent performs a specific task in the overall system
+
+
+##############################################
+
+---
+
+=== 13. What is Agentic AI? Importance of Multi Agent work flows
+
+
+* Multi-agent systems can follow different workflow patterns
+  ** Each workflow defines how agents collaborate to complete tasks
+
+* *Sequential workflow*
+  ** Tasks are executed step by step by different agents
+  ** Output of one agent becomes input to the next agent
+  ** Example workflow
+  *** Agent A collects data
+  *** Agent B analyzes the data
+  *** Agent C generates a report
+
+* *Parallel workflow*
+  ** Multiple agents work simultaneously if tasks are independent
+  ** This improves performance and reduces waiting time
+  ** Example workflow
+  *** Agent A performs API testing
+  *** Agent D performs another independent task
+  *** Agent C starts database analysis after Agent B finishes
+
+* *Hierarchical workflow*
+  ** A manager agent controls other agents
+  ** The manager decides which agent should perform a task
+  ** Agents are invoked dynamically at runtime
+  ** The user only provides the goal
+  ** The manager agent orchestrates the workflow automatically
+
+* *Collaborative workflow*
+  ** Agents communicate with each other continuously
+  ** Communication happens in a round-robin manner
+  ** Agents share intermediate results and improve decisions together
+
+* *AI agents can collaborate to achieve a common goal*
+  ** Each agent performs a specific responsibility
+  ** Agents coordinate through workflows
+
+* *Definition of Agentic AI*
+  ** Agentic AI refers to systems that autonomously take actions and make decisions to achieve goals
+  ** The system goes beyond simply responding to prompts
+
+* #*Difference between AI agents and Agentic AI*#
+  ** AI agent
+  *** An individual autonomous system with tools and reasoning
+  ** Agentic AI
+  *** The entire process where multiple AI agents collaborate to solve a problem
+
+* Agentic AI focuses on the process of collaboration
+  ** Multiple agents work together through workflows
+  ** The system coordinates actions to achieve the final goal
+
+* Agentic AI systems are autonomous
+  ** They make decisions without constant human guidance
+  ** They initiate actions proactively instead of only reacting to prompts
+
+* Orchestration is an important concept in Agentic AI
+  ** It defines how multiple agents coordinate with each other
+  ** Example orchestration patterns
+  *** Sequential workflows
+  *** Hierarchical workflows
+  *** Collaborative workflows
+
+* Reasoning happens at each step of the workflow
+  ** Each agent analyzes information before performing actions
+  ** This improves decision quality
+
+* Traditional LLM systems vs Agentic AI
+
+** Traditional LLM systems
+*** Focus on answering questions
+*** Usually involve a single interaction
+*** Mostly reactive
+
+** Agentic AI systems
+*** Focus on solving problems
+*** Involve multi-step interactions
+*** Are proactive and goal driven
+*** Can take autonomous decisions
+
+* Tools play a critical role in AI agents
+  ** LLM alone acts as the brain
+  ** Tools provide the capability to interact with external systems
+
+* MCP tools enable AI agents to perform real-world actions
+  ** Example capabilities
+  *** Browser automation
+  *** Database access
+  *** API interactions
+  *** File system operations
+
+* #*Core architecture of Agentic AI*#
+
+** Large Language Model
+*** Acts as the brain for reasoning and decision making
+
+** Tools (such as MCP)
+*** Provide the ability to perform actions
+
+** AI Agents
+*** Combine the brain and tools to execute tasks
+
+** Multi-Agent System
+*** Multiple agents collaborate through workflows
+
+** Agentic AI
+*** The complete system where multiple agents coordinate to achieve a goal
+
+##############################################
+
+== AutoGen Multi-Agent System
+
+A comprehensive project for building intelligent, autonomous AI agents that collaborate, self-correct, and execute complex tasks using Microsoft AutoGen Framework.
+
+=== My-Examples Folder
+
+The `src/my-examples/` directory contains practical examples demonstrating AutoGen framework capabilities:
+
+*basics1.py*:
+Basic single agent example showing how to:
+
+- Create an AssistantAgent with OpenAI model client
+- Run a simple math task ("What is 25 * 8?")
+- Use environment variables for API key configuration
+
+*basics2.py*
+Multi-modal agent example demonstrating:
+
+- Image processing capabilities
+- MultiModalMessage handling
+- Analyzing images with AI agents
+
+*basics3.py*
+Multi-agent conversation example featuring:
+
+- Round-robin group chat between MathTeacher and Student agents
+- MaxMessageTermination condition
+- Agent-to-agent learning interactions
+
+*basics4.py*
+Human-in-the-loop workflow showing:
+
+- UserProxyAgent for human interaction
+- TextMentionTermination for session control
+- Math tutoring scenario with human student
+
+*basics5.py*
+Agent memory and state management demonstrating:
+
+- Saving agent conversation state to JSON
+- Loading saved state into different agents
+- Memory transfer between agents
+
+*basics6.py*
+MCP (Model Context Protocol) integration featuring:
+
+- Filesystem server configuration
+- McpWorkbench for file system access
+- Multi-agent collaboration with file operations
+
+*memory.json*
+
+Saved agent conversation state from basics5.py example
+
+## Getting Started
+
+1. Install dependencies: `pip install -r requirements.txt`
+2. Configure environment variables in `.env` file
+3. Run examples: `python src/my-examples/basics1.py`
+
+## Key Features
+
+- Environment variable configuration for API keys
+- Multi-agent collaboration patterns
+- Memory and state management
+- File system integration via MCP
+- Human-in-the-loop workflows

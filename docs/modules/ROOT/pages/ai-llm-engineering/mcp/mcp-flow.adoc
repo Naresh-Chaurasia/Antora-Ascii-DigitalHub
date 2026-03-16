@@ -1,0 +1,173 @@
+= Model Context Protocol (MCP) – Request Flow Explained
+:toc: right
+:toclevels: 5
+:sectnums: 1
+:sectnumlevels: 1
+
+Yes, the overall flow described is conceptually correct and matches how the Model Context Protocol (MCP) works. However, a few clarifications help make the explanation more precise.
+
+This section simplifies the flow so it becomes easier to understand.
+
+== Roles of the Components
+
+The architecture involves several components.
+
+* *User* – asks a question
+* *Application Server* – your backend system that receives user requests and communicates with the LLM
+* *LLM / Cloud Model* – analyzes the request and decides whether tools should be used
+* *MCP Client* – component used by the Application Server to communicate with an MCP Server
+* *MCP Server* – hosts and executes tools
+* *External Service (Example: GitHub API)* – actual system that provides real data
+
+Overall architecture:
+
+----
+User
+↓
+Application Server
+↓
+LLM (Cloud Model)
+↓
+MCP Client
+↓
+MCP Server
+↓
+External API (Example: GitHub)
+----
+
+=== Step 1 - User asks a question
+
+The user sends a query.
+
+* "What repositories do I have?"
+* The *Application Server* receives this request.
+
+=== Step 2: Application Server gets available tools from the MCP Server
+
+----
+Application Server
+   ↓
+MCP Client
+   ↓
+ListToolsRequest
+   ↓
+MCP Server
+   ↓
+ListToolsResult (get_repositories, create_repository, delete_repository)
+   ↓
+MCP Client
+   ↓
+Application Server
+----
+
+* Application Server gets available tools #from the MCP Server#
+
+* Before sending the request to the LLM, the *Application Server* may first ask:
+
+** "What tools are available?"
+
+
+##################################################
+
+
+=== Step 3: Application Server sends user question and available tools to the LLM
+
+The *Application Server* now sends the following to the LLM:
+
+* User question
+* List of tools available from the MCP Server
+
+##################################################
+
+=== Step 4 - LLM never runs tools directly
+
+*LLM decides to use a tool*
+
+* The LLM analyzes the request and determines that a tool should be used.
+
+
+*Important note:*
+
+The *LLM never runs tools directly.* The LLM only *requests* that a tool be executed.
+
+##################################################
+
+=== Step 5 - Application Server asks the MCP Server to execute the tool
+
+The *Application Server* detects the tool request and forwards it to the *MCP Server* through the MCP Client.
+
+##################################################
+
+=== Step 6 - MCP Server executes the tool
+
+The *MCP Server* executes the tool.
+
+Example tool execution:
+
+The tool inside the *MCP Server* may call an external API such as GitHub.
+
+* GET https://api.github.com/user/repos
+
+The external service returns repository data.
+
+##################################################
+
+=== Step 7 - MCP Server returns the tool result
+
+The *MCP Server* sends the tool result back.
+
+
+*Flow:*
+
+* MCP Server
+* MCP Client
+* Application Server
+
+##################################################
+
+=== Step 8 - Application Server sends tool result to the LLM
+
+The *Application Server* now sends the tool result back to the LLM.
+
+##################################################
+
+=== Step 9 - LLM generates final response
+
+The LLM now has enough information to generate the final answer.
+
+You have the following repositories:
+
+1. ai-project
+2. springboot-demo
+3. angular-book-app
+
+##################################################
+
+
+=== Step 10 - Response returned to the user
+
+The response flows back to the user.
+
+== Important Clarification
+
+The explanation earlier suggested that the *Application Server must request the list of tools from the MCP Server every time.*
+
+This is not always required.
+
+In real systems:
+
+* Tools are often loaded once when the *Application Server starts*
+* The tool list is cached
+* It is not requested from the *MCP Server* for every user query
+
+However, for teaching purposes the step-by-step flow is still useful.
+
+== Simplified Mental Model
+
+A helpful way to think about MCP:
+
+
+* LLM = Brain
+* MCP Server = Toolbox
+* MCP Client = Tool Connector
+* External APIs = Real World

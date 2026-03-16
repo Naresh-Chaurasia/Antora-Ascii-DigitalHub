@@ -1,0 +1,3 @@
+= Automation Framework Design
+
+A short placeholder page for designing automation frameworks (structure, reporting, CI integration, maintainability).

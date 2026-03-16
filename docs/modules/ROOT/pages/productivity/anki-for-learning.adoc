@@ -1,0 +1,3 @@
+= Using Anki for Learning
+
+A short placeholder page for using Anki effectively (spaced repetition, card design, reviews).

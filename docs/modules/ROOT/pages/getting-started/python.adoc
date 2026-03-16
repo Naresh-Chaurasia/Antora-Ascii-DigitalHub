@@ -1,0 +1,140 @@
+= Python
+:toc: right
+:toclevels: 5
+:sectnums:
+:sectnumlevels: 5
+:toc-title: Table of Contents
+
+== AI-ML-GenAI-Python-TechStack
+
+* Local Code Base
+** /Users/nareshchaurasia/nc/AI-ML-GenAI/AI-ML-GenAI-Python-TechStack
+*** *LangChain-Data-Chat*
+
+
+---
+
+== Langchain
+
+* file:///Users/nareshchaurasia/nc/Awakening-The-Giant/lanchain/LangChain.adoc[Langchain]
+
+TIP: Starting the PDF application locally
+
+----
+
+echo $VIRTUAL_ENV
+
+cd stephen-grider/pdf
+
+deactivate
+
+# On MacOS, WSL, Linux
+source .venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Initialize the database
+flask --app app.web init-db
+
+# Start the application locally
+inv dev
+
+#########
+
+cd stephen-grider/local-do-files
+pipenv shell
+pipenv install
+python app.py
+
+#########
+
+
+cd pdf
+source .venv/bin/activate
+inv devworker
+
+#########
+
+redis-server
+
+----
+
+
+
+== Virtual Environment
+
+=== ALL Virtual Environment
+
+----
+find . -type f -name "activate" -path "*/bin/activate"
+
+./jose-salvatierra/.flask/bin/activate
+
+./text-to-voice/text-voice/bin/activate
+
+./stephen-grider/pdf/.venv/bin/activate
+
+./.venv/bin/activate
+
+./andrei-dumitrescu/project-streamlit/streamlit/bin/activate
+
+./andrei-dumitrescu/project-ChatGPT-app/chatgpt-app/bin/activate
+----
+
+
+=== Different Version Python
+
+----
+
+brew install python@3.11
+
+/opt/homebrew/bin/python3.11 -m venv venv-py311-piper-tts
+
+source venv-py311-piper-tts/bin/activate
+
+python --version
+
+----
+
+
+=== Current Version Pythonn
+
+✔ *Creating Virtual Environment*
+
+----
+nareshchaurasia@Nareshs-MacBook-Pro project-streamlit % python3 -m venv myenv
+
+nareshchaurasia@Nareshs-MacBook-Pro project-streamlit % source myenv/bin/activate
+
+(myenv) nareshchaurasia@Nareshs-MacBook-Pro project-streamlit % pip install -r requirements.txt
+
+(myenv) nareshchaurasia@Nareshs-MacBook-Pro project-streamlit % pip install --upgrade pip
+----
+
+
+##############################################
+
+---
+
+=== GenAI
+
+✔  *Creating Virtual Environment with specific Python Version*
+
+----
+# brew install python@3.12
+
+# which python3.12
+
+ o/p => /opt/homebrew/bin/python3.12
+
+# /opt/homebrew/bin/python3.12 -m venv gen-ai
+
+source gen-ai/bin/activate
+
+(gen-ai) nareshchaurasia@Nareshs-MacBook-Pro Setup % pwd
+/Users/nareshchaurasia/nc/AI-ML-GenAI/gen-ai-app-dev/Setup
+(gen-ai) nareshchaurasia@Nareshs-MacBook-Pro Setup %
+
+pip install -r requirements.txt
+----

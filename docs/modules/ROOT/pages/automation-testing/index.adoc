@@ -1,0 +1,3 @@
+= Automation Testing
+
+A structured set of notes and placeholders covering test automation topics.

@@ -1,0 +1,3 @@
+= Integration Patterns
+
+A short placeholder page for integration patterns (sync vs async, APIs, messaging, contracts).

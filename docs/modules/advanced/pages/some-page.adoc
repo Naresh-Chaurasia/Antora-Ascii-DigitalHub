@@ -1,5 +1,0 @@
-= Some Page
-
-This is a small placeholder page used to demonstrate a working `xref:some-page.adoc[]` example.
-
-Go back to xref:how-to/add-a-page.adoc[How to Add a Page].

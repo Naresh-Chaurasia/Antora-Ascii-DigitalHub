@@ -1,0 +1,62 @@
+= Tools
+:toc: right
+:toclevels: 5
+:sectnums:
+:sectnumlevels: 5
+
+TIP: TIP
+
+IMPORTANT: IMPORTANT
+
+CAUTION: CAUTION
+
+WARNING: WARNING
+
+NOTE: NOTE
+
+== Macbook Pro
+
+=== Finder
+
+*Open a Folder Using Path on macOS*
+
+*Method 1: Finder*
+
+1. Open Finder
+2. Press `⌘ + Shift + G`
+3. Enter the folder path
+4. Press `Enter`
+
+Example:
+----
+/Users/nareshchaurasia/Documents/project
+----
+
+*Method 2: Terminal*
+
+Open folder in Finder:
+
+[source,bash]
+----
+open /Users/nareshchaurasia/Documents/project
+----
+
+Navigate in terminal:
+
+[source,bash]
+----
+cd /Users/nareshchaurasia/Documents/project
+----
+
+##################################################
+
+---
+
+
+=== Tags
+
+* Add Tags by dragging the File/Folder to the tag.
+* Cmd + Option + I
+* Finder / Setting / Tags
+** Choose which tags will show on left
+* Select multiple files and apply tags

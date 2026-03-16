@@ -1,0 +1,3 @@
+= Software Architecture
+
+A structured set of notes and placeholders covering software architecture topics.

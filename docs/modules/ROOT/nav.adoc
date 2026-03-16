@@ -1,23 +1,73 @@
 * xref:index.adoc[Home]
 
 .Getting Started
-* xref:getting-started:introduction.adoc[Introduction]
-* xref:getting-started:setup/prerequisites.adoc[Prerequisites]
-* xref:getting-started:setup/install.adoc[Install]
-* xref:getting-started:installation.adoc[Installation (Full)]
-* xref:getting-started:first-project.adoc[Your First Project]
-* xref:getting-started:concepts/antora-terminology.adoc[Antora Terminology]
+* xref:getting-started/index.adoc[Overview]
+* xref:getting-started/quick-start.adoc[Quick Start]
+* xref:getting-started/installation-guide.adoc[Installation Guide]
+* xref:getting-started/basic-concepts.adoc[Basic Concepts]
+* xref:getting-started/first-project.adoc[First Project]
 
-.Advanced Topics
-* xref:advanced:index.adoc[Advanced Overview]
-* xref:advanced:configuration.adoc[Advanced Configuration]
-* xref:advanced:deployment.adoc[Deployment Options]
-* xref:advanced:how-to/add-a-page.adoc[How to Add a Page]
-* xref:advanced:some-page.adoc[Some Page]
+.Spring Microservices
+* xref:spring-microservices/index.adoc[Overview]
+* xref:spring-microservices/spring-boot-basics.adoc[Spring Boot Basics]
+* xref:spring-microservices/rest-api-design.adoc[REST API Design]
+* xref:spring-microservices/microservices-architecture.adoc[Microservices Architecture]
+* xref:spring-microservices/api-gateway.adoc[API Gateway]
+* xref:spring-microservices/service-discovery.adoc[Service Discovery]
+* xref:spring-microservices/resilience-patterns.adoc[Resilience Patterns]
 
-.Reference
-* xref:reference:api.adoc[API Reference]
-* xref:reference:cli.adoc[CLI Reference]
-* xref:reference:downloads.adoc[Downloads]
-* xref:reference:configuration.adoc[Configuration Reference]
-* xref:reference:glossary/terms.adoc[Glossary]
+.AI & LLM Engineering
+* xref:ai-llm-engineering/index.adoc[Overview]
+* xref:ai-llm-engineering/prompt-engineering.adoc[Prompt Engineering]
+* xref:ai-llm-engineering/langchain.adoc[LangChain]
+* xref:ai-llm-engineering/vector-databases.adoc[Vector Databases]
+* xref:ai-llm-engineering/mcp-model-context-protocol.adoc[MCP (Model Context Protocol)]
+* xref:ai-llm-engineering/mcp/introduction-mcp.adoc[Introduction to Model Context Protocol]
+..Agentic AI
+* xref:ai-llm-engineering/building-ai-applications.adoc[Building AI Applications]
+** xref:ai-llm-engineering/agentic-ai.adoc[agentic ai]
+** xref:ai-llm-engineering/agenti-ai/agentic-ai2.adoc[agentic ai2]
+** xref:ai-llm-engineering/mcp/mcp-henry.adoc[MCP - Henry Habib]
+** xref:ai-llm-engineering/mcp/mcp-yash.adoc[MCP - Yash Thakker]
+
+.Software Architecture
+* xref:software-architecture/index.adoc[Overview]
+* xref:software-architecture/system-design.adoc[System Design]
+* xref:software-architecture/integration-patterns.adoc[Integration Patterns]
+* xref:software-architecture/event-driven-architecture.adoc[Event Driven Architecture]
+* xref:software-architecture/microservices-vs-monolith.adoc[Microservices vs Monolith]
+* xref:software-architecture/enterprise-architecture.adoc[Enterprise Architecture]
+
+.Productivity
+* xref:productivity/index.adoc[Overview]
+* xref:productivity/note-taking-systems.adoc[Note Taking Systems]
+* xref:productivity/anki-for-learning.adoc[Using Anki for Learning]
+* xref:productivity/tools.adoc[Tools]
+
+.Soft Skills
+* xref:soft-skills/index.adoc[Overview]
+* xref:soft-skills/communication-skills.adoc[Communication Skills]
+* xref:soft-skills/emotional-intelligence.adoc[Emotional Intelligence]
+* xref:soft-skills/leadership-skills.adoc[Leadership Skills]
+* xref:soft-skills/interpersonal-skills.adoc[Interpersonal Skills]
+* xref:soft-skills/time-management.adoc[Time Management]
+* xref:soft-skills/public-speaking.adoc[Public Speaking]
+* xref:soft-skills/negotiation-skills.adoc[Negotiation Skills]
+
+.Dance
+* xref:dance/index.adoc[Overview]
+* xref:dance/salsa-basics.adoc[Salsa Basics]
+* xref:dance/bachata-basics.adoc[Bachata Basics]
+* xref:dance/sensual-bachata-techniques.adoc[Sensual Bachata Techniques]
+* xref:dance/musicality.adoc[Musicality]
+* xref:dance/practice-drills.adoc[Practice Drills]
+
+.Books
+* xref:books/index.adoc[Overview]
+* xref:books/technology-books.adoc[Technology Books]
+* xref:books/business-books.adoc[Business Books]
+* xref:books/self-help-books.adoc[Self-Help Books]
+* xref:books/fiction-books.adoc[Fiction Books]
+* xref:books/non-fiction-books.adoc[Non-Fiction Books]
+* xref:books/reading-list.adoc[Reading List]
+* xref:books/book-reviews.adoc[Book Reviews]

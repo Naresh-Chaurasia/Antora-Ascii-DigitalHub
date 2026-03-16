@@ -1,0 +1,3 @@
+= Event Driven Architecture
+
+A short placeholder page for event-driven architecture concepts (events, streams, brokers, consumers).

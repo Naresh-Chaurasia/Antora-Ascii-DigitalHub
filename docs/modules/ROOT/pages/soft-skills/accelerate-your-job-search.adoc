@@ -1,0 +1,378 @@
+= Accelerate Your Job Search with AI
+:toc: right
+:toclevels: 5
+:sectnums:
+:sectnumlevels: 5
+
+== Context Switching
+
+== Resources
+
+* https://docs.google.com/spreadsheets/d/1wfS4bMUaBMa5HLTPENyy0PUQS-jFUYtqlpRabdH4mzk/template/preview?gid=0#gid=0[Prompts]
+
+== Module 1
+
+=== Identify your transferable skills
+
+*What Are Transferable Skills?*
+
+Transferable skills are abilities you develop in one situation that can be applied to a completely different context, such as a new job. These skills come from all kinds of life experiences, not just paid work.
+
+*Why Transferable Skills Matter*
+
+* You already have valuable skills from your life experiences
+* They help you decide which jobs to pursue
+* They help you explain your background on a resume
+* They help you confidently talk about yourself in interviews
+
+Many employers now use *skills-based hiring*, meaning they focus more on relevant skills than on formal education or previous job titles.
+
+*Examples of Transferable Skills*
+
+Transferable skills can be both technical and non-technical.
+
+*Technical Skills*
+
+* Programming
+* Data analysis
+* Technical troubleshooting
+
+*Non-Technical (Soft) Skills*
+
+* #Communication#
+* Adaptability
+* #Problem-solving#
+* Teamwork
+* Customer service
+* Leadership
+
+These skills are often just as important to employers as technical skills.
+
+*Why Transferable Skills Are Hard to Identify*
+
+* Your skills feel natural or “second nature” to you
+* You may underestimate experiences outside of formal jobs
+* You may not realize employers value these skills
+
+*How to Identify Your Transferable Skills*
+
+*Step 1: Reflect on Your Life Experiences*
+
+Think beyond job titles and paid work.
+Consider:
+
+* Volunteering
+* #Mentoring#
+* Coaching sports
+* Leadership roles
+* School activities
+* Community involvement
+
+*Step 2: Identify Skills Gained from Each Experience*
+
+Ask yourself:
+
+* Did I handle administrative or detail-oriented tasks?
+* Did I plan events or manage schedules?
+* Did I communicate with different groups?
+* Did I brainstorm ideas or solve problems?
+
+Write down the skills you developed in each situation.
+
+*Step 3: Connect Skills to Potential Jobs*
+
+Think about how your skills apply to other roles.
+
+Examples:
+
+* Executive Assistant → Project Manager  
+  - Scheduling, coordination, communication, planning
+
+* Team-based experiences (sports, military, school) → Many roles  
+  - Collaboration, teamwork, adaptability, shared goal achievement
+
+*Key Takeaway*
+
+You already have more job-ready skills than you might think. By recognizing and clearly communicating your transferable skills, you can strengthen your resume, perform better in interviews, and expand your career opportunities.
+
+*Conclusion*
+
+Transferable skills come from real life. When you identify them and align them with job requirements, you position yourself strongly for new roles—even in fields you haven’t worked in before.
+
+##############################################
+
+---
+
+=== Mike: Identify your most valuable transferable skills
+
+*Background*
+
+Mike is a Product Lead at the Google School for Leaders, where he leads teams building learning experiences for managers and leaders across Google. *He previously worked as a teacher*, and the skills he developed in the classroom now directly apply to his role as a product lead.
+
+*What Are Transferable Skills?*
+
+Transferable *skills are abilities learned in one environment that can be applied across different roles, industries, and careers*.
+
+*Teaching Skills Applied to Product Leadership*
+
+Skills developed in the classroom that translate to leadership roles include:
+
+* Prioritization
+* Time management
+* Navigating uncertainty
+* Adaptability
+* Communication with senior leaders
+* Collaboration with colleagues
+
+*Four Key Transferable Skills Employers Value*
+
+*Communication*
+
+* Ability to tailor messages to different audiences
+* Clear and concise delivery
+* Adapting communication style based on who you’re speaking to
+
+*Problem-Solving*
+
+* Ability to respond effectively when challenges arise
+* Demonstrates critical thinking and decision-making
+* Shows a holistic approach to situations
+
+*Navigating Ambiguity*
+
+* Comfort with change and uncertainty
+* Ability to respond effectively to shifting circumstances
+* Maintaining a positive impact on others during change
+
+*Emotional Regulation*
+
+* Managing emotions during stressful or uncertain situations
+* Showing up consistently for the team
+* Demonstrating self-awareness and emotional intelligence
+
+*Why These Skills Matter*
+
+* Employers value skills that transfer across roles and industries
+* These skills show how you think, adapt, and collaborate
+* Strong transferable skills help teams grow and perform at a higher level
+
+*Key Takeaway*
+
+Your past experiences—no matter the role—have equipped you with valuable, transferable skills. When you can clearly explain how you use communication, problem-solving, adaptability, and emotional regulation, you present a more complete and compelling picture to employers.
+
+---
+
+##############################################
+
+=== Career Identity Statement
+ 
+* Career Identity Statement = Your professional "North Star" guiding job search and networking.
+* Purpose:
+** *Provides a quick, insightful overview of your skills, interests, goals, and passions*.
+** Goes beyond listing qualifications; shows what makes you unique.
+* Example:
+** "My background in finance and customer service has equipped me with strong analytical skills and a client-focused approach. I excel at using data to solve problems effectively, and I'm committed to clear communication and fostering positive interactions. I highly value teamwork, and my passion for basketball continually reinforces the importance of collaboration and communication in achieving shared goals."
+* Why it works:
+** Highlights a unique mix of skills and experiences.
+** Combines analytical ability with customer focus.
+** Adds personal touch through passions.
+* Tips for creating your own:
+** Avoid vague phrases; use specific skills and examples.
+** Keep it focused on key aspects of your professional self.
+** Maintain a positive, genuine tone.
+** Aim for clarity and conciseness.
+* Where to use:
+** Networking introductions.
+** Cover letters or job inquiry emails.
+** Professional bios and online profiles.
+* Benefits:
+** Helps present your authentic self.
+** Narrows job search to roles matching your goals and values.
+
+##############################################
+
+=== Launch your job search with Career Dreamer
+
+* https://grow.google/career-dreamer/home/profile/experience/2
+
+----
+I am a Principal Architect and Technical Trainer known for translating complex business needs into resilient, scalable software architectures. My impact extends to cultivating high-performing technical teams through mentorship and strategic training, fostering an environment of continuous growth. Driven by an innate curiosity and a commitment to personal and professional development, I actively explore and integrate emerging technologies, particularly within Generative AI, to craft intelligent solutions that augment human potential.
+----
+
+
+---
+
+*Prompts*
+
+----
+You are a career coach and an expert at helping people achieve their career goals. Below is a JSON representation of my professional profile, exported from a companion app called Career Dreamer:
+
+{"experiences":[{"title":"Principal Architect and Technical Trainer","organization":"IT Industry","tasks":["Design and oversee complex software architectures that align with organizational goals and industry best practices.","Develop and deliver comprehensive technical training programs to elevate the skills of development teams.","Mentor and guide junior architects and engineers, fostering their technical growth and problem-solving abilities.","Collaborate with stakeholders to translate business requirements into scalable and robust technical solutions.","Establish and enforce coding standards and architectural patterns to ensure system quality and maintainability.","Research and evaluate emerging technologies to identify opportunities for innovation and strategic implementation."]}],"education":[{"level":"Master's degree","fieldOfStudy":"Computer"}],"skills":[{"basis":"Principal Architect and Technical Trainer at IT Industry","name":"Technical Leadership","rationale":"In a Principal Architect role, you presumably guided technical teams, made critical architectural decisions, and set technical direction, demonstrating significant technical leadership."},{"basis":"Principal Architect and Technical Trainer at IT Industry","name":"Complex System Design","rationale":"Your experience as a Principal Architect implies you were responsible for the design of intricate and robust IT systems, suggesting a deep understanding of complex system design."},{"basis":"Principal Architect and Technical Trainer at IT Industry","name":"Mentoring And Coaching","rationale":"By training others, you probably honed your abilities in mentoring and coaching individuals to improve their technical understanding and performance."},{"basis":"Principal Architect and Technical Trainer at IT Industry","name":"Problem Solving","rationale":"Architects and trainers frequently encounter and resolve complex technical challenges and learning obstacles, so you likely possess strong problem-solving capabilities."},{"basis":"Master's degree in Computer","name":"Programming Proficiency","rationale":"As a Master's degree holder in Computer, you likely possess a deep understanding of one or more programming languages, enabling you to write, debug, and maintain complex software. This would stem from extensive coursework and project work involving the practical application of coding principles."},{"basis":"Master's degree in Computer","name":"System Design","rationale":"Your advanced coursework might have included modules on designing and evaluating computer systems, suggesting you have an aptitude for understanding and architecting complex technological solutions."},{"name":"Generative Artificial Intelligence","manual":true}],"interests":[{"interest":"Latin Dance, Fitness, Self Help Books, Learning","motivations":["I want to continuously improve myself and expand my knowledge base.","I value personal growth and the pursuit of self-betterment."]},{"interest":"Generative AI","motivations":["I want to contribute to the development of intelligent systems that can augment human capabilities.","I value the process of learning and adapting to rapidly evolving technological landscapes."]}]}
+
+And here is a career that I was recommended to look into based on my profile:
+
+AI Solutions Architect - Designs and implements AI-driven solutions, bridging the gap between business needs and AI capabilities. This involves understanding complex systems, selecting appropriate AI technologies, and ensuring scalability and integration.
+
+I would like to discuss this further with you. Start with a note about Career Dreamer and how we are continuing the journey I started there. Next, write a short paragraph description of the role. Finally, provide a numbered list of further discussion topics to choose from. The list should be phrased as “here are some things you can ask me”, and topics should satisfy the following criteria:
+-Written in the first person (i.e., containing “I” and “my”), as if I am asking them to you
+-Consist of three questions
+-Contain a mixture of inquiries about the role itself (e.g., typical day-to-day) and inquiries that seek to understand the role in relation to my profile
+
+Topics should NOT contain the following
+-Open-ended reflections (e.g., “What interests me about this role?”)
+-Solicitations of opinions (e.g., “Do you think I am a good fit for this role?””)
+
+Invite me to type the number of the topic (use the word “type”) that interests me in order to continue the conversation in that direction; also inform me that I am free to provide my own topic if I would like. Whenever applicable, subsequent responses should end with a similar numbered list of further discussion topics to choose from (and invitation to dictate my own topic if desired). Your tone should be neutral and matter-of-factly. Do not label the components of the output as I have described them here; integrate everything into a cohesive result. And always keep it concise and skimmable!
+----
+
+
+##############################################
+
+---
+
+== Module 2
+
+=== Unlock the power of a job search plan
+
+##############################################
+
+---
+
+=== Understand resume writing best practices
+
+*Tailoring Your Resume – Summary*
+
+*Why Tailoring Your Resume Matters*
+
+A resume is often an employer’s first impression of you and acts as a marketing tool. A one-size-fits-all resume is ineffective because different jobs—even with the same title—can require different skills.
+
+*Recruiters are more likely to hire candidates who tailor their resumes to each role.* In fact, many recruiters spend only a few seconds reviewing each resume, so relevance and clarity are critical.
+
+*Key Insight*:
+83% of recruiters are more likely to hire candidates who *tailor their resume to a specific job*.
+
+*Same Job Title, Different Skill Needs*:
+Even identical job titles can have different expectations.
+
+Example:
+
+* UX Designer at a large e-commerce company  
+  - Extensive user research  
+  - Designing for complex websites  
+
+* UX Designer at a startup  
+  - Rapid prototyping  
+  - A/B testing for mobile apps  
+
+This makes tailoring your resume essential for every application.
+
+*Three Key Areas to Focus On*
+
+*1. Resume Content*
+
+*Show Measurable Results*
+
+* Use numbers and data to demonstrate impact
+* Example:
+  - Instead of: “Increased sales”
+  - Use: “*Increased new product sales by 30% versus* quota by closing eight new accounts in under three months”
+
+*Translate Experience into Transferable Skills*
+
+* Focus on skills gained, not just responsibilities
+* Example:
+  - Store clerk experience → communication and customer service
+  - *Resulted in a 20% increase in positive customer reviews*
+
+*Use Impactful Language*
+
+* Use strong action verbs and precise wording
+* Emphasize your active role and ownership
+
+Example:
+
+* Before: “Made a new company dashboard”
+* After: “Designed and built a real-time interactive dashboard enabling faster decision-making for five partner teams”
+
+*Add Specific Context*
+
+* Avoid vague statements
+* Provide concrete examples and proof
+* Example:
+  - *Mentored junior team members and helped troubleshoot complex technical issues*
+
+*2. Resume Structure*
+
+*Keep It Concise*
+
+* Ideally one page
+* Maximum two pages
+* Shows prioritization and clarity
+
+*Make Skills Easy to Find*
+
+* Highlight key skills prominently
+* Use bullet points
+* *Include keywords from the job description*
+
+*Ensure Logical and Scannable Layout*
+
+* Use section titles, bullets, spacing, and emphasis
+* *Avoid large blocks of text*
+* Make it easy for recruiters to scan quickly
+
+*3. Resume Personalization*
+
+*Use Job Description Keywords*
+
+* Identify important words and phrases
+* Incorporate them naturally into your resume
+
+*Align with Job Responsibilities*
+
+* Match your bullet points to the role’s requirements
+* Show clear connections between your experience and the job
+
+*Be Selective*
+
+* Do not list everything you’ve ever done
+* Emphasize relevant experiences
+* Remove or shorten less relevant details
+
+*Key Takeaway*
+
+A strong resume is concise, tailored, and results-driven. By aligning your content, structure, and language with each job description, you make it easy for recruiters to quickly see why you’re a strong match.
+
+*Conclusion*
+
+Tailoring your resume takes effort, but it significantly increases your chances of standing out. Focus on relevance, clarity, and impact—and keep it brief.
+
+
+##############################################
+
+---
+
+##############################################
+
+---
+
+##############################################
+
+---
+
+##############################################
+
+---
+
+
+##############################################
+
+---
+
+##############################################
+
+---
+
+##############################################
+
+---

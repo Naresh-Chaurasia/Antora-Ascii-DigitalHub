@@ -1,0 +1,266 @@
+= Introduction to Model Context Protocol
+:toc: right
+:toclevels: 5
+:sectnums: 1
+:sectnumlevels: 1
+
+== Module1
+
+* https://github.com/astral-sh/uv
+
+=== Introducing MCP
+
+image::mcp/mcp1.png[MCP Architecture Diagram, 600, 400]
+
+---
+
+image::mcp/mcp2.png[MCP Flow Diagram, 600, 400]
+
+---
+
+* Model Context Protocol (MCP)
+  ** MCP is a communication layer that provides an AI model with context and tools.
+  ** It reduces the need for developers to write large amounts of integration code.
+  ** It simplifies connecting AI models with external services.
+
+* Core Components of MCP
+  ** Client
+  *** The application that interacts with the AI model.
+  *** Example: A chat interface used by a user.
+  ** Server
+  *** Hosts integrations with external systems.
+  *** Contains internal components such as tools, resources, and prompts.
+
+* Example Use Case: GitHub Chat Application
+  ** A chat interface allows a user to ask questions about their GitHub account.
+  ** Example query: “What open pull requests do I have across all repositories?”
+  ** The AI needs to access GitHub data to answer the question.
+
+* Role of Tools
+  ** Tools allow the AI to perform actions or retrieve data from external services.
+  ** Example: A tool that fetches open pull requests from GitHub.
+  ** Tools act as connectors between the AI model and external APIs.
+
+* Challenge Without MCP
+  ** Developers must manually create tools for every API feature.
+  ** Example: GitHub has many features.
+  *** Repositories
+  *** Pull requests
+  *** Issues
+  *** Projects
+  ** Each feature would require separate tool schemas and function implementations.
+  ** Developers must write, test, and maintain all this code.
+
+* How MCP Solves the Problem
+  ** MCP shifts tool definition and execution to an MCP server.
+  ** Developers no longer need to implement all tools themselves.
+  ** The MCP server provides ready-made tools for external services.
+
+* MCP Server Concept
+  ** An MCP server acts as an interface to an external service.
+  ** It wraps service functionality into tools.
+  ** Example: A GitHub MCP server exposes GitHub features as tools.
+
+* Benefits of MCP
+  ** Reduces development effort.
+  ** Eliminates the need to build and maintain many integrations.
+  ** Provides standardized access to external services.
+
+* Common Question: Who Builds MCP Servers
+  ** Anyone can create an MCP server.
+  ** Often created by service providers themselves.
+  *** Example: AWS could provide an official MCP server.
+  *** The server would include tools for interacting with AWS services.
+
+* Common Question: Why Use MCP Instead of Calling APIs Directly
+  ** Direct API usage requires developers to build tools themselves.
+  *** Define tool schemas.
+  *** Implement functions.
+  ** MCP servers provide these tools already implemented.
+  ** This saves development time and effort.
+
+* Common Misconception: MCP vs Tool Use
+  ** Some people think MCP and tool use are the same.
+  ** In reality, they are complementary concepts.
+  *** Tool use: AI calling functions to perform actions.
+  *** MCP: A system that provides pre-built tools.
+
+* Key Insight
+  ** MCP is about delegating the work of creating and maintaining tools.
+  ** Instead of developers building tools, MCP servers provide them.
+
+
+##################################################
+
+---
+
+=== MCP Client
+
+image::mcp/flow-mcp.png[MCP Flow Diagram, 600, 400]
+
+* MCP Client
+** The MCP client enables communication between your server and an MCP server.
+** It acts as the access point for all tools provided by the MCP server.
+** Your server interacts with tools through the MCP client.
+
+* Transport Agnostic Communication
+** MCP does not depend on a specific communication protocol.
+** Client and server can communicate using different transports.
+*** Standard Input / Output (stdio)
+**** Common when client and server run on the same machine.
+*** HTTP
+*** WebSockets
+*** Other communication protocols
+
+* Message-Based Communication
+** MCP client and server communicate by exchanging structured messages.
+** All message types are defined in the MCP specification.
+
+* Tool Discovery Messages
+** ListToolsRequest
+*** Sent from MCP client to MCP server.
+*** Requests a list of available tools.
+** ListToolsResult
+*** Sent from MCP server to MCP client.
+*** Contains the list of tools provided by the server.
+
+* Tool Execution Messages
+** CallToolRequest
+*** Sent from MCP client to MCP server.
+*** Requests execution of a specific tool with arguments.
+** CallToolResult
+*** Sent from MCP server to MCP client.
+*** Contains the output produced by the tool.
+
+* End-to-End Example Flow
+
+** Step 1: User Request
+*** A user sends a query to the application server.
+*** Example: “What repositories do I have?”
+
+** Step 2: Server Needs Tool Information
+*** The server must provide available tools when querying the AI model.
+*** The server asks the MCP client to retrieve the list of tools.
+
+** Step 3: Tool List Retrieval
+*** MCP client sends ListToolsRequest to MCP server.
+*** MCP server responds with ListToolsResult containing available tools.
+*** MCP client returns the tool list to the server.
+
+** Step 4: Request Sent to AI Model
+*** The server sends a request to the AI model (Claude).
+*** The request includes:
+**** The user’s query.
+**** The list of available tools.
+
+** Step 5: AI Decides to Use a Tool
+*** The AI analyzes the request and available tools.
+*** It determines that a tool must be executed.
+*** The AI responds with a tool use instruction.
+
+** Step 6: Server Requests Tool Execution
+*** The server receives the tool request from the AI.
+*** The server asks the MCP client to run the tool.
+
+** Step 7: Tool Execution Through MCP
+*** MCP client sends CallToolRequest to the MCP server.
+*** MCP server executes the requested tool.
+
+** Step 8: External Service Call
+*** The MCP server calls an external service.
+*** Example: GitHub API to retrieve repositories.
+
+** Step 9: Tool Result Returned
+*** GitHub returns the requested data.
+*** MCP server wraps the data in CallToolResult.
+*** MCP server sends the result to the MCP client.
+*** MCP client forwards the result to the server.
+
+** Step 10: Result Sent Back to AI
+*** The server sends the tool result to the AI model.
+*** The result is included as part of a message.
+
+** Step 11: Final AI Response
+*** The AI uses the tool result to generate the final answer.
+*** Example: “Your repositories are…”
+
+** Step 12: Response Delivered to User
+*** The server sends the final response back to the user.
+
+* Key Insight
+** MCP separates responsibilities across multiple components.
+** The MCP client handles communication.
+** The MCP server handles tool execution.
+** External services provide the actual data.
+
+---
+
+##################################################
+
+=== Connecting Integration Challenges to MCP - #BOT#
+
+
+During today's session covering how the Model Contacts Protocol (MCP) addresses integration challenges, we focused on:
+
+- **Integration Challenges**: You accurately identified the difficulties of explicit, non-reusable coding for external services and the complexities of client-server communication across different machines.
+- **MCP's Solution**: You understood that MCP servers offload the burden of integration by managing tools for external services, reducing the need for custom implementation in your application.
+- **MCP Architecture and Components**: You correctly identified tools, resources, and prompts as key components of an MCP server, providing excellent examples of GitHub tools and the role of authentication.
+- **Client-Server Communication**: You recognized the transport-agnostic nature of MCP and identified `ListToolsRequest` and `CallToolRequest` as crucial message types for client-server interaction.
+- **Practical Applications of MCP**: You provided a clear example of how MCP simplifies integrating VS Code with GitHub by abstracting away direct API communication.
+
+**Your strengths:**
+- You demonstrated a strong understanding of the core problems MCP aims to solve, particularly around custom coding and reusability.
+- You grasped the fundamental concept of an MCP server offloading integration burdens and provided concrete examples of MCP tools.
+- You were able to connect MCP's design principles, like transport agnosticism and specific message types, to its practical benefits.
+
+**Areas for improvement:**
+- While you identified the components, a deeper dive into the specific functions of 'resources' and 'prompts' within the MCP server could further solidify your understanding.
+
+##################################################
+
+== Module 2
+
+=== Project Setup
+
+image::mcp/custom-mcp.png[Custom MCP Server Architecture, 800, 600]
+
+##################################################
+
+During today's session covering how the Model Context Protocol (MCP) addresses integration challenges, we focused on:
+
+*Integration Challenges*
+
+- You accurately identified the difficulties of explicit, non-reusable coding for external services.
+- You also recognized the complexities of client-server communication across different machines.
+
+*MCP's Solution*
+
+- You understood that MCP servers offload the burden of integration by managing tools for external services.
+- This reduces the need for custom implementation inside your application.
+
+*MCP Architecture and Components*
+
+- You correctly identified *tools*, *resources*, and *prompts* as key components of an MCP server.
+- You provided good examples such as GitHub tools and explained the role of authentication.
+
+*Client-Server Communication*
+
+- You recognized the *transport-agnostic* nature of MCP.
+- You identified `ListToolsRequest` and `CallToolRequest` as important message types used for communication between the client and the MCP server.
+
+*Practical Applications of MCP*
+
+- You gave a clear example of how MCP simplifies integrating VS Code with GitHub.
+- MCP abstracts away the direct API communication with GitHub.
+
+*Your strengths*
+
+- You demonstrated a strong understanding of the core problems MCP aims to solve, particularly around custom coding and reusability.
+- You clearly understood how an MCP server offloads integration complexity.
+- You supported your understanding with concrete examples of MCP tools.
+
+*Areas for improvement*
+
+- While you correctly identified the components of MCP, a deeper understanding of the specific role of *resources* and *prompts* inside an MCP server would strengthen your knowledge further.
+
+##################################################

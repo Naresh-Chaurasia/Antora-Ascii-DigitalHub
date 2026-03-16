@@ -1,9 +1,0 @@
-= Glossary
-
-A tiny glossary page in a subfolder (`glossary/`).
-
-== Terms
-
-* *xref* - Antora cross reference macro.
-* *include* - AsciiDoc include directive.
-* *module* - A folder under `docs/modules/`.

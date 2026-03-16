@@ -1,0 +1,187 @@
+= Template
+:toc: right
+:toclevels: 5
+:sectnums:
+:sectnumlevels: 5
+
+
+
+Before learning anything new, asking yourself these two questions can help you get the most out of the experience:
+
+1. *What specific goal do I want to achieve by learning this?*
+* This helps clarify your purpose and keeps you focused on what’s most important to you. It also helps in selecting relevant resources and methods for learning.
+
+2. *How will I apply this knowledge in my life or work?*
+* Thinking about practical applications ensures that the knowledge becomes useful and not just theoretical. It also motivates you to retain and understand the material better by connecting it to real-world scenarios.
+
+##################################################
+
+---
+
+
+TIP: TIP
+
+IMPORTANT: IMPORTANT
+
+CAUTION: CAUTION
+
+WARNING: WARNING
+
+NOTE: NOTE
+
+##################################################
+
+---
+
+
+[cols="1,2"]
+|===
+| One | Two
+
+| Foo
+a|
+- Bar
+- Baz
+|===
+
+---
+
+[cols="1,2"]
+|===
+| One | Two
+
+| Foo
+| Bar
+
+|===
+
+##################################################
+
+---
+
+
+.Resources
+[%collapsible]
+====
+* H2
+* http://localhost:8080/h2-console (user/password)
+====
+
+== Wecome to Course
+
+
+##############################################
+
+== Emojis
+
+Sure! You can use Unicode emojis in AsciiDoc files just like you would in plain text. Here are some commonly used emojis that work well in AsciiDoc:
+
+*Common Emojis for AsciiDoc*
+
+✅ *Status & Checkmarks*
+
+- ✔️ `✔️` (Check)
+- ✅ `✅` (Green check)
+- ❌ `❌` (Cross)
+- ⚠️ `⚠️` (Warning)
+
+📌 *Pointers & Highlights*
+
+- 📌 (Pin)
+- 🔥 (Fire)
+- ⭐ (Star)
+- 📍 (Location pin)
+
+📢 *Communication & Alerts*
+
+- 📢 `📢` (Loudspeaker)
+- 🔔 `🔔` (Bell)
+- 📣 `📣` (Megaphone)
+
+🎯 *Progress & Goals*
+
+- 🎯 `🎯` (Target)
+- 🚀 `🚀` (Rocket)
+- ⏳ `⏳` (Hourglass)
+- 🎉 `🎉` (Celebration)
+
+🛠️ *Development & Tools*
+
+- 🛠️ `🛠️` (Tools)
+- 🖥️ `🖥️` (Computer)
+- 💾 `💾` (Save)
+- ⚙️ `⚙️` (Gear)
+
+📖 *Education & Learning*
+
+- 📖 `📖` (Book)
+- 📝 `📝` (Notepad)
+- 🎓 `🎓` (Graduation cap)
+
+💡 *Ideas & Innovation*
+
+- 💡 `💡` (Light bulb)
+- 🤔 `🤔` (Thinking)
+- ❓ `❓` (Question)
+- ❗ `❗` (Exclamation)
+
+🔄 *Arrows & Navigation*
+
+- ➡️ `➡️` (Right arrow)
+- ⬅️ `⬅️` (Left arrow)
+- 🔄 `🔄` (Reload/Sync)
+
+📅 *Time & Calendar*
+
+- 📅 `📅` (Calendar)
+- ⏰ `⏰` (Alarm clock)
+- 🕒 `🕒` (Clock)
+
+❤️ *Reactions & Emotions*
+
+- 👍 `👍` (Thumbs up)
+- 👎 `👎` (Thumbs down)
+- ❤️ `❤️` (Heart)
+- 😂 `😂` (Laugh)
+- 😎 `😎` (Cool)
+
+You can directly copy and paste these emojis into your `.adoc` files. Let me know if you need specific ones! 😊
+
+
+##############################################
+
+
+
+
+##############################################
+
+---
+
+
+##############################################
+
+---
+
+
+##############################################
+
+
+##############################################
+
+
+##############################################
+
+
+##############################################
+
+
+##############################################
+
+
+##############################################
+
+
+##############################################
+
+
+https://xxx[ok]

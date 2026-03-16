@@ -1,0 +1,3 @@
+= TestNG
+
+A short placeholder page for TestNG concepts (suites, annotations, data providers, parallel runs).

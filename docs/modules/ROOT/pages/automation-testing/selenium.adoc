@@ -1,0 +1,3 @@
+= Selenium
+
+A short placeholder page for Selenium-based UI automation (locators, waits, page objects).

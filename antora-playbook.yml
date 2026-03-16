@@ -22,5 +22,12 @@ runtime:
 asciidoc:
   attributes:
     icons: font
-    sectnums: ''
-    toc: left
+    sectnums: 5
+    sectnumlevels: 5
+    toc: right
+    toclevels: 5
+
+antora:
+  extensions:
+    - require: '@antora/lunr-extension'
+      index_latest_only: true

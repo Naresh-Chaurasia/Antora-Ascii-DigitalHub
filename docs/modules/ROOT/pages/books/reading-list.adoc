@@ -1,0 +1,3 @@
+= Book Reading List
+
+A curated list of books to read, including recommendations, reading goals, and progress tracking for various categories.

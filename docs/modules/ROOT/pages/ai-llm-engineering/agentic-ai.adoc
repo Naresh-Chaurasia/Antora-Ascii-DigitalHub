@@ -1,0 +1,3 @@
+= Agentic AI
+
+Welcome to Agentic AI section. This section will cover agentic AI patterns, techniques, and best practices.

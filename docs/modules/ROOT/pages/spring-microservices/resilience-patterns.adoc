@@ -1,0 +1,3 @@
+= Resilience Patterns
+
+A short placeholder page for resilience patterns (timeouts, retries, circuit breakers, bulkheads).

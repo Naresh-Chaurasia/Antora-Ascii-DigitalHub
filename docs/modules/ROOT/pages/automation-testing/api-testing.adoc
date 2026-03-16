@@ -1,0 +1,3 @@
+= API Testing
+
+A short placeholder page for API testing (contract tests, REST clients, assertions, environments).
