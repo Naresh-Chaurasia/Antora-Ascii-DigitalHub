@@ -1371,7 +1371,7 @@ This forms a complete local MCP development environment.
 
 ##################################################
 
-=== 23. Connect an MCP Client to an MCP Server locally built
+=== 23). Connect an MCP Client to an MCP Server locally built
 
 * I am inside client folder, and doing all this.
 
@@ -1391,7 +1391,36 @@ uv run client_airbnb.py
 
 ----
 
-* Calling Weather / Airbnb with my own client 
+* Calling Weather with my own client 
+
+=== 24). Connect an MCP Client to an MCP Server using NPX
+
+* Calling Airbnb with my own client 
+
+---
+
+##################################################
+
+== Section 5
+
+=== 25. MCP Server and local files 1
+
+
+
+---
+
+##################################################
+
+
+---
+
+##################################################
+
+
+---
+
+##################################################
+
 
 ---
 
