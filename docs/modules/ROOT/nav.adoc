@@ -42,7 +42,7 @@
 * xref:productivity/index.adoc[Overview]
 * xref:productivity/note-taking-systems.adoc[Note Taking Systems]
 * xref:productivity/anki-for-learning.adoc[Using Anki for Learning]
-* xref:productivity/tools.adoc[Tools]
+* xref:productivity/mac.adoc[Macbook Pro]
 
 .Soft Skills
 * xref:soft-skills/index.adoc[Overview]
