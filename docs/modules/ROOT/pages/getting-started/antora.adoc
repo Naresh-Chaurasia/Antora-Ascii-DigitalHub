@@ -1,0 +1,7 @@
+= Antora
+
+Inside First Project
+
+* mcp is inside assets
+
+image::mcp/mcp1.png[MCP Architecture Diagram, 800, 600]

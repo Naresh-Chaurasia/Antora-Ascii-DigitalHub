@@ -60,3 +60,72 @@ cd /Users/nareshchaurasia/Documents/project
 * Finder / Setting / Tags
 ** Choose which tags will show on left
 * Select multiple files and apply tags
+
+##################################################
+
+---
+
+
+=== Sticky Notes
+
+##################################################
+
+=== Safari
+
+* *Basic navigation*
+** Swipe left or right with two fingers
+** Or use Command + Left / Right Arrow
+
+* *Tab management*
+* Open new tab:
+** Click "+" icon
+** Or press Command + T
+* Switch tabs:
+** Press Control + Tab repeatedly
+* Close tab:
+** Press Command + W
+* Reopen closed tab:
+** Press Command + Z
+
+* *Closing multiple tabs*
+
+* Close all other tabs:
+
+* Press Command + Option + W
+* Note:
+
+* Command + Z will NOT restore closed tabs in this case
+
+* *Managing many tabs*
+* View all tabs:
+** Pinch inward on trackpad
+** Or press Command + Shift + Backslash ()
+* Exit tab overview:
+** Press Command + Shift + Backslash again
+
+* *Refreshing pages*
+* Reload page:
+** Click reload button
+** Or press Command + R
+
+* *Scrolling alternatives*
+** Use Option + Up / Down Arrow
+** Useful when mouse is used instead of trackpad
+
+* *Finding text on a page*
+
+* Open search:
+
+** Press Command + F
+** Type keyword (e.g., "Japan")
+** Matches are highlighted on page
+** Scroll to navigate through results
+
+* *Closing browser*
+
+* Close current tab:
+
+** Command + W
+* Quit browser completely:
+    
+* Command + Q

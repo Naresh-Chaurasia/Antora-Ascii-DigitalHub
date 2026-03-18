@@ -1,3 +1,0 @@
-= Installation Guide
-
-Step-by-step installation instructions for setting up the Antora documentation environment, including prerequisites, dependencies, and configuration.

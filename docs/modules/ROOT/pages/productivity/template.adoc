@@ -4,6 +4,16 @@
 :sectnums:
 :sectnumlevels: 5
 
+TIP: TIP
+
+IMPORTANT: IMPORTANT
+
+CAUTION: CAUTION
+
+WARNING: WARNING
+
+NOTE: NOTE
+
 
 
 Before learning anything new, asking yourself these two questions can help you get the most out of the experience:
@@ -19,15 +29,6 @@ Before learning anything new, asking yourself these two questions can help you g
 ---
 
 
-TIP: TIP
-
-IMPORTANT: IMPORTANT
-
-CAUTION: CAUTION
-
-WARNING: WARNING
-
-NOTE: NOTE
 
 ##################################################
 

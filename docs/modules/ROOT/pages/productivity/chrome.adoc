@@ -1,3 +1,3 @@
-= Productivity
+= Chrome
 
 A structured set of notes and placeholders for productivity and learning workflows.

@@ -1,0 +1,100 @@
+= Prompts Library
+:toc: right
+:toclevels: 5
+:sectnums:
+:sectnumlevels: 5
+
+== How to Use
+
+Each prompt follows the same simple structure:
+
+* Title
+* Category
+* Prompt
+* Notes (optional)
+
+---
+
+== Prompts
+
+=== Content Creation: Convert Text to AsciiDoc
+
+*Prompt*
+
+
+##########################
+
+.Convert the following text into clean AsciiDoc format
+[%collapsible]
+====
+
+
+Convert the following text into clean AsciiDoc format.
+
+Extract the key ideas from the following text and convert them into a structured bullet-point summary.
+
+*Instructions:*
+
+- Identify the main concepts and supporting ideas.
+- Organize the summary hierarchically.
+- Use bullet levels to represent the structure of ideas.
+
+*Formatting rules:*
+
+- Use the following bullet hierarchy:
+  * Main idea
+  ** Sub idea
+  *** Deeper explanation or example
+- Each bullet should contain one clear idea.
+- Keep sentences short and easy to read.
+- Remove filler text, repetition, and conversational phrases.
+- Preserve important examples or analogies if they help understanding.
+- Maintain logical grouping of ideas.
+
+Output requirements:
+- Output only the bullet summary.
+- Ensure the format is clean so it can be copied with one click and pasted into notes or documentation tools.
+
+Refer Above Article
+
+
+##################################################
+====
+
+
+
+== Debug Java Code
+
+*Category:* Development
+
+*Prompt*
+
+Analyze this Java code.
+
+* Find errors
+* Explain simply
+* Suggest fixes
+
+---
+
+*Notes*
+
+* Useful for beginners
+* Can add "step-by-step" if needed
+
+---
+
+##################################################
+
+
+=== Explain Concept Simply
+
+*Category:* Teaching
+
+*Prompt*
+
+Explain this concept in very simple terms. Avoid technical jargon. Use real-life examples.
+
+*Notes*
+
+* Works well for teaching content

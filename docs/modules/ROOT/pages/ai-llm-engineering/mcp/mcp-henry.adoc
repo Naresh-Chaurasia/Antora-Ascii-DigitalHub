@@ -6,6 +6,14 @@
 
 == Resources
 
+* https://modelcontextprotocol.io/specification/2025-03-26/server/prompts
+
+== Context Switching
+
+* Created MCP server, and called it using Inspector.
+* Create MCP server, and called using Claude. Manually update config file or use MCP CLI.
+* Created MCP server, and called using Visual Studio Code.
+
 == Section 1
 
 === Why does MCP exists?
@@ -211,7 +219,7 @@
 
 ---
 
-=== 21. Create a Simple MCP Server1
+=== #21. Create a Simple MCP Server1#
 
 IMPORTANT: Create a simple MCP Server and run it locally. Open inspector with token pre-filled: http://localhost:6274/?MCP_PROXY_AUTH_TOKEN=5976d1038450b3d335654d5b185eef35898597c65648a1a580a76f23a6cfa1ed
 
@@ -249,6 +257,10 @@ IMPORTANT: Create a simple MCP Server and run it locally. Open inspector with to
 * Start the MCP development server using the file weather.py
 * This runs the MCP server locally so you can test tools/resources
 * #NC#: Create Host and Client for us
+
+---
+
+`mcp install`
 
 
 ##################################################
@@ -888,6 +900,12 @@ IMPORTANT: Create a simple MCP Server and run it locally. Open inspector with to
 * #NC#: Create Host and Client for us
 
 
+`uv add requests`: Install a package called requests
+
+---
+
+`mcp install weather.py`: It will install in claude. #Pending#
+
 ##################################################
 
 ---
@@ -1403,11 +1421,95 @@ uv run client_airbnb.py
 
 == Section 5
 
-=== 25. MCP Server and local files 1
+=== 25). MCP Server and local files 1
 
+* /Users/nareshchaurasia/nc/Python-TechHub/AI-ML-GenAI/MCP/MCP-Henry-Habib/My-Code/notes
+* `mcp dev local.py`
+** Open the inspector and perform read and write operations.
+
+=== 26). MCP Server and local files 2
+
+* Adding it to claude and running from Claude
+
+---
+
+##################################################
+
+
+=== 27). Using MCP Servers to interact with your desktop
 
 
 ---
+
+##################################################
+
+=== 28). Using MCP Servers to make API calls
+
+---
+
+* Refer code. I just tried it with Inspector.
+
+##################################################
+
+
+---
+
+=== 29. Using MCP Servers with other AI models or web search
+
+
+
+##################################################
+
+== Section 5: MCP Server Deep Dive - Resources and Prompts
+
+=== 31). Introduction to MCP Resources and Prompts
+
+=== 32). Prompts deep dive
+
+* It works with Inspector and Not with Claude.
+
+=== 33). Resources deep dive
+
+* It works with Inspector and Not with Claude.
+
+
+
+
+##################################################
+
+
+---
+
+== Section 9: MCp Client Deep Dive
+
+=== 44). Introduction to MCP Clients
+
+
+image::mcp/mcp-arch.png[MCP Architecture Diagram, 800, 600]
+
+##################################################
+
+
+---
+
+
+##################################################
+
+
+---
+
+
+##################################################
+
+
+---
+
+
+##################################################
+
+
+---
+
 
 ##################################################
 
@@ -1423,15 +1525,17 @@ uv run client_airbnb.py
 
 
 ---
-
-##################################################
-
 
 == Glossary
+
+* Cline VS Code Plugin
 
 === What is `continue`
 
 
+.Continue Plugin
+[%collapsible]
+====
 *Continue* is an AI coding assistant for developers that runs inside editors like Visual Studio Code and in the terminal.
 
 * It connects **LLMs (like GPT, Claude, etc.)** with your **codebase and tools**.
@@ -1459,6 +1563,9 @@ Your code / APIs / databases
 ```
 
 So Continue acts like a **bridge between your development environment and AI models**.
+====
+
+
 
 
 

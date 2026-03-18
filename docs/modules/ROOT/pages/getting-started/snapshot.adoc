@@ -1,0 +1,195 @@
+= Snapshot
+:toc: right
+:toclevels: 1
+
+== 🧭 Life Dashboard
+
+[cols="1,2"]
+|===
+| Area | Current Status
+
+| 🎯 Career
+| Transitioning to Solution Architect (Java + Cloud)
+
+| 🧠 Learning
+| AWS, GenAI (RAG, MCP), Angular, Node.js
+
+| 🎓 Teaching
+| Java, Spring Boot, Automation Testing
+
+| 💻 Projects
+| Angular apps, Prompt Library, Book App
+
+| 🎨 Dance
+| Salsa & Bachata (performance + competition focus)
+
+| ⚡ Personal Growth
+| Productivity, Relationships, Discipline
+
+|===
+
+---
+
+##############################################
+
+=== Dance
+
+* Mohamed Petra (Bachata)
+
+* [ ] 12,13,14,15 Videos
+* [ ] Update Class Notes
+
+---
+
+##############################################
+
+== 🚀 Active Focus (Now)
+
+* Solution Architect preparation
+* AWS SAA-C03 certification (focus: VPC)
+* GenAI experimentation (RAG, MCP, Claude, OpenAI)
+* Content creation (courses + prompts)
+* Dance training (Bachata focus)
+
+---
+
+== 📚 Projects Dashboard
+
+[cols="1,2,1"]
+|===
+| Project | Description | Status
+
+| Book App
+| Angular app to display structured book summaries
+| 🟡 In Progress
+
+| Prompt Library
+| Reusable prompts in AsciiDoc (Antora-ready)
+| 🟢 Active
+
+| Course Content
+| Java, Spring Boot, Testing courses
+| 🟡 Ongoing
+
+| GenAI Experiments
+| RAG, MCP, LLM apps
+| 🟢 Active
+
+|===
+
+---
+
+== 🛠️ Skills Stack
+
+*Backend*
+
+* Java
+* Spring Boot
+* REST APIs
+* MongoDB
+
+*Frontend*
+
+* Angular
+* JSON → UI rendering
+* Quill Editor
+
+*AI / GenAI*
+
+* OpenAI APIs
+* LangChain
+* Pinecone
+* RAG
+* MCP
+
+*Cloud*
+
+* AWS (in progress)
+
+---
+
+== 🎯 Goals Tracker
+
+[cols="1,1,1"]
+|===
+| Goal | Timeline | Status
+
+| Become Solution Architect
+| 6–12 months
+| 🟡 In Progress
+
+| AWS Certification
+| 1 month
+| 🔴 Focus Needed
+
+| Build Course Platform
+| 6 months
+| 🟡 Planning
+
+| Dance Performance
+| Ongoing
+| 🟢 Active
+
+|===
+
+---
+
+== 📈 Weekly System
+
+*Learning*
+
+* Study AWS (especially VPC)
+* Explore GenAI tools
+
+*Building*
+
+* Work on Angular + AI projects
+* Improve prompt library
+
+*Teaching*
+
+* Create structured content
+* Simplify concepts
+
+*Health / Creative*
+
+* Dance practice (Bachata focus)
+* Record / review performance
+
+---
+
+== 🧠 Knowledge Areas
+
+* Core Java (teaching + content)
+* Microservices & Integration
+* Cloud (AWS - learning phase)
+* Frontend (Angular)
+* Security (XSS, CSRF basics)
+
+---
+
+== 🔁 Monthly Review Template
+
+* What did I build?
+* What did I learn?
+* What improved in career direction?
+* What needs more focus?
+* What should I stop?
+
+---
+
+== ⚡ Rules / Principles
+
+* Focus on *building + teaching*
+* Keep things *simple and structured*
+* Prioritize *high-impact skills*
+* Balance *career + creative (dance)*
+
+---
+
+== 📌 Quick Notes
+
+* Strong backend + architecture experience
+* Expanding into cloud + AI
+* Unique combo: *Tech + Teaching + Dance*
+* Long-term: build scalable learning + personal brand

@@ -1,11 +1,11 @@
 * xref:index.adoc[Home]
 
 .Getting Started
-* xref:getting-started/index.adoc[Overview]
-* xref:getting-started/quick-start.adoc[Quick Start]
-* xref:getting-started/installation-guide.adoc[Installation Guide]
+* xref:getting-started/antora.adoc[Antora]
 * xref:getting-started/basic-concepts.adoc[Basic Concepts]
-* xref:getting-started/first-project.adoc[First Project]
+* xref:getting-started/prompts-library.adoc[Prompts Library]
+* xref:getting-started/python.adoc[Python]
+* xref:getting-started/snapshot.adoc[Snapshot]
 
 .Spring Microservices
 * xref:spring-microservices/index.adoc[Overview]
@@ -39,10 +39,12 @@
 * xref:software-architecture/enterprise-architecture.adoc[Enterprise Architecture]
 
 .Productivity
-* xref:productivity/index.adoc[Overview]
+* xref:productivity/chrome.adoc[Chrome]
+* xref:productivity/mac.adoc[Macbook Pro]
 * xref:productivity/note-taking-systems.adoc[Note Taking Systems]
 * xref:productivity/anki-for-learning.adoc[Using Anki for Learning]
-* xref:productivity/mac.adoc[Macbook Pro]
+* xref:productivity/visual-studio.adoc[Visual Studio]
+
 
 .Soft Skills
 * xref:soft-skills/index.adoc[Overview]
@@ -55,14 +57,15 @@
 * xref:soft-skills/negotiation-skills.adoc[Negotiation Skills]
 
 .Dance
-* xref:dance/index.adoc[Overview]
-* xref:dance/salsa-basics.adoc[Salsa Basics]
 * xref:dance/bachata-basics.adoc[Bachata Basics]
-* xref:dance/sensual-bachata-techniques.adoc[Sensual Bachata Techniques]
+* xref:dance/ballet.adoc[Ballet]
+* xref:dance/instagram.adoc[Instagram]
 * xref:dance/musicality.adoc[Musicality]
 * xref:dance/practice-drills.adoc[Practice Drills]
 * xref:dance/sagar-prerna.adoc[Sagar & Prerna]
-* xref:dance/ballet.adoc[Ballet]
+* xref:dance/salsa.adoc[Salsa]
+* xref:dance/sensual-bachata-techniques.adoc[Sensual Bachata Techniques]
+
 
 .Books
 * xref:books/index.adoc[Overview]

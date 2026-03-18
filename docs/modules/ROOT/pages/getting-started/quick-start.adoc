@@ -1,3 +1,0 @@
-= Quick Start
-
-Quick setup guide for new users, including installation, basic configuration, and first steps to get your documentation running locally.

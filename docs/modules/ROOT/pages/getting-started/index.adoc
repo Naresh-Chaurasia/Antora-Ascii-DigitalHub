@@ -1,3 +1,0 @@
-= Getting Started
-
-Welcome to the Antora Documentation Hub! This section provides essential information for getting started with the documentation system, including setup, basic concepts, and first steps for users.

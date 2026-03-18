@@ -1,0 +1,182 @@
+= Visual Studio
+
+== Visual Studio Code
+
+=== James Quick
+
+* [ ] While adding file: folder/file1.txt. If folder is not present it will be created.
+* [ ] #⌘ + Option + → is Next tab and ⌘ + Option + ← is Previous tab# (Navigate open windows)
+* [ ] #⌘ + K then ⌘ + Q# (Go to last edit location)
+* [ ] ⌘ + P → Jump to any file
+* [ ] ⌃ + R → Recent files list
+* [ ] ⌘ + Shift + N → New file
+* [ ] ⌘ + W → Close current tab
+* [ ] Cmd + Shift + P → Command Palette
+* [ ] Cmd + B → Toggle Sidebar
+* [ ] Cmd + . → Quick Fix / Refactor
+* [ ] Cmd + J → Toggle Terminal
+* [ ] Option + Shift + Drag Mouse → Copy Vertically
+* [ ] Cmd + \ → Split Editor
+* [ ] Cmd + Shift + \ → Split Editor Right
+* [ ] Cmd + Shift + [ → Previous Group
+* [ ] Cmd + Shift + ] → Next Group
+* [ ] Cmd + Shift + W → Close Group
+* [ ] Cmd + Shift + T → Open Recent
+
+##################################################
+
+
+== Windsurf Vibe Coding
+
+* [ ] Valentin Despa
+* [ ] Make Notes | Bookmarks | Goals of this course
+
+---
+
+=== Model Recommendation
+
+**Use Claude Sonnet 4 BYOK** — Best balance of performance, cost, and reliability for software development tasks.
+
+**Why Sonnet 4 BYOK?**: Fast response times for coding | More affordable for extended development sessions | Excellent at Java / Spring Boot development | Stable (not beta like Opus models)
+
+**When to Switch to Opus 4 BYOK?**: You need complex architectural reasoning | You're working on particularly challenging algorithms | Cost is not a concern
+
+**Conclusion**: For your current Spring Boot project development, **Sonnet 4 BYOK** will handle everything efficiently.
+
+---
+
+
+=== Workspace
+
+
+
+=== 🔍 Regular Search
+
+* **File Search**
+
+  * Cmd + P
+
+
+=== Switch Windows
+
+* Cmd + `` (Cmd + backtick)
+
+---
+
+* **Searchbox** search the occurance of "word" in all the files.
+  * Open the above search in editor.
+  * You can choose the context of search in the top right corner.
+  * Exclude Options
+  * Include Options
+  * Right click and find in folder
+
+=== 👤 Profiles
+
+* Refer Help Menu to create profiles.
+
+
+=== Shortcuts
+
+
+*Must-Know (Daily Use)*
+
+* [ ] Cmd + Shift + P → Command Palette
+* [ ] Cmd + P → Quick Open (files, symbols)
+* [ ] Ctrl + ` → Toggle Windows
+* [ ] Cmd + B → Toggle Sidebar
+* [ ] Cmd + . → Quick Fix / Refactor
+* [ ] Cmd + J → Toggle Terminal
+* [ ] Option + Shift + Drag Mouse → Copy Vertically
+
+---
+
+*Editor & Navigation*
+
+* [ ] Cmd + \ → Split Editor
+* [ ] Cmd + 1 / 2 / 3 → Focus Editor Group
+* [ ] Cmd + W → Close Editor
+* [ ] Cmd + K Cmd + W → Close All Editors
+* [ ] Cmd + Shift + O → Go to Symbol (file)
+* [ ] Cmd + T → Go to Symbol (workspace)
+* [ ] Cmd + Click → Go to Definition
+
+---
+
+*Editing Power Moves*
+
+* [ ] Cmd + D → Select next occurrence
+* [ ] Cmd + Shift + L → Select all occurrences
+* [ ] Option + ↑ / ↓ → Move line up/down
+* [ ] Shift + Option + ↑ / ↓ → Duplicate line
+* [ ] Cmd + / → Toggle comment
+* [ ] Cmd + Shift + K → Delete line
+* [ ] Cmd + U → Undo last cursor
+
+---
+
+*Multi-Cursor*
+
+* [ ] Option + Click → Add cursor
+* [ ] Cmd + Option + ↑ / ↓ → Add cursors vertically
+
+---
+
+*Search & Replace*
+
+* [ ] Cmd + F → Find
+* [ ] Cmd + Option + F → Replace
+* [ ] Cmd + Shift + F → Search in workspace
+
+---
+
+*Terminal (Mac)*
+
+* [ ] Ctrl + ` → Show / Hide Terminal
+* [ ] Cmd + Shift + 5 → Split Terminal
+* [ ] Cmd + Shift + C → New Terminal
+* [ ] Cmd + K → Clear Terminal
+
+---
+
+*Debugging*
+
+* [ ] F5 → Start / Continue Debug
+* [ ] F9 → Toggle Breakpoint
+* [ ] F10 → Step Over
+* [ ] F11 → Step Into
+* [ ] Shift + F11 → Step Out
+* [ ] Cmd + Shift + D → Debug View
+
+---
+
+*Git*
+
+* [ ] Cmd + Shift + G → Source Control
+* [ ] Cmd + Enter → Commit (message focused)
+
+---
+
+*Formatting*
+
+* [ ] Shift + Option + F → Format Document
+* [ ] Cmd + K Cmd + F → Format Selection
+
+---
+
+*Focus & Layout*
+
+* [ ] Cmd + J → Toggle Panel
+* [ ] Cmd + K Cmd + Z → Zen Mode
+* [ ] Cmd + Shift + E → Explorer
+* [ ] Cmd + Shift + X → Extensions
+
+---
+
+*Top 5 to Master First*
+
+* [ ] Cmd + Shift + P
+* [ ] Cmd + P
+* [ ] Cmd + .
+* [ ] Cmd + D
+* [ ] Ctrl + `
+
