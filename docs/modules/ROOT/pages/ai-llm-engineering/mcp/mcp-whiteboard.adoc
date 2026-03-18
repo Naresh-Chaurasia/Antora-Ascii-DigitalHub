@@ -1,0 +1,3 @@
+= MCP Whiteboard
+
+* [ ] How Did I connect VS Code to MCP.

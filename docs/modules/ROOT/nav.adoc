@@ -21,14 +21,17 @@
 * xref:ai-llm-engineering/prompt-engineering.adoc[Prompt Engineering]
 * xref:ai-llm-engineering/langchain.adoc[LangChain]
 * xref:ai-llm-engineering/vector-databases.adoc[Vector Databases]
+..MCP
 * xref:ai-llm-engineering/mcp-model-context-protocol.adoc[MCP (Model Context Protocol)]
-* xref:ai-llm-engineering/mcp/introduction-mcp.adoc[Introduction to Model Context Protocol]
-..Agentic AI
+** xref:ai-llm-engineering/mcp/introduction-mcp.adoc[Introduction to Model Context Protocol]
+** xref:ai-llm-engineering/mcp/mcp-henry.adoc[MCP - Henry Habib]
+** xref:ai-llm-engineering/mcp/mcp-yash.adoc[MCP - Yash Thakker]
+** xref:ai-llm-engineering/mcp/mcp-whiteboard.adoc[MCP - Whiteboard]
+
+.Agentic AI
 * xref:ai-llm-engineering/building-ai-applications.adoc[Building AI Applications]
 ** xref:ai-llm-engineering/agentic-ai.adoc[agentic ai]
 ** xref:ai-llm-engineering/agenti-ai/agentic-ai2.adoc[agentic ai2]
-** xref:ai-llm-engineering/mcp/mcp-henry.adoc[MCP - Henry Habib]
-** xref:ai-llm-engineering/mcp/mcp-yash.adoc[MCP - Yash Thakker]
 
 .Software Architecture
 * xref:software-architecture/index.adoc[Overview]

@@ -7,6 +7,7 @@
 == Resources
 
 * https://modelcontextprotocol.io/specification/2025-03-26/server/prompts
+* The code repository is available in Section 3, Video 19.
 
 == Context Switching
 
@@ -1485,7 +1486,47 @@ uv run client_airbnb.py
 === 44). Introduction to MCP Clients
 
 
+---
+
+.MCP Architecture
+[%collapsible]
+====
+
 image::mcp/mcp-arch.png[MCP Architecture Diagram, 800, 600]
+
+====
+
+* Using Visual Studio Code
+** You typically do *not* need to learn MCP clients
+*** MCP client functionality is already built-in
+*** Connection to MCP servers is handled automatically
+
+* What happens behind the scenes
+** VS Code acts as an MCP host
+*** Includes an MCP client
+**** Uses MCP protocol internally
+**** Connects to MCP servers for you
+
+* When you can safely skip this topic
+** Using existing tools or IDEs
+*** VS Code, Cursor, etc.
+** Using frameworks
+*** LangGraph
+*** OpenAI Agents SDK
+**** They abstract MCP completely
+
+* When you would need it
+** Building your own tool or app from scratch
+*** Creating your own MCP host
+*** Manually handling client-server communication
+
+* Bottom line
+** Normal development
+*** Skip it
+** Infrastructure-level development
+*** Learn it
+
+
 
 ##################################################
 

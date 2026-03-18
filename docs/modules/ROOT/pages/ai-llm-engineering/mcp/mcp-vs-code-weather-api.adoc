@@ -1,0 +1,3 @@
+= MCP VS Code Weather API
+
+* [ ] How Did I connect VS Code to MCP.
