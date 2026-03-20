@@ -41,7 +41,7 @@
 ** Custom internal API MCP server
 *** Simulate connecting to a company's internal tooling
 
-* [x] Build a custom MCP server for enterprise use
+* [x] Build a custom MCP server for enterprise us: #Not Week1#
 
 ** Node.js / Python SDK walkthrough
 

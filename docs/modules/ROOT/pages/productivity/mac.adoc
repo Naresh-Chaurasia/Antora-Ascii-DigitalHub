@@ -18,6 +18,11 @@ NOTE: NOTE
 
 === Finder
 
+* Hide/Show Hidden Files
+** Press `Command + Shift + .`
+
+---
+
 *Open a Folder Using Path on macOS*
 
 *Method 1: Finder*

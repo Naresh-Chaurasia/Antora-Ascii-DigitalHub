@@ -1,12 +1,17 @@
-= Introduction to Model Context Protocol
+= Introduction to Model Context Protocol - Anthropic
 :toc: right
 :toclevels: 5
 :sectnums: 1
 :sectnumlevels: 1
 
-== Module1
+== Resources
 
 * https://github.com/astral-sh/uv
+* Download code from Module 2
+
+== Module1
+
+
 
 === Introducing MCP
 
@@ -226,41 +231,60 @@ image::mcp/custom-mcp.png[Custom MCP Server Architecture, 800, 600]
 
 ##################################################
 
-During today's session covering how the Model Context Protocol (MCP) addresses integration challenges, we focused on:
+=== Defining tools with MCP
 
-*Integration Challenges*
+* MCP server setup for CLI chatbot
+  ** Extend existing CLI chatbot with MCP server functionality
+  ** Add tools to enable document operations
 
-- You accurately identified the difficulties of explicit, non-reusable coding for external services.
-- You also recognized the complexities of client-server communication across different machines.
+* MCP server implementation
+** Create server in `mcpserver.py` file
+** Use *MCP Python SDK* for quick setup. Single line creates MCP server instance
 
-*MCP's Solution*
+* In-memory document storage
+** Store documents in a dictionary (`docs`)
+** Keys represent document IDs
+** Values contain document content
 
-- You understood that MCP servers offload the burden of integration by managing tools for external services.
-- This reduces the need for custom implementation inside your application.
+* Tool creation using MCP SDK
+** Use `@mcp.tool()` decorator to define tools
+** Provide tool name and description
+** Define function with typed arguments
+*** Use `pydantic.Field` for argument metadata
+** SDK auto-generates JSON schema
+*** No need to manually write schemas
 
-*MCP Architecture and Components*
+* Tool 1: Read document
+** Purpose: return document content
+** Input: document ID
+** Logic:
+*** Check if document exists in `docs`
+*** Raise error if not found
+*** Return document content if found
 
-- You correctly identified *tools*, *resources*, and *prompts* as key components of an MCP server.
-- You provided good examples such as GitHub tools and explained the role of authentication.
+* Tool 2: Edit document
+** Purpose: modify document content
+** Inputs: document ID, old string, new string
+** Logic:
+*** Validate document exists
+*** Perform string replace operation
+*** Update document in dictionary
 
-*Client-Server Communication*
+* Error handling
+** Use validation to check document existence
+** Raise `ValueError` for invalid document ID
 
-- You recognized the *transport-agnostic* nature of MCP.
-- You identified `ListToolsRequest` and `CallToolRequest` as important message types used for communication between the client and the MCP server.
+* Key benefit of MCP SDK
+** Simplifies tool definition process
+** Automatically handles schema generation
+** Reduces complexity compared to manual JSON schema writing
 
-*Practical Applications of MCP*
+* Final outcome
+** MCP server created with two tools
+*** Read document tool
+*** Edit document tool
+  ** Ready for integration with Claude or other AI systems
 
-- You gave a clear example of how MCP simplifies integrating VS Code with GitHub.
-- MCP abstracts away the direct API communication with GitHub.
 
-*Your strengths*
-
-- You demonstrated a strong understanding of the core problems MCP aims to solve, particularly around custom coding and reusability.
-- You clearly understood how an MCP server offloads integration complexity.
-- You supported your understanding with concrete examples of MCP tools.
-
-*Areas for improvement*
-
-- While you correctly identified the components of MCP, a deeper understanding of the specific role of *resources* and *prompts* inside an MCP server would strengthen your knowledge further.
 
 ##################################################

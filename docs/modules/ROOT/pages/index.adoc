@@ -1,11 +1,117 @@
-= Home
+= Antora
 
-This is a minimal Antora component.
 
-== Section One
+== 1. Antora Overview (Big Picture)
 
-Some content here.
+=== YouTube Videos
 
-== Section Two
+link:https://www.youtube.com/watch?v=BAJ8F7yQz64[Antora: Documentation Sites for Software Teams by Dan Allen]
 
-More content.
+---
+
+* Asciidoc for Authoring
+* Antora for Publishing
+
+---
+
+*What you’ll learn:*
+
+* What Antora is and why it exists
+* Docs-as-code philosophy
+* Multi-repo + versioned documentation
+* Real-world usage in teams
+
+TIP: This is your foundation video—don’t skip it.
+
+== 2. Quickstart (Install + First Project)
+
+*Video:* [https://archive.fosdem.org/2021/schedule/event/ttdasciidocantora/](https://archive.fosdem.org/2021/schedule/event/ttdasciidocantora/)
+
+*What you’ll learn:*
+
+* Install Antora (Node.js / Docker)
+* Create playbook
+* Generate your first site
+
+TIP: Build a small project while watching.
+
+== 3. Core Concepts (Most Important)
+
+*Video:* [https://coconote.app/notes/e542114b-94db-46ac-b8f0-63b4bf5a568a](https://coconote.app/notes/e542114b-94db-46ac-b8f0-63b4bf5a568a)
+
+*What you’ll learn:*
+
+* Component / Module / Page structure
+* How Antora pulls content from Git
+* Versioning via branches
+
+IMPORTANT: This is the most critical part for mastery.
+
+== 4. AsciiDoc (Very Important)
+
+*Video:* [https://gist.github.com/Kambaa/f307bec69e196f1c2a3ae0129d52ea32](https://gist.github.com/Kambaa/f307bec69e196f1c2a3ae0129d52ea32)
+
+*What you’ll learn:*
+
+* Syntax basics
+* Includes (reuse content)
+* Attributes (DRY principle)
+
+TIP: Master this to unlock Antora’s full power.
+
+== 5. UI Customization (Professional Docs)
+
+*Video:* [https://archive.fosdem.org/2021/schedule/event/ttdasciidocantora/](https://archive.fosdem.org/2021/schedule/event/ttdasciidocantora/)
+
+*What you’ll learn:*
+
+* UI bundle concept
+* Themes and layouts
+* Branding your docs site
+
+TIP: This is where your docs look professional.
+
+== 6. Advanced (Extensions + Power Features)
+
+*Video:* [https://docs.antora.org/antora/latest/extend/extension-tutorial/](https://docs.antora.org/antora/latest/extend/extension-tutorial/)
+
+*What you’ll learn:*
+
+* Extend Antora pipeline
+* Add custom validations
+* Modify navigation or content
+
+TIP: Use this to automate and scale documentation.
+
+== 7. Full Real-World Build (End-to-End)
+
+*Video:* [https://archive.fosdem.org/2021/schedule/event/ttdasciidocantora/](https://archive.fosdem.org/2021/schedule/event/ttdasciidocantora/)
+
+*What you’ll learn:*
+
+* End-to-end workflow
+* CI/CD integration
+* Real project structure
+
+TIP: Watch this after completing basics.
+
+== Learning Strategy
+
+* Watch Overview
+* Do Quickstart hands-on
+* Learn Core Concepts deeply
+* Apply on your own docs
+* Master AsciiDoc
+* Move to UI + Extensions
+
+TIP: Don’t binge-watch. Build while learning.
+
+== Goal (For You)
+
+* Create a multi-repo documentation portal
+* Version your courses like software
+* Reuse content using includes
+* Automate build using CI/CD
+* Build your personal documentation platform
+
+TIP: Think of Antora as "Documentation Architecture", not just a tool.

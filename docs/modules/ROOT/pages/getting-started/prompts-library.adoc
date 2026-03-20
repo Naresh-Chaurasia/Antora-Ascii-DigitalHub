@@ -1,34 +1,21 @@
 = Prompts Library
 :toc: right
 :toclevels: 5
-:sectnums:
+:sectnums: 5
 :sectnumlevels: 5
 
-== How to Use
-
-Each prompt follows the same simple structure:
-
-* Title
-* Category
-* Prompt
-* Notes (optional)
-
----
 
 == Prompts
 
 === Content Creation: Convert Text to AsciiDoc
 
-*Prompt*
-
-
-##########################
 
 .Convert the following text into clean AsciiDoc format
 [%collapsible]
 ====
 
-
+[source,asciidoc]
+----
 Convert the following text into clean AsciiDoc format.
 
 Extract the key ideas from the following text and convert them into a structured bullet-point summary.
@@ -57,44 +44,50 @@ Output requirements:
 
 Refer Above Article
 
+----
+
 
 ##################################################
 ====
 
 
 
-== Debug Java Code
+== Dance
 
-*Category:* Development
+.Deep, thoughtful, and structured discussion about dance as an art form
+[%collapsible]
+====
 
-*Prompt*
+[source,asciidoc]
+----
+I want to have a deep, thoughtful, and structured discussion about dance as an art form.
 
-Analyze this Java code.
+Treat dance not just as movement, but as a form of expression, communication, and identity.
 
-* Find errors
-* Explain simply
-* Suggest fixes
+Guide the discussion step-by-step using thought-provoking questions, reflections, and insights. Push me to think deeper rather than giving surface-level answers.
 
----
+Focus on areas like:
 
-*Notes*
+* Dance as self-expression vs performance
+* The role of musicality and emotion in dance
+* Connection (with self, partner, and audience)
+* Technique vs artistry
+* Improvisation vs choreography
+* Masculine and feminine energy in dance
+* Presence, confidence, and storytelling through movement
+* The difference between social dancing and performing
+* What makes a dancer “memorable” vs just “good”
 
-* Useful for beginners
-* Can add "step-by-step" if needed
+Also:
 
----
+* Challenge my assumptions when needed
+* Ask follow-up questions based on my responses
+* Bring examples from styles like Salsa and Bachata where relevant
+* Help me connect these ideas to my own dance journey (practice, teaching, performing)
 
-##################################################
+Start with one deep question and then continue the discussion interactively based on my responses.
 
+----
 
-=== Explain Concept Simply
+====
 
-*Category:* Teaching
-
-*Prompt*
-
-Explain this concept in very simple terms. Avoid technical jargon. Use real-life examples.
-
-*Notes*
-
-* Works well for teaching content

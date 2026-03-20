@@ -1,8 +1,8 @@
 = Model Context Protocol (MCP) – Request Flow Explained
 :toc: right
 :toclevels: 5
-:sectnums: 1
-:sectnumlevels: 1
+:sectnums: 5
+:sectnumlevels: 5
 
 Yes, the overall flow described is conceptually correct and matches how the Model Context Protocol (MCP) works. However, a few clarifications help make the explanation more precise.
 

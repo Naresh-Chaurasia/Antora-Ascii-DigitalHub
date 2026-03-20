@@ -1,0 +1,23 @@
+= Sample GenAI Page
+:toc: right
+:toclevels: 3
+:sectnums:
+:sectnumlevels: 3
+
+== Overview
+
+This is a sample page under the GenAI section. You can use this as a template for creating additional GenAI-related content.
+
+== Section 1
+
+Add your content here.
+
+== Section 2
+
+Add more content here.
+
+== Resources
+
+* Link 1
+* Link 2
+* Link 3

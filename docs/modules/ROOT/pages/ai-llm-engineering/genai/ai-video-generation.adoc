@@ -1,0 +1,48 @@
+= AI Video Generation
+:toc: right
+:toclevels: 3
+:sectnums:
+:sectnumlevels: 3
+
+[TIP]
+====
+* Extract KeyPoint, and see how it is done | No hands-on | No Completion required.
+====
+
+== Module 1
+
+
+=== Overview of HeyGen & Trupeer
+
+* Haygen overview
+** AI tool for creating digital human avatars. Avatars can present, interact, and speak like real humans
+
+* Haygen features
+** Realistic avatars with accurate lip-sync
+*** Supports multiple languages
+** Voice options available
+*** Clone your own voice or use AI-generated voices
+** High customization flexibility
+*** Change backgrounds, avatars, and templates
+
+* Haygen value proposition
+** Enables fast video production
+*** #Eliminates need for camera presence#
+
+
+* Troupier overview
+** AI tool for product video and guide creation
+*** Focuses on automation of video generation
+
+* Troupier features
+** Combines multiple videos into one output
+*** Simplifies content assembly process
+** No manual editing required
+*** Videos are ready for publishing
+** Supports custom voice and avatars
+*** Personalizes generated content
+
+##################################################
+
+== Module 2
+

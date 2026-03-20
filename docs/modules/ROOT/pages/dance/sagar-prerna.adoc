@@ -36,5 +36,5 @@
 * Flick
 * Box Step
 * Rebound: Prep is on 78
-* Diagonal Hand Change: 12 Pull
+* Diagonal Hand Change: 12 Pull (Go 90 Come 90, You face her again)
 * Jacket Step.

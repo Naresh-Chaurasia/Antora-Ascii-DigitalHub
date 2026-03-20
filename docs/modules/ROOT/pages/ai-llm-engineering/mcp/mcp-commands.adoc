@@ -1,0 +1,203 @@
+= MCP Commands
+:toc: right
+:toclevels: 5
+:sectnums: 5
+:sectnumlevels: 5
+
+---
+
+NOTE: When you run in dev mode, you get inspector. | When you Install, you make entry in claude desktop config.
+
+---
+
+== Overview
+
+* This document lists commonly used MCP (Model Context Protocol) commands.
+* Commands are grouped by purpose for quick reference.
+
+== Setup Commands
+
+=== Initialize Project
+
+[source,bash]
+----
+uv init
+----
+
+* *Purpose*:
+** Initializes a new project
+
+=== Create Virtual Environment
+
+[source,bash]
+----
+uv venv
+source .venv/bin/activate
+----
+
+* *Purpose*:
+** Creates and activates virtual environment
+
+=== Install MCP CLI
+
+[source,bash]
+----
+uv add "mcp[cli]"
+----
+
+* *Purpose*:
+** Installs MCP CLI tools
+
+##################################################
+
+== Run Commands
+
+=== Run MCP Server
+
+[source,bash]
+----
+mcp run server.py
+----
+
+* *Purpose*:
+** Starts MCP server
+
+=== Run MCP Dev Server
+
+[source,bash]
+----
+mcp dev server.py
+----
+
+* *Purpose*:
+** Runs MCP server in development mode (auto-reload, faster iteration)
+** This comes with Inspector UI for debugging and monitoring
+
+=== Run MCP with Directory
+
+[source,bash]
+----
+uv run --directory /path/to/project mcp run server.py
+----
+
+* *Purpose*:
+** Runs MCP server from specific directory
+
+##################################################
+
+=== Install MCP Server
+
+[source,bash]
+----
+mcp install weather.py
+----
+
+* *Purpose*:
+** Registers the MCP server (weather.py) with MCP clients
+** Automatically adds configuration (e.g., Claude Desktop config)
+** Makes the server discoverable and usable by MCP-enabled tools
+
+##################################################
+
+== Development Commands
+
+=== Add Dependency
+
+[source,bash]
+----
+uv add <package-name>
+----
+
+* *Purpose*:
+** Adds new dependency
+
+=== Remove Dependency
+
+[source,bash]
+----
+uv remove <package-name>
+----
+
+* *Purpose*:
+** Removes dependency
+
+##################################################
+
+== Debugging Commands
+
+=== Check Port Usage
+
+[source,bash]
+----
+lsof -i :<port>
+----
+
+* *Purpose*:
+** Finds process using a port
+
+=== Kill Process
+
+[source,bash]
+----
+kill -9 <PID>
+----
+
+* *Purpose*:
+** Terminates process
+
+##################################################
+
+== VS Code Integration Commands
+
+=== Run via VS Code MCP Config
+
+[source,json]
+----
+{
+  "mcpServers": {
+    "my-server": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--directory",
+        "/path/to/project",
+        "mcp",
+        "run",
+        "server.py"
+      ]
+    }
+  }
+}
+----
+
+* *Purpose*:
+** Configure MCP server inside VS Code
+
+== Quick Reference
+
+[cols="1,3"]
+|===
+| Command | Description
+
+| uv init
+| Initialize project
+
+| uv venv
+| Create virtual environment
+
+| uv add "mcp[cli]"
+| Install MCP CLI
+
+| mcp run server.py
+| Run MCP server
+
+| mcp dev server.py
+| Run MCP in dev mode
+
+| lsof -i :<port>
+| Check port usage
+
+| kill -9 <PID>
+| Kill process
+
+|===

@@ -21,12 +21,19 @@
 * xref:ai-llm-engineering/prompt-engineering.adoc[Prompt Engineering]
 * xref:ai-llm-engineering/langchain.adoc[LangChain]
 * xref:ai-llm-engineering/vector-databases.adoc[Vector Databases]
+..GenAI
+* xref:ai-llm-engineering/genai/genai.adoc[GenAI]
+** xref:ai-llm-engineering/genai/sample.adoc[Sample GenAI Page]
+** xref:ai-llm-engineering/genai/ai-video-generation.adoc[AI Video Generation]
 ..MCP
 * xref:ai-llm-engineering/mcp-model-context-protocol.adoc[MCP (Model Context Protocol)]
-** xref:ai-llm-engineering/mcp/introduction-mcp.adoc[Introduction to Model Context Protocol]
+** xref:ai-llm-engineering/mcp/mcp-anthropic.adoc[MCP - Anthropic]
+** xref:ai-llm-engineering/mcp/mcp-commands.adoc[MCP - Commands]
 ** xref:ai-llm-engineering/mcp/mcp-henry.adoc[MCP - Henry Habib]
-** xref:ai-llm-engineering/mcp/mcp-yash.adoc[MCP - Yash Thakker]
+** xref:ai-llm-engineering/mcp/mcp-summary.adoc[MCP - Summary]
+** xref:ai-llm-engineering/mcp/mcp-vs-code.adoc[MCP - VS Code]
 ** xref:ai-llm-engineering/mcp/mcp-whiteboard.adoc[MCP - Whiteboard]
+** xref:ai-llm-engineering/mcp/mcp-yash.adoc[MCP - Yash Thakker]
 
 .Agentic AI
 * xref:ai-llm-engineering/building-ai-applications.adoc[Building AI Applications]
@@ -48,7 +55,6 @@
 * xref:productivity/anki-for-learning.adoc[Using Anki for Learning]
 * xref:productivity/visual-studio.adoc[Visual Studio]
 
-
 .Soft Skills
 * xref:soft-skills/index.adoc[Overview]
 * xref:soft-skills/communication-skills.adoc[Communication Skills]
@@ -64,6 +70,7 @@
 * xref:dance/ballet.adoc[Ballet]
 * xref:dance/instagram.adoc[Instagram]
 * xref:dance/musicality.adoc[Musicality]
+* xref:dance/marius-elena.adoc[Marius & Elena]
 * xref:dance/practice-drills.adoc[Practice Drills]
 * xref:dance/sagar-prerna.adoc[Sagar & Prerna]
 * xref:dance/salsa.adoc[Salsa]
