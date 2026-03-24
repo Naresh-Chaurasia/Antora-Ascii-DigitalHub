@@ -13,6 +13,10 @@
 * xref:content/instagram.adoc[Instagram]
 * xref:content/image-processing.adoc[Image Processing]
 
+.GenC
+* xref:genc/genc-resources.adoc[GenC Resources]
+* xref:genc/sample.adoc[Sample]
+
 .Spring Microservices
 * xref:spring-microservices/index.adoc[Overview]
 * xref:spring-microservices/spring-boot-basics.adoc[Spring Boot Basics]

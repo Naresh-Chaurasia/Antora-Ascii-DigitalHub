@@ -1,0 +1,9 @@
+= GenC - Resources
+
+:toc: right
+:toclevels: 5
+:sectnums:
+:sectnumlevels: 5
+
+* https://github.com/Naresh-Chaurasia/GenC-KnowledgeHub[GenC Knowledge Hub]
+* https://github.com/Naresh-Chaurasia/GenC-TechHub[GenC Tech Hub]

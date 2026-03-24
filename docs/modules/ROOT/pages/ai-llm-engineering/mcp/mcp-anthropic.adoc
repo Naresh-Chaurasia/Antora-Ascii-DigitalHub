@@ -290,6 +290,16 @@ image::mcp/custom-mcp.png[Custom MCP Server Architecture, 800, 600]
 
 === Implementing a client
 
+WARNING: It also has main.py which is pending. Not Relevant.
+
+[source,bash]
+----
+(resources) nareshchaurasia@Nareshs-MacBook-Pro resources % pwd
+/Users/nareshchaurasia/nc/Python-TechHub/AI-ML-GenAI/MCP/MCP-Anthropic/My-Code/resources
+
+(resources) nareshchaurasia@Nareshs-MacBook-Pro resources % uv run mcp_client.py     
+----
+
 * MCP client purpose and role
   ** Acts as a bridge between application code and MCP server
   ** Exposes server functionality to the rest of the codebase
@@ -339,7 +349,7 @@ image::mcp/custom-mcp.png[Custom MCP Server Architecture, 800, 600]
   ** Sends tool name and input parameters
   ** Returns execution result
 
-* Testing the client
+* #Testing the client#
   ** Test harness provided in MCP client file
   ** Run file directly to test functionality
   *** Example: run client script using command line
