@@ -1,0 +1,56 @@
+= Developing Interpersonal Skills
+:toc: right
+:toclevels: 5
+:sectnums: 5
+:sectnumlevels: 5
+
+== Module 1
+
+=== Let's begin with the first topic
+
+* Communication style self-awareness
+  ** Identify your own communication style
+  *** Reflect on how you usually speak, listen, and respond
+  ** Recognize different communication preferences
+  *** People vary in how they express and receive information
+
+* Types of communication behavior
+  ** Expressive vs reserved communication
+  *** Some people are more vocal and leading
+  *** Others prefer listening and supporting
+  ** Analytical vs reactive approach
+  *** Some analyze and ask questions before responding
+  *** Others share opinions quickly
+
+* Importance of effective communication
+  ** Communication can be ambiguous
+  *** What is said may differ from what is understood
+  ** Influencing factors
+  *** Perceptions affect interpretation
+  *** Biases shape understanding
+  *** Reactions impact outcomes
+
+* #Adapting communication style#
+  ** No need to change your natural style
+  *** Maintain authenticity
+  ** Adjust based on the other person
+  *** Modify what you say
+  *** Modify how you say it
+  ** Prevent misunderstandings
+  *** Avoid communication clashes
+
+* Benefits of understanding communication styles
+  ** Improves clarity and effectiveness
+  *** Reduces confusion in conversations
+  ** Enhances connection with others
+  *** Builds better relationships
+  ** Acts like rules of the road analogy
+  *** Know when to lead, follow, or adjust
+  *** Helps navigate conversations smoothly
+
+* Example of effective communication
+  ** Ginny Rometty’s communication style
+  *** Strong and impactful speaker
+  *** Connects through eye contact
+  *** Inspires people to follow her lead
+  

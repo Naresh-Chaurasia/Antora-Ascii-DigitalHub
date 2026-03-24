@@ -4,14 +4,9 @@
 :sectnums: 1
 :sectnumlevels: 1
 
-== Resources
 
-* https://github.com/astral-sh/uv
-* Download code from Module 2
 
 == Module1
-
-
 
 === Introducing MCP
 
@@ -41,7 +36,7 @@ image::mcp/mcp2.png[MCP Flow Diagram, 600, 400]
   ** Example query: “What open pull requests do I have across all repositories?”
   ** The AI needs to access GitHub data to answer the question.
 
-* Role of Tools
+* #Role of Tools#
   ** Tools allow the AI to perform actions or retrieve data from external services.
   ** Example: A tool that fetches open pull requests from GitHub.
   ** Tools act as connectors between the AI model and external APIs.
@@ -99,7 +94,7 @@ image::mcp/mcp2.png[MCP Flow Diagram, 600, 400]
 
 ---
 
-=== MCP Client
+=== #MCP Client#
 
 image::mcp/flow-mcp.png[MCP Flow Diagram, 600, 400]
 
@@ -214,11 +209,13 @@ During today's session covering how the Model Contacts Protocol (MCP) addresses 
 - **Practical Applications of MCP**: You provided a clear example of how MCP simplifies integrating VS Code with GitHub by abstracting away direct API communication.
 
 **Your strengths:**
+
 - You demonstrated a strong understanding of the core problems MCP aims to solve, particularly around custom coding and reusability.
 - You grasped the fundamental concept of an MCP server offloading integration burdens and provided concrete examples of MCP tools.
 - You were able to connect MCP's design principles, like transport agnosticism and specific message types, to its practical benefits.
 
 **Areas for improvement:**
+
 - While you identified the components, a deeper dive into the specific functions of 'resources' and 'prompts' within the MCP server could further solidify your understanding.
 
 ##################################################
@@ -285,6 +282,105 @@ image::mcp/custom-mcp.png[Custom MCP Server Architecture, 800, 600]
 *** Edit document tool
   ** Ready for integration with Claude or other AI systems
 
-
+---
 
 ##################################################
+ 
+== Module 3
+
+=== Implementing a client
+
+* MCP client purpose and role
+  ** Acts as a bridge between application code and MCP server
+  ** Exposes server functionality to the rest of the codebase
+  ** Used to fetch tools and execute them when requested
+
+* Client vs server in projects
+  ** Typically, projects use either a client or a server
+  ** This project includes both for learning purposes
+  ** Helps understand end-to-end interaction
+
+* MCP client structure
+  ** Implemented as a single class
+  ** Wraps a client session from MCP Python SDK
+  ** *Client session* represents the connection to the MCP server
+
+* Resource management
+  ** Client session requires cleanup when no longer needed
+  ** Cleanup handled inside the MCP client class
+  *** Implemented in connect, async enter, and async exit methods
+  ** Wrapping session simplifies resource handling
+
+* #Why the client is needed#
+  ** Used to interact with MCP server from application code
+  ** Supports two main operations
+  *** Fetch list of tools
+  *** Execute a tool
+  ** These operations integrate with Claude’s workflow
+
+* Key functions to implement
+  ** list_tools
+  *** Calls session.*list_tools*()
+  *** Returns available tool definitions
+  *** Used to send tool list to Claude
+
+** call_tool
+*** Calls session.*call_tool*(tool_name, tool_input)
+*** Executes a specific tool
+*** Used when Claude requests tool execution
+
+* How list_tools works
+  ** Accesses MCP session
+  ** Retrieves all tool definitions from server
+  ** Returns tool metadata including description and schema
+
+* How call_tool works
+  ** Uses session connection
+  ** Sends tool name and input parameters
+  ** Returns execution result
+
+* Testing the client
+  ** Test harness provided in MCP client file
+  ** Run file directly to test functionality
+  *** Example: run client script using command line
+  ** Validates tool listing and execution
+
+* Example test outcome
+  ** Tools like read document and edit document are listed
+  ** Each tool includes description and input schema
+
+* Integration with CLI and Claude
+  ** Application sends tool list to Claude
+  ** Claude decides when to use a tool
+  ** Example workflow
+  *** User asks for document content
+  *** Claude selects appropriate tool
+  *** MCP client calls server tool
+  *** Result returned to Claude and shown to user
+
+* Example use case
+  ** Document with ID report.pdf stored in server
+  ** Claude retrieves content using tool
+  ** Output confirms document details
+
+* Overall outcome
+  ** Client successfully lists tools
+  ** Client successfully executes tools
+  ** Enables seamless interaction between Claude and MCP server
+
+
+---
+
+##################################################
+
+
+
+---
+
+##################################################
+
+
+== Resources
+
+* https://github.com/astral-sh/uv
+* Download code from Module 2

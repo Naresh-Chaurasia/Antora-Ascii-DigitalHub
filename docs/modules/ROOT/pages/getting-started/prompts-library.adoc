@@ -5,9 +5,24 @@
 :sectnumlevels: 5
 
 
-== Prompts
+== Content Creation
 
-=== Content Creation: Convert Text to AsciiDoc
+
+.Template
+[%collapsible]
+====
+
+[source,asciidoc]
+----
+Your content here. Source is asciidoc for single click copy.
+----
+
+====
+
+##################################################
+
+
+=== Convert Text to AsciiDoc
 
 
 .Convert the following text into clean AsciiDoc format
@@ -43,12 +58,44 @@ Output requirements:
 - Ensure the format is clean so it can be copied with one click and pasted into notes or documentation tools.
 
 Refer Above Article
-
 ----
 
 
-##################################################
 ====
+
+##################################################
+
+---
+
+== GenC
+
+
+
+.10 Core Java interview questions
+[%collapsible]
+====
+
+[source,asciidoc]
+----
+Create a list of 10 Core Java interview questions focused on Object-Oriented Programming concepts (such as inheritance, polymorphism, encapsulation, and abstraction) suitable for college-level students. Include a mix of basic and intermediate questions. 
+
+Give output in asciidoc single click copy format.
+----
+
+====
+
+
+##################################################
+
+---
+
+
+
+##################################################
+
+---
+
+
 
 
 
@@ -90,4 +137,9 @@ Start with one deep question and then continue the discussion interactively base
 ----
 
 ====
+
+
+##################################################
+
+
 

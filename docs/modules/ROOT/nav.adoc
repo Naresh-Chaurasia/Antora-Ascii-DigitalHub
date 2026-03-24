@@ -7,6 +7,12 @@
 * xref:getting-started/python.adoc[Python]
 * xref:getting-started/snapshot.adoc[Snapshot]
 
+.Content
+* xref:content/content-strategy.adoc[Content Strategy]
+* xref:content/content-creation.adoc[Content Creation]
+* xref:content/instagram.adoc[Instagram]
+* xref:content/image-processing.adoc[Image Processing]
+
 .Spring Microservices
 * xref:spring-microservices/index.adoc[Overview]
 * xref:spring-microservices/spring-boot-basics.adoc[Spring Boot Basics]
@@ -28,8 +34,8 @@
 ..MCP
 * xref:ai-llm-engineering/mcp-model-context-protocol.adoc[MCP (Model Context Protocol)]
 ** xref:ai-llm-engineering/mcp/mcp-anthropic.adoc[MCP - Anthropic]
-** xref:ai-llm-engineering/mcp/mcp-commands.adoc[MCP - Commands]
 ** xref:ai-llm-engineering/mcp/mcp-henry.adoc[MCP - Henry Habib]
+** xref:ai-llm-engineering/mcp/mcp-playbook.adoc[MCP - Playbook]
 ** xref:ai-llm-engineering/mcp/mcp-summary.adoc[MCP - Summary]
 ** xref:ai-llm-engineering/mcp/mcp-vs-code.adoc[MCP - VS Code]
 ** xref:ai-llm-engineering/mcp/mcp-whiteboard.adoc[MCP - Whiteboard]
@@ -60,7 +66,7 @@
 * xref:soft-skills/communication-skills.adoc[Communication Skills]
 * xref:soft-skills/emotional-intelligence.adoc[Emotional Intelligence]
 * xref:soft-skills/leadership-skills.adoc[Leadership Skills]
-* xref:soft-skills/interpersonal-skills.adoc[Interpersonal Skills]
+* xref:soft-skills/developing-interpersonal.adoc[Developing Interpersonal Skills]
 * xref:soft-skills/time-management.adoc[Time Management]
 * xref:soft-skills/public-speaking.adoc[Public Speaking]
 * xref:soft-skills/negotiation-skills.adoc[Negotiation Skills]
@@ -85,4 +91,4 @@
 * xref:books/fiction-books.adoc[Fiction Books]
 * xref:books/non-fiction-books.adoc[Non-Fiction Books]
 * xref:books/reading-list.adoc[Reading List]
-* xref:books/book-reviews.adoc[Book Reviews]
+

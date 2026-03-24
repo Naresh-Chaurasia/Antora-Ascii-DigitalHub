@@ -350,7 +350,7 @@ ai-dev-assistant/
 
 ##################################################
 
-=== Phase 1: Microservices Setup
+=== 1️⃣ Phase 1: Microservices Setup
 
 * Create Spring Boot services:
 ** user-service
@@ -362,7 +362,6 @@ ai-dev-assistant/
 ** Centralized logging (log files)
 
 * Optional:
-** Config Server
 ** Service Discovery (Eureka)
 
 * Verify:
@@ -371,7 +370,7 @@ ai-dev-assistant/
 
 ##################################################
 
-=== 🛠 Phase 2: MCP Tools (Microservices-Focused)
+=== 2️⃣ Phase 2: MCP Tools (Microservices-Focused)
 
 *1. Service Config Analyzer*
 
@@ -459,7 +458,7 @@ ai-dev-assistant/
 
 ##################################################
 
-=== Phase 3: LLM Integration
+=== 3️⃣ Phase 3: LLM Integration
 
 * Connect MCP with:
 ** Visual Studio Code (AI extensions) OR OpenAI API
@@ -475,7 +474,7 @@ ai-dev-assistant/
 
 ##################################################
 
-=== Phase 4: Real Microservices Integration
+=== 4️⃣ Phase 4: Real Microservices Integration
 
 * Connect tools to:
 ** Real configs (application.yml)
@@ -487,7 +486,7 @@ ai-dev-assistant/
 
 ##################################################
 
-=== Phase 5: Testing Scenarios
+=== 5️⃣ Phase 5: Testing Scenarios
 
 * Create failure scenarios:
 ** Service down
@@ -502,7 +501,7 @@ ai-dev-assistant/
 
 ##################################################
 
-=== Phase 6: Documentation
+=== 6️⃣ Phase 6: Documentation
 
 * Create:
 ** Architecture diagram (microservices + MCP)
@@ -515,7 +514,7 @@ ai-dev-assistant/
 
 ##################################################
 
-=== Phase 7: Packaging & Demo
+=== 7️⃣ Phase 7: Packaging & Demo
 
 * Deliverables:
 ** GitHub repo
@@ -532,7 +531,7 @@ ai-dev-assistant/
 
 ##################################################
 
-=== Future Enhancements
+=== 🔮 Future Enhancements
 
 * Add:
 ** Kubernetes integration (pods, logs)
@@ -546,7 +545,7 @@ ai-dev-assistant/
 
 ##################################################
 
-=== Success Criteria
+=== 🏁 Success Criteria
 
 * MCP server integrates with multiple services
 * Can debug cross-service issues

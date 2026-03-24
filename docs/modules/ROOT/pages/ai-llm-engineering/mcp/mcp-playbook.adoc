@@ -1,4 +1,4 @@
-= MCP Commands
+= MCP Playbook
 :toc: right
 :toclevels: 5
 :sectnums: 5
@@ -10,12 +10,25 @@ NOTE: When you run in dev mode, you get inspector. | When you Install, you make 
 
 ---
 
-== Overview
+== 📖 Overview
 
 * This document lists commonly used MCP (Model Context Protocol) commands.
 * Commands are grouped by purpose for quick reference.
 
-== Setup Commands
+== ⚙️ Setup Commands
+
+=== Environment Setup
+
+* VSCode
+* Python
+* Claude Desktop
+* uv
+* npm
+* OpenAI API Key
+* GitHub account
+* (Optional) Microsoft Azure account / Virtual Machine
+
+##################################################
 
 === Initialize Project
 
@@ -24,8 +37,7 @@ NOTE: When you run in dev mode, you get inspector. | When you Install, you make 
 uv init
 ----
 
-* *Purpose*:
-** Initializes a new project
+* *Purpose*: Initializes a new project
 
 === Create Virtual Environment
 
@@ -35,8 +47,7 @@ uv venv
 source .venv/bin/activate
 ----
 
-* *Purpose*:
-** Creates and activates virtual environment
+* *Purpose*: Creates and activates virtual environment
 
 === Install MCP CLI
 
@@ -45,12 +56,11 @@ source .venv/bin/activate
 uv add "mcp[cli]"
 ----
 
-* *Purpose*:
-** Installs MCP CLI tools
+* *Purpose*: Installs MCP CLI tools
 
 ##################################################
 
-== Run Commands
+== 🧩 MCP Commands
 
 === Run MCP Server
 
@@ -59,8 +69,7 @@ uv add "mcp[cli]"
 mcp run server.py
 ----
 
-* *Purpose*:
-** Starts MCP server
+* *Purpose*: Starts MCP server
 
 === Run MCP Dev Server
 
@@ -99,7 +108,7 @@ mcp install weather.py
 
 ##################################################
 
-== Development Commands
+== 💻 Development Commands
 
 === Add Dependency
 
@@ -108,8 +117,7 @@ mcp install weather.py
 uv add <package-name>
 ----
 
-* *Purpose*:
-** Adds new dependency
+* *Purpose*: Adds new dependency
 
 === Remove Dependency
 
@@ -118,12 +126,11 @@ uv add <package-name>
 uv remove <package-name>
 ----
 
-* *Purpose*:
-** Removes dependency
+* *Purpose*: Removes dependency
 
 ##################################################
 
-== Debugging Commands
+== 🐞 Debugging Commands
 
 === Check Port Usage
 
@@ -132,8 +139,7 @@ uv remove <package-name>
 lsof -i :<port>
 ----
 
-* *Purpose*:
-** Finds process using a port
+* *Purpose*: Finds process using a port
 
 === Kill Process
 
@@ -142,12 +148,11 @@ lsof -i :<port>
 kill -9 <PID>
 ----
 
-* *Purpose*:
-** Terminates process
+* *Purpose*: Terminates process
 
 ##################################################
 
-== VS Code Integration Commands
+== 🧠 VS Code Integration
 
 === Run via VS Code MCP Config
 

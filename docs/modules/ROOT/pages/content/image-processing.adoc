@@ -1,0 +1,26 @@
+= Image Processing
+
+----
+brew install imagemagick
+
+magick input.png -resize 1200 -quality 70 output.jpg
+----
+
+
+---
+
+##################################################
+
+*pillow*
+
+----
+
+pip install pillow
+
+
+from PIL import Image
+
+img = Image.open('input.png')
+img = img.resize((1200, 800))
+img.save('output.jpg', quality=70)
+----
