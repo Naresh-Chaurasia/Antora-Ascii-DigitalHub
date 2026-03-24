@@ -15,25 +15,4 @@
 
 == Turns
 
-* https://www.instagram.com/reels/DV8CLU9jINn/
-
-++++
-<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reels/DV8CLU9jINn" data-instgrm-version="14"></blockquote>
-<script async src="//www.instagram.com/embed.js"></script>
-++++
-
-
----
-
-
-++++
-<iframe src="https://www.instagram.com/reels/DV8CLU9jINn/embed"
-        width="400"
-        height="600"
-        frameborder="0"
-        scrolling="no"
-        allowtransparency="true">
-</iframe>
-++++
-
----
+reel::DV8CLU9jINn[]

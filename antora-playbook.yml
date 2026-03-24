@@ -12,6 +12,7 @@ ui:
   bundle:
     url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
     snapshot: true
+  supplemental_files: ./ui/src
 
 output:
   dir: build/site
@@ -26,6 +27,8 @@ asciidoc:
     sectnumlevels: 5
     toc: right
     toclevels: 5
+  extensions:
+    - ./extensions/reel-extension.js
 
 antora:
   extensions:
