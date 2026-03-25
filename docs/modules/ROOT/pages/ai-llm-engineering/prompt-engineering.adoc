@@ -1,3 +1,0 @@
-= Prompt Engineering
-
-A short placeholder page for prompt engineering techniques (role, context, constraints, examples).

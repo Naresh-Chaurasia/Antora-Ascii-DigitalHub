@@ -1,3 +1,0 @@
-= Building AI Applications
-
-A short placeholder page covering end-to-end AI app development (prompting, RAG, evals, deployment).

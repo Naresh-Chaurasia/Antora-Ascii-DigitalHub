@@ -1,10 +1,15 @@
 = Introduction to Model Context Protocol - Anthropic
 :toc: right
 :toclevels: 5
-:sectnums: 1
-:sectnumlevels: 1
+:sectnums: 5
+:sectnumlevels: 5
 
+== POCs
 
+* MCP-Anthropic/My-Code/read-write/mcp_server_rw_documents.py
+** This is the main MCP server file that implements read-write document operations
+* MCP-Anthropic/My-Code/resources/mcp_client_list_tools.py
+** This is a client script that lists available tools from the MCP server
 
 == Module1
 
@@ -383,14 +388,241 @@ WARNING: It also has main.py which is pending. Not Relevant.
 
 ##################################################
 
+=== Defining resources
 
+* *MCP Resources Concept*
+** Resources expose data from MCP server to client
+** Used for read operations
+** Each resource represents one type of data access
+
+* *Feature Goal*
+** Allow users to mention documents using `@document_name`
+** Automatically fetch document content
+** Inject content into prompt sent to Claude
+
+* *Two Key Features*
+** Autocomplete on `@` typing
+*** Show list of available documents
+** Fetch document content on submit
+*** Insert content into prompt before sending to Claude
+
+* #*Why This Approach*#
+** Avoid relying on Claude to fetch document data
+** Provide context upfront in the prompt
+** Improves response accuracy and control
+
+* *Types of Resources*
+** Direct (Static) Resources
+*** Fixed URI
+*** Example: `docs://documents`
+** Templated Resources
+*** Dynamic URI with parameters
+*** Example: `docs://documents/{doc_id}`
+*** Parameters passed as function arguments
+
+* *Resource Flow*
+** User types `@`
+*** Client requests list of documents
+*** MCP client sends read request with URI
+*** MCP server returns document list
+** User submits message with mention
+*** Client requests specific document
+*** MCP server returns document content
+
+* *Resource Implementation*
+** Resource 1: List Documents
+*** URI: `docs://documents`
+*** MIME type: `application/json`
+*** Returns list of document IDs (names)
+*** Used for autocomplete
+
+** Resource 2: Fetch Document
+*** URI: `docs://documents/{doc_id}`
+*** MIME type: `text/plain`
+*** Returns document content
+*** Validates document existence
+
+* *MIME Type Usage*
+** Indicates format of returned data
+** `application/json` → structured data
+** `text/plain` → raw text
+** Helps client decide how to process response
+
+* *SDK Behavior*
+** Automatically serializes return values to string
+** JSON responses must be deserialized by client
+** Template parameters mapped to function arguments
+
+* *Error Handling*
+** Check if document exists
+** Raise error if document not found
+
+* *Testing with MCP Inspector*
+** Start server using `uv run mcp dev mcp_server.py`
+** Connect via browser (default port 6274)
+** View available resources
+*** Direct resources
+*** Resource templates
+** Test document list
+*** Returns JSON string
+** Test document fetch
+*** Returns plain text content
+
+* *Key Takeaways*
+** Use resources for structured data access
+** Separate resources for list and detail operations
+** Use templated resources for dynamic queries
+** Always define appropriate MIME type
 
 ---
 
+.MCP Resources Quiz
+[%collapsible]
+====
+
+*Question 1*
+
+*What is the primary purpose of resources in an MCP server?*
+
+- To allow clients to modify data on the server
+- To establish authentication between client and server
+- To compress data for faster transmission
+- To expose read-only data to clients without requiring tool calls
+
+*Correct Answer:* To expose read-only data to clients without requiring tool calls
+
+##############################################
+
+---
+
+*Question 2*
+
+*In a templated resource with URI "docs://documents/{doc_id}", how are the parameters passed to the function?*
+
+- Through environment variables
+- As keyword arguments automatically parsed by the Python SDK
+- As query string parameters in the URL
+- Through a separate JSON configuration file
+
+*Correct Answer:* As keyword arguments automatically parsed by the Python SDK
+
+##############################################
+
+---
+
+*Question 3*
+
+*When reading a resource that returns JSON data with MIME type "application/json", what should the client do with the response?*
+
+- Parse the text as JSON and return the parsed object
+- Send it directly to the AI model as a base64 string
+- Return the raw text content without parsing
+- Convert it to a binary format
+
+*Correct Answer:* Parse the text as JSON and return the parsed object
+
+##############################################
+
+---
+
+*Question 4*
+
+*What is the key advantage of using resources over tools when providing document contents to an AI model?*
+
+- Resources automatically cache data on the client side
+- Resources use less memory than tools
+- Resources can handle larger files than tools
+- Resource content is included directly in the initial prompt, avoiding the need for additional tool calls
+
+*Correct Answer:* Resource content is included directly in the initial prompt, avoiding the need for additional tool calls
+
+====
+
+
 ##################################################
 
+---
 
-== Resources
+=== Defining prompts
+
+* Prompts in MCP server
+  ** Used to define pre-built, high-quality instructions for specific tasks
+  ** Help improve results compared to user-written prompts
+  ** Designed for reuse across client applications
+
+* Feature implemented: Slash command (`/format`)
+  ** Typing `/` shows available commands
+  *** Currently supports only `format`
+  ** Selecting `format` asks for a document ID
+  *** Example: `report.pdf`
+  ** Executes a prompt to reformat document into Markdown
+
+* Goal of the feature
+  ** Convert plain text documents into Markdown format
+  ** Use Claude to rewrite content
+  ** Improve output quality using a well-designed prompt
+
+* Why prompts are needed
+  ** Users can manually ask for formatting
+  *** Example: “convert this to markdown”
+  ** Results may vary in quality
+  ** Predefined prompts ensure:
+  *** Better consistency
+  *** Higher quality output
+  *** Tested and optimized behavior
+
+* Role of MCP server
+  ** Stores specialized prompts for its domain
+  *** Example: document management
+  ** Exposes prompts to client applications
+  ** Avoids duplicating prompt logic in clients
+
+* Prompt definition in MCP
+  ** Uses a prompt decorator
+  *** Includes name and optional description
+  ** Accepts input parameters
+  *** Example: `docId` (string)
+  ** Returns a list of messages
+  *** User and assistant messages
+
+* Prompt implementation flow
+  ** Receive document ID
+  ** Ask Claude to:
+  *** Read document using a tool
+  *** Convert content to Markdown
+  *** Optionally save updated content
+
+* Code structure highlights
+  ** Import base prompt message class
+  ** Define function with type annotations
+  ** Write a detailed prompt string
+  ** Return messages using base user message
+
+* Testing the prompt
+  ** Run MCP inspector
+  ** Connect to server
+  ** Navigate to prompts section
+  ** Select `format` prompt
+  ** Enter document ID
+  ** Retrieve generated messages
+  ** Send messages to Claude for execution
+
+* Key benefit
+  ** Prompts are:
+  *** Pre-tested
+  *** Evaluated
+  *** Tailored for specific use cases
+  ** Provide better user experience than ad-hoc prompts
+
+
+##############################################
+
+---
+
+
+
+
+== Course Resources / Materials
 
 * https://github.com/astral-sh/uv
 * Download code from Module 2

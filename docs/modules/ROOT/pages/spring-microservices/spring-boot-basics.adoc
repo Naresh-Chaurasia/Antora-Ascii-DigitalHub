@@ -1,3 +1,0 @@
-= Spring Boot Basics
-
-A short placeholder page for Spring Boot fundamentals (project setup, configuration, starter dependencies).

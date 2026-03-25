@@ -1,3 +1,0 @@
-= Microservices Architecture
-
-A short placeholder page describing microservices architecture principles and trade-offs.

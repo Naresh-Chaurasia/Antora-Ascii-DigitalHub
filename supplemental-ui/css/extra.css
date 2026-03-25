@@ -1,0 +1,5 @@
+/* Wrap functionality for code blocks */
+.literalblock.wrap pre {
+  white-space: pre-wrap;
+  word-break: break-word;
+}

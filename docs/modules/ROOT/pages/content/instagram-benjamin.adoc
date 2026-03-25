@@ -1,0 +1,189 @@
+= Instagram - Benjamin Wilson
+:toc: right
+:toclevels: 5
+:sectnums:
+:sectnumlevels: 5
+
+
+== Section 1
+
+=== 4. A Birds Eye View of Our Instagram Affinity Ladder Strategy
+
+* *Instagram Affinity Ladder*
+  ** Framework to grow Instagram with targeted audience
+  ** Focuses on moving users through defined levels
+  ** Goal is trust building and eventual conversion
+
+* *Level 1: Potential Audience*
+  ** People who do not know you or your content
+  ** Entire reachable audience on Instagram
+  ** Goal is to get visibility in front of them
+
+* *Level 2: Content Viewers*
+  ** Users who discover and watch your content
+  ** Achieved through high-quality, optimized posts
+  *** Use Instagram algorithm biases
+  *** Create relevant and engaging content
+
+* *Level 3: Profile Visitors*
+  ** Users who visit your profile after seeing content
+  ** Triggered by curiosity or interest
+  *** Content should encourage profile clicks
+  *** Profile must be optimized for conversion
+
+* *Level 4: Followers*
+  ** Users who follow your account
+  ** Result of strong profile and content alignment
+  *** Consistent value leads to follow decision
+  *** Audience becomes part of your community
+
+* *Level 5: Branding and Sales*
+  ** Followers convert into customers or loyal audience
+  ** Trust built through consistent content
+  *** Actions include buying products or services
+  *** May engage on other platforms (podcast, website)
+
+* *Content Strategy*
+  ** Research target audience deeply
+  ** Create content tailored to their interests
+  ** Optimize posts for reach and engagement
+  ** Align content with profile messaging
+
+* *Example: Tony Robbins Model*
+  ** Target Audience Definition
+  *** People interested in Tony Robbins and Oprah Winfrey
+  *** Approximate reach of 25 million people
+
+** Content Distribution
+*** Uses high-quality, optimized content
+*** Leverages Instagram algorithm for reach
+
+** Conversion Flow
+*** Content → Profile Visit → Follow
+*** Continuous content builds trust
+*** Funnels audience to products and services
+
+** Monetization
+*** Offers courses, coaching, and experiences
+*** Drives traffic to external platforms
+
+---
+
+* *Key Takeaways*
+  ** [ ] Growth requires structured audience movement
+  ** [ ] Content is entry point to the ladder
+  ** [ ] Profile optimization drives follows
+  ** [ ] Trust enables conversion and sales
+
+  ---
+
+* *Actionable Items*
+  ** [ ] Define your target audience clearly
+  ** [ ] Identify where your audience spends time on Instagram
+  ** [ ] Create 5–10 high-quality posts tailored to that audience
+  ** [ ] Optimize your profile (bio, highlights, visuals)
+  ** [ ] Add clear call-to-action in content (visit profile, follow)
+  ** [ ] Maintain consistent posting schedule
+  ** [ ] Track which content drives profile visits and follows
+  ** [ ] Build trust through valuable and consistent content
+  ** [ ] Create a simple funnel to move followers to your product or service
+
+##############################################
+
+---
+
+=== 5. Your Instagram Starter Mission
+
+* *Instagram Starter Mission Overview*
+  ** Exercise to accelerate Instagram growth
+  ** Focus on learning from successful accounts
+  ** Use proven strategies instead of guessing
+
+* *Core Idea: Leverage Existing Research*
+  ** Big companies spend millions on content research
+  ** You can learn by observing their accounts
+  ** Goal is to replicate what already works
+
+* *Two Types of Accounts to Follow*
+  ** Dream Accounts
+  *** Large, successful, high-performing accounts
+  *** Used for inspiration and best practices
+  *** Observe posting frequency, content style, bio, visuals
+
+** Close Competitors
+*** Accounts in your specific niche
+*** More relevant to your target audience
+*** Easier to replicate and compete with
+
+* *Dream Accounts Strategy*
+  ** Follow top 10 high-quality accounts
+  ** Analyze what makes them successful
+  *** Content type and quality
+  *** Posting frequency
+  *** Profile optimization
+  *** Engagement style
+
+** Example Accounts to Study*
+*** Instagram
+*** National Geographic
+*** Ellen DeGeneres
+*** Nike
+*** Coca-Cola
+*** Apple
+*** Disney
+*** Lamborghini
+*** Starbucks
+*** Audi
+
+* *Why Dream Accounts Matter*
+  ** Provide high-quality content benchmarks
+  ** Show trends and platform direction
+  ** Help understand what goes viral
+  ** Enable modeling of success
+
+* *Close Competitor Strategy*
+  ** Search using niche-specific keywords
+  *** Example: "pizza", "entrepreneur", "fashion"
+  ** Filter by accounts category
+  ** Identify both large and small competitors
+
+** Types of Competitors*
+*** Big brands (e.g., major companies)
+*** Local businesses (direct competitors)
+*** Fan/viral content pages
+
+* *Examples of Competitor Discovery*
+  ** Search general keyword (e.g., pizza)
+  *** Find large brands like Pizza Hut
+  ** Search location-based keyword (e.g., pizza Miami)
+  *** Find local competitors
+  ** Search niche keyword (e.g., entrepreneur)
+  *** Find content-focused accounts
+
+* *Learning Approach*
+  ** Do not reinvent the wheel
+  ** Model what is already working
+  ** Replicate successful patterns
+  ** Adapt strategies to your niche
+
+* *Expected Outcome*
+  ** Build a strong reference list of accounts
+  ** Gain clarity on content strategy
+  ** Improve chances of rapid follower growth
+  ** Move toward goal of 10,000 followers
+
+* *Actionable Items*
+  ** Download or open the workbook
+  ** Identify and follow 10 dream accounts
+  ** Identify and follow 5 close competitors
+  ** Observe and note:
+  *** Posting frequency
+  *** Content types (reels, images, stories)
+  *** Bio structure and profile design
+  *** Engagement patterns (likes, comments)
+
+** Search your niche keywords in Instagram
+** Follow both large and small relevant accounts
+** Refresh feed daily to study content patterns
+** Start documenting ideas you can replicate
+** Pick 3 content styles to test on your own profile

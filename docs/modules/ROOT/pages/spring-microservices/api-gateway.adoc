@@ -1,3 +1,0 @@
-= API Gateway
-
-A short placeholder page covering API gateway responsibilities (routing, auth, rate limiting, aggregation).

@@ -6,19 +6,28 @@
 
 == Requirements
 
-* [x] Understand MCP and why it matters: the "USB-C for AI" — standard protocol for connecting AI agents to enterprise tools, data, and systems
+* Demo
+* MCP Server - GitHub API
 
-* [x] Understand MCP architecture
+
+---
+
+* [x] Understand MCP and why it matters: the "USB-C for AI" — standard protocol for connecting AI agents to enterprise tools, data, and systems | *PPT*
+
+* [x] Understand MCP architecture | *PPT*
 ** Hosts
 ** Clients
 ** Servers
 ** Protocol layer
 
-* [ ] Learn MCP resource primitives
-** Tools
+* [ ] Learn MCP resource primitives | *PPT*
+** [x] Tools
 ** Resources
 ** Prompts
-** Sampling
+** #Sampling#: Governance and Quality. Drop It.
+*** https://modelcontextprotocol.io/specification/2025-06-18/client/sampling
+
+---
 
 * [x] Understand enterprise MCP patterns
 
@@ -29,7 +38,11 @@
 ** Multi-server composition
 *** Chaining file system + database + GitHub + custom MCP servers in a single workflow
 
-* [x] Hands-on: Set up and configure MCP servers in VS Code
+---
+
+#One enough#
+
+* [x] #Hands-on#: Set up and configure MCP servers in VS Code
 
 ** Database MCP server
 *** Connect to Week 2's production database
@@ -43,17 +56,20 @@
 
 * [x] Build a custom MCP server for enterprise us: #Not Week1#
 
-** Node.js / Python SDK walkthrough
+---
+
+** Node.js / #Python SDK walkthrough# - Using this one.
 
 ** Define tools with JSON Schema
-*** Input validation
+*** Input validation - Validation on the API call.
 *** Error handling
-*** Idempotency
+*** #Idempotency# - Ensuring the same request doesn't produce different results. Same POST should not create two payments. 
 
-** Authentication and authorization
-*** Scoping what an agent can access
+** Authentication and authorization - #Github Token#
+*** Scoping what an agent can access - Read-only, read-write, etc. Token should handle the role.
 
 ** Rate limiting and audit logging
+*** #Rate Limit by Github.#
 *** Because agents will call tools at machine speed
 
 * [x] Testing MCP servers
@@ -61,8 +77,7 @@
 ** Test with MCP Inspector
 ** Write integration tests for MCP servers
 
-* [ ] Enterprise security deep-dive
-
+* [ ] #Enterprise security deep-dive#: 2nd Iteration 
 ** Data exposure risks
 ** Least-privilege tool permissions
 ** Preventing prompt injection through tool responses
@@ -73,7 +88,7 @@
 *** Authentication
 *** Logging
 *** Rate limiting
-*** Exposing domain-specific tools for the Week 2 application
+*** Exposing domain-specific tools for the Week 2 application - #fine#
 
 
 

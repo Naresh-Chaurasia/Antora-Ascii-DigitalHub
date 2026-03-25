@@ -1,3 +1,0 @@
-= Vector Databases
-
-A short placeholder page for vector databases (embeddings, indexing, similarity search, RAG).

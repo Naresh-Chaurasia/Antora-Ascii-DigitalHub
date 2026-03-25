@@ -1,3 +1,0 @@
-= REST API Design
-
-A short placeholder page for REST API design guidelines (resources, verbs, status codes, versioning).

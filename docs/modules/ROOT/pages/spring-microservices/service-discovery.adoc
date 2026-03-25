@@ -1,3 +1,0 @@
-= Service Discovery
-
-A short placeholder page covering service discovery concepts (registry, client-side vs server-side discovery).

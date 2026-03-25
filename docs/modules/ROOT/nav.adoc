@@ -10,45 +10,35 @@
 .Content
 * xref:content/content-strategy.adoc[Content Strategy]
 * xref:content/content-creation.adoc[Content Creation]
-* xref:content/instagram.adoc[Instagram]
 * xref:content/image-processing.adoc[Image Processing]
+* Instagram
+** xref:content/instagram.adoc[Instagram]
+** xref:content/instagram-benjamin.adoc[Instagram - Benjamin Wilson]
+
 
 .GenC
 * xref:genc/genc-resources.adoc[GenC Resources]
 * xref:genc/sample.adoc[Sample]
 
-.Spring Microservices
-* xref:spring-microservices/index.adoc[Overview]
-* xref:spring-microservices/spring-boot-basics.adoc[Spring Boot Basics]
-* xref:spring-microservices/rest-api-design.adoc[REST API Design]
-* xref:spring-microservices/microservices-architecture.adoc[Microservices Architecture]
-* xref:spring-microservices/api-gateway.adoc[API Gateway]
-* xref:spring-microservices/service-discovery.adoc[Service Discovery]
-* xref:spring-microservices/resilience-patterns.adoc[Resilience Patterns]
-
 .AI & LLM Engineering
 * xref:ai-llm-engineering/index.adoc[Overview]
-* xref:ai-llm-engineering/prompt-engineering.adoc[Prompt Engineering]
-* xref:ai-llm-engineering/langchain.adoc[LangChain]
-* xref:ai-llm-engineering/vector-databases.adoc[Vector Databases]
+* xref:ai-llm-engineering/TechWizard-MCP.adoc[TechWizard MCP]
 ..GenAI
 * xref:ai-llm-engineering/genai/genai.adoc[GenAI]
 ** xref:ai-llm-engineering/genai/sample.adoc[Sample GenAI Page]
 ** xref:ai-llm-engineering/genai/ai-video-generation.adoc[AI Video Generation]
-..MCP
-* xref:ai-llm-engineering/mcp-model-context-protocol.adoc[MCP (Model Context Protocol)]
+* MCP
 ** xref:ai-llm-engineering/mcp/mcp-anthropic.adoc[MCP - Anthropic]
+** xref:ai-llm-engineering/mcp/mcp-flow.adoc[MCP - Flow]
 ** xref:ai-llm-engineering/mcp/mcp-henry.adoc[MCP - Henry Habib]
 ** xref:ai-llm-engineering/mcp/mcp-playbook.adoc[MCP - Playbook]
 ** xref:ai-llm-engineering/mcp/mcp-summary.adoc[MCP - Summary]
 ** xref:ai-llm-engineering/mcp/mcp-vs-code.adoc[MCP - VS Code]
 ** xref:ai-llm-engineering/mcp/mcp-whiteboard.adoc[MCP - Whiteboard]
 ** xref:ai-llm-engineering/mcp/mcp-yash.adoc[MCP - Yash Thakker]
-
-.Agentic AI
-* xref:ai-llm-engineering/building-ai-applications.adoc[Building AI Applications]
-** xref:ai-llm-engineering/agentic-ai.adoc[agentic ai]
-** xref:ai-llm-engineering/agenti-ai/agentic-ai2.adoc[agentic ai2]
+* Agentic AI
+** xref:ai-llm-engineering/agenti-ai/agenti-ai-rahul-shetty.adoc[Agentic AI - Rahul Shetty]
+** xref:ai-llm-engineering/agenti-ai/agentic-ai2.adoc[Agentic AI 2]
 
 .Software Architecture
 * xref:software-architecture/index.adoc[Overview]
@@ -59,6 +49,7 @@
 * xref:software-architecture/enterprise-architecture.adoc[Enterprise Architecture]
 
 .Productivity
+* xref:productivity/ascii-template.adoc[Ascii Template]
 * xref:productivity/chrome.adoc[Chrome]
 * xref:productivity/mac.adoc[Macbook Pro]
 * xref:productivity/note-taking-systems.adoc[Note Taking Systems]
@@ -66,25 +57,16 @@
 * xref:productivity/visual-studio.adoc[Visual Studio]
 
 .Soft Skills
-* xref:soft-skills/index.adoc[Overview]
-* xref:soft-skills/communication-skills.adoc[Communication Skills]
-* xref:soft-skills/emotional-intelligence.adoc[Emotional Intelligence]
-* xref:soft-skills/leadership-skills.adoc[Leadership Skills]
+* xref:soft-skills/accelerate-your-job-search.adoc[Accelerate Your Job Search]
 * xref:soft-skills/developing-interpersonal.adoc[Developing Interpersonal Skills]
-* xref:soft-skills/time-management.adoc[Time Management]
-* xref:soft-skills/public-speaking.adoc[Public Speaking]
-* xref:soft-skills/negotiation-skills.adoc[Negotiation Skills]
+
 
 .Dance
-* xref:dance/bachata-basics.adoc[Bachata Basics]
 * xref:dance/ballet.adoc[Ballet]
-* xref:dance/instagram.adoc[Instagram]
-* xref:dance/musicality.adoc[Musicality]
 * xref:dance/marius-elena.adoc[Marius & Elena]
-* xref:dance/practice-drills.adoc[Practice Drills]
 * xref:dance/sagar-prerna.adoc[Sagar & Prerna]
 * xref:dance/salsa.adoc[Salsa]
-* xref:dance/sensual-bachata-techniques.adoc[Sensual Bachata Techniques]
+
 
 
 .Books

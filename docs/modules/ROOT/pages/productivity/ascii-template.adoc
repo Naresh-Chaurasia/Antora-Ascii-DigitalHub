@@ -1,4 +1,4 @@
-= Template
+= Ascii Template
 :toc: right
 :toclevels: 5
 :sectnums:
@@ -13,6 +13,17 @@ CAUTION: CAUTION
 WARNING: WARNING
 
 NOTE: NOTE
+
+
+##############################################
+
+---
+
+
+
+##############################################
+
+---
 
 
 

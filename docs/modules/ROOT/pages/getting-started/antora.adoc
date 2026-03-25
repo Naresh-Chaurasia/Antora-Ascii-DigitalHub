@@ -1,7 +1,14 @@
 = Antora
 
-Inside First Project
+== Snippets
 
-* mcp is inside assets
+* ~/Library/Application Support/Windsurf/User/profiles/57a4383b/snippets/Ascii-Generation.code-snippets
+** code
+** res
+** sep
+** tblist
+** tb
 
-image::mcp/mcp1.png[MCP Architecture Diagram, 800, 600]
+##############################################
+
+---

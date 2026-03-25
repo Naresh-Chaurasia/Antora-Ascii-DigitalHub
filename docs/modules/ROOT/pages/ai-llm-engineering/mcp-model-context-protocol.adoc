@@ -1,3 +1,0 @@
-= MCP (Model Context Protocol)
-
-A short placeholder page for MCP concepts (tools, resources, servers, clients, context exchange).

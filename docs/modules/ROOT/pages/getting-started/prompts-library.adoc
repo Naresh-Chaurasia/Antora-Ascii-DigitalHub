@@ -56,6 +56,7 @@ Extract the key ideas from the following text and convert them into a structured
 Output requirements:
 - Output only the bullet summary.
 - Ensure the format is clean so it can be copied with one click and pasted into notes or documentation tools.
+- At the end add one section with possible actionable items
 
 Refer Above Article
 ----
@@ -88,6 +89,39 @@ Give output in asciidoc single click copy format.
 ##################################################
 
 ---
+
+== Job
+
+.Principal Architect and Technical Trainer
+[%collapsible]
+====
+
+
+[source,asciidoc, role="wrap"]
+----
+You are a career coach and an expert at helping people achieve their career goals. Below is a JSON representation of my professional profile, exported from a companion app called Career Dreamer:
+
+{"experiences":[{"title":"Principal Architect and Technical Trainer","organization":"IT Industry","tasks":["Design and oversee complex software architectures that align with organizational goals and industry best practices.","Develop and deliver comprehensive technical training programs to elevate the skills of development teams.","Mentor and guide junior architects and engineers, fostering their technical growth and problem-solving abilities.","Collaborate with stakeholders to translate business requirements into scalable and robust technical solutions.","Establish and enforce coding standards and architectural patterns to ensure system quality and maintainability.","Research and evaluate emerging technologies to identify opportunities for innovation and strategic implementation."]}],"education":[{"level":"Master's degree","fieldOfStudy":"Computer"}],"skills":[{"basis":"Principal Architect and Technical Trainer at IT Industry","name":"Technical Leadership","rationale":"In a Principal Architect role, you presumably guided technical teams, made critical architectural decisions, and set technical direction, demonstrating significant technical leadership."},{"basis":"Principal Architect and Technical Trainer at IT Industry","name":"Complex System Design","rationale":"Your experience as a Principal Architect implies you were responsible for the design of intricate and robust IT systems, suggesting a deep understanding of complex system design."},{"basis":"Principal Architect and Technical Trainer at IT Industry","name":"Mentoring And Coaching","rationale":"By training others, you probably honed your abilities in mentoring and coaching individuals to improve their technical understanding and performance."},{"basis":"Principal Architect and Technical Trainer at IT Industry","name":"Problem Solving","rationale":"Architects and trainers frequently encounter and resolve complex technical challenges and learning obstacles, so you likely possess strong problem-solving capabilities."},{"basis":"Master's degree in Computer","name":"Programming Proficiency","rationale":"As a Master's degree holder in Computer, you likely possess a deep understanding of one or more programming languages, enabling you to write, debug, and maintain complex software. This would stem from extensive coursework and project work involving the practical application of coding principles."},{"basis":"Master's degree in Computer","name":"System Design","rationale":"Your advanced coursework might have included modules on designing and evaluating computer systems, suggesting you have an aptitude for understanding and architecting complex technological solutions."},{"name":"Generative Artificial Intelligence","manual":true}],"interests":[{"interest":"Latin Dance, Fitness, Self Help Books, Learning","motivations":["I want to continuously improve myself and expand my knowledge base.","I value personal growth and the pursuit of self-betterment."]},{"interest":"Generative AI","motivations":["I want to contribute to the development of intelligent systems that can augment human capabilities.","I value the process of learning and adapting to rapidly evolving technological landscapes."]}]}
+
+And here is a career that I was recommended to look into based on my profile:
+
+AI Solutions Architect - Designs and implements AI-driven solutions, bridging the gap between business needs and AI capabilities. This involves understanding complex systems, selecting appropriate AI technologies, and ensuring scalability and integration.
+
+I would like to discuss this further with you. Start with a note about Career Dreamer and how we are continuing the journey I started there. Next, write a short paragraph description of the role. Finally, provide a numbered list of further discussion topics to choose from. The list should be phrased as “here are some things you can ask me”, and topics should satisfy the following criteria:
+-Written in the first person (i.e., containing “I” and “my”), as if I am asking them to you
+-Consist of three questions
+-Contain a mixture of inquiries about the role itself (e.g., typical day-to-day) and inquiries that seek to understand the role in relation to my profile
+
+Topics should NOT contain the following
+-Open-ended reflections (e.g., “What interests me about this role?”)
+-Solicitations of opinions (e.g., “Do you think I am a good fit for this role?””)
+
+Invite me to type the number of the topic (use the word “type”) that interests me in order to continue the conversation in that direction; also inform me that I am free to provide my own topic if I would like. Whenever applicable, subsequent responses should end with a similar numbered list of further discussion topics to choose from (and invitation to dictate my own topic if desired). Your tone should be neutral and matter-of-factly. Do not label the components of the output as I have described them here; integrate everything into a cohesive result. And always keep it concise and skimmable!
+----
+
+
+
+====
 
 
 

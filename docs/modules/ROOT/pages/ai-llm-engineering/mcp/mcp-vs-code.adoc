@@ -1,18 +1,8 @@
 = MCP VS Code Weather API
 :toc: right
 :toclevels: 5
-:sectnums:
+:sectnums: 5
 :sectnumlevels: 5
-
-TIP: TIP
-
-IMPORTANT: IMPORTANT
-
-CAUTION: CAUTION
-
-WARNING: WARNING
-
-NOTE: NOTE
 
 ---
 
@@ -27,44 +17,27 @@ NOTE: When you run in dev mode, you get inspector
 
 ---
 
-* Visual Studio Code
-* Continue Extension
-* #Continue CLI#
+* [x] Visual Studio Code
+* [x] Continue Extension
+* [ ] #Continue CLI#
 ** Think of it like this:
 *** Your FastMCP server = Tool provider (exposes get_weather)
 *** LLM (GPT) = Brain (decides when to use the tool)
 *** Continue = Connector / Controller
 *** Continue = AI agent runtime inside VS Code that enables LLMs to use your MCP tools.
-* OpenAI models
-* MCP (Model Context Protocol) server
-* Python MCP server executed using `uv`
+* [x] OpenAI models
+* [x] MCP (Model Context Protocol) server
+* [x] Python MCP server executed using `uv`
 
 This setup allows an AI model to call external tools (like a weather API) through MCP.
 
 ---
 
-*1. Architecture Overview*
-
-The overall architecture works as follows:
-
-----
-VS Code / Terminal
-↓
-Continue Extension / Continue CLI
-↓
-OpenAI Model (GPT)
-↓
-MCP Protocol
-↓
-MCP Server (weather.py)
-↓
-External Tool / API
-----
+*✔️ Architecture Overview*
 
 In this setup:
 
 * The LLM decides when to call a tool.
-* MCP provides the standard interface.
 * The MCP server executes the tool.
 
 
@@ -72,7 +45,7 @@ In this setup:
 
 ---
 
-*2. Install Required Tools (CLI)*
+*✔️ Install Required Tools (CLI)*
 
 Install the following tools.
 
@@ -84,7 +57,9 @@ Install the following tools.
 
 ---
 
-*3. Continue Configuration Directory (VS Code)*
+*✔️ Continue Configuration Directory (VS Code)*
+
+#Using config.yaml#
 
 ls ~/.continue
 
@@ -100,7 +75,17 @@ package.json
 
 ---
 
-*4. MCP Server*
+*✔️ MCP Server/GitHub API*
+
+----
+MCP-Henry-Habib/My-Code/API/github-api-private.py
+----
+
+##################################################
+
+---
+
+*MCP Server/Weather API*
 
 The MCP server in this setup is a Python program:`weather.py`. In this case the server is returning hard code value.
 
@@ -114,94 +99,26 @@ Example project path: `/Users/nareshchaurasia/nc/Python-TechHub/AI-ML-GenAI/MCP/
 
 ---
 
-*5. Continue Configuration for VS Code*
+*✔️ Continue Configuration for VS Code*
 
-VS Code uses the TypeScript configuration file:
-
----
-
-`~/.continue/config.ts`
+TypeScript configuration file: `/.continue/config.ts`
 
 Example configuration:
 
 [source, typescript]
 ----
-const config = {
-  defaultModel: "gpt-4o-mini",
-
-  models: [
-    {
-      title: "GPT-4o-mini",
-      provider: "openai",
-      model: "gpt-4o-mini",
-      apiKey: process.env.OPENAI_API_KEY
-    }
-  ],
-
-  mcpServers: {
-    weather: {
-      command: "uv",
-      args: [
-        "run",
-        "--directory",
-        "/Users/nareshchaurasia/nc/Python-TechHub/AI-ML-GenAI/MCP/MCP-Henry-Habib/My-Code/hello-world",
-        "mcp",
-        "run",
-        "weather.py"
-      ]
-    },
-
-    crypto: {
-      command: "uv",
-      args: [
-        "run",
-        "--directory",
-        "/Users/nareshchaurasia/nc/Python-TechHub/AI-ML-GenAI/MCP/MCP-Henry-Habib/My-Code/API",
-        "mcp",
-        "run",
-        "crypto.py"
-      ]
-    },
-    github: {
-      command: "uv",
-      args: [
-        "run",
-        "--directory",
-        "/Users/nareshchaurasia/nc/Python-TechHub/AI-ML-GenAI/MCP/MCP-Henry-Habib/My-Code/API",
-        "mcp",
-        "run",
-        "github.py"
-      ]
-    }
-  }
-};
-
-export default config;
+export function modifyConfig(config: any): any {
+  return config;
+}
 ----
 
 ##################################################
 
-Notes:
-
-* `defaultModel` defines which model Continue will use.
-* `mcpServers` registers available MCP tools.
-
 ---
 
-##################################################
-
-
-
-*6. Continue CLI Configuration*
-
-The Continue CLI uses a YAML configuration file:
-
----
-
-*~/.continue/config.yaml*
+TypeScript configuration file: `/.continue/config.yaml`
 
 Example configuration:
-
 
 [source, yaml]
 ----
@@ -209,10 +126,10 @@ name: Local Config
 version: 1.0.0
 
 models:
-  - name: GPT-5.2
+  - name: GPT-4o-mini
     provider: openai
-    model: gpt-5.2
-    apiKey: Key
+    model: gpt-4o-mini
+    apiKey: "sk-proj-"
 
 mcpServers:
   - name: weather
@@ -224,35 +141,52 @@ mcpServers:
       - mcp
       - run
       - weather.py
+
+  - name: crypto
+    command: uv
+    args:
+      - run
+      - --directory
+      - /Users/nareshchaurasia/nc/Python-TechHub/AI-ML-GenAI/MCP/MCP-Henry-Habib/My-Code/API
+      - mcp
+      - run
+      - crypto.py
+
+  - name: github-private
+    command: uv
+    args:
+      - run
+      - --directory
+      - /Users/nareshchaurasia/nc/Python-TechHub/AI-ML-GenAI/MCP/MCP-Henry-Habib/My-Code/API
+      - mcp
+      - run
+      - "github-api-private.py"
+    env:
+      GITHUB_TOKEN: "ghp_"
 ----
-
-
-
 
 ##################################################
 
-*7. Environment Variable for API Key*
+---
+
+*Environment Variable for API Key*
 
 Instead of hardcoding API keys, use environment variables.
 
-Set the OpenAI key:
-
----
-
-*export OPENAI_API_KEY="your-api-key"*
+Set the OpenAI key: `export OPENAI_API_KEY="your-api-key"`
 
 Make it permanent:
-
----
 
 ----
 echo 'export OPENAI_API_KEY="your-api-key"' >> ~/.zshrc
 source ~/.zshrc
 ----
 
+##################################################
+
 ---
 
-*8. Restart VS Code*
+*Restart VS Code*
 
 After updating configuration: Quit VS Code completely. Restart VS Code.
 
@@ -260,41 +194,31 @@ After updating configuration: Quit VS Code completely. Restart VS Code.
 
 === Test in VS Code
 
-*9. Test in VS Code*
+*Test in VS Code*
 
 Open Continue chat using Cmd + L
 
-Example prompt:
-
----
-
-*Use the weather MCP server to get the weather in Tokyo*
-
-The system will:
-
-1. Detect tool availability
-2. Call `get_weather`
-3. Return the result.
-
----
+Example prompt: `Fetch Repositories from GitHub using the github-private MCP server`
 
 ##################################################
 
+
+
 === Test Using Continue CLI
 
-*10. Test Using Continue CLI*
+*Test Using Continue CLI*
 
 Run: `cn chat --config ~/.continue/config.yaml`
 
 Then enter prompt:
 
-`Use the weather MCP server to get the weather in Tokyo`
+`Fetch Repositories from GitHub using the github-private MCP server`
 
 The CLI will start the MCP server and call the tool.
 
 ---
 
-*11. Verify MCP Server Logs*
+*Verify MCP Server Logs*
 
 Typical logs look like: These confirm that the MCP protocol is working.
 
@@ -306,7 +230,7 @@ Message from server
 
 ##################################################
 
-*12. Useful Commands*
+*Useful Commands*
 
 Check Continue CLI:
 
@@ -323,7 +247,7 @@ cn run "Get weather in Tokyo"
 
 ##################################################
 
-*13. Troubleshooting*
+*Troubleshooting*
 
 *Model not visible in VS Code*
 
@@ -335,7 +259,7 @@ Check:
 
 ---
 
-*14. Cannot find process.env*
+*Cannot find process.env*
 
 ```
 cd ~/.continue
@@ -366,16 +290,7 @@ If it works manually, Continue should also run it.
 
 ---
 
-*16. Future MCP Extensions*
 
-Additional useful MCP servers:
-
-* Filesystem MCP (read codebase)
-* GitHub MCP (repo access)
-* SQL MCP (database queries)
-* REST API MCP
-
-These allow AI to interact with development tools and infrastructure.
 
 ##################################################
 

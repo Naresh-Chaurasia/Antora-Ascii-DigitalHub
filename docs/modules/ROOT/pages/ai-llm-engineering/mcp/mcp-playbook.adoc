@@ -17,7 +17,7 @@ NOTE: When you run in dev mode, you get inspector. | When you Install, you make 
 
 == ⚙️ Setup Commands
 
-=== Environment Setup
+=== ✔️ Environment Setup
 
 * VSCode
 * Python
@@ -26,7 +26,6 @@ NOTE: When you run in dev mode, you get inspector. | When you Install, you make 
 * npm
 * OpenAI API Key
 * GitHub account
-* (Optional) Microsoft Azure account / Virtual Machine
 
 ##################################################
 
@@ -177,6 +176,35 @@ kill -9 <PID>
 
 * *Purpose*:
 ** Configure MCP server inside VS Code
+
+##############################################
+
+---
+
+== Demo1 - GitHub API
+
+
+=== Inspector UI
+
+----
+# Run MCP server in development mode. This comes with Inspector UI for debugging and monitoring
+mcp dev MCP-Henry-Habib/My-Code/API/github-api-private.py
+----
+
+##############################################
+
+---
+
+=== VS Code
+
+----
+Show me my GitHub repositories
+----
+
+
+##############################################
+
+---
 
 == Quick Reference
 

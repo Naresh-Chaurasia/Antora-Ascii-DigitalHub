@@ -28,6 +28,8 @@ a|
  * [ ] Madrid (Heel Toe)
 |===
 
+* *End Goal*: Transition from one drill to another seamlessly without basics.
+
 ##################################################
 
 ---

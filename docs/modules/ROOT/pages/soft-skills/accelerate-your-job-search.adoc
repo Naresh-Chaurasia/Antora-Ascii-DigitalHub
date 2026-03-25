@@ -4,11 +4,7 @@
 :sectnums:
 :sectnumlevels: 5
 
-== Context Switching
 
-== Resources
-
-* https://docs.google.com/spreadsheets/d/1wfS4bMUaBMa5HLTPENyy0PUQS-jFUYtqlpRabdH4mzk/template/preview?gid=0#gid=0[Prompts]
 
 == Module 1
 
@@ -164,7 +160,7 @@ Your past experiences—no matter the role—have equipped you with valuable, tr
 
 ##############################################
 
-=== Career Identity Statement
+=== Understand Career Identity Statement
  
 * Career Identity Statement = Your professional "North Star" guiding job search and networking.
 * Purpose:
@@ -195,8 +191,13 @@ Your past experiences—no matter the role—have equipped you with valuable, tr
 
 * https://grow.google/career-dreamer/home/profile/experience/2
 
+[source, shell]
 ----
-I am a Principal Architect and Technical Trainer known for translating complex business needs into resilient, scalable software architectures. My impact extends to cultivating high-performing technical teams through mentorship and strategic training, fostering an environment of continuous growth. Driven by an innate curiosity and a commitment to personal and professional development, I actively explore and integrate emerging technologies, particularly within Generative AI, to craft intelligent solutions that augment human potential.
+I am a Principal Architect and Technical Trainer known for translating complex business needs into resilient, scalable software architectures. 
+
+My impact extends to cultivating high-performing technical teams through mentorship and strategic training, fostering an environment of continuous growth. 
+
+Driven by an innate curiosity and a commitment to personal and professional development, I actively explore and integrate emerging technologies, particularly within Generative AI, to craft intelligent solutions that augment human potential.
 ----
 
 
@@ -351,6 +352,12 @@ Tailoring your resume takes effort, but it significantly increases your chances 
 ##############################################
 
 ---
+
+== Context Switching
+
+== Resources
+
+* https://docs.google.com/spreadsheets/d/1wfS4bMUaBMa5HLTPENyy0PUQS-jFUYtqlpRabdH4mzk/template/preview?gid=0#gid=0[Prompts]
 
 ##############################################
 
