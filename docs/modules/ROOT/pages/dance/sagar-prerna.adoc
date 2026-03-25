@@ -1,8 +1,21 @@
 = Sagar & Prerna
+:toc: right
+:toclevels: 5
+:sectnums: 5
+:sectnumlevels: 5
 
 * [x] This page will only contain Sagar and Prerna
 * [x] Identify problem Areas, and work on them | Basically what is not happening.
 * [x] Easiest and long term solution will be to copy and paste the content from here to Anki
+
+##################################################
+
+---
+
+== YouTube
+
+* https://www.youtube.com/playlist?list=PL5wtqicMLL7b0Pq0QJzks-1NOlGZzt_an
+
 
 ##################################################
 
@@ -15,7 +28,7 @@
 [source, asciidoc]
 [cols="1,1"]
 |===
-| Happening | Not Happening
+| Refine | Later
 
 a|
  * [ ] Sweep
