@@ -1,14 +1,149 @@
 = Antora
 
-== Snippets
+== AsciiDoc Snippets
 
 * ~/Library/Application Support/Windsurf/User/profiles/57a4383b/snippets/Ascii-Generation.code-snippets
-** code
-** res
-** sep
-** tblist
-** tb
+** adm - Admonitions
+** code - Code block
+** res - Collapsible Resource
+** sep - Separator
+** tblist - Table with list
+** tb - Simple table
+
+---
+
+##############################################
+
+[source,shell, role="wrap"]
+----
+lsof -i :8080
+kill -9 $(lsof -t -i :8080)
+----
 
 ##############################################
 
 ---
+
+== Admonitions
+
+TIP: TIP. Tip of the day.
+
+IMPORTANT: IMPORTANT. It is important to use it.
+
+CAUTION: CAUTION. Do it, but with Caution.
+
+WARNING: WARNING. Don't do this.
+
+NOTE: NOTE. My Note. My Comment
+
+
+##############################################
+
+---
+
+== Tables
+
+.Tables
+[%collapsible]
+====
+
+
+[cols="1,3"]
+|===
+| One | Two
+
+| Foo
+a|
+- Bar
+- Baz
+|===
+
+---
+
+[cols="1,2"]
+|===
+| One | Two
+
+| Foo
+| Bar
+
+|===
+
+====
+
+##############################################
+
+== Emojis
+
+[cols="1,2"]
+|===
+| Category | Emojis
+
+| Status & Checkmarks
+a|
+✔️ (Check) +
+✅ (Green check) +
+❌ (Cross) +
+⚠️ (Warning)
+
+| Pointers & Highlights
+a|
+📌 (Pin) +
+🔥 (Fire) +
+⭐ (Star) +
+📍 (Location pin)
+
+| Communication & Alerts
+a|
+📢 (Loudspeaker) +
+🔔 (Bell) +
+📣 (Megaphone)
+
+| Progress & Goals
+a|
+🎯 (Target) +
+🚀 (Rocket) +
+⏳ (Hourglass) +
+🎉 (Celebration)
+
+| Development & Tools
+a|
+🛠️ (Tools) +
+🖥️ (Computer) +
+💾 (Save) +
+⚙️ (Gear)
+
+| Education & Learning
+a|
+📖 (Book) +
+📝 (Notepad) +
+🎓 (Graduation cap)
+
+| Ideas & Innovation
+a|
+💡 (Light bulb) +
+🤔 (Thinking) +
+❓ (Question) +
+❗ (Exclamation)
+
+| Arrows & Navigation
+a|
+➡️ (Right arrow) +
+⬅️ (Left arrow) +
+🔄 (Reload / Sync)
+
+| Time & Calendar
+a|
+📅 (Calendar) +
+⏰ (Alarm clock) +
+🕒 (Clock)
+
+| Reactions & Emotions
+a|
+👍 (Thumbs up) +
+👎 (Thumbs down) +
+❤️ (Heart) +
+😂 (Laugh) +
+😎 (Cool)
+
+|===

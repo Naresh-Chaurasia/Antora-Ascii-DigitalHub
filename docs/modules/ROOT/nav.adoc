@@ -29,6 +29,7 @@
 ** xref:ai-llm-engineering/genai/ai-video-generation.adoc[AI Video Generation]
 * MCP
 ** xref:ai-llm-engineering/mcp/mcp-anthropic.adoc[MCP - Anthropic]
+** xref:ai-llm-engineering/mcp/mcp-coursera.adoc[MCP - Coursera]
 ** xref:ai-llm-engineering/mcp/mcp-flow.adoc[MCP - Flow]
 ** xref:ai-llm-engineering/mcp/mcp-henry.adoc[MCP - Henry Habib]
 ** xref:ai-llm-engineering/mcp/mcp-playbook.adoc[MCP - Playbook]
@@ -70,9 +71,9 @@
 
 
 .Books
+* xref:books/steal-artist.adoc[Steal Like An Artist]
 * xref:books/index.adoc[Overview]
 * xref:books/technology-books.adoc[Technology Books]
-* xref:books/business-books.adoc[Business Books]
 * xref:books/self-help-books.adoc[Self-Help Books]
 * xref:books/fiction-books.adoc[Fiction Books]
 * xref:books/non-fiction-books.adoc[Non-Fiction Books]

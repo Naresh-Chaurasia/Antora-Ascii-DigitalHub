@@ -1,0 +1,5 @@
+= MCP - Coursera
+:toc: right
+:toclevels: 5
+:sectnums: 5
+:sectnumlevels: 5

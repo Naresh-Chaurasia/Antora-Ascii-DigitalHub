@@ -16,6 +16,155 @@ NOTE: NOTE
 
 == Macbook Pro
 
+=== Apps
+
+##############################################
+
+---
+
+* [ ] ActivityWatch.app - Tracks how you spend time on your computer.
+* [ ] Adobe Lightroom.app - Photo editing and management tool for photographers.
+* [ ] Alfred 5.app - Productivity launcher and automation tool for macOS.
+* [ ] Anaconda-Navigator.app - GUI to manage Python environments and data science tools.
+* [ ] Anki.app - Flashcard-based spaced repetition learning app.
+* [ ] App Store.app - Official macOS app marketplace.
+* [ ] Apps.app - Likely a folder/utility for managing applications.
+* [ ] Automator.app - Automates repetitive tasks with workflows.
+* [ ] Be Focused.app - Pomodoro timer for productivity.
+* [ ] Books.app - Read and manage ebooks and PDFs.
+* [ ] Calculator.app - Basic and scientific calculator.
+* [ ] Calendar.app - Schedule and manage events.
+* [ ] CapCut.app - Video editing tool for social media content.
+* [ ] ChatGPT.app - AI assistant for conversations and tasks.
+* [ ] CheatSheet.app - Shows keyboard shortcuts for active apps.
+
+* [ ] Chess.app - Play chess against computer or online.
+* [ ] Claude.app - AI assistant similar to ChatGPT.
+* [ ] Clock.app - Time, alarms, and world clock.
+* [ ] Comet.app - Likely a browser or productivity tool.
+* [ ] Contacts.app - Manage contacts and address book.
+* [ ] ❌ Cursor.app - AI-powered code editor.
+* [ ] Descript.app - Audio/video editing with transcription.
+* [ ] Dictate.app - Voice dictation tool.
+* [ ] Dictionary.app - Built-in word definitions and thesaurus.
+* [ ] ❌ Discord.app - Chat and voice communication platform.
+* [ ] Docker.app - Containerization platform for developers.
+* [ ] draw.io.app - Diagram and flowchart creation tool.
+* [ ] EdrawMind.app - Mind mapping software.
+* [ ] FaceTime.app - Video and audio calling.
+* [ ] Fantastical.app - Advanced calendar and scheduling app.
+
+* [ ] Find My.app - Locate Apple devices and contacts.
+* [ ] ❌ Firefox.app - Web browser by Mozilla.
+* [ ] Flow.app - Task and project management tool.
+* [ ] Font Book.app - Manage installed fonts.
+* [ ] Freeform.app - Collaborative whiteboard app.
+* [ ] Games.app - Folder or launcher for games.
+* [ ] GarageBand.app - Music creation and recording tool.
+* [ ] Google Chrome.app - Popular web browser.
+* [ ] ❌ Guitar Gravitas.app - Likely a guitar/music-related tool.
+* [ ] Habit.app - Habit tracking application.
+* [ ] Habitify.app - Habit tracking and productivity tool.
+* [ ] Habits.app - Another habit tracker.
+* [ ] Home.app - Manage smart home devices.
+* [ ] HP.app - HP printer/device utility.
+* [ ] HP Easy Scan.app - Scan documents using HP devices.
+
+* [ ] HP Smart.app - Manage HP printers and scanning.
+* [ ] Image Capture.app - Import photos from devices.
+* [ ] Image Playground.app - Likely image editing/playground tool.
+* [ ] iMovie.app - Video editing software.
+* [ ] ❌ IntelliJ IDEA CE.app - Java IDE for development.
+* [ ] iPhone Mirroring.app - Mirror iPhone screen on Mac.
+* [ ] ❌ Jaspersoft Studio.app - Reporting tool for JasperReports.
+* [ ] Journal.app - Personal journaling app.
+* [ ] Keynote.app - Presentation software.
+* [ ] Kindle.app - Read Amazon Kindle books.
+* [ ] Loopify.app - Loop-based productivity/music tool.
+* [ ] Mail.app - Email client.
+* [ ] Maps.app - Navigation and maps.
+* [ ] Messages.app - SMS and iMessage app.
+* [ ] Microsoft Edge.app - Web browser by Microsoft.
+
+* [ ] Microsoft OneNote.app - Note-taking application.
+* [ ] Microsoft PowerPoint.app - Presentation software.
+* [ ] Microsoft Teams.app - Team collaboration and meetings.
+* [ ] Microsoft Word.app - Word processing tool.
+* [ ] Mission Control.app - Manage open windows/desktops.
+* [ ] MonitorControl.app - Control external monitor settings.
+* [ ] Music.app - Apple music player.
+* [ ] MusicToMusic.app - Likely music conversion/editing tool.
+* [ ] MySQLWorkbench.app - Database design and management tool.
+* [ ] Notes.app - Note-taking app.
+* [ ] Notion.app - All-in-one workspace for notes and tasks.
+* [ ] Numbers.app - Spreadsheet application.
+* [ ] ❌ Obsidian.app - Markdown-based note-taking tool.
+* [ ] Ollama.app - Run local LLMs on your machine.
+* [ ] Pages.app - Word processing and document editor.
+
+* [ ] Passwords.app - Manage saved passwords.
+* [ ] Phone.app - Make/receive calls via Mac.
+* [ ] Photo Booth.app - Take photos using webcam.
+* [ ] Photos.app - Photo library management.
+* [ ] Playlisty for Apple Music.app - Playlist management tool.
+* [ ] ❌ Pluralsight.app - Learning platform for tech skills.
+* [ ] ❌ PocketTube.app - YouTube subscription manager.
+* [ ] Podcasts.app - Listen to podcasts.
+* [ ] Postman.app - API testing and development tool.
+* [ ] Preview.app - View PDFs and images.
+* [ ] ProtonVPN.app - Secure VPN service.
+* [ ] ❌ PyCharm CE.app - Python IDE.
+* [ ] Python 3.10.app - Python runtime environment.
+* [ ] Quick Note.app - Fast note-taking tool.
+* [ ] QuickTime Player.app - Media player.
+
+* [ ] Raindrop.io.app - Bookmark manager.
+* [ ] Rectangle.app - Window management tool.
+* [ ] Reminders.app - Task and reminder manager.
+* [ ] Safari.app - Apple’s web browser.
+* [ ] ScreenBrush.app - Draw on screen during presentations.
+* [ ] Shortcuts.app - Automate tasks with shortcuts.
+* [ ] Siri.app - Voice assistant.
+* [ ] Snagit 2023.app - Screen capture and recording tool.
+* [ ] Spotify.app - Music streaming service.
+* [ ] Stickies.app - Sticky notes on desktop.
+* [ ] Stocks.app - Track stock market data.
+* [ ] Streaks.app - Habit tracking app.
+* [ ] Strides.app - Goal and habit tracking.
+* [ ] Structured.app - Daily planner and scheduler.
+* [ ] Studio 3T.app - MongoDB GUI client.
+
+* [ ] System Settings.app - macOS system configuration.
+* [ ] TextEdit.app - Basic text editor.
+* [ ] Time Machine.app - Backup and restore tool.
+* [ ] Tips.app - macOS tips and tutorials.
+* [ ] Todoist.app - Task management app.
+* [ ] ❌ TV.app - Watch movies and shows.
+* [ ] Ultimate Pen.app - Likely drawing/input tool.
+* [ ] Utilities - Folder with system utilities.
+* [ ] ❌ VLC.app - Media player supporting all formats.
+* [ ] Voice Memos.app - Record audio notes.
+* [ ] Wacom Tablet.app - Manage Wacom tablet settings.
+* [ ] ❌ Weather.app - Weather forecasts.
+* [ ] ❌ Webex.app - Video conferencing tool.
+* [ ] Windsurf.app - Likely development/AI tool.
+* [ ] Xmind.app - Mind mapping software.
+* [ ] ❌ zoom.us.app - Video conferencing platform.
+
+
+
+##############################################
+
+---
+
+=== Dictation
+
+* Fn key 2 times
+
+##############################################
+
+---
+
 === Finder
 
 * Hide/Show Hidden Files
@@ -52,19 +201,6 @@ Navigate in terminal:
 ----
 cd /Users/nareshchaurasia/Documents/project
 ----
-
-##################################################
-
----
-
-
-=== Tags
-
-* Add Tags by dragging the File/Folder to the tag.
-* Cmd + Option + I
-* Finder / Setting / Tags
-** Choose which tags will show on left
-* Select multiple files and apply tags
 
 ##################################################
 
@@ -134,3 +270,17 @@ cd /Users/nareshchaurasia/Documents/project
 * Quit browser completely:
     
 * Command + Q
+
+=== Tags
+
+* Add Tags by dragging the File/Folder to the tag.
+* Cmd + Option + I
+* Finder / Setting / Tags
+** Choose which tags will show on left
+* Select multiple files and apply tags
+
+##################################################
+
+---
+
+

@@ -11,7 +11,7 @@
 * MCP-Anthropic/My-Code/resources/mcp_client_list_tools.py
 ** This is a client script that lists available tools from the MCP server
 
-== Module1
+== ✔️ Module1
 
 === Introducing MCP
 
@@ -99,7 +99,13 @@ image::mcp/mcp2.png[MCP Flow Diagram, 600, 400]
 
 ---
 
-=== #MCP Client#
+=== MCP Client
+
+NOTE: I need to understand usecase, and then implement it. Also understand `main.py`.
+
+##############################################
+
+---
 
 image::mcp/flow-mcp.png[MCP Flow Diagram, 600, 400]
 
@@ -137,7 +143,7 @@ image::mcp/flow-mcp.png[MCP Flow Diagram, 600, 400]
 *** Sent from MCP server to MCP client.
 *** Contains the output produced by the tool.
 
-* End-to-End Example Flow
+* End-to-End Example Flow (#above#)
 
 ** Step 1: User Request
 *** A user sends a query to the application server.
@@ -225,7 +231,7 @@ During today's session covering how the Model Contacts Protocol (MCP) addresses 
 
 ##################################################
 
-== Module 2
+== ✔️ Module 2
 
 === Project Setup
 
@@ -295,9 +301,25 @@ image::mcp/custom-mcp.png[Custom MCP Server Architecture, 800, 600]
 
 === Implementing a client
 
-WARNING: It also has main.py which is pending. Not Relevant.
+[NOTE]
+====
+* Client runs the Server, and fetches the tools from it.
+* This has main.py which is pending. Not sure about it.
 
-[source,bash]
+----
+async def main():
+    async with MCPClient(
+        # If using Python without UV, update command to 'python' and remove "run" from args.
+        command="uv",
+        args=["run", "mcp_server_resource.py"],
+    ) as _client:
+        result = await _client.list_tools()
+        print(result)
+----
+
+====
+
+[source,shell, role="wrap"]
 ----
 (resources) nareshchaurasia@Nareshs-MacBook-Pro resources % pwd
 /Users/nareshchaurasia/nc/Python-TechHub/AI-ML-GenAI/MCP/MCP-Anthropic/My-Code/resources
@@ -406,7 +428,7 @@ WARNING: It also has main.py which is pending. Not Relevant.
 ** Fetch document content on submit
 *** Insert content into prompt before sending to Claude
 
-* #*Why This Approach*#
+* *#Why This Approach#*
 ** Avoid relying on Claude to fetch document data
 ** Provide context upfront in the prompt
 ** Improves response accuracy and control
