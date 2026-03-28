@@ -43,6 +43,7 @@
 * xref:content/content-strategy.adoc[Content Strategy]
 * xref:content/content-creation.adoc[Content Creation]
 * xref:content/canva.adoc[Canva]
+* xref:content/gamma.adoc[Gamma]
 * xref:content/image-processing.adoc[Image Processing]
 * Instagram
 ** xref:content/instagram.adoc[Instagram]
@@ -52,13 +53,12 @@
 
 ##############################################
 
-.💃 Dance
+.🕺 Dance
 * xref:dance/ballet.adoc[Ballet]
+* xref:dance/beast-mode.adoc[Beast Mode]
 * xref:dance/marius-elena.adoc[Marius & Elena]
 * xref:dance/sagar-prerna.adoc[Sagar & Prerna]
 * xref:dance/salsa.adoc[Salsa]
-
-
 
 ##############################################
 

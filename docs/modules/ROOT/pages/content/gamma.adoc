@@ -1,0 +1,6 @@
+= Gamma
+:toc: right
+:toclevels: 5
+:sectnums:
+:sectnumlevels: 5
+
