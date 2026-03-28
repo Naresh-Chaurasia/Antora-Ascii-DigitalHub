@@ -1,3 +1,8 @@
+
+echo "Building Antora site..."
+sleep 1
+npm run build
+
 echo "Adding all files to git staging..."
 sleep 1
 git add .

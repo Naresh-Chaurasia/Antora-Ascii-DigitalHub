@@ -1,3 +1,0 @@
-= Microservices vs Monolith
-
-A short placeholder page comparing microservices and monolithic architectures (complexity, deployment, ownership).

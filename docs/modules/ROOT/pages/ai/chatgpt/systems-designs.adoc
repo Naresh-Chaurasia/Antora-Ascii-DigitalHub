@@ -1,0 +1,7 @@
+= Building Systems with the ChatGPT API
+
+* [ ] Learn to split complex tasks into a pipeline of subtasks using multistage prompts.
+* [ ] Efficiently build multi-step systems using large language models.
+* [ ] Evaluate your LLM inputs and outputs for safety, accuracy, and relevance.
+
+---

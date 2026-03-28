@@ -1,0 +1,84 @@
+= Hands-on Agentic AI: Building Intelligent Agents Specialization
+:toc: right
+:toclevels: 5
+:sectnums: 5
+:sectnumlevels: 5
+
+== MCP - Model Content Protocol (Coursera)
+
+=== M1: The AI Integration Problem: Why MCP Matters
+
+* AI customer service systems require multiple integrations
+  ** CRM, inventory, payments, and support systems must be connected
+  ** Traditional approach uses separate connectors for each system
+  *** Each connector has its own authentication, format, and error handling
+
+* Traditional AI integration is complex and inefficient
+  ** Custom connectors needed for every data source
+  ** Different authentication methods across systems
+  ** Inconsistent data formats and error handling
+  ** Increased security vulnerabilities
+  ** Maintenance effort grows with more integrations
+
+* Real-world problem example
+  ** AI recommendation engine needed data from 12 systems
+  *** Customer data, inventory, pricing, reviews, shipping
+  ** Each integration was built as a custom solution
+  ** Engineering team spent 60% time maintaining connectors
+  ** Competitor delivered faster using a better approach
+
+* AI project challenges in industry
+  ** 70% of AI projects fail to reach production
+  *** Data integration is the primary reason
+  ** Engineers spend ~40% time on connectors instead of AI innovation
+
+* Model Context Protocol (MCP) solves integration problems
+  ** Acts as a universal standard for AI-data connections
+  ** Similar to USB-C for device connectivity
+  ** Standardizes communication between AI systems and data sources
+
+* MCP compared to historical standardization
+  ** Before HTTP → fragmented web communication
+  ** HTTP standardized web protocols
+  *** Enabled growth of the internet
+  ** MCP plays similar role for AI integrations
+
+* Key features of MCP
+  ** One protocol for multiple connections
+  *** Build once, connect to many data sources
+  ** Standardized security model
+  *** Built-in authentication and authorization
+  ** Consistent interaction patterns
+  *** Same way to connect to APIs, databases, file systems
+  ** Open ecosystem
+  *** Community-built connectors for popular services
+
+* Business impact of MCP adoption
+  ** 75% reduction in integration development time
+  ** 60% fewer security vulnerabilities
+  ** Faster connector development (weeks → hours)
+  *** Example: Microsoft Copilot Studio
+
+* Core benefit of MCP
+  ** Reduces focus on integration complexity
+  ** Enables focus on building intelligent AI applications
+  ** Unlocks faster and scalable AI solutions
+
+* Industry adoption and momentum
+  ** Used by companies like Anthropic
+  ** Adopted by Microsoft
+  ** Implemented by Block
+  ** Demonstrates real-world success of standardized AI integration
+
+* Fundamental insight
+  ** AI effectiveness depends on data access
+  ** Fragmented integrations limit AI potential
+  ** Standardization is key to scaling AI systems
+
+* Actionable items
+  ** Evaluate current AI integrations for connector complexity
+  ** Identify systems that can benefit from standardization
+  ** Explore MCP-compatible tools and platforms
+  ** Reduce custom connector development efforts
+  ** Design AI architecture with standardized protocols first
+  ** Focus engineering effort on AI capabilities instead of integrations

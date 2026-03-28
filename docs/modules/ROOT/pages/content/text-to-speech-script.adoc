@@ -1,0 +1,323 @@
+*TONE: Neutral Teaching | Calm | Clear*
+
+Hello everyone, welcome to my course.
+
+Today we are going to learn something very practical and useful.
+
+I will explain everything step by step in a simple way.
+
+Let us begin with a basic question.
+
+What is programming?
+
+Programming is the process of giving instructions to a computer.
+
+Now let me explain this with a simple example.
+
+Imagine you want to cook a meal.
+
+You follow a sequence of steps.
+
+Similarly, a computer follows instructions written in a program.
+
+---
+
+*TONE: Friendly | Slight Smile*
+
+I hope you are enjoying this session so far.
+
+Learning programming can be fun if you approach it the right way.
+
+Do not worry if things feel confusing initially.
+
+That is completely normal.
+
+With practice, everything will become clear.
+
+---
+
+*TONE: Questioning | Curious*
+
+Have you ever wondered how applications are built?
+
+How does a mobile app work?
+
+What happens behind the scenes?
+
+Let us explore this together.
+
+---
+
+*TONE: Emphasis | Slightly Energetic*
+
+This concept is very important.
+
+Make sure you understand this clearly.
+
+You will use this again and again in your journey.
+
+---
+
+*TONE: Slow | Explanation Mode*
+
+Let me explain this step by step.
+
+First, we define a class.
+
+Then we create objects from that class.
+
+Each object has its own data and behavior.
+
+Take your time to understand this.
+
+---
+
+*TONE: Example Storytelling*
+
+Let us take a real-world example.
+
+Imagine a bank account.
+
+Each account has a balance.
+
+You can deposit money.
+
+You can withdraw money.
+
+This is how objects behave in programming.
+
+---
+
+*TONE: Slight Pause | Reflective*
+
+Think about this for a moment.
+
+Does it make sense?
+
+Try to visualize it in your mind.
+
+---
+
+*TONE: Encouraging*
+
+You are doing great so far.
+
+Keep going.
+
+Do not stop here.
+
+Consistency is the key to success.
+
+---
+
+*TONE: Slightly Faster | Summary Mode*
+
+Let us quickly summarize what we have learned.
+
+We discussed programming basics.
+
+We understood objects and classes.
+
+We explored real-world examples.
+
+---
+
+*TONE: Instructional*
+
+Now try this on your own.
+
+Write a simple program.
+
+Experiment with different inputs.
+
+Observe the output carefully.
+
+---
+
+*TONE: Error Handling | Calm*
+
+Sometimes things will not work as expected.
+
+You may see errors.
+
+Do not panic.
+
+Errors are part of learning.
+
+---
+
+*TONE: Motivational*
+
+Every expert was once a beginner.
+
+Keep practicing daily.
+
+Small steps lead to big results.
+
+---
+
+*TONE: Conversational*
+
+Let me ask you something.
+
+Have you tried writing code on your own?
+
+If not, this is the right time to start.
+
+---
+
+*TONE: Slight Laugh / Light*
+
+Do not worry if your code does not work the first time.
+
+It happens to everyone.
+
+Even experienced developers face issues.
+
+---
+
+*TONE: Deep Explanation*
+
+Now let us go deeper into this concept.
+
+We will break it into smaller parts.
+
+Understanding each part is important.
+
+---
+
+*TONE: Confident | Authoritative*
+
+This is a core concept in programming.
+
+You must understand this clearly.
+
+It will help you in advanced topics.
+
+---
+
+*TONE: Pause Between Sentences*
+
+Take a deep breath.
+
+Relax.
+
+Let us continue.
+
+---
+
+*TONE: Teaching | Structured*
+
+Step one: understand the problem.
+
+Step two: plan your solution.
+
+Step three: write the code.
+
+Step four: test your code.
+
+---
+
+*TONE: Real-life Example*
+
+Think about ordering food online.
+
+You select items.
+
+You place an order.
+
+You receive confirmation.
+
+This is similar to how systems work.
+
+---
+
+*TONE: Analytical*
+
+Let us analyze this problem carefully.
+
+What are the inputs?
+
+What is the expected output?
+
+What logic do we need?
+
+---
+
+*TONE: Slight Urgency*
+
+Focus on this part.
+
+This is where most beginners struggle.
+
+Once you understand this, things become easier.
+
+---
+
+*TONE: Calm Ending*
+
+We have covered a lot in this session.
+
+Take some time to revise.
+
+Practice what you have learned.
+
+---
+
+*TONE: Closing | Warm*
+
+Thank you for being part of this session.
+
+I hope you found this helpful.
+
+See you in the next class.
+
+---
+
+*TONE: Variation Practice | Numbers*
+
+One, two, three, four, five.
+
+Six, seven, eight, nine, ten.
+
+---
+
+*TONE: Variation Practice | Mixed Sentences*
+
+Today is a great day to learn something new.
+
+Practice makes perfect.
+
+Stay consistent and keep improving.
+
+---
+
+*TONE: Variation Practice | Questions*
+
+What is your goal?
+
+Why do you want to learn programming?
+
+How will you apply these skills?
+
+---
+
+*TONE: Variation Practice | Commands*
+
+Start now.
+
+Do not delay.
+
+Take action today.
+
+---
+
+*TONE: Variation Practice | Emotional Range*
+
+I am excited to teach you.
+
+I am happy with your progress.
+
+I am proud of your effort.
+
+Keep moving forward.

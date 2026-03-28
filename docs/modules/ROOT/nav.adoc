@@ -1,68 +1,58 @@
-* xref:index.adoc[Home]
+* xref:index.adoc[🏠 Home]
 
-.Getting Started
-* xref:getting-started/antora.adoc[Antora]
-* xref:getting-started/basic-concepts.adoc[Basic Concepts]
-* xref:getting-started/prompts-library.adoc[Prompts Library]
-* xref:getting-started/python.adoc[Python]
-* xref:getting-started/snapshot.adoc[Snapshot]
+.🤖 Artificial Intelligence
+* xref:ai/index.adoc[Overview]
+* xref:ai/TechWizard-MCP.adoc[TechWizard MCP]
+* Agentic AI
+** xref:ai/agenti-ai/agenti-ai-rahul-shetty.adoc[Agentic AI - Rahul Shetty]
+** xref:ai/agenti-ai/agentic-ai2.adoc[Agentic AI 2]
+* ChatGPT
+** xref:ai/chatgpt/index.adoc[ChatGPT]
+** xref:ai/chatgpt/systems-designs.adoc[Building Systems with the ChatGPT API]
+** xref:ai/chatgpt/prompts-engineering-developers.adoc[ChatGPT Prompts for Developers]
+..GenAI
+* xref:ai/genai/genai.adoc[GenAI]
+** xref:ai/genai/sample.adoc[Sample GenAI Page]
+** xref:ai/genai/ai-video-generation.adoc[AI Video Generation]
+* MCP
+** xref:ai/mcp/mcp-anthropic.adoc[MCP - Anthropic]
+** xref:ai/mcp/mcp-agentic-ai.adoc[MCP - Agentic AI]
+** xref:ai/mcp/mcp-flow.adoc[MCP - Flow]
+** xref:ai/mcp/mcp-henry.adoc[MCP - Henry Habib]
+** xref:ai/mcp/mcp-playbook.adoc[MCP - Playbook]
+** xref:ai/mcp/mcp-summary.adoc[MCP - Summary]
+** xref:ai/mcp/mcp-vs-code.adoc[MCP - VS Code]
+** xref:ai/mcp/mcp-whiteboard.adoc[MCP - Whiteboard]
+** xref:ai/mcp/mcp-yash.adoc[MCP - Yash Thakker]
 
-.Content
+##############################################
+
+.🏗️ Architecture and Design
+* xref:architecture-design/index.adoc[Overview]
+
+##############################################
+
+.📚 Books
+* xref:books/steal-artist.adoc[Steal Like An Artist]
+* xref:books/kindle-list.adoc[Kindle List]
+* xref:books/show-your-work.adoc[Show Your Work]
+
+##############################################
+
+.🎥 Content
 * xref:content/content-strategy.adoc[Content Strategy]
 * xref:content/content-creation.adoc[Content Creation]
+* xref:content/canva.adoc[Canva]
 * xref:content/image-processing.adoc[Image Processing]
 * Instagram
 ** xref:content/instagram.adoc[Instagram]
 ** xref:content/instagram-benjamin.adoc[Instagram - Benjamin Wilson]
+* Voice Cloning
+** xref:content/text-to-speech.adoc[Text to Speech]
 
+##############################################
 
-.GenC
-* xref:genc/genc-resources.adoc[GenC Resources]
-* xref:genc/sample.adoc[Sample]
-
-.AI & LLM Engineering
-* xref:ai-llm-engineering/index.adoc[Overview]
-* xref:ai-llm-engineering/TechWizard-MCP.adoc[TechWizard MCP]
-..GenAI
-* xref:ai-llm-engineering/genai/genai.adoc[GenAI]
-** xref:ai-llm-engineering/genai/sample.adoc[Sample GenAI Page]
-** xref:ai-llm-engineering/genai/ai-video-generation.adoc[AI Video Generation]
-* MCP
-** xref:ai-llm-engineering/mcp/mcp-anthropic.adoc[MCP - Anthropic]
-** xref:ai-llm-engineering/mcp/mcp-coursera.adoc[MCP - Coursera]
-** xref:ai-llm-engineering/mcp/mcp-flow.adoc[MCP - Flow]
-** xref:ai-llm-engineering/mcp/mcp-henry.adoc[MCP - Henry Habib]
-** xref:ai-llm-engineering/mcp/mcp-playbook.adoc[MCP - Playbook]
-** xref:ai-llm-engineering/mcp/mcp-summary.adoc[MCP - Summary]
-** xref:ai-llm-engineering/mcp/mcp-vs-code.adoc[MCP - VS Code]
-** xref:ai-llm-engineering/mcp/mcp-whiteboard.adoc[MCP - Whiteboard]
-** xref:ai-llm-engineering/mcp/mcp-yash.adoc[MCP - Yash Thakker]
-* Agentic AI
-** xref:ai-llm-engineering/agenti-ai/agenti-ai-rahul-shetty.adoc[Agentic AI - Rahul Shetty]
-** xref:ai-llm-engineering/agenti-ai/agentic-ai2.adoc[Agentic AI 2]
-
-.Software Architecture
-* xref:software-architecture/index.adoc[Overview]
-* xref:software-architecture/system-design.adoc[System Design]
-* xref:software-architecture/integration-patterns.adoc[Integration Patterns]
-* xref:software-architecture/event-driven-architecture.adoc[Event Driven Architecture]
-* xref:software-architecture/microservices-vs-monolith.adoc[Microservices vs Monolith]
-* xref:software-architecture/enterprise-architecture.adoc[Enterprise Architecture]
-
-.Productivity
-* xref:productivity/ascii-template.adoc[Ascii Template]
-* xref:productivity/chrome.adoc[Chrome]
-* xref:productivity/mac.adoc[Macbook Pro]
-* xref:productivity/note-taking-systems.adoc[Note Taking Systems]
-* xref:productivity/anki-for-learning.adoc[Using Anki for Learning]
-* xref:productivity/visual-studio.adoc[Visual Studio]
-
-.Soft Skills
-* xref:soft-skills/accelerate-your-job-search.adoc[Accelerate Your Job Search]
-* xref:soft-skills/developing-interpersonal.adoc[Developing Interpersonal Skills]
-
-
-.Dance
+.💃 Dance
 * xref:dance/ballet.adoc[Ballet]
 * xref:dance/marius-elena.adoc[Marius & Elena]
 * xref:dance/sagar-prerna.adoc[Sagar & Prerna]
@@ -70,12 +60,44 @@
 
 
 
-.Books
-* xref:books/steal-artist.adoc[Steal Like An Artist]
-* xref:books/index.adoc[Overview]
-* xref:books/technology-books.adoc[Technology Books]
-* xref:books/self-help-books.adoc[Self-Help Books]
-* xref:books/fiction-books.adoc[Fiction Books]
-* xref:books/non-fiction-books.adoc[Non-Fiction Books]
-* xref:books/reading-list.adoc[Reading List]
+##############################################
+
+.🚀 Getting Started
+* xref:getting-started/antora.adoc[Antora]
+* xref:getting-started/basic-concepts.adoc[Basic Concepts]
+* xref:getting-started/prompts-library.adoc[Prompts Library]
+* xref:getting-started/python.adoc[Python]
+* xref:getting-started/snapshot.adoc[Snapshot]
+
+
+##############################################
+
+.👨‍💻 GenC
+* xref:genc/genc-resources.adoc[GenC Resources]
+* xref:genc/sample.adoc[Sample]
+
+##############################################
+
+.💡 Productivity
+* Journal
+** xref:productivity/journal/journal-mar-26.adoc[Journal - Mar 26]
+
+* xref:productivity/ascii-template.adoc[Ascii Template]
+* xref:productivity/chrome.adoc[Chrome]
+* xref:productivity/mac.adoc[Macbook Pro]
+* xref:productivity/note-taking-systems.adoc[Note Taking Systems]
+* xref:productivity/anki-for-learning.adoc[Using Anki for Learning]
+* xref:productivity/visual-studio.adoc[Visual Studio]
+
+##############################################
+
+.🤝 Soft Skills
+* xref:soft-skills/accelerate-your-job-search.adoc[Accelerate Your Job Search]
+* xref:soft-skills/developing-interpersonal.adoc[Developing Interpersonal Skills]
+
+##############################################
+
+
+
+
 

@@ -1,0 +1,449 @@
+= Build Your Own Voice Cloning System (Coqui AI)
+:toc: right
+:toclevels: 5
+:sectnums: 5
+:sectnumlevels: 5
+
+== Overview
+
+This guide walks you step-by-step to build a **Text-to-Speech system using your own cloned voice**.
+
+You will:
+
+* Record your voice dataset
+* Prepare training data
+* Train a voice model using Coqui TTS
+* Generate speech from text
+* Build a simple API around it
+
+---
+
+== Prerequisites
+
+*Basic Requirements*
+
+* Python 3.9 – 3.11
+* Mac / Linux (Mac M1/M2 works)
+* 16GB RAM (recommended)
+* GPU (optional but highly recommended for faster training)
+
+##############################################
+
+---
+
+== High-Level Architecture
+
+* Text Input → Voice Model → Audio Output
+* Extended pipeline: Dataset → Preprocessing → Training → Model → Inference → API → Video
+
+
+##############################################
+
+---
+
+== Step 1: Record Your Voice Dataset
+
+This is the *most critical step*.
+
+*Recording Guidelines*
+
+* Quiet room (no fan, AC noise)
+* Same microphone throughout
+* Speak naturally (teaching tone)
+* Avoid background noise
+* Maintain consistent distance from mic
+
+*Duration*
+
+* Minimum: 30 minutes
+* Recommended: 60–90 minutes
+
+---
+
+*What to Record*
+
+Include variety:
+
+* Statements
+* Questions
+* Explanations
+* Emotional variations
+
+Example:
+
+
+.TTS Script
+[%collapsible]
+====
+
+include::text-to-speech-script.adoc[]
+
+====
+
+
+
+##############################################
+
+---
+
+---
+
+*File Format*
+
+* Format: WAV
+* Bit depth: 16-bit
+* Sample rate: 22050 Hz or 44100 Hz
+
+---
+
+*File Naming*
+
+```
+audio_001.wav
+audio_002.wav
+audio_003.wav
+```
+
+##############################################
+
+---
+
+== Step 2: Create Metadata File
+
+Create a file named `metadata.txt`:
+
+Format:
+
+```
+audio_001|Hello everyone, welcome to my Java course
+audio_002|Today we will learn inheritance
+audio_003|What is polymorphism
+```
+
+*Important Rules*
+
+* Exact match between audio and text
+* No spelling mistakes
+* Use simple punctuation
+
+---
+
+##############################################
+
+---
+
+== Step 3: Setup Environment
+
+*Create Virtual Environment*
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+---
+
+*Install Coqui TTS*
+
+```bash
+pip install TTS
+```
+
+---
+
+*Verify Installation*
+
+```bash
+tts --help
+```
+
+---
+
+##############################################
+
+---
+
+== Step 4: Test Pretrained Model (Sanity Check)
+
+Before training, verify setup:
+
+```bash
+tts --text "Hello this is a test" \
+--model_name tts_models/en/ljspeech/tacotron2-DDC \
+--out_path test.wav
+```
+
+Play `test.wav`
+
+---
+
+##############################################
+
+---
+
+== Step 5: Dataset Preparation Structure
+
+Organize like this:
+
+```
+dataset/
+├── wavs/
+│    ├── audio_001.wav
+│    ├── audio_002.wav
+│
+├── metadata.txt
+```
+
+---
+
+
+##############################################
+
+---
+
+== Step 6: Choose Model (Recommended)
+
+Use pretrained multilingual model:
+
+tts_models/multilingual/multi-dataset/xtts_v2
+
+Why:
+
+* Supports voice cloning
+* Good quality
+* Less training time
+
+---
+
+##############################################
+
+---
+
+== Step 7: Training / Fine-Tuning
+
+=== Basic Command
+
+```bash
+tts --model_name tts_models/multilingual/multi-dataset/xtts_v2 \
+--data_path ./dataset \
+--output_path ./output
+```
+
+---
+
+=== What Happens
+
+* Loads pretrained model
+* Learns your voice patterns
+* Saves trained model
+
+---
+
+=== Training Time
+
+* CPU: Very slow (not recommended)
+* GPU: 2–10 hours depending on dataset
+
+---
+
+##############################################
+
+---
+
+== Step 8: Model Output
+
+After training:
+
+```
+output/
+├── config.json
+├── model.pth
+├── speakers.json
+```
+
+---
+
+##############################################
+
+---
+
+== Step 9: Generate Speech (Inference)
+
+```bash
+tts --text "Welcome to my course" \
+--model_path ./output/model.pth \
+--config_path ./output/config.json \
+--out_path output.wav
+```
+
+---
+
+##############################################
+
+---
+
+== Step 10: Build API (Optional but Recommended)
+
+=== Python FastAPI Example
+
+```python
+from fastapi import FastAPI
+import os
+
+app = FastAPI()
+
+@app.get("/speak")
+def speak(text: str):
+    os.system(f'tts --text "{text}" --model_path ./output/model.pth --out_path output.wav')
+    return {"status": "generated"}
+```
+
+Run:
+
+```bash
+uvicorn main:app --reload
+```
+
+---
+
+##############################################
+
+---
+
+== Step 11: Integrate with Java (Your Stack)
+
+=== Flow
+
+* Spring Boot → REST call → Python service
+* Python service → generate audio
+* Return audio file
+
+---
+
+##############################################
+
+---
+
+== Step 12: Convert Audio to Video
+
+Use FFmpeg:
+
+```bash
+ffmpeg -loop 1 -i image.png -i output.wav \
+-c:v libx264 -t 30 -pix_fmt yuv420p output.mp4
+```
+
+---
+
+
+##############################################
+
+---
+
+== Step 13: Optimization Tips
+
+* Normalize audio levels
+* Remove silence from recordings
+* Use consistent tone
+* Add more data for better quality
+
+---
+
+##############################################
+
+---
+
+== Common Problems
+
+=== Robotic Voice
+
+* Dataset too small
+* Poor recording quality
+
+=== Wrong Pronunciation
+
+* Incorrect metadata
+* Spelling errors
+
+=== Training Failure
+
+* GPU not configured
+* Wrong file paths
+
+---
+
+##############################################
+
+---
+
+== Hardware Recommendations
+
+* Minimum: CPU + 16GB RAM
+* Recommended: NVIDIA GPU (8GB+ VRAM)
+
+---
+
+##############################################
+
+---
+
+== Security Considerations
+
+* Store model securely
+* Do not expose public API without auth
+* Treat voice model as sensitive asset
+
+---
+
+##############################################
+
+---
+
+== Roadmap (Suggested Approach)
+
+*Phase 1*
+
+* Setup environment
+* Test pretrained model
+
+*Phase 2*
+
+* Record dataset
+
+*Phase 3*
+
+* Train model
+
+*Phase 4*
+
+* Build API
+
+*Phase 5*
+
+* Integrate with video pipeline
+
+---
+
+== Final Thoughts
+
+* Dataset quality > everything else
+* Start simple, then improve
+* Treat this as a product, not just experiment
+
+---
+
+
+##############################################
+
+---
+
+== Next Steps
+
+You can extend this into:
+
+* Automated course generation
+* AI teaching assistant
+* YouTube content pipeline
+* Personalized learning voice system
+
+---

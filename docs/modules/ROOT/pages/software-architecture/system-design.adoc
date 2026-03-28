@@ -1,3 +1,0 @@
-= System Design
-
-A short placeholder page for system design fundamentals (requirements, constraints, scaling, trade-offs).

@@ -27,6 +27,11 @@ asciidoc:
     sectnumlevels: 5
     toc: right
     toclevels: 5
+
+    # ADD THIS
+    source-highlighter: highlight.js
+    highlightjs-theme: github
+
   extensions:
     - ./extensions/reel-extension.js
 

@@ -4,12 +4,20 @@
 :sectnums: 5
 :sectnumlevels: 5
 
-== POCs
 
-* MCP-Anthropic/My-Code/read-write/mcp_server_rw_documents.py
-** This is the main MCP server file that implements read-write document operations
-* MCP-Anthropic/My-Code/resources/mcp_client_list_tools.py
-** This is a client script that lists available tools from the MCP server
+[NOTE]
+====
+* Author: Stephen Grider
+
+* About this Course: In this course, you'll discover how to build powerful AI applications using the Model Context Protocol, a revolutionary approach that eliminates tedious integration code when connecting Claude to external services and data sources. This course takes you from understanding MCP's core architecture to building fully functional MCP servers and clients that can interact with real-world systems.
+
+* You'll learn the three essential MCP primitives - tools, resources, and prompts - and understand when to use each one. Through hands-on implementation, you'll create your own MCP server with the Python SDK, defining tools that Claude can call autonomously, resources that provide data to your applications, and prompts that deliver professionally crafted workflows to end users.
+
+* By building both client and server components, you'll gain complete insight into how MCP enables seamless communication between AI models and external services. You'll work with the MCP Inspector to test your implementations, understand transport protocols, and see exactly how messages flow through the entire system. Whether you're building GitHub integrations, document management systems, or custom AI workflows, this course gives you the practical skills to leverage MCP's standardized approach and dramatically reduce your development burden.
+====
+
+##############################################
+
 
 == ✔️ Module1
 
@@ -101,7 +109,10 @@ image::mcp/mcp2.png[MCP Flow Diagram, 600, 400]
 
 === MCP Client
 
-NOTE: I need to understand usecase, and then implement it. Also understand `main.py`.
+[NOTE]
+====
+* I need to understand usecase, and then implement it. Also understand `main.py`. It is used for CLI. I will come back to this in future.
+====
 
 ##############################################
 
@@ -304,28 +315,22 @@ image::mcp/custom-mcp.png[Custom MCP Server Architecture, 800, 600]
 [NOTE]
 ====
 * Client runs the Server, and fetches the tools from it.
-* This has main.py which is pending. Not sure about it.
-
-----
-async def main():
-    async with MCPClient(
-        # If using Python without UV, update command to 'python' and remove "run" from args.
-        command="uv",
-        args=["run", "mcp_server_resource.py"],
-    ) as _client:
-        result = await _client.list_tools()
-        print(result)
-----
-
+* ⚠️ main.py: This file is the main entry point for an MCP (Model Context Protocol) client application. It initializes and runs a CLI-based chat interface that connects to Claude AI and manages multiple MCP server connections. The file handles environment setup, creates MCP clients for different server scripts, and launches the interactive chat application
 ====
+
+
 
 [source,shell, role="wrap"]
 ----
 (resources) nareshchaurasia@Nareshs-MacBook-Pro resources % pwd
 /Users/nareshchaurasia/nc/Python-TechHub/AI-ML-GenAI/MCP/MCP-Anthropic/My-Code/resources
 
-(resources) nareshchaurasia@Nareshs-MacBook-Pro resources % uv run mcp_client.py     
+(resources) nareshchaurasia@Nareshs-MacBook-Pro resources % uv run mcp_client.py  
+
+# Here there is mention about Claude also
+(resources) nareshchaurasia@Nareshs-MacBook-Pro resources % mcp uv run main.py  
 ----
+
 
 * MCP client purpose and role
   ** Acts as a bridge between application code and MCP server
@@ -412,6 +417,20 @@ async def main():
 
 === Defining resources
 
+
+[source,shell, role="wrap"]
+----
+(resources) nareshchaurasia@Nareshs-MacBook-Pro resources % pwd
+/Users/nareshchaurasia/nc/Python-TechHub/AI-ML-GenAI/MCP/MCP-Anthropic/My-Code/resources
+
+(resources) nareshchaurasia@Nareshs-MacBook-Pro resources % uv run mcp_client.py  
+
+# Here there is mention about Claude also
+(resources) nareshchaurasia@Nareshs-MacBook-Pro resources % mcp uv run main.py  
+
+(resources) nareshchaurasia@Nareshs-MacBook-Pro resources % mcp uv run mcp_server_resource.py  
+----
+
 * *MCP Resources Concept*
 ** Resources expose data from MCP server to client
 ** Used for read operations
@@ -439,7 +458,7 @@ async def main():
 *** Example: `docs://documents`
 ** Templated Resources
 *** Dynamic URI with parameters
-*** Example: `docs://documents/{doc_id}`
+*** Example: `docs://documents/\{doc_id\}`
 *** Parameters passed as function arguments
 
 * *Resource Flow*
@@ -459,7 +478,7 @@ async def main():
 *** Used for autocomplete
 
 ** Resource 2: Fetch Document
-*** URI: `docs://documents/{doc_id}`
+*** URI: `docs://documents/\{doc_id\}`
 *** MIME type: `text/plain`
 *** Returns document content
 *** Validates document existence
@@ -519,7 +538,7 @@ async def main():
 
 *Question 2*
 
-*In a templated resource with URI "docs://documents/{doc_id}", how are the parameters passed to the function?*
+*In a templated resource with URI "docs://documents/\{doc_id\}", how are the parameters passed to the function?*
 
 - Through environment variables
 - As keyword arguments automatically parsed by the Python SDK
@@ -642,6 +661,17 @@ async def main():
 ---
 
 
+== POCs
+
+* MCP-Anthropic/My-Code/read-write/mcp_server_rw_documents.py
+** This is the main MCP server file that implements read-write document operations
+* MCP-Anthropic/My-Code/resources/mcp_client_list_tools.py
+** This is a client script that lists available tools from the MCP server
+
+
+##############################################
+
+---
 
 
 == Course Resources / Materials
