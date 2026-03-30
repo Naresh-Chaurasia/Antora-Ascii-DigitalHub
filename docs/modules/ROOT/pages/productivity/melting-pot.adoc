@@ -1,0 +1,17 @@
+= Melting Pot
+
+
+== Books
+
+[cols="1,1"]
+|===
+| Simple | Demanding
+
+a|
+- Bar
+- Baz
+
+a|
+- Bar
+- Baz
+|===

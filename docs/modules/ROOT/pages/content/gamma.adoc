@@ -4,3 +4,62 @@
 :sectnums:
 :sectnumlevels: 5
 
+
+
+
+video::r9VOYJM6nZc[youtube, width=800, height=450, caption="Video"]
+
+---
+
+[NOTE]
+====
+* Let's change look and feel.
+* Are there better ways to visualise this.
+* Turn this into table and format.
+
+====
+
+##############################################
+
+---
+
+video::Lruw3yQeZDc[youtube, width=800, height=450, caption="Video"]
+
+---
+
+[NOTE]
+====
+* Gamma Agents 
+* Recreate this table to match my deck design. I can attach a pic containing table.
+* APIs
+====
+
+##############################################
+
+---
+
+video::xGn2whCNObM[youtube, width=800, height=450, caption="Video"]
+
+---
+
+
+##############################################
+
+---
+
+video::5IdmTaR2AMg[youtube, width=800, height=450, caption="Video"]
+
+---
+
+##############################################
+
+---
+
+video::5CrK7ytrRJk[youtube, width=800, height=450, caption="Video"]
+
+---
+
+
+
+
+

@@ -1,3 +1,0 @@
-= Note Taking Systems
-
-A short placeholder page for note-taking systems (capture, organize, review, retrieval).

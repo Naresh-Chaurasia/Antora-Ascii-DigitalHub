@@ -34,6 +34,7 @@
 
 .📚 Books
 * xref:books/steal-artist.adoc[Steal Like An Artist]
+* xref:books/good-vibe.adoc[Good Vibe Good Life]
 * xref:books/kindle-list.adoc[Kindle List]
 * xref:books/show-your-work.adoc[Show Your Work]
 
@@ -56,6 +57,7 @@
 .🕺 Dance
 * xref:dance/ballet.adoc[Ballet]
 * xref:dance/beast-mode.adoc[Beast Mode]
+* xref:dance/gidc-salsa.adoc[GIDC Salsa]
 * xref:dance/marius-elena.adoc[Marius & Elena]
 * xref:dance/sagar-prerna.adoc[Sagar & Prerna]
 * xref:dance/salsa.adoc[Salsa]
@@ -85,7 +87,7 @@
 * xref:productivity/ascii-template.adoc[Ascii Template]
 * xref:productivity/chrome.adoc[Chrome]
 * xref:productivity/mac.adoc[Macbook Pro]
-* xref:productivity/note-taking-systems.adoc[Note Taking Systems]
+* xref:productivity/melting-pot.adoc[Melting Pot]
 * xref:productivity/anki-for-learning.adoc[Using Anki for Learning]
 * xref:productivity/visual-studio.adoc[Visual Studio]
 
