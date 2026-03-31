@@ -410,7 +410,8 @@ to technical and non-technical stakeholders.
 
 [NOTE]
 ====
-* This has also been converted to deck.
+* It was dicussion with BOT.
+* This has also been converted to deck (MCP Architecture and Security - v1.0).
 ====
 
 * MCP Architecture and Security
@@ -479,6 +480,13 @@ to technical and non-technical stakeholders.
 ##############################################
 
 ---
+
+
+##############################################
+
+---
+
+== Module 2: Implementing MCP Specification
 
 === M2: MCP Core Components: Resources, Tools, and Protocols
 
@@ -560,3 +568,117 @@ to technical and non-technical stakeholders.
   ** Design workflows combining resources, tools, and prompts
   ** Test integration using real-world scenarios
   ** Iterate for performance, security, and accuracy
+
+
+##############################################
+
+---
+
+=== M2: MCP Specification Deep Dive: Protocol Implementation Patterns
+
+* MCP implementation bridges theory and practice
+  ** Specifications look simple initially
+  ** Real-world implementation reveals complexity
+  ** Success depends on understanding patterns and nuances
+
+* *#Key MCP specification concepts#*
+  ** JSON schemas define structure and behavior
+  ** Resource URIs identify data endpoints
+  ** Capability negotiation aligns client and server features
+  ** Authentication and error handling ensure reliability
+
+* Resources in MCP follow structured JSON schemas
+  ** Represent readable data for the agent
+  ** Defined using a consistent schema format
+  *** URI as unique identifier
+  *** Metadata for context
+  **** Name
+  **** Description
+  **** Data format (e.g., application/json)
+  *** Schema defines data structure
+  **** Enables reliable parsing
+  **** Ensures consistent data usage
+  ** Example
+  *** customer or active-accounts as resource URIs
+
+* Tools in MCP use structured definitions
+  ** Represent actions the agent can perform
+  ** Defined similarly to JSON-RPC methods
+  ** Key components
+  *** Name of the tool
+  *** Description for usage context
+  *** Input schema
+  **** Defines required parameters
+  **** Enforces mandatory fields
+  ** Example
+  *** create-support-ticket with inputs like customerId and description
+
+* Importance of JSON schema standardization
+  ** Removes ambiguity in interactions
+  ** Creates machine-readable contracts
+  ** Enables predictable and scalable AI behavior
+  ** Supports multi-agent system integration
+
+* Resource URIs as API design surface
+  ** Act as access points for AI systems
+  ** Must be intuitive and consistent
+  ** Should support future scalability
+  ** Poor design leads to long-term limitations
+
+* MCP error handling patterns
+  ** Defined error codes and response formats
+  ** Must handle different failure scenarios
+  *** Network failures
+  *** Authentication errors
+  *** Data validation issues
+  ** Critical for production stability
+
+* Authentication in MCP
+  ** Supports multiple methods
+  *** API keys
+  *** OAuth
+  *** Custom authentication
+  ** Defines how credentials are passed and validated
+  ** Common source of implementation issues
+
+* Capability negotiation
+  ** Happens during client-server connection
+  ** Aligns supported features
+  ** Enables graceful degradation
+  *** System continues working with limited capabilities
+
+* Implementation best practices
+  ** Start simple to reduce complexity
+  *** Begin with read-only resources
+  *** Validate architecture early
+  ** Incrementally add features
+  *** Introduce tools after resources are stable
+  ** Design for scalability from the start
+  *** Resource URIs and tool names define API surface
+  ** Prioritize robustness
+  *** Strong error handling
+  *** Thorough authentication testing
+
+* Recommended implementation flow
+  ** Define resource schemas
+  ** Implement basic resource access
+  ** Add tool capabilities gradually
+  ** Test authentication and error handling
+  ** Optimize for performance and scalability
+
+* Key takeaways
+  ** MCP specifications provide structured blueprints
+  ** JSON schemas ensure consistency and clarity
+  ** Resource URIs act as AI-facing APIs
+  ** Capability negotiation improves flexibility
+  ** Incremental development leads to stable systems
+
+* Actionable items
+  ** Design and document resource schemas clearly
+  ** Create intuitive and scalable resource URIs
+  ** Define tool contracts with strict input validation
+  ** Implement standardized error handling across all components
+  ** Choose appropriate authentication method and test thoroughly
+  ** Start with read-only implementations before adding actions
+  ** Validate system behavior with real-world scenarios
+  ** Plan for scalability and future feature expansion

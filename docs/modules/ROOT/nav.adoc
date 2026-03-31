@@ -6,11 +6,13 @@
 * Agentic AI
 ** xref:ai/agenti-ai/agenti-ai-rahul-shetty.adoc[Agentic AI - Rahul Shetty]
 ** xref:ai/agenti-ai/agentic-ai2.adoc[Agentic AI 2]
+* Content
+** xref:ai/content/ai-content-google.adoc[AI Content - Google]
 * ChatGPT
 ** xref:ai/chatgpt/index.adoc[ChatGPT]
 ** xref:ai/chatgpt/systems-designs.adoc[Building Systems with the ChatGPT API]
 ** xref:ai/chatgpt/prompts-engineering-developers.adoc[ChatGPT Prompts for Developers]
-..GenAI
+* GenAI
 * xref:ai/genai/genai.adoc[GenAI]
 ** xref:ai/genai/sample.adoc[Sample GenAI Page]
 ** xref:ai/genai/ai-video-generation.adoc[AI Video Generation]
@@ -55,6 +57,7 @@
 ##############################################
 
 .🕺 Dance
+* xref:dance/awpra.adoc[AwPra]
 * xref:dance/ballet.adoc[Ballet]
 * xref:dance/beast-mode.adoc[Beast Mode]
 * xref:dance/basi-deisy.adoc[Basi Y Deisy]
