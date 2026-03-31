@@ -5,5 +5,18 @@
 :sectnums:
 :sectnumlevels: 5
 
+
+[NOTE]
+====
+* Use the Tags.
+====
+
+== Cloud
+
 * https://github.com/Naresh-Chaurasia/GenC-KnowledgeHub[GenC Knowledge Hub]
 * https://github.com/Naresh-Chaurasia/GenC-TechHub[GenC Tech Hub]
+
+== Local
+
+* /Users/nareshchaurasia/nc/GenC/GenC-TechHub
+* /Users/nareshchaurasia/nc/GenC/GenC-KnowledgeHub

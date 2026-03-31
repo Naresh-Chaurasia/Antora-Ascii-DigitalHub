@@ -5,7 +5,63 @@
 :sectnumlevels: 5
 
 
+> Workflow: Voice to Text => Use LLM to Convert to Bullet Points => Go Over the Video
 
+##############################################
+
+---
+
+== Working with Images
+
+video::5CrK7ytrRJk[youtube, width=800, height=450, caption="Video"]
+
+.Video Summary
+[%collapsible]
+====
+
+* [x] #Upload# images from your device (photos, logos, branded visuals)
+* [x] Paste an image #URL# to import images instantly
+* [x] Use #built-in web search# to find images without leaving Gamma
+* [x] Filter web images by license type
+* [ ] Generate #AI images# by describing what you want
+* [ ] Choose style, aspect ratio, and AI model for generated images
+* [ ] Access free, high-quality stock photos from #Unsplash# within Gamma
+* [ ] Add #GIFs# from Gamma’s built-in GIF library to make content dynamic
+* [ ] Use #pictographic#, hand-drawn style illustrations for a creative touch
+* [ ] Search and add #icons# to emphasize points or explain concepts
+* [ ] Use #accent images# to match your theme and fill design spaces
+* [ ] Manage accent images directly from the theme editor
+* [ ] Generate and insert #QR codes# to link to external resources
+* [ ] Add images while generating a new Gamma by selecting image sources in the prompt editor
+* [ ] Gamma automatically suggests and places relevant visuals during creation
+* [ ] Add images to an existing Gamma using the image icon in the insert menu
+
+* [ ] Drag and drop images directly into cards
+
+* [ ] Crop images to focus on important areas
+
+* [ ] Adjust image fit for better layout inside cards
+
+* [ ] Set focus points so images look good on all devices
+
+* [ ] Apply predefined styles to AI images (realistic, artistic, or custom)
+
+* [ ] Use AI-powered editing features like background removal, upscaling, vectorizing, and animation
+
+* [ ] Modify images using natural language (change colors, add/remove elements, refine details)
+
+* [ ] Gamma enables quick, flexible image editing without advanced design skills
+
+* [ ] Users can start for free at gamma.app to create visually rich content
+
+====
+
+
+
+
+##############################################
+
+---
 
 video::r9VOYJM6nZc[youtube, width=800, height=450, caption="Video"]
 
@@ -58,6 +114,54 @@ video::5IdmTaR2AMg[youtube, width=800, height=450, caption="Video"]
 video::5CrK7ytrRJk[youtube, width=800, height=450, caption="Video"]
 
 ---
+
+##############################################
+
+---
+
+== Images
+
+
+* https://help.gamma.app/en/articles/11047176-how-do-i-generate-images-with-ai-in-gamma
+
+---
+
+##############################################
+
+* [ ] link:https://www.youtube.com/watch?v=QOQiN9Kw23Q[Editing content with AI]
+
+* *AI-Powered Content Expansion*
+* [ ] Use `++` to automatically extend or elaborate text.
+* [ ] Repeating `++` continues increasing the content length.
+* *Each card includes a sparkle icon offering*
+* [ ] *Make more specific* [ ] – adds clarity and detail.
+* [ ] *Translate* [ ] – converts content to another language.
+* [ ] *Make this more visual* [ ] – restructures into visual columns and adds images.
+* [ ] *Try a different layout* [ ] – suggests alternate card formats.
+* [ ] Revert to the original version.
+* [ ] Accept changes via the checkmark.
+* [ ] Provide feedback with thumbs up or down.
+* *Gamma Pro – #Edit All Cards at Once#*
+* [ ] Translate the entire deck in one action.
+* [ ] Accept all AI changes or revert all at once.
+* [ ] Perform bulk operations, such as removing images from multiple cards.
+* *Generating New Cards with AI*
+* [ ] Insert new cards using the sparkle icon between cards.
+* [ ] Describe what you want, then choose a template or let *Magic* [ ] decide.
+* [ ] Further refine manually or using AI.
+
+---
+
+##############################################
+
+
+
+
+
+---
+
+##############################################
+
 
 
 

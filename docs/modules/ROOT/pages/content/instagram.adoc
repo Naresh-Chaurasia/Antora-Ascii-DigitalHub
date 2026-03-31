@@ -4,6 +4,129 @@
 :sectnums:
 :sectnumlevels: 5
 
+> Till Date, I have never gone back to anaylse the old video. Now, put all files in a folder, generate using ffmpeg. Later,Think Worflow.
+
+== Reels
+
+=== Steal Like An Artist
+
+.Instagram Post
+[%collapsible]
+====
+
+[source,asciidoc, role="wrap"]
+----
+
+📖 Steal Like An Artist
+
+@steal.likeanartist @austinkleon 
+
+If I’d waited to figure out who I was before starting,
+I’d still be waiting… instead of creating.
+
+We discover ourselves *through action*, not before it.
+
+This hit me because it got me working.
+
+Consistency > Motivation
+
+What do you think?
+
+
+#steallikeanartist #austinkleon 
+#bookthoughts #dailywisdom #selfgrowth #mindsetshift #personaldevelopment
+#growthmindset #learnsomethingnew #reelsindia #contentcreator #explorepage 
+
+----
+
+====
+
+
+##############################################
+
+---
+
+.generate_video.sh
+[%collapsible]
+====
+
+* /Users/nareshchaurasia/nc/Content-Creation/ffmpeg/Instagram-1/generate_video.sh
+
+[source,asciidoc, role="wrap"]
+----
+ffmpeg -loop 1 -i ./media/input.png -i music.mp3 -t 30 \
+-vf "scale=1080:1920:force_original_aspect_ratio=decrease,pad=1080:1920:(ow-iw)/2:(oh-ih)/2" \
+-c:v libx264 -profile:v high -level 4.0 -pix_fmt yuv420p -r 30 \
+-c:a aac -b:a 192k -ar 44100 \
+./media/reel_$(date +%Y%m%d_%H%M%S).mp4
+----
+
+====
+
+##############################################
+
+---
+
+.Workflow
+[%collapsible]
+====
+
+* *Workflow*: Gamma, Export, FFmpeg, Upload using Airdrop, and Reel It.
+
+*Goal*
+
+* Automate book quote → Instagram reel creation with minimal manual steps
+
+*Current Flow*
+
+* Extract quote from book
+* Create image in Gamma
+* Export image
+* Use FFmpeg to create video with MP3
+* AirDrop to iPhone
+* Upload as Reel/Story
+
+*Optimized Flow*
+
+* Store quotes in JSON/text file
+* Auto-generate quote image using script (template-based)
+* Auto-create video using FFmpeg (image + audio)
+* Save output to iCloud folder (auto sync to iPhone)
+* Auto-generate caption + hashtags
+* Post manually from iPhone (final step only)
+
+*Automation Scope*
+
+* Image generation → Fully automated
+* Video creation → Fully automated
+* File transfer → Automated via iCloud sync
+* Caption + hashtags → Automated
+* Posting → Manual (or API-based advanced setup)
+
+*End State*
+
+* Input: quotes.json
+* Output: ready-to-post reel + caption
+* Manual work: only posting from phone
+
+*Next Step Prompt (reuse later)*
+
+* "Help me continue building my quote-to-reel automation pipeline using Python, FFmpeg, and JSON input. Start from image generation step and guide step-by-step."
+
+*Optional Enhancements*
+
+* Add AI voice narration
+* Add zoom/animation effects in video
+* Batch generate multiple reels
+* Schedule posts using tools like Buffer/Later
+
+
+====
+
+
+##############################################
+
+
 
 == Skin Care
 

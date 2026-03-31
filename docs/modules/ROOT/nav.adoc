@@ -57,6 +57,8 @@
 .🕺 Dance
 * xref:dance/ballet.adoc[Ballet]
 * xref:dance/beast-mode.adoc[Beast Mode]
+* xref:dance/basi-deisy.adoc[Basi Y Deisy]
+* xref:dance/daniel-rosas.adoc[Daniel Rosas]
 * xref:dance/gidc-salsa.adoc[GIDC Salsa]
 * xref:dance/marius-elena.adoc[Marius & Elena]
 * xref:dance/sagar-prerna.adoc[Sagar & Prerna]

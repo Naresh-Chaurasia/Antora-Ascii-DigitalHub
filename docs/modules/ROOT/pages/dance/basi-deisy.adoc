@@ -1,0 +1,21 @@
+= Basi Y Deisy
+:toc: right
+:toclevels: 5
+:sectnums: 5
+:sectnumlevels: 5
+
+== Shines
+
+video::5CrK7ytrRJk[youtube, width=800, height=450, caption="Video"]
+
+---
+
+* [ ] Basic
+* [ ] Basic with Flair
+* [ ] Suzi Q
+* [ ] Tap Tap Tap and Shimmy
+* [ ] Right Tune | *Styling*
+
+##############################################
+
+---

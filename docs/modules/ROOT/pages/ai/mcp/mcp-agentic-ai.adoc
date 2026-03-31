@@ -401,3 +401,162 @@ or hybrid strategy)
 
 *Submission Guidelines*: Submit your evaluation report as a PDF, Word document, or structured outline. The report should be 800-1200 words and suitable for presentation
 to technical and non-technical stakeholders.
+
+##############################################
+
+---
+
+=== M1: Reflecting on Your MCP Evaluation Analysis
+
+[NOTE]
+====
+* This has also been converted to deck.
+====
+
+* MCP Architecture and Security
+** Understanding Structure and Safe AI Integration
+
+* What is MCP Architecture?
+- MCP provides a standardized way for AI systems to connect with tools and data
+- It enables structured, scalable, and reusable integrations
+- Promotes modular design instead of tightly coupled systems
+
+* Core Components of MCP
+- MCP Host: The AI application that needs data or actions
+- MCP Client: Acts as a bridge, sending structured requests
+- MCP Servers: Expose tools, APIs, databases, or services
+- Context Layer: Standard format for communication and data exchange
+
+* How MCP Works
+- The host initiates a request
+- The client converts it into MCP format
+- MCP servers process the request and return results
+- The response is unified into a consistent context
+
+* Architecture Flow
+- Host → Client → MCP Servers → Unified Context
+
+* Why Security Matters in MCP
+- AI systems interact with critical business systems
+- Uncontrolled access can expose sensitive data
+- Security must be built into the integration layer
+
+* Scoped Access Control
+- Each MCP server exposes only specific capabilities
+- Limits unnecessary or excessive access
+- Reduces the attack surface
+
+* Authentication & Authorization
+- Ensures only verified systems can access resources
+- Controls what each system is allowed to do
+- Protects sensitive operations and data
+
+* Service Isolation
+- Each MCP server operates independently
+- Failure or breach in one does not affect others
+- Improves resilience and containment
+
+* Auditability
+- All interactions follow a structured format
+- Easy to log, monitor, and trace actions
+- Supports compliance and debugging
+
+* Data Minimization
+- Only required data is shared per request
+- Avoids unnecessary data exposure
+- Enhances privacy and security
+
+* Policy Enforcement
+- Centralized control over access rules
+- Defines who can access what and when
+- Enables governance and compliance
+
+* Key Takeaway
+- MCP enables modular, secure, and scalable AI integration
+- Encourages controlled access and strong governance
+- A better approach than ad-hoc integrations
+
+##############################################
+
+---
+
+=== M2: MCP Core Components: Resources, Tools, and Protocols
+
+* MCP enables rapid AI integration
+  ** Traditional integration takes weeks
+  ** MCP-based integration can take hours
+  ** Speed comes from standardized components
+
+* MCP is built on three core components
+  ** Resources
+  ** Tools
+  ** Prompts
+
+* Resources represent data access
+  ** Similar to files in a file system
+  ** *Provide structured access to data*
+  ** Avoid exposing entire databases
+  *** Use schemas to define structure and access
+  *** Allow filtering and contextual data retrieval (contextually relevan data)
+  ** Example
+  *** Customer data exposed as structured resources instead of raw tables
+
+* Tools enable actions
+  ** Functions that AI can execute
+  ** Go beyond read-only operations
+  ** Allow interaction with external systems
+  *** Create records
+  *** Update data
+  *** Trigger workflows
+  ** Defined by clear contracts
+  *** Inputs
+  *** Outputs
+  *** Error handling
+  ** Example
+  *** Create support ticket
+  *** Update customer record
+  *** Generate invoice
+
+* Prompts provide intelligence and context
+  ** Reusable prompt templates
+  ** Guide AI behavior for specific tasks
+  ** Act like embedded domain experts
+  ** Ensure consistent and accurate responses
+
+* How components work together
+  ** Resources provide data context
+  ** Tools perform actions on that data
+  ** Prompts guide decision-making and responses
+  ** Combined effect
+  *** Seamless AI-driven workflows
+  *** Reduced need for custom integration logic
+
+* Real-world integration example
+  ** AI assistant handling customer issue
+  *** Uses resources to fetch customer history
+  *** Uses tools to update records or create tasks
+  *** Uses prompts to generate contextual responses
+  ** Outcome
+  *** Single standardized interaction replaces multiple API calls
+
+* Benefits of MCP design
+  ** Simplifies integration architecture
+  ** Reduces development time
+  ** Improves consistency across systems
+  ** Enables scalable AI interactions
+
+* *#Key takeaways#*
+  ** Resources = structured data access
+  ** Tools = actionable capabilities
+  ** Prompts = contextual intelligence
+  ** Together they form the foundation of MCP
+
+* Actionable items
+  ** Identify key data sources and model them as resources
+  ** Define schemas for controlled and structured data access
+  ** List business actions and implement them as tools
+  ** Standardize tool contracts with inputs and outputs
+  ** Create reusable prompt templates for common workflows
+  ** Design workflows combining resources, tools, and prompts
+  ** Test integration using real-world scenarios
+  ** Iterate for performance, security, and accuracy
