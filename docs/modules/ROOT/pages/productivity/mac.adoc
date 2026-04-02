@@ -22,6 +22,10 @@ NOTE: NOTE
 
 ---
 
+.Macbook Apps
+[%collapsible]
+====
+
 * [ ] ActivityWatch.app - Tracks how you spend time on your computer.
 * [ ] Adobe Lightroom.app - Photo editing and management tool for photographers.
 * [ ] Alfred 5.app - Productivity launcher and automation tool for macOS.
@@ -151,6 +155,9 @@ NOTE: NOTE
 * [ ] Xmind.app - Mind mapping software.
 * [ ] ❌ zoom.us.app - Video conferencing platform.
 
+====
+
+
 
 
 ##############################################
@@ -210,6 +217,16 @@ cd /Users/nareshchaurasia/Documents/project
 === Sticky Notes
 
 ##################################################
+
+=== Images / Screenshots
+
+video::GcbDQfeSzlM[youtube, width=800, height=450, caption="Video"]
+
+
+
+##############################################
+
+
 
 === Safari
 

@@ -1,0 +1,7 @@
+= Mastering GitHub Copilot
+:toc: right
+:toclevels: 5
+:sectnums: 5
+:sectnumlevels: 5
+
+> Mastering GitHub Copilot: From Setup to Real Projects SkillsBooster Academy

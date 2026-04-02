@@ -8,15 +8,37 @@
 
 [NOTE]
 ====
-* Use the Tags.
+* Use the Tags on Mac.
 ====
 
-== Cloud
+== Git
 
 * https://github.com/Naresh-Chaurasia/GenC-KnowledgeHub[GenC Knowledge Hub]
 * https://github.com/Naresh-Chaurasia/GenC-TechHub[GenC Tech Hub]
+
+##############################################
 
 == Local
 
 * /Users/nareshchaurasia/nc/GenC/GenC-TechHub
 * /Users/nareshchaurasia/nc/GenC/GenC-KnowledgeHub
+
+##############################################
+
+
+== React4 Course Delivery
+
+=== Slides
+
+* https://github.com/Naresh-Chaurasia/GenC-KnowledgeHub/tree/main/gen-c/slides-genc
+
+=== SOLID
+
+=== Desing Patterns
+
+
+
+=== Spring Core
+
+* https://github.com/Naresh-Chaurasia/GenC-TechHub/tree/main/GenC-SpringCore1
+* https://github.com/Naresh-Chaurasia/GenC-KnowledgeHub/blob/main/gen-c/spring/genc-spring-core.adoc

@@ -2,7 +2,6 @@
 
 .🤖 Artificial Intelligence
 * xref:ai/index.adoc[Overview]
-* xref:ai/TechWizard-MCP.adoc[TechWizard MCP]
 * Agentic AI
 ** xref:ai/agenti-ai/agenti-ai-rahul-shetty.adoc[Agentic AI - Rahul Shetty]
 ** xref:ai/agenti-ai/agentic-ai2.adoc[Agentic AI 2]
@@ -16,6 +15,8 @@
 * xref:ai/genai/genai.adoc[GenAI]
 ** xref:ai/genai/sample.adoc[Sample GenAI Page]
 ** xref:ai/genai/ai-video-generation.adoc[AI Video Generation]
+* GitHub Copilot
+** xref:ai/github-copilot/mastering-github-copilot.adoc[Mastering GitHub Copilot]
 * MCP
 ** xref:ai/mcp/mcp-anthropic.adoc[MCP - Anthropic]
 ** xref:ai/mcp/mcp-agentic-ai.adoc[MCP - Agentic AI]

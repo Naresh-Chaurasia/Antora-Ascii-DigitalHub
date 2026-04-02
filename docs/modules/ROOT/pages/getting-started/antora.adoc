@@ -5,14 +5,33 @@
 * ~/Library/Application Support/Windsurf/User/profiles/57a4383b/snippets/Ascii-Generation.code-snippets
 ** adm - Admonitions
 ** code - Code block
+** img - Image
 ** res - Collapsible Resource
 ** sep - Separator
 ** tblist - Table with list
 ** tb - Simple table
 
+##############################################
+
+---
+
+== PDF Conversion
+
+[.script]
+/Users/nareshchaurasia/nc/Antora-Ascii-DigitalHub/convert_adoc_pdf.sh
+
 ---
 
 ##############################################
+
+== Images
+
+image::mcp/mcp1.png[MCP Architecture Diagram, 600, 400]
+
+
+##############################################
+
+== Code Blocks
 
 [source,shell, role="wrap"]
 ----

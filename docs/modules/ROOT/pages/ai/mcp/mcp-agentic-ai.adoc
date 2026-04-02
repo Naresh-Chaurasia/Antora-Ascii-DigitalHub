@@ -38,7 +38,7 @@ By the end of this course, you will be able to:
 
 * Design and implement MCP servers ensuring secure and seamless data integration
 
-*Tips for Learners:*
+#*Tips for Learners:*#
 
 * *Think systems-first*: Consider how MCP fits into your existing AI architecture
 
@@ -92,7 +92,7 @@ By the end of this course, you will be able to:
   *** Enabled growth of the internet
   ** MCP plays similar role for AI integrations
 
-* *Key features of MCP*
+#* *Key features of MCP*#
   ** One protocol for multiple connections
   *** Build once, connect to many data sources
   ** Standardized security model
@@ -123,14 +123,6 @@ By the end of this course, you will be able to:
   ** AI effectiveness depends on data access
   ** Fragmented integrations limit AI potential
   ** Standardization is key to scaling AI systems
-
-* *Actionable items*
-  ** Evaluate current AI integrations for connector complexity
-  ** Identify systems that can benefit from standardization
-  ** Explore MCP-compatible tools and platforms
-  ** Reduce custom connector development efforts
-  ** Design AI architecture with standardized protocols first
-  ** Focus engineering effort on AI capabilities instead of integrations
 
 ##############################################
 
@@ -575,6 +567,8 @@ to technical and non-technical stakeholders.
 ---
 
 === M2: MCP Specification Deep Dive: Protocol Implementation Patterns
+
+image::mcp/mcp-protocol.png[MCP Protocol Diagram, 600, 400]
 
 * MCP implementation bridges theory and practice
   ** Specifications look simple initially
