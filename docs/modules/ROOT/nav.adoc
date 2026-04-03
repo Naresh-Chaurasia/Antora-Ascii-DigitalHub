@@ -73,7 +73,7 @@
 
 .🚀 Getting Started
 * xref:getting-started/antora.adoc[Antora]
-* xref:getting-started/basic-concepts.adoc[Basic Concepts]
+* xref:getting-started/ascii-antora.adoc[Ascii Antora]
 * xref:getting-started/prompts-library.adoc[Prompts Library]
 * xref:getting-started/python.adoc[Python]
 * xref:getting-started/snapshot.adoc[Snapshot]
