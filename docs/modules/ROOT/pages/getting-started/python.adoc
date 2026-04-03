@@ -5,6 +5,13 @@
 :sectnumlevels: 5
 :toc-title: Table of Contents
 
+
+== Python Resources
+
+* [ ] Python Code Checking
+* [ ] Python Code Structure on Mac
+
+
 == AI-ML-GenAI-Python-TechStack
 
 * Local Code Base

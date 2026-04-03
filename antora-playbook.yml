@@ -23,8 +23,7 @@ runtime:
 asciidoc:
   attributes:
     icons: font
-    sectnums: 5
-    sectnumlevels: 5
+    sectnums!:
     toc: right
     toclevels: 5
 

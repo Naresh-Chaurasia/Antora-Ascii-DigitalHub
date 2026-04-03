@@ -1,8 +1,6 @@
 = Agentic AI – Rahul
-:toc: right
-:toclevels: 5
-:sectnums: 1
-:sectnumlevels: 1
+:toc!:
+:sectnums!:
 
 > Learn Agentic AI – Build Multi-Agent Automation Workflows - Rahul Shetty
 
@@ -117,6 +115,7 @@ ps aux | grep mysql_mcp_server
 
 brew install uv
 
+# Download and install a MySQL MCP server so your AI client (like Claude Desktop / VSCode) can interact with a MySQL database
 uv pip install mysql-mcp-server
 Using Python 3.12.7 environment at: /opt/anaconda3
 Audited 1 package in 161ms
@@ -147,10 +146,15 @@ Requires: mcp, mysql-connector-python
 
 ##############################################
 
-== Section 1
+== ✔️ Section 1
 
 === 3. Transition from LLM -> AI Agents. Where AI Agent shines?
 
+> AI Agents extend LLMs from *just generating responses* to *taking real actions* by combining intelligence (LLM as the brain) with tools (the hands) to autonomously complete tasks end-to-end.
+
+.Collapsible Resource
+[%collapsible]
+====
 
 * Transition from LLMs to AI Agents
 ** LLMs mainly generate text responses based on training data.
@@ -250,7 +254,7 @@ Requires: mcp, mysql-connector-python
 ** They analyze the environment and choose actions.
 ** They execute multiple steps to achieve a goal.
 
-* Definition of an AI Agent
+* #Definition of an AI Agent#
 ** An AI agent is an autonomous system that:
 *** Understands user goals
 *** Takes decisions
@@ -275,15 +279,24 @@ Requires: mcp, mysql-connector-python
 ** Learn MCP
 ** Build single agents
 ** Build multi-agent systems
+====
+
 
 ---
 
 ##############################################
 
-== Section 2
+== ✔️ Section 2
 
 === 5. What is MCP? How this MCP help an LLM to be super powerful
 
+> *MCP (Model Context Protocol)* is a standard way to connect an LLM to external tools, systems, and data—so it can move from just “knowing” things to actually *doing* things. 
+
+> *It makes an LLM super powerful by acting like a #universal connector# (brain → hands), enabling it to access databases, automate browsers, call APIs, and execute real-world workflows automatically.*
+
+.Collapsible Resource
+[%collapsible]
+====
 * Building an AI Agent Using MCP Servers
 ** Goal is to convert plain English instructions into automated business workflows
 ** Automation includes browser actions, database queries, API calls, and file operations
@@ -415,6 +428,10 @@ Requires: mcp, mysql-connector-python
 ** Learning how MCP tools connect to agents
 ** Building multi-agent systems using MCP
 ** Creating automated workflows using AI agents
+====
+
+
+
 
 ---
 
@@ -422,7 +439,15 @@ Requires: mcp, mysql-connector-python
 
 === 7. Build Agent which automates web browser using Playwright/Selenium MCP Servers
 
+> *MCP Client is the interface where you give instructions, and MCP Servers provide the actual tools—together enabling the LLM to convert plain English into real actions like browser automation, API calls, and database queries.*
 
+> *Possible MCP clients include Claude Desktop, Visual Studio Code, Cursor, and GitHub Copilot—#any interface that lets you interact with an LLM can act as a client#.*
+
+> *In short: Client = where you talk, MCP Servers = what gets things done, and the LLM connects both to execute end-to-end workflows automatically.*
+
+.Collapsible Resource
+[%collapsible]
+====
 * MCP client is required to interact with MCP servers
 ** The client is the interface where users give instructions to the LLM
 ** Examples of MCP clients
@@ -570,6 +595,34 @@ Requires: mcp, mysql-connector-python
 ** MCP protocol sends structured requests
 ** MCP server performs the actual operation on the system
 
+====
+
+
+##############################################
+
+---
+
+=== 9. Build Agent which can extract data from SQL database by framing complex queries
+
+[source,asciidoc, role="wrap"]
+----
+# Download and install a MySQL MCP server so your AI client (like Claude Desktop / VSCode) can interact with a MySQL database
+uv pip install mysql-mcp-server
+
+# Update Claude config, and query database.
+----
+
+##############################################
+
+---
+
+=== 10. Build Agent which can perform API Testing & talk to local File systems for data
+
+##############################################
+
+---
+
+=== 11. Build Agent which can read/write to excel file for any given scenario
 
 ##############################################
 
@@ -579,6 +632,13 @@ Requires: mcp, mysql-connector-python
 
 === 12. Disadvantages of having Single Agent - and how Multi Agent fixes the problem
 
+> *A single AI agent can use many MCP tools, but it becomes complex and inefficient—like a “jack of all trades,” handling too many responsibilities.*
+
+> *A multi-agent system solves this by using specialized agents (each focused on one task) that can work in parallel, making the system more scalable, efficient, and easier to manage.*
+
+.Collapsible Resource
+[%collapsible]
+====
 * A single AI agent can use multiple MCP tools to perform different tasks
   ** The large language model acts as the brain of the agent
   ** The agent can handle browser automation, database queries, API calls, and file system access
@@ -645,6 +705,9 @@ Requires: mcp, mysql-connector-python
 * Multi-agent architecture is preferred for structured workflows
   ** Specialized agents collaborate
   ** Each agent performs a specific task in the overall system
+====
+
+
 
 
 ##############################################
@@ -653,7 +716,13 @@ Requires: mcp, mysql-connector-python
 
 === 13. What is Agentic AI? Importance of Multi Agent work flows
 
+> *#Agentic AI# is a system where multiple AI agents collaborate, make decisions, and take actions autonomously to achieve a goal—going beyond simple prompt-response into full problem-solving.*
 
+> *#Multi-agent# workflows are important because they enable specialization, parallel execution, and coordinated decision-making (sequential, parallel, hierarchical, collaborative), making systems more scalable, efficient, and intelligent.*
+
+.Collapsible Resource
+[%collapsible]
+====
 * Multi-agent systems can follow different workflow patterns
   ** Each workflow defines how agents collaborate to complete tasks
 
@@ -758,73 +827,54 @@ Requires: mcp, mysql-connector-python
 
 ** Agentic AI
 *** The complete system where multiple agents coordinate to achieve a goal
+====
 
 ##############################################
 
-== AutoGen Multi-Agent System
+---
 
-A comprehensive project for building intelligent, autonomous AI agents that collaborate, self-correct, and execute complex tasks using Microsoft AutoGen Framework.
+== Section 4
 
-=== My-Examples Folder
+* Simple Agents Programming: `/Users/nareshchaurasia/nc/Python-TechHub/AI-ML-GenAI/MCP/MCP-Rahul-Shetty/AgenticAIAutoGen`
 
-The `src/my-examples/` directory contains practical examples demonstrating AutoGen framework capabilities:
+##############################################
 
-*basics1.py*:
-Basic single agent example showing how to:
+== Section 5
 
-- Create an AssistantAgent with OpenAI model client
-- Run a simple math task ("What is 25 * 8?")
-- Use environment variables for API key configuration
+[cols="1,2,3,3", options="header"]
+|===
+| Component | Purpose | When to Use | Simple Example
 
-*basics2.py*
-Multi-modal agent example demonstrating:
+| *RoundRobinGroupChat*
+| Fixed sequence collaboration between agents
+| Use when workflow is structured and every agent must participate in order
+| Agent A → collect data +
+Agent B → analyze +
+Agent C → summarize +
+Repeat cycle
 
-- Image processing capabilities
-- MultiModalMessage handling
-- Analyzing images with AI agents
+| *SelectorGroupChat*
+| Dynamic agent selection based on context
+| Use when workflow requires decision-making on which agent to call
+| If coding → Developer +
+If review → Reviewer +
+If clarification → QA
 
-*basics3.py*
-Multi-agent conversation example featuring:
+| *AssistantAgent*
+| LLM-powered “thinking” agent
+| Use for generating answers, code, explanations, analysis
+| Writes Python code to read a file or explains a concept
 
-- Round-robin group chat between MathTeacher and Student agents
-- MaxMessageTermination condition
-- Agent-to-agent learning interactions
+| *UserProxyAgent*
+| Executes actions and interacts with environment
+| Use for running code, calling APIs, human-in-the-loop tasks
+| Executes the Python code provided by AssistantAgent
 
-*basics4.py*
-Human-in-the-loop workflow showing:
+|===
 
-- UserProxyAgent for human interaction
-- TextMentionTermination for session control
-- Math tutoring scenario with human student
 
-*basics5.py*
-Agent memory and state management demonstrating:
+##############################################
 
-- Saving agent conversation state to JSON
-- Loading saved state into different agents
-- Memory transfer between agents
+== Section 6
 
-*basics6.py*
-MCP (Model Context Protocol) integration featuring:
-
-- Filesystem server configuration
-- McpWorkbench for file system access
-- Multi-agent collaboration with file operations
-
-*memory.json*
-
-Saved agent conversation state from basics5.py example
-
-## Getting Started
-
-1. Install dependencies: `pip install -r requirements.txt`
-2. Configure environment variables in `.env` file
-3. Run examples: `python src/my-examples/basics1.py`
-
-## Key Features
-
-- Environment variable configuration for API keys
-- Multi-agent collaboration patterns
-- Memory and state management
-- File system integration via MCP
-- Human-in-the-loop workflows
+* web_surfer.py
