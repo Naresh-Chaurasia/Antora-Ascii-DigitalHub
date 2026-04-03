@@ -1,3 +1,0 @@
-= Agentic AI2
-
-A short placeholder page for agentic AI patterns (planning, tool use, reflection, guardrails).

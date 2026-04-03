@@ -1,3 +1,0 @@
-= Basic Concepts
-
-Fundamental concepts and terminology for understanding how Antora documentation works, including components, modules, navigation, and content organization.

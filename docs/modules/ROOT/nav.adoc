@@ -2,9 +2,10 @@
 
 .🤖 Artificial Intelligence
 * xref:ai/index.adoc[Overview]
+* xref:ai/TechWizard-MCP.adoc[TechWizard MCP]
 * Agentic AI
 ** xref:ai/agenti-ai/agenti-ai-rahul-shetty.adoc[Agentic AI - Rahul Shetty]
-** xref:ai/agenti-ai/agentic-ai2.adoc[Agentic AI 2]
+** xref:ai/agenti-ai/agentic-ai-mehmet.adoc[Agentic AI - Mehmet]
 * Content
 ** xref:ai/content/ai-content-google.adoc[AI Content - Google]
 * ChatGPT

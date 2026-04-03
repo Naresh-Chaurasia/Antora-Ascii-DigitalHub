@@ -1,3 +1,126 @@
-= Home
+= Life Dashboard
+
+++++
+
+<style>
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.card {
+  border-radius: 12px;
+  padding: 16px;
+  background: #2d3748;
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.card h3 {
+  margin-top: 0;
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffffff;
+  border-bottom: 1px solid #444;
+  padding-bottom: 8px;
+}
+
+.card ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.card li {
+  margin: 6px 0;
+}
+
+.badge {
+  font-size: 10px;
+  background: #ff6b6b;
+  color: #ffffff;
+  padding: 2px 6px;
+  border-radius: 6px;
+  margin-left: 6px;
+}
+
+.highlight {
+  color: #4caf50;
+}
+
+.comment {
+  font-size: 15px;
+  color: #9ca3af;
+  font-style: italic;
+  margin-top: 4px;
+  padding-left: 10px;
+}
+</style>
+
+<p><strong>Last Updated:</strong> <span class="highlight">Today</span></p>
+
+<div class="dashboard">
+
+  <div class="card">
+    <h3>🚀 Udemy</h3>
+    <ul>
+      <li>Architectures with Patterns, Frameworks and MCP - Mehmet Ozkaya <span class="badge">Active</span>
+        <div class="comment">Awesome course on agentic AI patterns</div>
+      </li>
+      <li>Learn Agentic AI – Build Multi-Agent Automation Workflows - Rahul Shetty <span class="badge">Completed</span>
+        <div class="comment">Convert to Deliverable Content</div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Coursera</h3>
+    <ul>
+      <li>AI Microservices Layer
+        <div class="comment">Container orchestration for AI services</div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>🧠 Learning</h3>
+    <ul>
+      <li>Kubernetes Deep Dive
+        <div class="comment">Production deployment strategies</div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>🎯 Weekly Goals</h3>
+    <ul>
+      <li>2 AI Videos
+        <div class="comment">Stay updated with AI trends</div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>⚡ Quick Notes</h3>
+    <ul>
+      <li>Focus on execution
+        <div class="comment">Action over procrastination</div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>🧹 Backlog</h3>
+    <ul>
+      <li>Personal Website
+        <div class="comment">Portfolio and personal branding</div>
+      </li>
+    </ul>
+  </div>
+
+</div>
+++++
+
 
 

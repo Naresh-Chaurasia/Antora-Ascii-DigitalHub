@@ -56,7 +56,7 @@ Extract the key ideas from the following text and convert them into a structured
 Output requirements:
 - Output only the bullet summary.
 - Ensure the format is clean so it can be copied with one click and pasted into notes or documentation tools.
-- At the end add one section with possible actionable items
+- Explain the entire concept in 1-2 lines as overall summary.
 
 Refer Above Article
 ----

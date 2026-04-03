@@ -218,9 +218,117 @@ cd /Users/nareshchaurasia/Documents/project
 
 ##################################################
 
-=== Images / Screenshots
+=== Shottr
 
 video::GcbDQfeSzlM[youtube, width=800, height=450, caption="Video"]
+
+---
+
+* [ ] What is Shottr?
+** [x] Lightweight screenshot tool for macOS
+* [ ] Fast capture + quick annotations
+* [ ] Optimized for developers, documentation, and content creators
+
+* [ ] Core Features
+
+* [ ] Capture selected area, window, or full screen
+* [ ] Scrolling screenshots (great for long web pages)
+* [ ] Pixelate / blur sensitive data
+* [ ] Add arrows, text, shapes quickly
+* [ ] Measure distances (useful for UI/UX work)
+* [ ] OCR (extract text from images)
+* [ ] Color picker
+* [ ] Pin screenshots on screen
+
+* [ ] Common Keyboard Shortcuts
+
+* [ ] Capture
+
+* [ ] Cmd + Shift + 2 → Select area screenshot
+* [ ] Cmd + Shift + 3 → Full screen screenshot
+* [ ] Cmd + Shift + 4 → Window capture
+* [ ] Cmd + Shift + 5 → Scrolling screenshot
+
+* [ ] After Capture (Editor Mode)
+
+* [ ] A → Arrow tool
+* [ ] R → Rectangle tool
+* [ ] T → Text tool
+* [ ] B → Blur / Pixelate
+* [ ] C → Copy to clipboard
+* [ ] S → Save image
+* [ ] Esc → Close editor
+
+* [ ] Utility
+
+* [ ] Space → Move selection
+* [ ] Hold Shift → Maintain proportions
+* [ ] Cmd + Z → Undo
+* [ ] Cmd + Shift + Z → Redo
+
+* [ ] Why Useful for AsciiDoc / Antora
+
+* [ ] Fast capture → reduces friction while writing docs
+* [ ] Small file size → better site performance
+* [ ] Quick annotations → highlight architecture diagrams
+* [ ] Scrolling capture → perfect for long UI screens
+
+* [ ] Suggested Workflow
+
+* [ ] Take screenshot using shortcut
+* [ ] Annotate instantly in Shottr
+* [ ] Save directly to docs/modules/ROOT/assets/images/
+* [ ] Reference in AsciiDoc:
+
+----
+image::example.png[]
+----
+
+* [ ] Pro Tips
+
+* [ ] Use blur for credentials before saving
+* [ ] Use consistent annotation style (color + arrow type)
+* [ ] Keep image width optimized (avoid huge files)
+* [ ] Prefer PNG for diagrams, JPG for photos
+
+
+---
+
+* [ ] What is Annotate?
+* [ ] Annotate means adding visual markings on your screenshot to explain something
+* [ ] Examples:
+* [ ] Draw arrows → point to important areas
+* [ ] Add text → explain what is happening
+* [ ] Highlight → focus attention
+* [ ] Blur / pixelate → hide sensitive data (passwords, emails)
+* [ ] Draw boxes → group sections
+
+* [ ] How to Annotate in Shottr
+* [ ] Take screenshot (Cmd + Shift + 2)
+* [ ] Shottr editor opens automatically
+* [ ] Use keyboard shortcuts:
+* [ ] A → Arrow
+* [ ] T → Text
+* [ ] R → Rectangle
+* [ ] B → Blur
+* [ ] Make quick edits and press S to save
+
+* [ ] How to Save Directly to docs/modules/ROOT/assets/images/
+* [ ] Open Shottr Settings
+* [ ] Go to → Saving / File Settings
+* [ ] Set Default Save Location:
+* [ ] Select your Antora folder:
+* [ ] docs/modules/ROOT/assets/images/
+
+* [ ] Optional (Recommended)
+* [ ] Enable auto-save after capture
+* [ ] Enable auto-copy to clipboard
+* [ ] Set file naming format (e.g., screenshot-{date}-{time}.png)
+
+* [ ] Result
+* [ ] Every screenshot you take will be saved automatically in your Antora images folder
+* [ ] No manual move needed
+
 
 
 

@@ -1,0 +1,11 @@
+= Ascii To Antora
+:toc: right
+:toclevels: 5
+:sectnums: 5
+:sectnumlevels: 5
+
+> Find all the old documentation and document it here.
+
+* /Users/nareshchaurasia/nc/Awakening-The-Giant
+* /Users/nareshchaurasia/nc/KnowledgeBase-DigitalHub
+** technical-reference-library

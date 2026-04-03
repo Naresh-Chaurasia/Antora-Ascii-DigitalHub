@@ -1,0 +1,390 @@
+= Agentic AI - Mehmet
+:toc: right
+:toclevels: 1
+:sectnums: 1
+:sectnumlevels: 1
+
+> Architectures with Patterns, Frameworks and MCP - Mehmet Ozkaya
+
+
+== ✔️ Section 1: Introduction
+
+=== 3. Course Project: Design Agentic AI Architecture for EShop Microservices
+
+> *User*: I need a pair of running shoes for my marathon next month. I want the best cushioning and support, and I'm looking for something under $150.
+
+> *Agent*: The agent acts as an intelligent decision-maker on behalf of the user. It understands user intent, interacts with multiple microservices, and autonomously performs tasks like searching, deciding, and executing actions (e.g., buying a product).
+
+---
+
+image::agentic-ai/agentic1.png[Agentic AI Architecture Diagram, 600, 400]
+
+
+.Collapsible Resource
+[%collapsible]
+====
+* Course Project Overview
+  ** Design a genetic AI architecture for microservices
+  ** Solve enterprise-scale problems using agentic systems
+  ** Build an intelligent layer on top of a real-world application
+
+* Baseline System: Passive Microservices
+  ** Identity microservice manages users
+  ** Catalog microservice handles products and search
+  ** Basket microservice manages shopping cart
+  ** Ordering microservice handles orders and history
+  ** System is passive and waits for API calls
+  *** Users perform multiple steps manually (search, check stock, purchase)
+  *** Human handles all reasoning and decision-making
+
+* Target System: Intelligent Agentic Architecture
+  ** Introduce an agentic layer between client and microservices
+  ** Transform system into active, intelligent, autonomous platform
+  ** Enable natural language interaction
+  *** Example: User requests running shoes under a budget
+  *** System finds, evaluates, and purchases automatically
+  ** Core capabilities
+  *** MCP for secure integration with microservices
+  *** Context awareness using user history
+  *** Collaboration between multiple agents
+
+* Use Case 1: Intelligent Shopper
+  ** Apply Router and Specialist Pattern
+  *** Router agent analyzes user request
+  *** Delegates task to catalog specialist agent
+  ** Specialist agent uses reasoning
+  *** Understands intent (e.g., marathon shoes)
+  *** Evaluates technical specifications
+  ** Apply Context Engineering
+  *** Automatically retrieves user data (e.g., shoe size)
+  *** Avoids asking repetitive questions
+
+* Use Case 2: Autonomous Checkout
+  ** Apply Tool Use Pattern
+  *** Agent directly calls basket and ordering APIs
+  ** Use MCP (Model Context Protocol)
+  *** Wrap legacy microservices as MCP servers
+  *** Enable standardized and secure agent integration
+  ** Apply Human-in-the-Loop Pattern
+  *** Require user confirmation for high-value transactions
+  *** Prevent unsafe autonomous spending
+
+* Use Case 3: Customer Support Agent
+  ** Apply ReAct (Reason + Act) Pattern
+  *** Agent reasons about user query
+  *** Acts by querying order service
+  *** Iterates until root cause is found
+  ** Apply Reflection Pattern
+  *** Agent reviews its response before sending
+  *** Ensures empathetic tone
+  ** Apply Hand-off Pattern
+  *** Transfers conversation to human when needed
+
+* Architecture Components and Design Focus
+  ** Agent workflows and orchestration
+  ** Design patterns for agent behavior
+  ** MCP-based integration layer
+  ** Context management and personalization
+  ** Security guardrails and safety controls
+
+* Learning Outcomes
+  ** Design MCP interfaces for microservices
+  ** Map agent workflows and responsibilities
+  ** Select appropriate frameworks and tools
+  ** Implement secure and scalable AI architecture
+  ** Build a complete agentic system blueprint
+
+* Actionable Items
+  ** Identify existing microservices and APIs in your system
+  ** Define MCP wrappers for each microservice
+  ** Design router and specialist agent workflows
+  ** Implement context retrieval from identity service
+  ** Build tool-use integrations for transaction flows
+  ** Add human-in-the-loop checkpoints for safety
+  ** Design customer support agent with ReAct pattern
+  ** Implement reflection and hand-off mechanisms
+  ** Test end-to-end agent workflows with real scenarios
+  ** Document architecture and refine based on feedback
+
+====
+
+##############################################
+
+---
+
+=== 4. The Evolution: From Generative AI to Agentic AI
+
+> An AI agent takes a goal instead of a prompt and actively works to achieve it by planning steps, using tools, and remembering progress. In short, it behaves like a worker that thinks, acts, and iterates until the task is completed.
+
+
+image::agentic-ai/agentic2.png[Agentic AI Architecture Diagram, 600, 400]
+
+
+.Collapsible Resource
+[%collapsible]
+====
+** Evolution of AI: From Generative AI to Agentic Systems
+
+*** Industry is rapidly evolving from simple generative AI to advanced AI systems
+**** Shift from micro (single task) to macro (system-level intelligence)
+**** Journey compared to moving from a consultant to a factory
+
+** Phase 1: Generative AI (Passive Systems)
+
+*** Based on prompt → response model
+**** User provides input and LLM generates output
+**** Interaction ends after response
+
+*** System characteristics
+**** Stateless and no memory
+**** Waits for user input
+**** No action capability
+
+*** Conceptual model
+**** Acts like an expert consultant
+**** Good for answering questions and content generation
+**** Cannot take initiative or perform tasks
+
+** Phase 2: AI Agents (Active Systems)
+
+*** Evolution from passive to active systems
+**** LLM enhanced with tools and memory
+
+*** Key capabilities
+**** Executes multi-step tasks
+**** Uses perceive → reason → act loop
+**** Maintains internal state and history
+
+*** Interaction model
+**** User provides a goal instead of a prompt
+**** Agent plans and executes steps to achieve goal
+
+*** System behavior
+**** Proactive and can initiate actions
+**** Remembers tool outputs and past steps
+
+*** Conceptual model
+**** Acts like a worker
+**** Single agent handling tasks independently
+
+** Phase 3: Agentic AI Systems (Collaborative Systems)
+
+*** Evolution from single agent to multi-agent architecture
+**** Designed for complex, large-scale problems
+
+*** Key architectural shift
+**** Multiple specialized agents collaborate
+**** Focus on orchestration and communication
+
+*** System behavior
+**** Handles complex goals through coordination
+**** Agents interact, delegate, and collaborate
+
+*** Types of agents
+**** Router agent acts as coordinator (foreman)
+**** Shopping agent handles sales-related tasks
+**** Support agent manages logistics and execution
+
+*** Interaction model
+**** User provides complex goal
+**** System distributes tasks across agents
+
+*** Conceptual model
+**** Acts like a factory
+**** Multiple workers collaborating as a system
+
+** Evolution Summary
+
+*** Generative AI
+**** Single brain responding to prompts
+**** Passive expert consultant
+
+*** AI Agent
+**** Brain + tools + memory
+**** Active worker executing goals
+
+*** *#Agentic AI System#*
+**** Multiple agents working together
+**** Collaborative factory solving complex problems
+
+*** Key progression
+**** Tool → Actor → System
+**** Passive → Active → Collaborative
+
+** Actionable Items
+
+*** Identify current usage
+**** Check if you are using only prompt-based AI
+**** Evaluate need for multi-step automation
+
+*** Start building AI agents
+**** Add tools integration to LLMs
+**** Implement memory for stateful behavior
+
+*** Design multi-agent systems
+**** Break complex problems into specialized roles
+**** Define clear responsibilities for each agent
+
+*** Focus on orchestration
+**** Implement communication between agents
+**** Design coordination logic for task flow
+
+*** Apply to real-world systems
+**** Use microservices as base architecture
+**** Map agents to business functions (sales, support, etc.)
+
+*** Experiment and iterate
+**** Start with single agent
+**** Gradually evolve into multi-agent architecture
+====
+
+##############################################
+
+---
+
+== Section 2: What are AI Agents ?
+
+=== 5. What are AI Agents? Key Principles
+
+> An AI agent is a goal-driven software entity that autonomously perceives its environment, reasons about it, and takes actions to achieve objectives. Unlike simple tools, it continuously adapts, reacts, and proactively works toward outcomes in a dynamic environment.
+
+
+.Collapsible Resource
+[%collapsible]
+====
+* AI agents: simple explanation
+  ** AI agent is a software entity that works like a digital employee
+  *** You give a goal, not step-by-step instructions
+  *** Example: research competitors and send summary
+
+* Difference between tool and agent
+  ** Tool requires explicit instructions for every step
+  *** Example: calculator needs exact input
+  ** Agent works towards a goal using available tools
+  *** Uses APIs, browser, or code autonomously
+
+* Core capabilities of an AI agent
+  ** Perception
+  *** Reads environment changes
+  *** Examples: new email, stock price change, user input
+  ** Reasoning
+  *** Decides what to do based on goal and inputs
+  *** Acts as the "brain" (LLM or logic system)
+  ** Action
+  *** Performs tasks to affect environment
+  *** Examples: call API, send email, execute code
+
+* Agentic loop
+  ** Continuous cycle of perception, reasoning, and action
+  *** Enables dynamic and adaptive behavior
+
+* Key principles of AI agents
+  ** Goal-driven
+  *** Focuses on achieving outcomes, not following fixed steps
+  *** Example:
+  **** Instruction: run report at 5 PM
+  **** Goal: ensure fresh sales data every morning
+  *** Agent adapts approach based on situation. If database is downs, send mail to admin.
+
+** Autonomy
+*** Operates without step-by-step human control
+*** Makes its own decisions to achieve goals
+*** Similar to delegating work to a developer
+
+** Reactivity
+*** Responds to changes and failures in environment
+*** Example:
+**** Script fails on API error
+**** Agent retries or switches to backup API
+*** Makes system robust and resilient
+
+** Proactiveness
+*** Takes initiative before problems occur
+*** Example:
+**** Reactive: alert when disk is full
+**** Proactive: clean up logs before disk is full
+*** Anticipates issues and prevents failures
+
+* Summary definition
+  ** AI agent is goal-driven, autonomous, reactive, and proactive
+  *** Capable of perceiving, reasoning, and acting
+  *** Works effectively in complex and dynamic environments
+
+====
+
+##############################################
+
+---
+
+=== 6. How AI Agents Uses Generative AI ?
+
+> Generative AI is reactive and produces content from prompts, while AI agents are proactive systems that pursue goals using multi-step actions powered by LLM reasoning.
+
+.Collapsible Resource
+[%collapsible]
+====
+* Generative AI (Reactive Systems)
+  ** Operates on prompt → response model
+  *** Waits for user input before acting
+  ** Generates content based on learned patterns
+  *** Text, images, audio, or code
+  ** Works as a pattern prediction engine
+  *** Predicts what comes next from training data
+  ** Stops after generating output
+  *** No further action without new prompt
+  ** Requires continuous human involvement
+  *** Human reviews, refines, and re-prompts
+
+* AI Agents (Agentic Systems)
+  ** Operate as proactive systems
+  *** Do not wait for continuous user input
+  ** Treat prompt as a goal, not a request
+  *** Execute tasks to achieve the goal
+  ** Perform multi-step actions autonomously
+  *** Minimal human intervention required
+  ** Follow an Agentic Loop
+  *** Continuous cycle of thinking, acting, and updating
+  ** Act like a manager, not just a tool
+  *** Take ownership of tasks end-to-end
+
+* Role of LLM in Both Systems
+  ** Common foundation for both approaches
+  *** LLM powers intelligence in both
+  ** In generative AI
+  *** LLM generates final output
+  ** In AI agents
+  *** LLM acts as a reasoning engine
+  ** Analogy
+  *** Agent = car, LLM = engine
+  *** Other components = wheels, sensors, controls
+
+* Example: Generative AI Usage
+  ** Used by content creators (e.g., YouTubers)
+  *** Script review, thumbnails, background music
+  ** Human remains in control
+  *** Reviews and refines outputs
+  ** AI acts as a creative assistant
+  *** Generates options, not decisions
+
+* Example: AI Agent Usage
+  ** Personal shopping agent scenario
+  *** Goal: Buy product at best price
+  ** Performs multiple actions independently
+  *** Searches availability
+  *** Tracks price changes
+  *** Completes checkout via APIs
+  *** Manages delivery
+  ** Requests human input only when needed
+  *** Mostly autonomous operation
+
+* Decision-Making in AI Agents
+  ** Uses LLM for reasoning
+  *** Core thinking mechanism
+  ** *Applies chain-of-thought reasoning*
+  *** Breaks complex tasks into steps
+  ** Internal reasoning is part of loop
+  *** Not final output like generative AI
+  ** Enables autonomous decision making
+  *** Drives actions toward goal achievement
+
+====
