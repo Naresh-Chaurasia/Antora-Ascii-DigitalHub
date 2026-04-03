@@ -877,4 +877,23 @@ If clarification → QA
 
 == Section 6
 
-* web_surfer.py
+* basics1.py: Single AI assistant answers a simple math question (25 * 8).
+
+* basics2.py: AI assistant analyzes an image file and describes what it sees.
+
+* basics3.py: Two agents (MathTeacher and Student) discuss multiplication concepts in a round-robin conversation.
+
+* basics4.py: Math tutor helps student with algebra problems until "LESSON COMPLETE" is said.
+
+* basics5.py: Demonstrates agent memory by saving state from one agent and loading it into another.
+
+* basics6.py: Math tutor with filesystem access can create files to help with algebra learning.
+
+* web_surfer.py: Web surfing agent navigates to Google and searches for AutoGen framework information.*
+
+== Section 7
+
+* Access recent bug data from Jira Project which got fixed and closed.
+* Analyze and consolidate them into a comprehensive Smoke Test flow that ensures bug coverage.
+* Convert the generated smoke test steps into Playwright automation actions.
+* Execute the test using Playwright and generate structured test results.
