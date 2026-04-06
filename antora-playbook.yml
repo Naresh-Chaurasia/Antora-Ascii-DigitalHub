@@ -30,6 +30,9 @@ asciidoc:
     # ADD THIS
     source-highlighter: highlight.js
     highlightjs-theme: github
+    
+    # Custom CSS for book styles
+    stylesheet: css/custom.css
 
   extensions:
     - ./extensions/reel-extension.js

@@ -1,6 +1,5 @@
-@import "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css";
-
 /* Book-level styles for all book pages */
+
 .dashboard {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

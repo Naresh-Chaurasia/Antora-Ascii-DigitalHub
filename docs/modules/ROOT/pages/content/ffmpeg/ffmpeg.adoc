@@ -1,0 +1,221 @@
+= FFmpeg Reel Creation Tutorial (Instagram Focus)
+
+== Goal
+Create high-quality Instagram reels (20–30 sec) using FFmpeg with:
+
+* clean timing | smooth transitions | synced music | text overlays | correct export settings
+
+---
+
+== Prerequisites
+
+* FFmpeg installed (`ffmpeg -version`) | Images from Gamma (already in vertical format 9:16) | One audio file (mp3)
+
+##############################################
+
+---
+
+== Step 1: Basic Slideshow (Images + Music)
+
+[source,bash]
+----
+ffmpeg 
+-loop 1 -t 4 -i img1.png 
+-loop 1 -t 4 -i img2.png 
+-loop 1 -t 4 -i img3.png 
+-i music.mp3 
+-filter_complex "
+[0:v][1:v][2:v]concat=n=3:v=1:a=0,format=yuv420p[v]
+" 
+-map "[v]" -map 3:a 
+-shortest 
+output.mp4
+----
+
+* Each image shows for 4 seconds
+* Music is added
+* Output is basic reel
+
+##############################################
+
+---
+
+== Step 2: Scale to Instagram Format (9:16)
+
+Instagram Reel Resolution:
+
+* 1080x1920
+
+[source,bash]
+----
+scale=1080:1920,setsar=1
+----
+
+Add inside filter:
+
+[source,bash]
+----
+[0:v]scale=1080:1920,setsar=1[v0];
+----
+
+##############################################
+
+---
+
+== Step 3: Add Smooth Transitions (xfade)
+
+[source,bash]
+----
+ffmpeg 
+-loop 1 -t 4 -i img1.png 
+-loop 1 -t 4 -i img2.png 
+-loop 1 -t 4 -i img3.png 
+-i music.mp3 
+-filter_complex "
+[0:v]scale=1080:1920,setsar=1[v0];
+[1:v]scale=1080:1920,setsar=1[v1];
+[2:v]scale=1080:1920,setsar=1[v2];
+
+[v0][v1]xfade=transition=fade:duration=1:offset=3[v01];
+[v01][v2]xfade=transition=fade:duration=1:offset=6[v]
+" 
+-map "[v]" -map 3:a 
+-shortest 
+output.mp4
+----
+
+* Transition duration = 1 sec
+* Offset controls WHEN transition happens
+
+##############################################
+
+---
+
+== Step 4: Add Text Overlay
+
+[source,bash]
+----
+drawtext=text='Your Hook Text':
+fontcolor=white:fontsize=60:
+x=(w-text_w)/2:
+y=100:
+enable='between(t,0,3)'
+----
+
+Add into filter:
+
+[source,bash]
+----
+[v]drawtext=text='Dance Your Story':
+fontcolor=white:fontsize=60:
+x=(w-text_w)/2:y=100:
+enable='between(t,0,3)'[vout]
+----
+
+---
+
+== Step 5: Sync Music (Trim Audio)
+
+[source,bash]
+----
+-i music.mp3 -ss 5 -t 20
+
+* Start from 5 sec
+* Use only 20 sec
+
+##############################################
+
+---
+
+== Step 6: Final Export Settings (Instagram Optimized)
+
+[source,bash]
+----
+-c:v libx264
+-pix_fmt yuv420p
+-profile:v high
+-level 4.0
+-r 30
+-b:v 2M
+-c:a aac
+-b:a 128k
+----
+
+
+##############################################
+
+---
+
+== Step 7: Full Reel Command (Production Ready)
+
+[source,asciidoc, role="wrap"]
+----
+#Creates a 20-second Instagram reel using 3 images (4 sec each), adds fade transitions, 
+#overlays hook text for first 3 seconds, syncs trimmed music, and exports in Instagram-optimized format (1080x1920, H.264, AAC).
+
+ffmpeg \
+-loop 1 -t 4 -i img1.png \
+-loop 1 -t 4 -i img2.png \
+-loop 1 -t 4 -i img3.png \
+-ss 5 -t 20 -i music.mp3 \
+-filter_complex "
+[0:v]scale=1080:1920,setsar=1[v0];
+[1:v]scale=1080:1920,setsar=1[v1];
+[2:v]scale=1080:1920,setsar=1[v2];
+
+[v0][v1]xfade=transition=fade:duration=1:offset=3[v01];
+[v01][v2]xfade=transition=fade:duration=1:offset=6[vbase];
+
+[vbase]drawtext=text='Start Strong':
+fontcolor=white:fontsize=60:
+x=(w-text_w)/2:y=100:
+enable='between(t,0,3)'[v]
+" \
+-map "[v]" -map 3:a \
+-shortest \
+-c:v libx264 -pix_fmt yuv420p -r 30 -b:v 2M \
+-c:a aac -b:a 128k \
+output.mp4
+----
+
+
+
+##############################################
+
+---
+
+== Viral Reel Timing Template (28 sec)
+
+* 0–2 sec → HOOK (strong text)
+* 2–10 sec → build curiosity
+* 10–20 sec → main content
+* 20–26 sec → payoff / emotion
+* 26–28 sec → loop trigger
+
+---
+
+== Tips (High Impact)
+
+* First 2 seconds decide everything
+* Keep cuts every 2–4 seconds
+* Use bold, readable text
+* Sync transitions with beat drops
+* Always preview before posting
+
+---
+
+== Next Step
+
+* Create 3 reels using this template
+* Modify:
+
+  * duration
+  * text
+  * transitions
+* Build your own reusable script
+
+---
+
+You are not editing videos.
+You are engineering attention.
+

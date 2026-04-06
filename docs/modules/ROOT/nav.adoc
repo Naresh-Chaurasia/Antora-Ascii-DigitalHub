@@ -6,6 +6,7 @@
 * Agentic AI
 ** xref:ai/agenti-ai/agenti-ai-rahul-shetty.adoc[Agentic AI - Rahul Shetty]
 ** xref:ai/agenti-ai/agentic-ai-mehmet.adoc[Agentic AI - Mehmet]
+** xref:ai/agenti-ai/mcp-agentic-ai.adoc[MCP - Agentic AI]
 * Content
 ** xref:ai/content/ai-content-google.adoc[AI Content - Google]
 * ChatGPT
@@ -20,7 +21,6 @@
 ** xref:ai/github-copilot/mastering-github-copilot.adoc[Mastering GitHub Copilot]
 * MCP
 ** xref:ai/mcp/mcp-anthropic.adoc[MCP - Anthropic]
-** xref:ai/mcp/mcp-agentic-ai.adoc[MCP - Agentic AI]
 ** xref:ai/mcp/mcp-flow.adoc[MCP - Flow]
 ** xref:ai/mcp/mcp-henry.adoc[MCP - Henry Habib]
 ** xref:ai/mcp/mcp-playbook.adoc[MCP - Playbook]
@@ -37,10 +37,11 @@
 ##############################################
 
 .📚 Books
-* xref:books/steal-artist.adoc[Steal Like An Artist]
+* xref:books/feel-fearl.adoc[Feel the Fear and Do It Anyway]
 * xref:books/good-vibe.adoc[Good Vibe Good Life]
 * xref:books/kindle-list.adoc[Kindle List]
 * xref:books/show-your-work.adoc[Show Your Work]
+* xref:books/steal-artist.adoc[Steal Like An Artist]
 
 ##############################################
 
@@ -50,6 +51,8 @@
 * xref:content/canva.adoc[Canva]
 * xref:content/gamma.adoc[Gamma]
 * xref:content/image-processing.adoc[Image Processing]
+* Ffmpeg
+** xref:content/ffmpeg/ffmpeg.adoc[FFmpeg]
 * Instagram
 ** xref:content/instagram.adoc[Instagram]
 ** xref:content/instagram-benjamin.adoc[Instagram - Benjamin Wilson]

@@ -6,7 +6,7 @@ echo "--------------------------------------"
 sleep 1
 
 # 🔧 Hardcoded folder path (CHANGE THIS)
-FOLDER="/Users/nareshchaurasia/nc/Antora-Ascii-DigitalHub/docs/modules/ROOT/pages/ai-llm-engineering/mcp"
+FOLDER="/Users/nareshchaurasia/nc/Antora-Ascii-DigitalHub/docs/modules/ROOT/pages/ai/agenti-ai/pdf"
 
 # Validate folder
 if [ ! -d "$FOLDER" ]; then

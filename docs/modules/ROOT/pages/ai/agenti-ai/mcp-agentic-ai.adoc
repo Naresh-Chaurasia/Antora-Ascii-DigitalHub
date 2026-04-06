@@ -1,14 +1,16 @@
 = Hands-on Agentic AI: Building Intelligent Agents Specialization
-:toc: right
-:toclevels: 5
-:sectnums: 5
-:sectnumlevels: 5
-
-== MCP - Model Content Protocol (Coursera)
-
-=== M1: The Integration Dilemma
 
 
+== Module 1
+
+=== The Integration Dilemma
+
+* Area of Improvement
+** Question: quantifiable metrics
+
+.Collapsible Resource
+[%collapsible]
+====
 You demonstrated a clear understanding of the practical benefits of LLM integration, particularly for querying large document pools.
 
 You emphasized the critical importance of security, privilege definition, and logging from the outset.
@@ -20,12 +22,14 @@ You identified key stakeholders and proactively addressed potential concerns lik
 *Areas for improvement:*
 
 While you identified the need to measure success, further development in defining specific, *#quantifiable metrics#* (beyond user feedback on correctness) would strengthen your strategy for balancing innovation and risk.
+====
+
 
 ##############################################
 
 ---
 
-=== M1: Welcome to the Course: Course Overview
+=== Welcome to the Course: Course Overview
 
 
 *Learning Outcomes:*
@@ -55,7 +59,7 @@ By the end of this course, you will be able to:
 
 ---
 
-=== M1: The AI Integration Problem: Why MCP Matters
+=== The AI Integration Problem: Why MCP Matters
 
 * AI customer service systems require multiple integrations
   ** CRM, inventory, payments, and support systems must be connected
@@ -92,7 +96,7 @@ By the end of this course, you will be able to:
   *** Enabled growth of the internet
   ** MCP plays similar role for AI integrations
 
-#* *Key features of MCP*#
+* #*Key features of MCP#*
   ** One protocol for multiple connections
   *** Build once, connect to many data sources
   ** Standardized security model
@@ -128,8 +132,11 @@ By the end of this course, you will be able to:
 
 ---
 
-=== M1: MCP Success Stories: Industry Leaders Transforming AI Integration
+=== MCP Success Stories: Industry Leaders Transforming AI Integration
 
+.Collapsible Resource
+[%collapsible]
+====
 * Anthropic open sourced Model Context Protocol (MCP) in November 2024
   ** Introduced a standard to solve AI integration challenges
   ** Shifted focus from building models to enabling connectivity
@@ -200,12 +207,17 @@ By the end of this course, you will be able to:
   ** Pilot MCP in one high-impact use case
   ** Measure improvements in development time and productivity
   ** Plan long-term architecture around open standards like MCP
+====
 
-  ##############################################
-  
-  ---
 
-=== M1: Evaluating MCP: Benefits, Challenges, and Implementation Considerations
+
+
+
+##############################################
+
+---
+
+=== Evaluating MCP: Benefits, Challenges, and Implementation Considerations
 
 link:https://treblle.com/blog/model-context-protocol-guide[MCP Guide, window="blank"]
 
@@ -213,9 +225,11 @@ link:https://treblle.com/blog/model-context-protocol-guide[MCP Guide, window="bl
 
 ---
 
-=== M1: Making the MCP Decision: Evaluation Framework for AI Integration
+=== Making the MCP Decision: Evaluation Framework for AI Integration
 
-
+.Collapsible Resource
+[%collapsible]
+====
 * Real-world decision scenario for MCP adoption
   ** Healthcare AI system needed integration with 15 data sources
   *** Patient records, lab results, imaging, drug databases
@@ -285,12 +299,14 @@ link:https://treblle.com/blog/model-context-protocol-guide[MCP Guide, window="bl
   *** #How to do this one.#
   ** Run a pilot project before full-scale adoption
   ** Compare short-term vs long-term integration costs
+====
+
 
 ##############################################
 
 ---
 
-=== M1: MCP Architecture Deep Dive: Understanding the Technical Foundation
+=== MCP Architecture Deep Dive: Understanding the Technical Foundation
 
 
 * https://www.kubiya.ai/blog/model-context-protocol-mcp-architecture-components-and-workflow
@@ -299,7 +315,7 @@ link:https://treblle.com/blog/model-context-protocol-guide[MCP Guide, window="bl
 
 ---
 
-=== M1: HOL: Evaluate MCP for Your AI Integration Scenario
+=== HOL: Evaluate MCP for Your AI Integration Scenario
 
 You've explored MCP's benefits, studied industry success stories, and
 learned the evaluation framework. Now it's time to apply this knowledge to
@@ -317,6 +333,9 @@ secure, scalable, and efficient data interoperability?
 
 ##############################################
 
+.MedTech Solutions
+[%collapsible]
+====
 ---
 
 *Scenario*
@@ -394,11 +413,12 @@ or hybrid strategy)
 *Submission Guidelines*: Submit your evaluation report as a PDF, Word document, or structured outline. The report should be 800-1200 words and suitable for presentation
 to technical and non-technical stakeholders.
 
+====
+
 ##############################################
 
----
 
-=== M1: Reflecting on Your MCP Evaluation Analysis
+=== Reflecting on Your MCP Evaluation Analysis
 
 [NOTE]
 ====
@@ -469,10 +489,12 @@ to technical and non-technical stakeholders.
 - Encourages controlled access and strong governance
 - A better approach than ad-hoc integrations
 
+
 ##############################################
 
 ---
 
+=== 📍 Evaluating MCP for Modern AI Integration
 
 ##############################################
 
@@ -480,8 +502,17 @@ to technical and non-technical stakeholders.
 
 == Module 2: Implementing MCP Specification
 
-=== M2: MCP Core Components: Resources, Tools, and Protocols
+=== MCP Core Components: Resources, Tools, and Protocols
 
+* *#Key takeaways#*
+** Resources = structured data access
+** Tools = actionable capabilities
+** Prompts = contextual intelligence
+** Together they form the foundation of MCP
+
+.Collapsible Resource
+[%collapsible]
+====
 * MCP enables rapid AI integration
   ** Traditional integration takes weeks
   ** MCP-based integration can take hours
@@ -561,15 +592,20 @@ to technical and non-technical stakeholders.
   ** Test integration using real-world scenarios
   ** Iterate for performance, security, and accuracy
 
+====
+
+
 
 ##############################################
 
----
 
-=== M2: MCP Specification Deep Dive: Protocol Implementation Patterns
+=== MCP Specification Deep Dive: Protocol Implementation Patterns
 
 image::mcp/mcp-protocol.png[MCP Protocol Diagram, 600, 400]
 
+.Collapsible Resource
+[%collapsible]
+====
 * MCP implementation bridges theory and practice
   ** Specifications look simple initially
   ** Real-world implementation reveals complexity
@@ -676,3 +712,750 @@ image::mcp/mcp-protocol.png[MCP Protocol Diagram, 600, 400]
   ** Start with read-only implementations before adding actions
   ** Validate system behavior with real-world scenarios
   ** Plan for scalability and future feature expansion
+
+====
+
+
+* MCP implementation enables AI systems to access data and perform actions through a structured server approach
+** Focus on building real, working implementations instead of abstract concepts
+
+* Hands-on learning improves understanding
+** Building an MCP server during a workshop clarified concepts quickly
+*** Participants learned both “what” and “how” of MCP
+
+* Core capabilities of an MCP server
+** Define resource schemas
+*** Structure how data is exposed to AI systems
+** Implement data access
+*** Enable reading customer or business data
+** Build tools
+*** Allow AI to perform actions like creating support tickets
+** Apply authentication
+*** Secure access to resources and tools
+** Handle errors
+*** Ensure reliability and robustness
+
+* Real-world use case example
+** MCP server for customer data and support tickets
+*** AI agents can read customer info and create tickets
+
+* Key implementation insights
+** Start simple
+*** Begin with read-only resources before adding tools
+** Design for usage
+*** Resource URIs and tool names act as APIs
+*** Optimize for how AI will use them
+** Test early and often
+*** Use a test client from the beginning
+** Security is essential
+*** Implement authentication from day one
+
+* MCP implementation pattern
+** Define resources
+** Implement access
+** Add tools
+** Secure connections
+** Handle errors
+
+* Outcome of proper MCP design
+** Scalable and practical AI integration
+*** Same patterns apply from small demos to enterprise systems
+
+##############################################
+
+---
+
+=== HOL: Design and Implement Your First MCP Resource Schema
+
+This guide helps you move from MCP theory to practical implementation by designing your first MCP resource schema.
+
+---
+
+*Introduction*
+
+You have learned the theoretical foundations of MCP and explored real-world implementations.
+
+Now it is time to design your own MCP resource schema, which forms the foundation of any successful MCP-based system.
+
+---
+
+*Objective*
+
+The goal is not just to list sales data types, but to design a schema that enables dynamic, AI-driven access to:
+
+* Customer data  
+* Deal information  
+* Sales activities  
+
+Key focus areas:
+
+* Create intuitive and scalable URIs  
+* Define clear and structured resources  
+* Document access patterns  
+* Enable accurate, real-time insights  
+
+---
+
+*Scenario*
+
+*Context*
+
+You are working as a senior developer at a company building AI-powered business intelligence tools.
+
+Your team is developing an AI assistant that helps sales teams:
+
+* Analyze customer data  
+* Track deal progress  
+* Generate insights  
+
+---
+
+*Problem*
+
+Currently, the AI assistant can only work with static data.
+
+However, the sales team needs:
+
+* Real-time access to data  
+* Ability to ask questions such as:
+  - Show high-value deals closing this month  
+  - What is the status of a specific customer account  
+
+---
+
+*Task*
+
+Design an MCP resource schema that enables dynamic access to CRM data, including:
+
+* Customers  
+* Deals  
+* Sales activities  
+
+---
+
+*Instructions*
+
+Design a comprehensive MCP resource schema for a sales intelligence AI assistant.
+
+---
+
+*1. Resource Identification*
+
+Identify key data types required by the AI assistant.
+
+Requirements:
+
+* Include at least 4 data types:
+  - Customers  
+  - Deals  
+  - Activities  
+  - Pipeline stages  
+
+Consider:
+
+* What data is most valuable for AI insights  
+* How sales teams use this data in practice  
+
+---
+
+*2. Resource URI Design*
+
+Design intuitive and scalable URI patterns.
+
+Guidelines:
+
+* Follow consistent naming conventions  
+* Include filtering patterns such as:
+  - deals://active  
+  - customers://high-value  
+* Ensure URIs can scale as the system grows  
+
+---
+
+*3. Resource Schema Definition*
+
+Define structure and metadata for each resource.
+
+Include:
+
+* Data fields provided by each resource  
+* MIME types and formats  
+* Descriptive names and documentation  
+
+---
+
+*4. Access Pattern Documentation*
+
+Explain how the AI assistant will use these resources.
+
+Include:
+
+* Common query patterns  
+* Relationships between resources  
+* How multiple resources can be combined for insights  
+
+---
+
+*Tools to Use*
+
+* Text editor or note-taking application  
+* JSON formatting tool (optional)  
+* Any documentation format  
+
+---
+
+*Submission*
+
+Create a structured document that includes:
+
+* Resource inventory with descriptions  
+* URI patterns and examples  
+* Schema definitions for each resource  
+* Usage documentation  
+
+---
+
+*Reflection*
+
+After completing your design, reflect on the following:
+
+* How did you balance simplicity with functionality in your URI design?  
+* What assumptions did you make about AI usage?  
+* How does your schema handle edge cases or unusual data?  
+* How would your design scale for multiple sales teams?  
+
+---
+
+*Next Step*
+
+Once completed:
+
+* Share your design with others  
+* Discuss your approach  
+* Gather feedback  
+
+This collaborative process helps refine your MCP design skills and exposes you to alternative approaches.
+
+---
+
+*Summary*
+
+This exercise teaches you how to:
+
+* Design MCP resources effectively  
+* Structure data for AI consumption  
+* Build scalable and maintainable systems  
+
+It shifts your thinking from:
+
+* Static data → Dynamic access  
+* Human-centric APIs → AI-driven resource design  
+
+##############################################
+
+---
+
+==== Solution
+
+This document defines a complete MCP resource schema for a sales intelligence AI assistant.
+
+The system enables AI-driven access to customer, deal, and activity data from a CRM platform.
+
+##############################################
+
+---
+
+==== 1. Resource Inventory
+
+The following core resources are exposed:
+
+[cols="1,3"]
+|===
+| Resource | Description
+
+| customers
+| Customer profiles including company details and account status
+
+| deals
+| Sales opportunities with value, stage, and timelines
+
+| activities
+| Sales interactions such as calls, meetings, emails
+
+| pipeline
+| Aggregated pipeline data grouped by stages
+
+| insights
+| AI-generated insights based on combined data
+|===
+
+sep
+
+==== 2. Resource URI Design
+
+URIs follow a consistent and scalable pattern:
+
+----
+<resource>://<filter>?<query_params>
+----
+
+*Examples*
+
+[cols="1,3"]
+|===
+| URI | Description
+
+| customers://all
+| Fetch all customers
+
+| customers://high-value
+| Customers with high revenue potential
+
+| customers://{customerId}
+| Specific customer details
+
+| deals://active
+| All active deals
+
+| deals://closing-soon
+| Deals closing within next 30 days
+
+| deals://{dealId}
+| Specific deal details
+
+| activities://recent
+| Recent sales activities
+
+| activities://customer/{customerId}
+| Activities for a specific customer
+
+| pipeline://overview
+| Pipeline summary grouped by stages
+
+| insights://customer/{customerId}
+| AI insights for a customer
+
+| insights://pipeline
+| AI insights on overall pipeline
+|===
+
+---
+
+##############################################
+
+---
+
+==== 3. Resource Schema Definitions
+
+*Customer Resource*
+
+[source,json]
+----
+{
+  "id": "string",
+  "name": "string",
+  "industry": "string",
+  "revenue": "number",
+  "status": "active | inactive",
+  "created_at": "datetime"
+}
+----
+
+---
+
+*Deal Resource*
+
+[source,json]
+----
+{
+  "id": "string",
+  "customer_id": "string",
+  "value": "number",
+  "stage": "prospecting | negotiation | closed",
+  "close_date": "date",
+  "status": "open | won | lost"
+}
+----
+
+---
+
+*Activity Resource*
+
+[source,json]
+----
+{
+  "id": "string",
+  "customer_id": "string",
+  "type": "call | email | meeting",
+  "timestamp": "datetime",
+  "notes": "string"
+}
+----
+
+---
+
+*Pipeline Resource*
+
+[source,json]
+----
+{
+  "stage": "string",
+  "total_deals": "number",
+  "total_value": "number"
+}
+----
+
+---
+
+*Insights Resource*
+
+[source,json]
+----
+{
+  "type": "customer | pipeline",
+  "summary": "string",
+  "recommendations": ["string"]
+}
+----
+
+##############################################
+
+---
+
+
+==== 4. Access Patterns
+
+The AI assistant uses the following patterns:
+
+*Common Queries*
+
+* "Show high-value customers"
+  → customers://high-value
+
+* "Deals closing this month"
+  → deals://closing-soon
+
+* "Recent activities for a customer"
+  → activities://customer/{customerId}
+
+* "Pipeline summary"
+  → pipeline://overview
+
+* "Insights for customer"
+  → insights://customer/{customerId}
+
+---
+
+*Resource Relationships*
+
+* customers ↔ deals (1:N)
+* customers ↔ activities (1:N)
+* deals → pipeline (aggregation)
+* all resources → insights
+
+---
+
+*Combined Queries (AI Behavior)*
+
+AI may:
+
+* Fetch customers + deals → identify high-value opportunities  
+* Fetch deals + activities → detect stalled deals  
+* Fetch pipeline + insights → recommend actions  
+
+##############################################
+
+---
+
+==== 5. Filtering and Query Parameters
+
+URIs support additional filters:
+
+----
+deals://active?min_value=50000&stage=negotiation
+customers://all?industry=finance
+activities://recent?days=7
+----
+
+---
+
+==== 6. Security Considerations
+
+Each resource enforces:
+
+* Input validation  
+* Role-based access control  
+* Data filtering  
+
+Example:
+
+* Sales Rep → only their customers  
+* Manager → full access  
+
+Sensitive data is excluded by default.
+
+---
+
+==== 7. Design Principles
+
+* Keep resources small and focused  
+* Use predictable URI patterns  
+* Avoid overloading a single resource  
+* Enable composability for AI  
+
+---
+
+==== 8. Example End-to-End Flow
+
+User Query:
+
+----
+"Show high-value deals closing soon"
+----
+
+AI Execution:
+
+1. Call deals://closing-soon  
+2. Filter by value > threshold  
+3. Fetch related customers  
+4. Generate insights  
+
+---
+
+==== Summary
+
+This MCP schema enables:
+
+* Dynamic data access  
+* AI-driven insights  
+* Scalable architecture  
+* Secure interactions  
+
+It separates:
+
+* AI decision-making  
+* Data access via MCP resources  
+
+This design is production-ready and extensible.
+
+##############################################
+
+---
+
+=== Reflecting on Your MCP Resource Schema Design
+
+*Introduction*
+
+Welcome! In this dialogue, we focused on designing Model Context Protocol (MCP) resource schemas that balance technical requirements with practical usability.
+
+Topics covered:
+
+* Understanding Resource Schemas
+* Designing URI Patterns
+* Structuring Resource Definitions
+* Considering Scalability and Usability
+
+---
+
+== Understanding Resource Schemas
+
+*Coach Question*
+
+In your own words, how would you describe a resource schema within MCP?
+
+*Naresh Response*
+
+Customer Resource
+----
+{
+  "id": "string",
+  "name": "string",
+  "industry": "string",
+  "revenue": "number",
+  "status": "active | inactive",
+  "created_at": "datetime"
+}
+----
+
+Deal Resource
+----
+{
+  "id": "string",
+  "customer_id": "string",
+  "value": "number",
+  "stage": "prospecting | negotiation | closed",
+  "close_date": "date",
+  "status": "open | won | lost"
+}
+----
+
+Activity Resource
+----
+{
+  "id": "string",
+  "customer_id": "string",
+  "type": "call | email | meeting",
+  "timestamp": "datetime",
+  "notes": "string"
+}
+----
+
+Pipeline Resource
+----
+{
+  "stage": "string",
+  "total_deals": "number",
+  "total_value": "number"
+}
+----
+
+Insights Resource
+----
+{
+  "type": "customer | pipeline",
+  "summary": "string",
+  "recommendations": ["string"]
+}
+----
+
+*Key Insight*
+
+* Resource schemas define structured representations of entities in the system.
+
+---
+
+*Coach Follow-up*
+
+Why are resource schemas important?
+
+*Naresh*
+
+* It helps to interact with different sources of data
+
+*Refined Understanding*
+
+* Resource schemas act as a *contract between AI systems and external systems*
+
+---
+
+== Designing URI Patterns
+
+*Naresh Approach*
+
+----
+<resource>://<filter>?<query_params>
+----
+
+*Examples*
+
+----
+customers://all
+customers://high-value
+customers://{customerId}
+----
+
+*Coach Prompt*
+
+How to fetch deals for a specific customer?
+
+*Naresh Answer*
+
+----
+deals://customer/{customerId}
+----
+
+*Key Insight*
+
+* URI patterns should be:
+  * Consistent
+  * Predictable
+  * Hierarchical (support relationships)
+
+---
+
+== Structuring Resource Definitions
+
+*Improved Customer Schema*
+
+----
+{
+  "id": "string",
+  "name": "string",
+  "industry": "string",
+  "revenue": "number",
+  "customer_tier": "low | medium | high-value",
+  "status": "active | inactive",
+  "created_at": "ISO 8601 datetime"
+}
+----
+
+*Key Considerations*
+
+* Clear data types
+* Enumerations for controlled values
+* Standard formats (e.g., ISO datetime)
+
+---
+
+*Relationships Identified*
+
+* customers ↔ deals (1:N)
+* customers ↔ activities (1:N)
+* deals → pipeline (aggregation)
+* all resources → insights
+
+---
+
+== Practical Benefits for AI Systems
+
+A well-structured schema helps:
+
+* Reduce ambiguity
+* Guide correct tool usage
+* Enable multi-step reasoning
+* Prevent hallucinations
+* Improve performance
+* Enforce security
+
+---
+
+== Scalability and Usability
+
+*Scalability Principles*
+
+* Keep resources small and modular
+* Use filtering and pagination
+* Design stateless and cacheable URIs
+* Ensure schema extensibility (avoid breaking changes)
+
+*Usability Principles*
+
+* Use clear, human-readable URIs
+* Keep patterns predictable
+* Use meaningful field names
+* Support composability for AI workflows
+
+---
+
+== Final Feedback
+
+*Strengths*
+
+* Strong understanding of schemas as a *contract*
+* Effective URI design with hierarchical relationships
+* Solid thinking on scalability and usability
+* Good structuring of resource definitions
+
+*Areas for Improvement*
+
+* Improve articulation of the *why* behind design decisions
+* Especially for complex relationships and patterns
+
+---
+
+*Conclusion*
+
+* You have demonstrated strong foundational understanding of MCP schema design.
+* With deeper reasoning and explanation of design choices, you can move toward expert-level thinking.
+
+Keep up the good work!

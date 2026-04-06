@@ -1,6 +1,4 @@
 = Agentic AI – Rahul
-:toc!:
-:sectnums!:
 
 > Learn Agentic AI – Build Multi-Agent Automation Workflows - Rahul Shetty
 
@@ -36,6 +34,12 @@ NOTE: What is Covered.
 * [x] Round Robin Agentic AI using Python + AutoGen Framework
 * [x] Select Agent based on Task Type using Python + AutoGen Framework
 * [x] Browser + Playwright Automation using Python + AutoGen Framework
+
+##############################################
+
+== Resources
+
+* https://codingwithnaresh.atlassian.net/
 
 
 ##############################################
@@ -889,7 +893,9 @@ If clarification → QA
 
 * basics6.py: Math tutor with filesystem access can create files to help with algebra learning.
 
-* web_surfer.py: Web surfing agent navigates to Google and searches for AutoGen framework information.*
+* web_surfer.py: Web surfing agent navigates to Google and searches for AutoGen framework information.
+
+##############################################
 
 == Section 7
 
@@ -897,3 +903,202 @@ If clarification → QA
 * Analyze and consolidate them into a comprehensive Smoke Test flow that ensures bug coverage.
 * Convert the generated smoke test steps into Playwright automation actions.
 * Execute the test using Playwright and generate structured test results.
+
+##############################################
+
+== Section 8
+
+> I have understood the concept, which is important, although the code is not working. I will fix it later. Move to next one.
+
+image::agentic-ai/agentic3.png[Agentic AI Architecture Diagram, 600, 400]
+
+---
+
+*Big Picture (What’s happening?)*
+
+* Agent 1: BugAnalyst → understands Jira bugs
+* Agent 2: AutomationAgent → runs Playwright tests
+* Tool 1: Jira MCP → fetches bug data
+* Tool 2: Playwright MCP → runs browser automation
+* Orchestrator: RoundRobinGroupChat → makes agents talk turn by turn
+
+---
+
+[source,asciidoc, role="wrap"]
+----
+User Task
+   ↓
+RoundRobin Orchestrator
+   ↓
+BugAnalyst
+   ↓ (uses)
+Jira MCP → Fetch Bugs
+   ↓
+Creates Test Scenario
+   ↓
+AutomationAgent
+   ↓ (uses)
+Playwright MCP → Run Test
+   ↓
+Execution + Screenshots
+   ↓
+"TESTING COMPLETE"
+   ↓
+System Stops
+----
+
+##############################################
+
+---
+
+== Section 9
+
+
+[NOTE]
+====
+* This is already implement with #exising# MCPs, and claude.
+====
+
+Connect to the database and retrieve necessary information from multiple tables. Read the API contract files to understand the required structure for API calls. Use the data fetched from the database to construct a Registration API POST call. Validate the data submission by triggering a Login API GET call. Finally, store the successfully registered user data into an Excel sheet.
+
+##############################################
+
+I cannot create visual diagrams, but I can provide a clean ASCII architecture diagram representation:
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                    Agentic AI AutoGen Framework                 │
+└─────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────┐
+│                        AutoGen Orchestrator                     │
+│  ┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐  │
+│  │  DatabaseAgent  │  │    APIAgent     │  │   ExcelAgent    │  │
+│  │                 │  │                 │  │                 │  │
+│  │ • MySQL Queries │  │ • REST API Calls│  │ • Excel Ops.    │  │
+│  │ • Data Retrieval│  │ • File System   │  │ • Data Storage  │  │
+│  │ • Formatting    │  │ • Validation    │  │ • Reporting     │  │
+│  └─────────────────┘  └─────────────────┘  └─────────────────┘  │
+└─────────────────────────────────────────────────────────────────┘
+           │                     │                     │
+           └─────────────────────┼─────────────────────┘
+                                 │
+┌─────────────────────────────────────────────────────────────────┐
+│                      MCP Server Layer                           │
+│  ┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐  │
+│  │   MySQL MCP     │  │  REST API MCP   │  │   Excel MCP     │  │
+│  │   Server        │  │   Server        │  │   Server        │  │
+│  └─────────────────┘  └─────────────────┘  └─────────────────┘  │
+│  ┌─────────────────┐                                            │
+│  │ Filesystem MCP  │                                            │
+│  │   Server        │                                            │
+│  └─────────────────┘                                            │
+└─────────────────────────────────────────────────────────────────┘
+           │                     │                     │
+           └─────────────────────┼─────────────────────┘
+                                 │
+┌─────────────────────────────────────────────────────────────────┐
+│                    External Systems                             │
+│  ┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐  │
+│  │   MySQL DB      │  │   REST APIs     │  │   Excel Files   │  │
+│  │ rahulshettyacad │  │ rahulshettyacad │  │   Reports       │  │
+│  │ emy database    │  │ emy.com         │  │                 │  │
+│  └─────────────────┘  └─────────────────┘  └─────────────────┘  │
+│  ┌─────────────────┐                                            │
+│  │   File System   │                                            │
+│  │   /Users/...    │                                            │
+│  └─────────────────┘                                            │
+└─────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────┐
+│                      Configuration                              │
+│  ┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐  │
+│  │  AgentFactory   │  │   McpConfig     │  │   OpenAI GPT-4  │  │
+│  │                 │  │                 │  │   Model Client  │  │
+│  │ • Agent Creation│  │ • MCP Settings  │  │                 │  │
+│  │ • Workbench Mgmt│  │ • Server Params │  │ • LLM Power     │  │
+│  │ • System Msgs   │  │ • Environment   │  │ • Intelligence  │  │
+│  └─────────────────┘  └─────────────────┘  └─────────────────┘  │
+└─────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────┐
+│                    Workflow Flow                                │
+│                                                                 │
+│  DatabaseAgent → APIAgent → ExcelAgent                          │
+│       ↓              ↓              ↓                           │
+│  Get Data       → Test APIs    → Save Results                   │
+│  from MySQL        using DB     to Excel file                   │
+│  tables            data                                         │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+##############################################
+
+---
+
+
+
+*Overview*
+
+This is a multi-agent automation framework built on AutoGen that orchestrates AI agents to perform complex workflows using MCP (Model Context Protocol) servers for external tool integration.
+
+---
+
+*Architecture*
+
+* *Core Components*
+** **AgentFactory** - Central factory for creating specialized AI agents
+** **McpConfig** - Configuration manager for MCP server connections
+** **Scenario Scripts** - Workflow orchestration examples
+
+* *Agent Types*
+** **DatabaseAgent** - Handles MySQL database operations
+** **APIAgent** - Performs REST API testing and filesystem operations
+** **ExcelAgent** - Manages Excel file operations
+
+*MCP Server Integrations*
+
+* **MySQL MCP Server** - Database connectivity
+* **REST API MCP Server** - HTTP API interactions
+* **Excel MCP Server** - Spreadsheet manipulation
+* **Filesystem MCP Server** - File operations
+
+*Workflow Example (scenario2.py)*
+
+*Sequential Registration Process*
+
+1. **DatabaseAgent** retrieves user registration data from MySQL tables
+2. **APIAgent** performs registration and login API calls using the database data
+3. **ExcelAgent** saves successful registration data to Excel file
+
+*Key Features*
+
+* **Round-robin communication** between agents
+* **Termination conditions** for workflow control
+* **Data passing** between agents using structured messages
+* **Error handling** and validation at each step
+
+*Technical Stack*
+
+* **AutoGen** - Multi-agent orchestration
+* **OpenAI GPT-4** - Language model
+* **MCP Protocol** - External tool integration
+* **MySQL** - Data persistence
+* **REST APIs** - External service integration
+* **Excel** - Data reporting
+
+*Use Cases*
+
+* **End-to-end testing** workflows
+* **Data processing** pipelines
+* **API automation** with database validation
+* **Multi-system integration** testing
+
+== Section 10
+
+*Context Engineering Review*: Strong Context Engineering: 
+
+*Structured Agent Roles* - Each agent has clearly defined responsibilities (Database → API → Excel), preventing context confusion
+*Explicit Data Handoffs* - Uses specific trigger phrases like "DATABASE_DATA_READY - APIAgent should proceed next" to maintain context flow
+*System Message Precision* - Detailed instructions specify exact data formats, validation rules, and success criteria
+*State Management* - Agents wait for specific completion signals before proceeding, maintaining workflow context

@@ -45,6 +45,42 @@
   margin-left: 6px;
 }
 
+.badge_action {
+  font-size: 10px;
+  background: #4caf50;
+  color: #ffffff;
+  padding: 2px 6px;
+  border-radius: 6px;
+  margin-left: 6px;
+}
+
+.badge_reading {
+  font-size: 10px;
+  background: #8bc34a;
+  color: #ffffff;
+  padding: 2px 6px;
+  border-radius: 6px;
+  margin-left: 6px;
+}
+
+.badge_done {
+  font-size: 10px;
+  background: #4caf50;
+  color: #ffffff;
+  padding: 2px 6px;
+  border-radius: 6px;
+  margin-left: 6px;
+}
+
+.badge_onhold {
+  font-size: 10px;
+  background: #ffffff;
+  color: #333333;
+  padding: 2px 6px;
+  border-radius: 6px;
+  margin-left: 6px;
+}
+
 .highlight {
   color: #4caf50;
 }
@@ -65,17 +101,20 @@
   <div class="card">
     <h3>🚀 Udemy</h3>
     <ul>
-      <li>Architectures with Patterns, Frameworks and MCP - Mehmet Ozkaya <span class="badge">Active</span>
-        <div class="comment">Awesome course on agentic AI patterns</div>
+    <li>Learn Agentic AI – Build Multi-Agent Automation Workflows - Rahul Shetty <span class="badge_done">Done</span>
+        <div class="comment">I have understood the concepts thoroughly. I can use them for notes and use case</div>
       </li>
-      <li>Learn Agentic AI – Build Multi-Agent Automation Workflows - Rahul Shetty <span class="badge">Completed</span>
-        <div class="comment">Convert to Deliverable Content</div>
+      
+      <hr style="border: none; border-top: 1px dashed #666; margin: 16px 0;">
+      
+      <li>Architectures with Patterns, Frameworks and MCP - Mehmet Ozkaya <span class="badge_onhold">On Hold</span>
+        <div class="comment">Going to Coursera now</div>
       </li>
     </ul>
   </div>
 
   <div class="card">
-    <h3>Coursera</h3>
+    <h3>🚀 Coursera</h3>
     <ul>
       <li>AI Microservices Layer
         <div class="comment">Container orchestration for AI services</div>
@@ -84,10 +123,13 @@
   </div>
 
   <div class="card">
-    <h3>🧠 Learning</h3>
+    <h3>📖 Books</h3>
     <ul>
-      <li>Kubernetes Deep Dive
-        <div class="comment">Production deployment strategies</div>
+      <li>Steal Like An Artist - Austin Kleon
+        <span class="badge_action">Action</span><div class="comment">Ready For Social Media</div>
+      </li>
+      <li>Feel the Fear and Do It Anyway - Susan Jeffers
+        <span class="badge_reading">Reading</span><div class="comment">Make Antora Notes</div>
       </li>
     </ul>
   </div>

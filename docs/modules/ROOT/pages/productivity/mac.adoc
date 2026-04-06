@@ -240,14 +240,31 @@ video::GcbDQfeSzlM[youtube, width=800, height=450, caption="Video"]
 * [ ] Color picker
 * [ ] Pin screenshots on screen
 
+##############################################
+
+---
+
+* [ ] Suggested Workflow
+** [x] Take screenshot using shortcut
+** [ ] Annotate instantly in Shottr
+** [x] Save directly to docs/modules/ROOT/assets/images/. This is done via setting.
+** [x] Reference in AsciiDoc:
+
+##############################################
+
+---
+
 * [ ] Common Keyboard Shortcuts
 
 * [ ] Capture
+** [x] Cmd + Shift + 2 → Select area screenshot
+** [ ] Cmd + Shift + 3 → Full screen screenshot
+** [ ] Cmd + Shift + 4 → Window capture
+** [ ] Cmd + Shift + 5 → Scrolling screenshot
 
-* [ ] Cmd + Shift + 2 → Select area screenshot
-* [ ] Cmd + Shift + 3 → Full screen screenshot
-* [ ] Cmd + Shift + 4 → Window capture
-* [ ] Cmd + Shift + 5 → Scrolling screenshot
+##############################################
+
+---
 
 * [ ] After Capture (Editor Mode)
 
@@ -273,12 +290,7 @@ video::GcbDQfeSzlM[youtube, width=800, height=450, caption="Video"]
 * [ ] Quick annotations → highlight architecture diagrams
 * [ ] Scrolling capture → perfect for long UI screens
 
-* [ ] Suggested Workflow
 
-* [ ] Take screenshot using shortcut
-* [ ] Annotate instantly in Shottr
-* [ ] Save directly to docs/modules/ROOT/assets/images/
-* [ ] Reference in AsciiDoc:
 
 ----
 image::example.png[]

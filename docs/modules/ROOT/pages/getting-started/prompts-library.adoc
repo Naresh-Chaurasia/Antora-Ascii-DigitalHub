@@ -44,9 +44,11 @@ Extract the key ideas from the following text and convert them into a structured
 *Formatting rules:*
 
 - Use the following bullet hierarchy:
-  * Main idea
-  ** Sub idea
-  *** Deeper explanation or example
+
+* Main idea
+** Sub idea
+*** Deeper explanation or example
+
 - Each bullet should contain one clear idea.
 - Keep sentences short and easy to read.
 - Remove filler text, repetition, and conversational phrases.
@@ -57,6 +59,7 @@ Output requirements:
 - Output only the bullet summary.
 - Ensure the format is clean so it can be copied with one click and pasted into notes or documentation tools.
 - Explain the entire concept in 1-2 lines as overall summary.
+
 
 Refer Above Article
 ----

@@ -5,6 +5,7 @@
 * ~/Library/Application Support/Windsurf/User/profiles/57a4383b/snippets/Ascii-Generation.code-snippets
 ** adm - Admonitions
 ** code - Code block
+** card - Card
 ** img - Image
 ** res - Collapsible Resource
 ** sep - Separator

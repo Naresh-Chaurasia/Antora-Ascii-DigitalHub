@@ -11,6 +11,10 @@
 * [ ] Python Code Checking
 * [ ] Python Code Structure on Mac
 
+== /Users/nareshchaurasia/nc/Python-TechHub
+
+
+
 
 == AI-ML-GenAI-Python-TechStack
 
