@@ -1,0 +1,8 @@
+== Day 15 – Performance & Cost
+
+*Concept*
+* Token usage
+* Latency
+
+*Exercise*
+* Measure cost of your agent

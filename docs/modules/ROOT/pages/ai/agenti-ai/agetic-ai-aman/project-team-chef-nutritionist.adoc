@@ -1,0 +1,116 @@
+* /Users/nareshchaurasia/nc/Python-TechHub/AI-ML-GenAI/Agentic-AI/Agentic-AI-Aman/Part2
+
+> This is Scenario about Project Team and Chef.
+
+*Overall Summary*
+Multi-agent AI systems use multiple specialized agents with defined roles, outputs, and context to collaboratively solve complex problems efficiently.
+
+*Learning Objectives*
+
+* Understand what a multi-agent system is
+* Identify roles, outputs, and context for agents
+* Design a simple multi-agent workflow
+* Apply the concept using a real-world example
+* Prepare for implementing multi-agent systems in code
+
+*Structured Concept Breakdown*
+
+* Multi-agent AI systems
+** Multiple agents work together to achieve a goal
+** Each agent handles a specific task
+*** Improves efficiency and clarity
+
+* Real-world analogy: Project team
+** Different roles are needed to deliver a project
+*** Python developer writes code
+*** QA analyst tests the application
+*** DevOps engineer handles deployment
+
+* Core principle: One agent, one role
+** Each agent should have a single responsibility
+** Avoid assigning multiple tasks to one agent
+*** Leads to better performance and maintainability
+
+* Defining agent roles
+** Each agent must have a clear purpose
+*** Example: Chef → creates recipes
+*** Example: Nutritionist → analyzes health value
+
+* Defining expected output (deliverables)
+** Each agent produces a specific output
+*** Developer → code
+*** QA → test report
+*** DevOps → deployment scripts
+
+* Defining context (background)
+** Each agent works based on previous outputs
+** Context flows between agents
+*** QA uses developer’s code
+*** Nutritionist uses chef’s recipes
+
+* Collaboration between agents
+** Agents share information and results
+** Ensures smooth workflow and better outcomes
+*** Critical for success of multi-agent systems
+
+* Designing a multi-agent system
+** Define roles for each agent
+** Define expected outputs
+** Define context for each agent
+** Ensure collaboration between agents
+
+---
+
+* *Example*: Chef and Nutritionist system
+** Input → Ingredient (e.g., chicken)
+** Agent 1: Chef
+*** Role → Generate recipes
+*** Output → 5 recipes
+** Agent 2: Nutritionist
+*** Role → Analyze recipes
+*** Context → Recipes from Chef
+*** Output → Best recipe for diabetic patient
+
+* Multi-agent workflow
+** Input → First agent
+** First agent → Intermediate output
+** Second agent → Refined output
+*** Final output → Optimized result
+
+*Step-by-Step Learning Flow*
+
+* Step 1: Foundation concept
+** Understand what an agent is
+*** Agent → Performs a specific task
+** Understand need for multiple agents
+*** Complex problems → Multiple roles required
+
+* Step 2: Core idea
+** Learn the three pillars
+*** Role → What the agent does
+*** Output → What the agent delivers
+*** Context → Input or background
+
+* Step 3: Advanced understanding
+** Understand collaboration
+*** Agents depend on each other’s output
+** Learn workflow chaining
+*** Output → Input for next agent
+
+* Step 4: Real-world application
+** Design a simple system
+*** Input → Ingredient
+*** Agent 1 → Generate options
+*** Agent 2 → Evaluate options
+*** Output → Best result
+** Prepare for Python implementation
+
+*Quick Revision Points*
+
+* Multi-agent → Multiple specialized agents
+* One agent → One role
+* Every agent → Defined output
+* Context → Connects agents
+* Collaboration → Key to success
+* Break problem → Smaller tasks
+* Chain agents → Better results

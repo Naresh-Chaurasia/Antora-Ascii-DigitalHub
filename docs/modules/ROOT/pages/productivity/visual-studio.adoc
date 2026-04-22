@@ -4,6 +4,7 @@
 
 === James Quick
 
+* [ ] Option + Shift - Vertical Code Selection
 * [ ] While adding file: folder/file1.txt. If folder is not present it will be created.
 * [ ] #⌘ + Option + → is Next tab and ⌘ + Option + ← is Previous tab# (Navigate open windows)
 * [ ] #⌘ + K then ⌘ + Q# (Go to last edit location)

@@ -1,0 +1,12 @@
+== Day 20 – Finalization & Future
+
+*Concept*
+* Agent frameworks (LangChain, AutoGen, CrewAI)
+* Future of agentic systems
+
+*Exercise*
+* Publish project on GitHub
+* Write architecture notes
+
+*Reflection*
+* What would you improve?

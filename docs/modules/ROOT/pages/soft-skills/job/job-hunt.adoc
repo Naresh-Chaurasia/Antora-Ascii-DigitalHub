@@ -1,0 +1,273 @@
+= Job Hunt System
+
+include::job-styles.adoc[]
+
+== 🎯 Getting Started
+
+++++
+<div class="checklist-section">
+  <h3>📋 Foundation Checklist</h3>
+
+  <div class="checklist-item" id="resume-ready">
+    <input type="checkbox" class="checkbox" onchange="toggleItem(this, 'resume-ready')">
+    <div class="item-content">
+      <div class="item-title">Update your resume: Tailor it for each application</div>
+      <div class="item-description">
+        <ul>
+          <li>✔️ Update Resume</li>
+          <li>Review Resume</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div class="checklist-item" id="linkedin-profile">
+    <input type="checkbox" class="checkbox" onchange="toggleItem(this, 'linkedin-profile')">
+    <div class="item-content">
+      <div class="item-title">Create a LinkedIn profile: Make it professional and complete</div>
+      <div class="item-description">
+        <ul>
+          <li>Update LinkeIn as Per Resume</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div class="checklist-item" id="interview-practice">
+    <input type="checkbox" class="checkbox" onchange="toggleItem(this, 'interview-practice')">
+    <div class="item-content">
+      <div class="item-title">Practice interviewing: Prepare common questions</div>
+      <div class="item-description">Practice "tell me about yourself," strengths, weaknesses, and behavioral questions</div>
+    </div>
+  </div>
+</div>
+
+<script>
+function toggleItem(checkbox, itemId) {
+  const item = checkbox.parentElement;
+  if (checkbox.checked) {
+    item.classList.add('completed');
+  } else {
+    item.classList.remove('completed');
+  }
+  saveProgress();
+}
+
+function saveProgress() {
+  const progress = {};
+  document.querySelectorAll('.checklist-item').forEach(item => {
+    const checkbox = item.querySelector('.checkbox');
+    progress[item.id] = checkbox.checked;
+  });
+  localStorage.setItem('jobSystemProgress', JSON.stringify(progress));
+}
+
+function loadProgress() {
+  const saved = localStorage.getItem('jobSystemProgress');
+  if (saved) {
+    const progress = JSON.parse(saved);
+    Object.keys(progress).forEach(itemId => {
+      const item = document.getElementById(itemId);
+      if (item) {
+        const checkbox = item.querySelector('.checkbox');
+        checkbox.checked = progress[itemId];
+        if (progress[itemId]) {
+          item.classList.add('completed');
+        }
+      }
+    });
+  }
+}
+
+document.addEventListener('DOMContentLoaded', loadProgress);
+</script>
+++++
+
+== 📅 Weekly Routine
+
+++++
+<div class="routine-section">
+  <div class="day-card">
+    <div class="day-title">📅 Monday - Research Day</div>
+    <div class="day-tasks">
+      • Research companies and find 5-10 positions<br>
+      • Save job postings that match your skills<br>
+      • Identify key requirements for each role<br>
+      • Plan your application strategy for the week
+    </div>
+  </div>
+  
+  <div class="day-card">
+    <div class="day-title">📝 Tuesday-Thursday - Application Days</div>
+    <div class="day-tasks">
+      • Apply to 2-3 quality jobs daily<br>
+      • Tailor resume for each application<br>
+      • Write customized cover letters<br>
+      • Track all applications in a spreadsheet
+    </div>
+  </div>
+  
+  <div class="day-card">
+    <div class="day-title">🤝 Friday - Networking & Follow-up</div>
+    <div class="day-tasks">
+      • Network and follow up on applications<br>
+      • Send follow-up emails from previous week<br>
+      • Reach out to new connections<br>
+      • Schedule informational interviews
+    </div>
+  </div>
+  
+  <div class="day-card">
+    <div class="day-title">📚 Weekend - Skill Development</div>
+    <div class="day-tasks">
+      • Learn new skills or prepare for interviews<br>
+      • Take online courses or watch tutorials<br>
+      • Practice technical skills or assessments<br>
+      • Prepare for upcoming interviews
+    </div>
+  </div>
+</div>
+++++
+
+== 🤝 Networking Strategy
+
+++++
+<div class="networking-section">
+  <h3>🌐 Weekly Networking Goals</h3>
+  
+  <div class="checklist-item">
+    <input type="checkbox" class="checkbox" onchange="toggleItem(this, 'network-weekly')">
+    <div class="item-content">
+      <div class="item-title">Reach out to 2-3 people in your target industry weekly</div>
+      <div class="item-description">Connect with alumni, former colleagues, or industry professionals</div>
+    </div>
+  </div>
+  
+  <div class="checklist-item">
+    <input type="checkbox" class="checkbox" onchange="toggleItem(this, 'info-interviews')">
+    <div class="item-content">
+      <div class="item-title">Ask for informational interviews, not jobs</div>
+      <div class="item-description">Request 15-20 minutes to learn about their experience and company</div>
+    </div>
+  </div>
+  
+  <div class="checklist-item">
+    <input type="checkbox" class="checkbox" onchange="toggleItem(this, 'linkedin-groups')">
+    <div class="item-content">
+      <div class="item-title">Join professional groups on LinkedIn</div>
+      <div class="item-description">Participate in discussions and share valuable content</div>
+    </div>
+  </div>
+  
+  <div class="checklist-item">
+    <input type="checkbox" class="checkbox" onchange="toggleItem(this, 'industry-events')">
+    <div class="item-content">
+      <div class="item-title">Attend virtual or in-person industry events</div>
+      <div class="item-description">Webinars, conferences, meetups, and networking events</div>
+    </div>
+  </div>
+</div>
+++++
+
+== 📊 Weekly Progress Tracker
+
+++++
+<div class="progress-section">
+  <h3>📈 This Week's Progress</h3>
+  
+  <div class="progress-item">
+    <span class="progress-label">Applications Sent</span>
+    <span class="progress-value" id="apps-count">0/15</span>
+  </div>
+  
+  <div class="progress-item">
+    <span class="progress-label">Networking Contacts</span>
+    <span class="progress-value" id="network-count">0/3</span>
+  </div>
+  
+  <div class="progress-item">
+    <span class="progress-label">Follow-ups Sent</span>
+    <span class="progress-value" id="followup-count">0/5</span>
+  </div>
+  
+  <div class="progress-item">
+    <span class="progress-label">Skills Practiced</span>
+    <span class="progress-value" id="skills-count">0/3</span>
+  </div>
+</div>
+++++
+
+== 📝 Weekly Notes
+
+++++
+<div class="notes-section">
+  <h3>📔 Weekly Reflection</h3>
+  
+  <textarea class="notes-textarea" id="weekly-notes" placeholder="Use this space to reflect on your week:
+
+• What went well this week?
+• What challenges did you face?
+• What did you learn?
+• What will you do differently next week?
+• Companies you're excited about
+• Interviews scheduled
+• Feedback received"></textarea>
+  
+  <button class="btn" onclick="saveNotes()">Save Weekly Notes</button>
+  
+  <div id="saved-notes" style="margin-top: 1rem;"></div>
+</div>
+
+<script>
+function saveNotes() {
+  const notes = document.getElementById('weekly-notes').value;
+  if (notes.trim()) {
+    const weekStart = new Date();
+    weekStart.setDate(weekStart.getDate() - weekStart.getDay());
+    const weekKey = `week_${weekStart.toISOString().split('T')[0]}`;
+    
+    const allNotes = JSON.parse(localStorage.getItem('weeklyNotes') || '{}');
+    allNotes[weekKey] = {
+      notes: notes,
+      date: weekStart.toLocaleDateString()
+    };
+    
+    localStorage.setItem('weeklyNotes', JSON.stringify(allNotes));
+    displaySavedNotes();
+    document.getElementById('weekly-notes').value = '';
+  }
+}
+
+function displaySavedNotes() {
+  const container = document.getElementById('saved-notes');
+  const allNotes = JSON.parse(localStorage.getItem('weeklyNotes') || '{}');
+  
+  const sortedWeeks = Object.keys(allNotes).sort().reverse().slice(0, 4);
+  
+  if (sortedWeeks.length > 0) {
+    container.innerHTML = '<h4>Previous Weeks:</h4>';
+    sortedWeeks.forEach(weekKey => {
+      const weekData = allNotes[weekKey];
+      const div = document.createElement('div');
+      div.className = 'journal-entry';
+      div.innerHTML = `
+        <div style="font-weight: 600; margin-bottom: 0.25rem;">Week of ${weekData.date}</div>
+        <div style="color: #374151; line-height: 1.5;">${weekData.notes.replace(/\n/g, '<br>')}</div>
+      `;
+      container.appendChild(div);
+    });
+  }
+}
+
+document.addEventListener('DOMContentLoaded', displaySavedNotes);
+</script>
+++++
+
+== 💡 Quick Reminders
+
+* **Quality over quantity** - Better to apply to 5 perfect jobs than 50 random ones
+* **Follow up** - Send a follow-up email 1 week after applying
+* **Keep learning** - Use this time to acquire new skills
+* **Stay positive** - The right job is out there, keep going!
+
+*Every application is practice. You're getting better with each one!*

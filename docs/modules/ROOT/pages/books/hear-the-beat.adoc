@@ -1,0 +1,306 @@
+= Hear The Beat - James Joseph
+
+include::book-styles.adoc[]
+
+##############################################
+
+---
+
+include::books-header.adoc[]
+
+##############################################
+
+---
+
+* https://ihatetodance.com/hear-the-beat-feel-the-music/
+
+== ✅ Introduction
+
+NOTE: This is load of inspiration but no action.
+
+This book isn't about knowing music in your head, it's about connecting to it at a deeper level. *It's about feeling it in your bones*. It's about creating a rhythmic connection.
+
+You'll learn how to clap. This will help you connect to music, *because clapping is like being an instrument in the band*.
+
+You'll learn how to identify the structure of music. This is known as *phrasing*. This will start you on the path to better musicality, *because it'll help you to predict where the music is going*. It'll give you the somewhat useless skill of being able to predict and punch the air to a big accent or hit in the music (but I bet your friends will find that cool). There's more: *according to the field of biomusicology, the study of biology and music, #if you can predict where the music is going, you'll enjoy it more#. Yup, lying on the couch and chilling to music is about to get better*.
+
+*Being rhythmically challenged is not a lack of ability; it's a lack of education.*
+
+#*It was a lack of education and training that was holding me back*.#
+
+I could hear not only the sets of 8 in the music, but also how the sets of 8 came together to form the bigger structure.
+
+Now I'm almost a virtuoso when it comes to tapping my foot and clapping my hands. I can even dance and, on a good night, not embarrass myself. Best of all, I enjoy listening to music more. *At times, I even feel like I'm part of the band*.
+
+== 1: Count the Music
+
+Even if you can't hear the structure, music has structure. For non - musicians, the most important structural element to know is a set of 8, also known as an 8 - count and an *eight - beat mini - phrase*. If you can count the sets of 8, you've found the underlying beat.
+
+Also, like a sentence, a set of 8 usually has a theme. You need to listen for themes, because generally these themes are related to the musical count and the structure.
+
+There's one other structural element, a *major phrase* (not to be confused with a mini - phrase), which I'll mention now because it'll help you hear the sets of 8. #Essentially, the musical themes of the sets of 8 (mini - phrases) can come together to form a bigger theme, which is a major phrase. So major phrases, like paragraphs in a piece of writing, are part of the bigger structure in a piece of music#.
+
+While music is made up of vocals, melody, harmony and drums, *it's the drums that create the underlying beat of music*. The drums and other percussion instruments are called the percussion section of the band. When you add the keyboard and guitars to the percussion section, it's often called the rhythm section, although the components of a rhythm section can vary from band to band.
+
+----
+Think of music like a dance performance. Just like dancers need timing and rhythm to move together, music needs a beat to stay on track. That beat comes from the drums — they are like the heartbeat of the music.
+
+The drums and percussion instruments (like tambourines or shakers) make up what musicians call the percussion section. They keep the timing steady — like a dancer’s internal count of 5, 6, 7, 8.
+
+Now, when you add guitars and keyboards to that beat, it becomes the rhythm section. This section creates the groove you feel in your body when you dance. It’s what makes your foot tap and your hips move. Different bands might have different instruments in their rhythm section, but they all work together to give dancers the rhythm to move to.
+----
+
+*For now, just remember that the #drums and percussion have the final word in establishing the beat, because that'll come in handy when you're up against difficult music#.*
+
+*LINGO ALERT: Feel the Music Don't count, feel ! The only count I know, is Count Basie !*
+
+We'll get to counting music in a moment. First, it'll help to get a feel for the music; that is, to get a sense for hearing the sets of 8 without counting, because ultimately that's your endgame.
+
+The chorus runs from 0 : 57 seconds to 1 : 15. As you listen, think about the structure in terms of four sets of 8 coming together, thematically, to create a major phrase of music.
+
+As you listen try to hear how a phrase of words aligns with a set of 8 in the music. *Notice how a set of 8 stands out. Specifically, notice how, thematically, the first three sets of 8 set up something, which gets resolved in the fourth set of 8*.
+
+Ponder this concept of themes in music, and setup and resolution in particular, because they happen a lot. While resolution is more complicated than this, for now think of the music building up tension that gets released through the resolution. A resolution brings a sense of comfort or closure.
+
+( I repeat : vocals do not always line up with the sets of 8 ).
+
+Go to video 1.2 on the website and listen to "Gotta Do Some War Work, Baby." Focus on the beginning of the song, the first 1 : 05 minutes, which have no vocals. There are five major phrases and each one runs for about 13 seconds.
+
+Listening to just the melody, notice how something builds up in the first three sets of 8 and then resolves in the fourth set of 8. This creates, thematically, a major phrase of music.
+
+---
+
+=== Intro to Counting
+
+The way to get started counting is simple: jump in and make mistakes!
+
+As you count, you’ll wonder if you’re counting correctly. There will be failed attempts. So stop and start over. It will be trial and error.
+
+Listen for an accent or emphasis on count 1; and listen for a mini - phrase ( set of 8 ) of music.
+
+1 ) Listen for an accent or emphasis on count 1.
+
+Often, but not always — I repeat, not always — those beats will sound stronger or sound different, especially count 1.
+
+Sometimes count 1 is louder or has more strength or has more oomph. I'm calling that an accent. But sometimes count 1 is not louder. Sometimes it has a manner or presence that's just different. #I'm calling that an emphasis. It could be a heaviness or an emptiness#. It could be some sort of transition point. Often what you hear on count 1 is something you can't explain. I often don't know why count 1 sounds different. Fortunately, it doesn't matter why, it only matters that you hear something different. In that way, try to develop a sense for "something" on count 1, not an intellect for it.
+
+Also, it helps to listen for the transition between two major phrases. If you can hear the resolution or conclusion of a major phrase — likely to be a handful of beats, not just one beat — that will prep you to listen for the beginning of the next major phrase, which will be a count 1.
+
+#Take the example of a verse ending and the chorus beginning, which is a transition between two major phrases#.
+
+It's hard to put into words what a set of 8 sounds like. Typically, a set of 8, like a sentence of words, will stand out in some way.
+
+It'll have integrity, like a sentence of words has integrity. You'll hear a theme or what I describe as a "musical thought." ( Remember, these smaller themes then come together to form bigger themes, which are the major phrases. )
+
+Over eight beats of music you might hear things such as a : Setup and resolution.
+
+"Call and response," which is when the music makes a statement and then there's an answer or reaction to the statement. Beginning point and an ending point; or maybe just a beginning point.
+
+Also, listen for some sort of transition between sets of 8, like something coming to an end, which would tip you off that something new is about to begin.
+
+#As you listen for all these elements, try to listen to the music as a whole and get a feel for the bigger structure.#
+
+From now on, whenever and wherever you hear music, count the sets of 8. Make it a habit. The more you work at it, the more natural it’ll become. #Even if you don’t think you’re making progress, you’re slowly training your ear#. Have faith that your brain knows what’s going on.
+
+== 2: Practice Counting Music
+
+Music creates order out of chaos.
+
+Practice is the hardest part of learning, and training is the essence of transformation.
+
+SoundHound and Shazam,
+
+Getting to know music at the intuitive level takes time. Don’t expect a switch to flip in your brain from “no rhythm” to “rhythm.” It’ll be more like a dial where the more you train, the better you get. And it’ll only happen through training.
+
+Practice, experiment, persist, and you'll improve.
+
+== 3: Clap
+
+NOTE: N/a
+
+And you will reap the benefits because learning to clap will : Help you to hear the sets of 8 and feel the beat. Improve your overall connection to music. Get your body moving to music. Help you save face, because in an audience people may judge your clapping. Clapping can be a test of your rhythm, so you may as well do it right — or people will know you ain't got no rhythm.
+
+Before we clap, a couple of definitions : *The downbeat is the odd - numbered beat, on counts 1, 3, 5 and 7. The upbeat is the even - numbered beat, on counts 2, 4, 6 and 8.*
+
+You could clap on every beat, counts 1, 2, 3, 4, 5, 6, 7 and 8. You could clap on the downbeat ( counts 1, 3, 5 and 7 ). You could clap on the upbeat ( counts 2, 4, 6 and 8 ).
+
+If the "tick" has an emphasis, I note it in all caps, so two beats would be "boom TICK."
+
+The stomp was the downbeat and the clap was the upbeat. So eight beats of music would look like this : stomp CLAP — stomp CLAP — stomp CLAP — stomp CLAP
+
+Do the following three variations and compare them. Do them with no music and all at the same tempo, which is kind of slow : Do a stomp and a CLAP and keep repeating it. Get into it. Stop. Just stomp your foot and get into it. Groove a little. Stop. Just clap and get into that. Keep grooving. Stop.
+
+HOW TO FAKE MUSICAL TALENT : If you ever hang out with friends who sing or play guitar, doing a "stomp CLAP" in the background will create a drum track for the musicians. It's fun and a good way to fake musical talent. Seriously, it works.
+
+My goal is to be entrained by the music — to be mesmerized, spellbound — and connecting to the simple, repetitive pattern of the downbeat and upbeat helps
+
+== 4: Waltz
+
+Also note that waltz music will not make you want to clap.
+
+DANCING TIP : When you dance a waltz with a "down up up" feeling, your head and body go down slightly on the downbeats ( count 1, count 4 ) and up on the upbeats ( counts 2 and 3, counts 5 and 6 ). This is referred to as the "rise and fall," and it helps define the look, feel and style of the dance.
+
+The waltz is the oldest ballroom dance, dating back to the 1700s.
+
+== 5: Tempo
+
+This lets me organize my music by tempo, *which helps when creating playlists for dancing and working out*, and when I want to create a mood, like for a dinner party.
+
+Occasionally, *just the opening section of a piece of music, what's called the introduction, has a different tempo*.
+
+Just search the web for "tap tempo" and you'll find other choices.
+
+If you're trying to connect to the beat, don't be conflicted — the tempo is the tempo, which is beats per minute. It's not always the energy of the song.
+
+== 6: Phrasing
+
+Every song contains audible clues that basically yell, "Hey, everyone, this is a new part !" These clues might include *a new instrument that starts playing, a big crash, a drum fill or even just a significant change in the drum patterns. Electronic music loves to steadily add and subtract different parts every 32 counts, making it easy to recognize and work with those changes*.
+
+++++
+<div class="dashboard">
+  <div class="card">
+    <h3>🎨 Key Concepts</h3>
+    <ul>
+      <li>Major Phrase | Instruments etc.
+      </li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3>🚀 Action Items | Dance</h3>
+    <ul>
+      <li>Identify Major Phrases | Instruments etc.
+      </li>
+    </ul>
+  </div>
+</div>
+++++
+
+---
+
+Music can be abstract and there is often more than one correct answer to a phrasing question. *You might get different teachers telling you to phrase differently*. Just remember, you are dealing with the expression of ideas. Ideas change and are interpreted in different ways.
+
+But don't get hung up on trying to identify the phrasing of a song. Hearing the sets of 8 is the primary skill you need to learn.
+
+One way to do it is with talent. For the rest of us, we can do it by becoming more musical. You'll learn more about that in the next chapter. *But for starters, learning how to identify the bigger structure of music, called phrasing, is a good first step toward becoming more musical*.
+
+The first two songs from 1 are examples of simple phrasing ( "Brother Louie" and "Gotta Do Some War Work, Baby," which I count in video 1.5 ). *Simple phrasing is music that's structured in four sets of 8. That is, four eight - beat mini - phrases come together to create a 32 - beat major phrase of music*.
+
+*But here's the beauty of phrasing: usually, the structure of music repeats throughout a song. So if you identify the phrasing early on, you can predict where the rest of the song is going, even with unfamiliar music. Not always, but often.*
+
+So if you miss a big accent in the beginning of a song, you can be ready when it hits again. That's one way you can know when to punch the air to a big accent even if you're listening to the song for the first time.
+
+*In all of the major phrases in both of these songs a theme builds in the first three sets of 8 that then gets resolved in the fourth set of 8.*
+
+##############################################
+
+---
+
+++++
+<div class="dashboard">
+  <div class="card">
+    <h3>🎨 Key Concepts</h3>
+    <ul>
+      <li>In all of the major phrases in both of these songs a theme builds in the first three sets of 8 that then gets resolved in the fourth set of 8
+      </li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3>🚀 Action Items | Dance</h3>
+    <ul>
+      <li>AI Microservices Layer
+        <div class="comment">Container orchestration for AI services</div>
+      </li>
+    </ul>
+  </div>
+</div>
+++++
+
+##############################################
+
+---
+
+*But there's a catch with major phrases: the number of mini - phrases in a major phrase can vary. So even though four sets of 8 is very common, you'll be up against other arrangements as well. For example, six sets of 8, which would be a 48 - beat major phrase, is common.*
+
+There's another catch, which is called "mixed phrasing," and this is where things get really tricky. *The number of mini - phrases in the major phrases can vary throughout a song*. So, for example, the first major phrase could be four sets of 8 and the next one could be five sets of 8. Or maybe you get one that's only three sets of 8. Sometimes you get a 16 - beat phrase ( two sets of 8 ) and you wonder, does it stand on its own as a 16 - beat phrase or "bridge"?
+
+Or does it belong to the major phrase before it? Don't worry about it. You may never know the answer. Just roll with it. If you're choreographing, do your own interpretation.
+
+Also, there's "*irregular phrasing*," which is when a song has extra beats. *It can be any number of beats but usually an even number. For example, you might get two or four beats placed between major phrases.*
+
+But don't sweat. Like I said earlier, patterns that you hear in the beginning of a song usually repeat. So after you hear the first part of the song and can figure out the phrasing, you should have a good idea of how the rest will go. Again, it doesn't always work out that way, but it often works.
+
+If you stumble — if the count doesn't seem to be correct — stop and start over. For example, you might hear a big transition when you weren't expecting it. Was that the beginning of a new major phrase ? Perhaps, so start over counting from there and see if that works.
+
+First, capture the name of the song so you can listen to it over and over. Try music recognition apps like *SoundHound and Shazam*.
+
+If you get a more complicated song with a phrase that's only, say, four beats, you note it like this: 4. For example, "Yesterday" by the Beatles has some major phrases made up of three sets of 8 followed by one set of 4. That gets noted like this : 8884. (Note : As I go to press, YouTube blocked the video I made of "Yesterday," but you can find the song on your own and try counting.)
+
+*I haven't talked much about intros*, but typically a song has an introduction, which sounds a little different — occasionally, an intro is really weird — and leads you into the first major phrase. The intro can be any length, and *I've noted the intro on the skeleton that follows as two sets of 8*.
+
+That's about it, really. Below is a generic musical skeleton for a song that has all simple phrasing, except for the 16 - beat intro ( I'm just showing the beginning of the song as the structure repeats ) : 88 – intro 8888 8888 8888 8888 etc.
+
+I think anything that departs from 32 - beat major phrases is usually another level of difficulty.
+
+For me, a hard song would be something I listen to four or five times and I still don't know what's going on. *I regularly encounter songs that are too hard or ambiguous and I give up*.
+
+##############################################
+
+---
+
+== 7: Move to Music
+
+* [ ] Foot Tapping
+* [ ] Be able to predict a big accent and punch the air
+
+The first thing, tapping your foot, is drop - dead simple. The second thing, "the spontaneous punch," is much harder. Yup, we're going to circle back to the scenario I set up in the Introduction and in 6 : that is, how to listen to a song for the first time and be able to predict a big accent and punch the air. I'm going to deliver on that punch — and take it to the next level.
+
+It can even be done privately because you can tap your big toe inside your shoe and nobody will know.
+
+musicality : The ability to hear specific changes in the music that warrant interpretation. The ability to feel mood changes in the music and interpret that change with body movement that accentuates the feeling in the music.
+
+*Musicality in dance then might be considered a measure or degree to which a dancer is receptive and creative in his translation or rendering of music through movement*.
+
+I think this is the harder part and we're going to work on it in a moment with the punching exercise.
+
+The second step is to creatively interpret the musical element through body movement and dance.
+
+We're not going to work on this, but I'll break it down now in a practical way so that you can learn it on your own :
+
+Movement can also be planned to unfamiliar music. You were introduced to that concept in 6 when I revealed how to punch the air to a big accent. You learned that the structure of a song usually repeats. So even if you miss a musical element in the beginning of a song, like a big accent, it usually repeats. In that sense, even though the first half of the song is unfamiliar, the second half of the song is somewhat familiar, which lets you respond to a big accent in a planned way. Essentially, you're given a second chance to receive the music.
+
+To be spontaneous you need the ability to react or "catch" something in the music. This is a thoughtless action. That's our path at the moment : "catching" stuff in music, which we'll
+
+express through a punch. Eventually, as you get better, what comes out of you — the "move" — may not be known by you or planned in advance. What comes out of you may not be what you'd expect and it may be something you've never done before. No kidding, it's like magic. On to the punch !
+
+The Spontaneous Punch
+
+You're going to punch the air to a break in the music. A break is when the music builds, hits an accent and then seems to stop : most or all of the instruments and vocals cut out for a few seconds. Breaks are one of the easiest elements in music to hear, which makes them a good place to start.
+
+This exercise is similar to an old concept in dance called "hitting the breaks." Hitting a break is acknowledging the dramatic change in the music ( the break ) with a dramatic dance move. *At a basic level of dance you could freeze your body or strike a pose, which are moves that would artistically fit the silence you hear during a break*. *At a more advanced level, you could do something like a syncopation with your footwork or a styling move, like a body roll. With a partner you could do a dramatic move like a dip*. 
+
+---
+
+Here's what I want you to do :
+
+When the music breaks, either punch or do something creative ( suggestions follow ). Breaks usually occur toward the end of a major phrase. Listen to a song and punch the air on the accented beat, which starts the break — usually a count 1, sometimes a count 5.
+
+Here's the challenge : the first one or two times through each song, do not count. Listen to the songs without counting the sets of 8. So the point of this exercise is to feel the music build up to the break and to predict, spontaneously, without counting, when the break will hit. This is also an exercise in getting a feel for the phrasing and structure.
+
+There's one artistic aspect of a punch you can control : the strength of your punch. If it's a big accent in the music, do a big punch; if it's a small accent, do a small punch. So, in addition to predicting the arrival of the accent, try to predict how hard the accent will hit
+
+ANOTHER TIP : There's on old saying in dance that goes something like, "There are no mistakes, only syncopations." So practice turning a mistake into a new move. AND ANOTHER TIP : There's another reason not to be self - conscious. What people see can affect what they hear. So, for example, if you deliver a big punch to a tiny accent, an audience may actually hear a bigger accent. That may not be a bad thing and it may even look good. So what you think is a mistake, the audience thinks is just another cool move.
+
+Here's what to listen for in your everyday music. There are many strong accents in music that aren't associated with a break but are still worthy of a punch. As you know, it's common for a count 1 to have an accent. You also know that it's common for the count 1 of a new major phrase to have an even stronger accent. Try punching there, the count 1 of a new major phrase. Granted, these may not always be loud accents, so simply adjust the size and intensity of your punch to match the accent. Got it ? Do it !
+
+For me, the hard part in achieving spontaneous movement to music was getting into the mindset and habit of consciously listening for things to react to. That is, I had to remember to do it. Then, after that, I had to train long enough until it became an unconscious action so I didn't have to think about it.
+
+There will always be somebody who dances better than I do. And there will always be someone who dances much, much worse than I do. Confidence comes from "owning" what you do.
+
+Take chances and don't be afraid to fail.
+
+But I came to realize that those talented dancers were correct. You have to work at it, and if you don't have talent, you have to work really, really hard. Eventually, for me "hitting the breaks" ( from the punching exercise ) became my gateway to improving my spontaneous movement because breaks in music are easy to hear.
+
+In the beginning, hitting a break was hard even to familiar music ( because I was distracted by other things like staying on the beat, leading my follower, choreographing the next move in my head, keeping my cool ). Eventually, I could do it.
+
+
+And that's my promise to you. I don't care if you think you have no connection to music, no ability to hear the beat and no musicality. You probably have some ability with music, and if you put in the time and train, even if you don't become great, you will get better.

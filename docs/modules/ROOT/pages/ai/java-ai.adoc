@@ -1,0 +1,141 @@
+= Agent-Based AI Learning Guide (For Java Developers)
+
+== 1. Shift Your Mental Model (Very Important)
+
+* Instead of thinking:
+** "How do I write this code?"
+
+* Think:
+** "What roles/agents do I need and how should they talk?"
+
+* Agent systems consist of:
+** Roles
+** Instructions
+** Flow
+** Tools
+
+
+== 2. Always Start with a Plain-English Plan
+
+* Before writing code, define:
+** What is the goal?
+** What agents are needed?
+** What does each agent do?
+** How do they interact?
+
+* Example:
+** Agent 1: User proxy (input)
+** Agent 2: Planner (break task)
+** Agent 3: Executor (do task)
+
+* If you can describe it in English → you can code it.
+
+
+== 3. Use a Fixed Template (Don’t Start Blank)
+
+* Always reuse a skeleton:
+
+[source, python]
+----
+1. Import libraries
+2. Configure LLM
+3. Define agents
+4. Define tools (if any)
+5. Define interaction flow
+6. Run
+----
+
+* Practice by copying and modifying existing code.
+
+
+== 4. Break Code into Micro-Blocks
+
+* Build step-by-step:
+** Step 1: Create one agent
+** Step 2: Make it respond
+** Step 3: Add second agent
+** Step 4: Make them talk
+
+* Small wins reduce overwhelm.
+
+
+== 5. Reverse Engineering Practice (Best Approach)
+
+* Take working code
+* Hide it
+* Rewrite from memory
+* Compare and fix
+
+* Builds muscle memory.
+
+
+== 6. Maintain Your Personal Pattern Library
+
+* Create reusable snippets:
+** Basic agent setup
+** Two-agent conversation
+** Tool usage example
+
+* Store in your notes (e.g., Antora)
+
+* Over time:
+** You assemble solutions instead of inventing from scratch
+
+
+== 7. Think in Flows, Not Syntax
+
+* Java mindset:
+** Syntax-focused
+
+* Agent mindset:
+** Flow-focused
+
+* Ask:
+** Who starts?
+** Who responds?
+** When does it stop?
+
+
+== 8. Use LLM as a Pair Programmer (Smartly)
+
+* Avoid:
+** "Write full code"
+
+* Prefer:
+** "Give me step 1"
+** "Now step 2"
+** "Explain why this agent is needed"
+
+* Stay in control of the process.
+
+
+== 9. Practice One Pattern Repeatedly
+
+* Do not jump topics
+
+* Progression:
+** Master 2-agent conversation
+** Add tools
+** Add memory
+
+
+== 10. Accept This Phase
+
+* Current state:
+** You understand → ✔
+** Writing from scratch → In progress
+
+* This is a normal transition phase.
+
+
+== Analogy
+
+* Java:
+** Writing classes
+
+* Agent-based AI:
+** Directing a movie
+
+* You define:
+** Who does what
+** How they interact

@@ -7,19 +7,141 @@
 
 == Content Creation
 
+##############################################
 
-.Template
+---
+
+=== Explain the code
+
+.Convert the following code into well-structured AsciiDoc documentation
 [%collapsible]
 ====
 
-[source,asciidoc]
+[source,asciidoc, role="wrap"]
 ----
-Your content here. Source is asciidoc for single click copy.
+Convert the following code into well-structured AsciiDoc documentation.
+
+Requirements:
+1. Remove all AsciiDoc headers (=, ==, ===) and replace with bold formatting using asterisks (*)
+2. Keep it concise and focused - avoid excessive detail
+3. Use simple, clear language suitable for documentation
+4. Include these main sections:
+- Overview (brief description)
+- System Architecture (components and their roles)
+- Implementation Details (key code examples)
+- Workflow Process (how it works)
+- Sample Execution (real example if available)
+- Key Features (main capabilities)
+- Technical Details (dependencies, configuration)
+- Use Cases (practical applications)
+- Benefits (advantages)
+- Conclusion (summary)
+
+1. Format guidelines:
+- Use *bold* for all section headers
+- Use bullet points with hyphens (-) for main lists
+- Use numbered lists with asterisks (*) for sub-items (like: * 1. Item - description)
+- Keep code blocks with [source,language] tags
+- Include JSON examples where relevant
+- Add simple ASCII diagrams for workflows
+- Keep paragraphs short and focused
+
+2. Content focus:
+- Explain what the code does
+- Highlight key components and their roles
+- Show practical examples
+- Emphasize benefits and use cases
+- Avoid technical jargon where possible
+
+3. Length target:
+- Aim for 100-150 lines maximum
+- Focus on essential information only
+- Remove redundant explanations
+
+4. Specific formatting rules:
+- Main sections: *Section Name*
+- Subsections: *Subsection Name:*
+- Main bullet points: - Point description
+- Numbered sub-points: * 1. Item - description
+- Code blocks: `python code here`
+
+Please analyze the provided code/notebook and generate documentation following these guidelines exactly.
 ----
+
 
 ====
 
 ##################################################
+
+=== Convert to Self Paced Learning
+
+.Self Paced Learning
+[%collapsible]
+====
+
+[source,asciidoc, role="wrap"]
+----
+
+*Objective:*
+Convert the given article into structured, self-paced learning content that a learner can follow independently.
+
+*Instructions:*
+
+* Identify the main concepts, supporting ideas, and practical insights
+* Transform the content into a guided learning format
+* Ensure the learner can *understand, apply, and practice* the topic step by step
+
+*Output Structure:*
+
+* Overall Summary (1–2 lines)
+** Provide a concise explanation of the entire concept
+
+* Learning Objectives
+** Clearly state what the learner will be able to do after completing this content
+
+* Structured Concept Breakdown
+** Use the hierarchy:
+*** Main concept
+**** Sub concept
+***** Explanation / example
+
+** Keep each point short and clear
+** Remove filler and repetition
+** Preserve useful examples and analogies
+
+* Step-by-Step Learning Flow
+** Step 1: Foundation concept
+** Step 2: Core idea
+** Step 3: Advanced understanding
+** Step 4: Real-world application
+
+* Quick Revision Points
+** Summarize key takeaways in bullet points
+
+*Formatting Rules:*
+
+* Do NOT use headings or section titles
+* Use only bullet structure for organization
+* Use:
+** * for main bullets
+** ** for sub-bullets
+** *** for deeper levels
+* Keep sentences short and simple
+* Focus on clarity and usability for self-learning
+* Ensure content is actionable, not just descriptive
+
+*Output Requirements:*
+
+* Output only bullet-structured content
+* Ensure it is clean and ready to paste into notes or documentation tools
+
+----
+
+====
+
+##############################################
+
+---
 
 
 === Convert Text to AsciiDoc

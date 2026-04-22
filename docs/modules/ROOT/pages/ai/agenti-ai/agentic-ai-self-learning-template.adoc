@@ -1,0 +1,257 @@
+= Agentic AI – 20 Day Self-Paced Program
+Author: Naresh Chaurasia
+:toc:
+:toclevels: 2
+
+== Program Outcome
+
+By the end of this program, you will be able to:
+
+* Understand the difference between traditional AI and Agentic AI
+* Build AI agents that plan, reason, and act
+* Integrate tools, memory, and decision-making
+* Design multi-agent systems
+* Handle real-world challenges like hallucination, failure, and scaling
+* Build a production-ready agentic system
+
+---
+
+== Day 1 – What is Agentic AI?
+
+* *Concept*
+* Traditional AI vs Agentic AI
+* AI that responds vs AI that acts
+
+* *Exercise*
+* Write 3 differences between chatbot and agent
+
+* *Reflection*
+* Where do you see agents replacing workflows?
+
+---
+
+== Day 2 – Agent Mental Model
+
+* *Concept*
+* Goal → Plan → Action → Observation → Loop
+
+* *Exercise*
+* Draw agent loop diagram
+
+* *Reflection*
+* Why is looping critical?
+
+---
+
+== Day 3 – Components of an Agent
+
+* *Concept*
+* LLM
+* Tools
+* Memory
+* Planner
+
+* *Exercise*
+* Map real-world example (e.g., travel assistant)
+
+---
+
+== Day 4 – Tool Usage in Agents
+
+* *Concept*
+* Why agents need tools
+* Tool invocation patterns
+
+* *Exercise*
+* List 5 tools an AI agent can use
+
+---
+
+== Day 5 – First Simple Agent
+
+* *Concept*
+* Single-step agent
+
+* *Exercise*
+* Build a simple agent that calls one tool
+
+---
+
+== Day 6 – Multi-Step Reasoning
+
+* *Concept*
+* Chain-of-thought
+* Step-by-step execution
+
+* *Exercise*
+* Solve a multi-step task using agent logic
+
+---
+
+== Day 7 – Agent Loop Implementation
+
+* *Concept*
+* Iterative execution
+
+* *Exercise*
+* Build loop: Think → Act → Observe
+
+---
+
+== Day 8 – Planning Strategies
+
+* *Concept*
+* Static vs dynamic planning
+
+* *Exercise*
+* Design a planner for a task (e.g., booking trip)
+
+---
+
+== Day 9 – Memory in Agents
+
+* *Concept*
+* Short-term vs long-term memory
+
+* *Exercise*
+* Add memory to your agent
+
+---
+
+== Day 10 – Handling Failures
+
+* *Concept*
+* Tool failure
+* Wrong reasoning
+
+* *Exercise*
+* Introduce failure and recover
+
+---
+
+== Day 11 – Multi-Tool Agents
+
+* *Concept*
+* Tool selection logic
+
+* *Exercise*
+* Build agent with 2–3 tools
+
+---
+
+== Day 12 – Context Management
+
+* *Concept*
+* Managing context window
+
+* *Exercise*
+* Optimize prompts for better context
+
+---
+
+== Day 13 – Multi-Agent Systems
+
+* *Concept*
+* Agents collaborating
+
+* *Exercise*
+* Design 2 agents working together
+
+---
+
+== Day 14 – Coordination Patterns
+
+* *Concept*
+* Leader–worker
+* Peer-to-peer
+
+* *Exercise*
+* Implement simple coordination
+
+---
+
+== Day 15 – Performance & Cost
+
+* *Concept*
+* Token usage
+* Latency
+
+* *Exercise*
+* Measure cost of your agent
+
+---
+
+== Day 16 – Safety & Guardrails
+
+* *Concept*
+* Hallucination
+* Safe execution
+
+* *Exercise*
+* Add validation layer
+
+---
+
+== Day 17 – Capstone Project (Design)
+
+* *Concept*
+* Real-world system
+
+* *Exercise*
+* Design an agent system:
+** Goal-driven
+** Multi-tool
+** Memory-enabled
+
+---
+
+== Day 18 – Capstone Project (Build)
+
+* *Exercise*
+* Implement your system
+
+---
+
+== Day 19 – Capstone Project (Enhance)
+
+* *Concept*
+* Reliability improvements
+
+* *Exercise*
+* Add retries, logging, monitoring
+
+---
+
+== Day 20 – Finalization & Future
+
+* *Concept*
+* Agent frameworks (LangChain, AutoGen, CrewAI)
+* Future of agentic systems
+
+* *Exercise*
+* Publish project on GitHub
+* Write architecture notes
+
+* *Reflection*
+* What would you improve?
+
+---
+
+== Bonus Section
+
+* Common mistakes in agent design
+* Over-engineering agents
+* When NOT to use agents
+
+---
+
+== Final Note
+
+Agentic AI is not about calling APIs.
+
+It is about:
+* Decision-making
+* Iteration
+* Handling uncertainty
+
+Build daily. Break often. Learn deeply.

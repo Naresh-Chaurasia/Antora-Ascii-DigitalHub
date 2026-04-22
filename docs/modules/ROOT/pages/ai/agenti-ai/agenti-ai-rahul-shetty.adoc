@@ -286,6 +286,14 @@ Requires: mcp, mysql-connector-python
 ====
 
 
+##############################################
+
+---
+
+=== 8. Defining and Executing Your Agent
+
+link:./content/day-4-tools-urs.adoc[Day 4 - Tool Usage in Agents]
+
 ---
 
 ##############################################
@@ -442,6 +450,8 @@ Requires: mcp, mysql-connector-python
 ##############################################
 
 === 7. Build Agent which automates web browser using Playwright/Selenium MCP Servers
+
+
 
 > *MCP Client is the interface where you give instructions, and MCP Servers provide the actual tools—together enabling the LLM to convert plain English into real actions like browser automation, API calls, and database queries.*
 

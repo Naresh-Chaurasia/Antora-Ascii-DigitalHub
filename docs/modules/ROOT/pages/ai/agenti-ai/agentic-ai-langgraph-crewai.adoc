@@ -1,0 +1,35 @@
+= Agentic AI with LangGraph, CrewAI, AutoGen and BeeAI
+
+== Module1
+
+> Agentic Frameworks and LangGraph Design Patterns for Effective AI Systems 
+
+=== Understanding Agentic AI and Open Source Frameworks
+
+link:./content/day-1-what-agentic-ai-c.adoc[Day 1 - What is Agentic AI?]
+
+link:./content/day-2-frameworks-c.adoc[Day 2 - Frameworks]
+
+##############################################
+
+---
+
+=== Building AI Agents with Open Source Frameworks
+
+* Pending Adoc
+* Similar to above
+* This talks about various frameworks
+
+##############################################
+
+---
+
+=== Essential Design Patterns for AI Systems
+
+* link:./content/day-3-patterns-c.adoc[Day 3 - Patterns]
+* Whether I want to use images from here will be part of #refinement#.
+
+##############################################
+
+---
+

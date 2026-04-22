@@ -1,0 +1,10 @@
+== Day 3 – Components of an Agent
+
+*Concept*
+* LLM
+* Tools
+* Memory
+* Planner
+
+*Exercise*
+* Map real-world example (e.g., travel assistant)

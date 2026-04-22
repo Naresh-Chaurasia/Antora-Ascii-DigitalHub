@@ -8,9 +8,14 @@
 
 ---
 
-* https://gitlabs.cognizant-academy.com/techwizard/MCP-Reference-Implementations
-* https://gitlabs.cognizant-academy.com/techwizard/document_portal
-* https://cognizantonline.sharepoint.com/sites/NACampusHireCognizant/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FNACampusHireCognizant%2FShared%20Documents%2FGeneral%2FCurriculum%2F2026%20GenC%20Onsite%20Curriculum%2FTechWizard&viewid=9a326e15%2Dec7a%2D4fa0%2Db07c%2Dc8e924ff535b&csf=1&ovuser=de08c407%2D19b9%2D427d%2D9fe8%2Dedf254300ca7%2C794827%40cognizant%2Ecom&OR=Teams%2DHL&CT=1775043182446&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIxNDE1LzI2MDIyNzA0MjE1IiwiSGFzRmVkZXJhdGVkVXNlciI6ZmFsc2V9&CID=e5af05a2%2D9080%2D7000%2D19d3%2D196cda180410&cidOR=SPO&FolderCTID=0x012000585C9FE04258F641A6D865D6E4E97C4C[TechWizard SharePoint]
+* MCP Repository
+** https://gitlabs.cognizant-academy.com/techwizard/MCP-Reference-Implementations
+* Local
+** /Users/nareshchaurasia/nc/Python-TechWizard/MCP-Reference-Implementations
+* Sample Repository
+** https://gitlabs.cognizant-academy.com/techwizard/document_portal
+* SharePoint
+** https://cognizantonline.sharepoint.com/sites/NACampusHireCognizant/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FNACampusHireCognizant%2FShared%20Documents%2FGeneral%2FCurriculum%2F2026%20GenC%20Onsite%20Curriculum%2FTechWizard&viewid=9a326e15%2Dec7a%2D4fa0%2Db07c%2Dc8e924ff535b&csf=1&ovuser=de08c407%2D19b9%2D427d%2D9fe8%2Dedf254300ca7%2C794827%40cognizant%2Ecom&OR=Teams%2DHL&CT=1775043182446&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIxNDE1LzI2MDIyNzA0MjE1IiwiSGFzRmVkZXJhdGVkVXNlciI6ZmFsc2V9&CID=e5af05a2%2D9080%2D7000%2D19d3%2D196cda180410&cidOR=SPO&FolderCTID=0x012000585C9FE04258F641A6D865D6E4E97C4C[TechWizard SharePoint]
 
 ##############################################
 

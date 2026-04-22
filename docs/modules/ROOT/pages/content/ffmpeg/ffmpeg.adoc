@@ -1,6 +1,7 @@
 = FFmpeg Reel Creation Tutorial (Instagram Focus)
 
 == Goal
+
 Create high-quality Instagram reels (20–30 sec) using FFmpeg with:
 
 * clean timing | smooth transitions | synced music | text overlays | correct export settings
@@ -14,6 +15,10 @@ Create high-quality Instagram reels (20–30 sec) using FFmpeg with:
 ##############################################
 
 ---
+
+
+
+
 
 == Step 1: Basic Slideshow (Images + Music)
 
@@ -176,9 +181,10 @@ enable='between(t,0,3)'[v]
 -c:v libx264 -pix_fmt yuv420p -r 30 -b:v 2M \
 -c:a aac -b:a 128k \
 output.mp4
+
 ----
 
-
+----
 
 ##############################################
 
@@ -219,3 +225,28 @@ output.mp4
 You are not editing videos.
 You are engineering attention.
 
+##############################################
+
+
+== Usercases
+
+*Mashup*
+
+[source,asciidoc, role="wrap"]
+----
+
+* I have 5 videos and want to create a random mashup by selecting 2 clips from each. Can FFmpeg help with this?
+
+* I want to generate a random mashup from 5 videos, picking 2 clips from each video. Is FFmpeg suitable for this?
+
+* Can FFmpeg be used to automatically create a mashup by extracting 2 random clips from each of my 5 videos?
+
+* I have multiple videos and want to randomly extract clips and combine them into one mashup. Can FFmpeg handle this?
+
+* Is it possible to use FFmpeg to pick random segments from several videos and merge them into a single mashup?
+
+----
+
+##############################################
+
+---

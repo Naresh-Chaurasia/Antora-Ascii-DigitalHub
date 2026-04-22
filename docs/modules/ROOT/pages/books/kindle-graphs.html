@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kindle Library Analytics</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .stat-label {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        .chart-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        .chart-box {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .chart-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #2c3e50;
+            text-align: center;
+        }
+        .insights {
+            background: #e8f4fd;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 5px solid #667eea;
+        }
+        .insights h3 {
+            color: #2c3e50;
+            margin-top: 0;
+        }
+        .insights ul {
+            line-height: 1.6;
+        }
+        canvas {
+            max-height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📚 Kindle Library Analytics</h1>
+        
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">90</div>
+                <div class="stat-label">Total Books</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">25</div>
+                <div class="stat-label">Categories</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">76</div>
+                <div class="stat-label">Unique Authors</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">3</div>
+                <div class="stat-label">Most Prolific Authors</div>
+            </div>
+        </div>
+
+        <div class="chart-container">
+            <div class="chart-box">
+                <div class="chart-title">📊 Books by Category</div>
+                <canvas id="categoryChart"></canvas>
+            </div>
+            <div class="chart-box">
+                <div class="chart-title">👥 Top Authors</div>
+                <canvas id="authorChart"></canvas>
+            </div>
+        </div>
+
+        <div class="chart-container">
+            <div class="chart-box">
+                <div class="chart-title">🎯 Reading Focus Areas</div>
+                <canvas id="focusChart"></canvas>
+            </div>
+            <div class="chart-box">
+                <div class="chart-title">📈 Category Distribution</div>
+                <canvas id="distributionChart"></canvas>
+            </div>
+        </div>
+
+        <div class="insights">
+            <h3>🔍 Key Insights</h3>
+            <ul>
+                <li><strong>Spirituality & Mindfulness</strong> is your largest category (12 books), showing a focus on inner growth and meditation</li>
+                <li><strong>Memory & Learning</strong> is well-represented (7 books), indicating investment in personal development skills</li>
+                <li><strong>Communication</strong> appears frequently (4 books), suggesting work on social and interpersonal skills</li>
+                <li>You have multiple books from <strong>Mark Manson, Robert Greene, and Om Swami</strong>, showing author loyalty</li>
+                <li><strong>Mindset & Psychology</strong> books dominate your collection, focusing on mental strength and personal growth</li>
+                <li>The collection balances <strong>practical skills</strong> (memory, learning, communication) with <strong>philosophical depth</strong> (spirituality, meaning)</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Data extracted from the Kindle list
+        const categoryData = {
+            'Spirituality': 12,
+            'Mindset': 8,
+            'Memory': 6,
+            'Communication': 6,
+            'Learning': 5,
+            'Masculinity': 3,
+            'Dating': 3,
+            'Dance': 2,
+            'Creativity': 2,
+            'Productivity': 4,
+            'Philosophy': 3,
+            'Strategy': 3,
+            'Self-help': 3,
+            'Leadership': 3,
+            'Emotions': 3,
+            'Habits': 2,
+            'Mindfulness': 3,
+            'Health': 2,
+            'Tech': 2,
+            'Other': 15
+        };
+
+        const authorData = {
+            'Mark Manson': 2,
+            'Robert Greene': 2,
+            'Om Swami': 3,
+            'Harry Lorayne': 2,
+            'James Joseph': 2,
+            'Thibaut Meurisse': 2,
+            'Austin Kleon': 2,
+            'Robert Glover': 2,
+            'Others': 71
+        };
+
+        // Category Chart
+        const categoryCtx = document.getElementById('categoryChart').getContext('2d');
+        new Chart(categoryCtx, {
+            type: 'doughnut',
+            data: {
+                labels: Object.keys(categoryData),
+                datasets: [{
+                    data: Object.values(categoryData),
+                    backgroundColor: [
+                        '#667eea', '#764ba2', '#f093fb', '#f5576c',
+                        '#4facfe', '#00f2fe', '#43e97b', '#38f9d7',
+                        '#fa709a', '#fee140', '#30cfd0', '#330867',
+                        '#a8edea', '#fed6e3', '#ff9a9e', '#fecfef',
+                        '#a1c4fd', '#c2e9fb', '#cfd9df', '#e2ebf0'
+                    ]
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            padding: 10,
+                            font: { size: 11 }
+                        }
+                    }
+                }
+            }
+        });
+
+        // Author Chart
+        const authorCtx = document.getElementById('authorChart').getContext('2d');
+        new Chart(authorCtx, {
+            type: 'bar',
+            data: {
+                labels: Object.keys(authorData),
+                datasets: [{
+                    label: 'Books per Author',
+                    data: Object.values(authorData),
+                    backgroundColor: '#667eea',
+                    borderColor: '#764ba2',
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            stepSize: 1
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                }
+            }
+        });
+
+        // Focus Areas Chart
+        const focusCtx = document.getElementById('focusChart').getContext('2d');
+        new Chart(focusCtx, {
+            type: 'radar',
+            data: {
+                labels: ['Spirituality', 'Mindset', 'Memory', 'Communication', 'Learning', 'Productivity'],
+                datasets: [{
+                    label: 'Focus Areas',
+                    data: [12, 8, 6, 6, 5, 4],
+                    backgroundColor: 'rgba(102, 126, 234, 0.2)',
+                    borderColor: '#667eea',
+                    borderWidth: 2,
+                    pointBackgroundColor: '#667eea',
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: '#667eea'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    r: {
+                        beginAtZero: true,
+                        ticks: {
+                            stepSize: 2
+                        }
+                    }
+                }
+            }
+        });
+
+        // Distribution Chart
+        const distributionCtx = document.getElementById('distributionChart').getContext('2d');
+        new Chart(distributionCtx, {
+            type: 'polarArea',
+            data: {
+                labels: ['Personal Growth', 'Skills', 'Philosophy', 'Health', 'Business', 'Other'],
+                datasets: [{
+                    data: [35, 25, 15, 8, 5, 12],
+                    backgroundColor: [
+                        'rgba(102, 126, 234, 0.8)',
+                        'rgba(118, 75, 162, 0.8)',
+                        'rgba(240, 147, 251, 0.8)',
+                        'rgba(245, 87, 108, 0.8)',
+                        'rgba(79, 172, 254, 0.8)',
+                        'rgba(0, 242, 254, 0.8)'
+                    ]
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom'
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

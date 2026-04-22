@@ -1,0 +1,10 @@
+= CoPilot Henry Habib
+
+== Section 5: Microsoft Copilot and Word
+
+*27. Fundamentals of Microsoft Copilot and Word*
+
+* Acess MS Word with Brower
+* Acess MS Word with App
+* This response is not based on the document. Good One.
+* Tracibility (This summary, from where it comes in a document)

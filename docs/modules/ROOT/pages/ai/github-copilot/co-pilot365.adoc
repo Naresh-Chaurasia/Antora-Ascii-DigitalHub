@@ -1,0 +1,535 @@
+= Co-Pilot 365
+:toc: right
+
+
+> Give me summary of  in asciidoc bullet points "Unlocking Efficiency: Copilot 365 in Action Part 4". Don't use headings = or == or === etc
+
+
+Non-Developer Tools Master Class Learning Objectives.
+
+By the end of the masterclass, participants will be able to:
+
+1. Understand the role of GenAI in improving productivity, decision‑making, and operational efficiency for business and functional roles
+2. Access and use the tool confidently for everyday work scenarios without technical or coding expertise
+3. Apply the tool to real business tasks such as content creation, analysis, summarization, planning, and workflow support
+4. Use effective prompting techniques to get accurate, relevant, and reliable outputs for business contexts
+5. Adopt GenAI responsibly by following enterprise governance, data‑privacy, ethical usage, and cost/token awareness guidelines
+
+##############################################
+
+---
+
+* With reference to microsoft copilot Understand the role of GenAI in improving productivity, decision‑making, and operational efficiency for business and functional roles.
+
+* With reference to microsoft copilot Access and use the tool confidently for everyday work scenarios without technical or coding expertise
+
+##############################################
+
+---
+
+== Overall Summary
+
+* This mapping connects each learning objective with relevant modules and topics from the Copilot course to ensure full coverage.
+
+== Learning Objective 1
+
+* *Understand the role of GenAI in improving productivity, decision-making, and operational efficiency*
+
+** Module 1: Introduction to Microsoft Copilot
+*** Exploring Generative AI and Microsoft Copilot
+*** The Impact of Copilot On How We Work
+*** The AI behind Copilot: An overview
+*** Copilot in Business
+*** Copilot in action: A day in the life
+
+** Module 2: Take advantage of Microsoft Copilot
+*** How Copilot works with your existing data
+*** Case Study: Microsoft 365 Copilot Increases Employee Efficiency and Customer Relationships
+*** Unlock Efficiency in the O365 Applications (Part 1–4)
+
+---
+
+== Learning Objective 2
+* *Access and use the tool confidently for everyday work scenarios*
+
+** Module 1
+*** How to Get Started with Microsoft Copilot
+*** Your first Copilot discussion
+
+** Module 2
+*** Setting up Copilot for Yourself and Your Team
+*** Configure Your Workspace
+*** Navigating and Integrating Copilot Features
+*** Top 10 Copilot tips for everyday tasks
+
+---
+
+== Learning Objective 3
+* *Apply the tool to real business tasks such as content creation, analysis, summarization, planning, and workflow support*
+
+** Module 2
+*** Draft and Add Content With Copilot in Word
+*** Identify Insights With Excel
+*** Create a Compelling Presentation With PowerPoint
+*** Hands-on Activity: Using Data to Gain Insights for a Presentation
+*** Unlock efficiency in Microsoft Dynamics 365 applications
+
+---
+
+== Learning Objective 4
+* *Use effective prompting techniques to get accurate, relevant, and reliable outputs*
+
+** Module 3: Prompt Engineering
+*** Elements of an Effective Prompt
+*** Crafting Effective Prompts to O365 Copilot
+*** Crafting Powerful Prompts for Effective AI Interaction
+*** Iterating on Prompts
+*** The Copilot Prompt Guide
+
+---
+
+== Learning Objective 5
+* *Adopt GenAI responsibly (governance, privacy, ethical usage, cost awareness)*
+
+** Module 3
+*** Prompt Limitations and Privacy
+*** The Copilot Prompt Guide
+
+** Module 1
+*** Understanding The AI Technology Behind Copilot
+*** How Copilot learns and adapts
+
+---
+
+== Final Coverage Summary
+* All 5 learning objectives are fully covered across 3 modules
+* Module 1 → *Foundation + Awareness*
+* Module 2 → *Hands-on Usage + Productivity*
+* Module 3 → *Prompting + Responsible AI Usage*
+
+##############################################
+
+---
+
+
+== Moduel 1
+
+=== Course Introduction: Introduction to Microsoft Copilot
+
+> What it can do. I need to figure out, how it will do it.
+
+.Collapsible Resource
+[%collapsible]
+====
+* Overall Summary
+** Understand how Microsoft Copilot uses generative AI to improve productivity, automate tasks, and enhance creativity across everyday work tools
+
+* Learning Objectives
+** Understand what Copilot is and how it works
+** Explain the basics of generative AI, including benefits and limitations
+** Identify how Copilot integrates into daily tools like email, documents, and meetings
+** Apply Copilot to automate tasks and improve workflow efficiency
+** Use AI to generate ideas, analyze data, and enhance decision-making
+
+* Structured Concept Breakdown
+** Copilot and its role
+*** AI-powered assistant
+**** Uses artificial intelligence to support daily work
+**** Works inside common tools like documents, emails, and meetings
+*** Productivity enhancer
+**** Reduces manual effort
+**** Speeds up repetitive tasks
+
+** Generative AI fundamentals
+*** What is generative AI
+**** AI that creates content like text, summaries, and ideas
+**** Learns patterns from large amounts of data
+*** Capabilities
+**** Generate emails, reports, and insights
+**** Assist in analysis and creativity
+*** Limitations
+**** May produce incorrect or incomplete results
+**** Requires human validation and judgment
+
+** Integration into workflow
+*** Everyday applications
+**** Writing emails quickly
+**** Creating and editing documents
+**** Summarizing meetings and conversations
+*** Business use cases
+**** Sales: analyze customer data
+**** Marketing: generate campaign ideas
+**** Customer service: automate responses
+
+** Workflow transformation
+*** Automation
+**** Handles repetitive tasks automatically
+**** Saves time and effort
+*** Creativity support
+**** Suggests ideas and improvements
+**** Helps overcome writer’s block
+*** Decision support
+**** Provides insights from data
+**** Helps in faster and better decisions
+
+* Step-by-Step Learning Flow
+** Step 1: Foundation concept
+*** Understand what AI and generative AI are
+*** Learn how AI can assist in daily tasks
+
+** Step 2: Core idea
+*** Learn what Copilot does
+*** Explore how it integrates into common tools
+
+** Step 3: Advanced understanding
+*** Understand strengths and limitations of AI
+*** Learn how to guide AI with better inputs
+
+** Step 4: Real-world application
+*** Use Copilot to write emails and documents
+*** Analyze data and generate insights
+*** Apply in sales, marketing, and customer service tasks
+
+* Quick Revision Points
+** Copilot is an AI assistant integrated into work tools
+** Generative AI creates content and insights
+** It improves productivity and reduces manual work
+** It supports creativity and idea generation
+** It must be used with human judgment
+** It applies across multiple business functions
+** It transforms how work is done daily
+====
+
+
+
+##############################################
+
+---
+
+=== Get ready to unlock AI with Copilot
+
+> What it can do. I need to figure out, how it will do it.
+
+##############################################
+
+---
+
+=== Exploring Generative AI and Microsoft Copilot: #BOT#
+
+*our strengths:*
+
+* You demonstrated a strong understanding of how AI can automate mundane tasks, providing excellent examples like code checking and calendar management.
+* You clearly identified practical applications of Copilot in streamlining daily activities within Microsoft applications.
+
+*Areas for improvement:*
+
+> AI and ML power Copilot: What needs to be covered in this for non-technical audience.
+
+* While you grasped the core concepts, further exploration into the specific technical aspects of how AI and ML power Copilot would deepen your understanding.
+* Reflecting on the broader implications and *ethical considerations* of generative AI's limitations in various professional contexts could enhance your critical thinking.
+
+##############################################
+
+---
+
+=== The Impact of Copilot On How We Work
+
+> What it can do. I need to figure out, how it will do it.
+
+##############################################
+
+---
+
+=== The AI behind Copilot: An overview
+
+> Reading Material. Can convert to slides.
+
+##############################################
+
+---
+
+=== How Copilot learns and adapts
+
+> Check this out later
+
+##############################################
+
+---
+
+
+
+=== Copilot in Business
+
+> Excel Use Cases
+
+* Complex Data Analysis
+
+##############################################
+
+---
+
+
+== Module 2
+
+=== Take advantage of Microsoft Copilot
+
+* Learning Objectives
+** Understand what Copilot is and how it supports daily work
+** Configure Copilot for effective usage
+** Apply Copilot to emails, documents, meetings, and CRM tasks
+** Use prompts to generate content, summaries, and insights
+** Explore advanced features like automation and data analysis
+
+.Collapsible Resource
+[%collapsible]
+====
+* Overall Summary
+** Learn how to use Microsoft Copilot as an AI assistant to improve productivity, automate tasks, and work more efficiently across daily workflows
+
+* Learning Objectives
+** Understand what Copilot is and how it supports daily work
+** Configure Copilot for effective usage
+** Apply Copilot to emails, documents, meetings, and CRM tasks
+** Use prompts to generate content, summaries, and insights
+** Explore advanced features like automation and data analysis
+
+* Structured Concept Breakdown
+** Copilot as a Productivity Guide
+*** Role of Copilot
+**** AI assistant that supports tasks, reduces effort, and improves efficiency
+*** Key Benefit
+**** Acts like a personal assistant for daily work
+
+** Setting Up the Workspace
+*** Configuration
+**** Customize settings for better usability
+*** Environment Setup
+**** Prepare tools and workspace for smooth operation
+
+** Handling Everyday Tasks
+*** Email Management
+**** Draft, reply, and organize emails quickly
+*** Document Creation
+**** Generate and edit documents efficiently
+*** Presentation Creation
+**** Build slides and outlines using prompts
+*** CRM and Workflow (Dynamics 365)
+**** Manage customer data and tasks
+
+** Smart Assistance Features
+*** Summarization
+**** Convert long content into key points
+*** Content Generation
+**** Create emails, documents, and ideas instantly
+*** Translation
+**** Translate content across multiple languages
+
+** Productivity Enhancements
+*** Automation
+**** Convert prompts into structured outputs like to-do lists
+*** Shortcuts and Tricks
+**** Use hidden features to save time and effort
+
+** Advanced Capabilities
+*** Data Analysis
+**** Identify trends and insights from data
+*** Prompt-Based Creation
+**** Generate structured outputs like presentations and reports
+====
+
+
+
+##############################################
+
+---
+
+=== Setting up Copilot for Yourself and Your Team
+
+* Open CoPilot and go over different options
+
+##############################################
+
+---
+
+=== Setting up Copilot for Your Team
+
+* List PowerPoint files I modified in the last 2 days.
+
+##############################################
+
+---
+
+
+=== ✔️ Unlock Efficiency in the O365 Applications: Copilot in Action Part 1
+
+* eCommerce Marketing
+* Create Word Document | Create PPT from Word Document | Create Sections in the PPT
+
+--- 
+
+*Coursera Coach*
+
+* Practical Use in Office Apps
+** Shows how to use Copilot in Word for drafting, editing, and formatting documents.
+** Demonstrates creating summaries and transforming documents into presentations with Copilot in PowerPoint.
+* Interactive Features
+** Explains accessing Copilot inline and via toolbar icons.
+Highlights prompt engineering to get precise outputs from Copilot.
+
+
+
+##############################################
+
+---
+
+=== ✔️ Unlock Efficiency in the O365 Applications: Copilot in Action Part 2
+
+*Coursera Coach*
+
+
+* Copilot in Excel
+** Shows how Copilot works with Excel tables to perform tasks like sorting data by revenue using natural language prompts.
+** Demonstrates Copilot's ability to add calculated columns (e.g., ROI) with explanations and create visualizations such as pie charts.
+* Copilot's Dual Role
+** Acts as an expert user performing routine Excel tasks efficiently.
+** Serves as a knowledge assistant by writing formulas, explaining them, and applying standard business terms.
+
+##############################################
+
+---
+
+=== Unlocking Efficiency: Copilot 365 in Action Part 1
+
+* Outlook
+** Summary with Copilot
+
+
+---
+
+
+##############################################
+
+---
+
+=== Unlocking Efficiency: Copilot 365 in Action Part 1
+
+*Key Highlights*
+
+* Copilot 365 helps automate mundane tasks such as changing fonts or adding sections in documents and presentations.
+* It provides quick summaries of large documents to help users get an overview and find answers efficiently.
+
+*Practical Use Cases*
+
+* Drafting proposals in Word using natural language commands.
+* Creating presentations in PowerPoint with AI assistance.
+* Analyzing data by communicating with Copilot 365 in natural language.
+
+*Productivity Benefits*
+
+* Quickly confirms understanding of key points in communications.
+* Assists in drafting clear and effective responses, saving time.
+* Keeps users focused by eliminating the need to search externally for additional content, such as quotes or references.
+
+
+---
+
+* Summary of outlook mail
+
+
+##############################################
+
+---
+
+=== Unlocking Efficiency: Copilot 365 in Action Part 2
+
+- The video demonstrates analyzing a new dataset using Microsoft Copilot integrated with Excel.
+- Copilot quickly converts data into an Excel table, enabling immediate data manipulation and insights.
+- It generates a PivotTable to show age groups by preferred style, which the user finds helpful despite not being a regular PivotTable user.
+- The user explores satisfaction levels with glasses, focusing on those moderately satisfied, filtering by region, age group, and purchase frequency.
+- Copilot assists in identifying preferred styles (eclectic and sport comfort) and their purchase frequencies, mainly in Asia and Europe.
+- The analysis concludes with price range insights and reflects on how Copilot enhances productivity by simplifying data formatting, generating insights, and supporting logical data exploration.
+
+
+##############################################
+
+---
+
+=== Unlocking Efficiency: Copilot 365 in Action Part 3
+
+- The video demonstrates using Microsoft Copilot to assist in preparing an interim briefing PowerPoint by summarizing data and insights.
+- Copilot analyzes customer preferences, identifying favored styles (eclectic and sport comfort), key regions (Asia and Europe), and price ranges ($80 to $200).
+- It generates a concise summary of these insights, which can be copied into documents for easy reference.
+- Copilot can also create visual presentations of data summaries, such as tables, to enhance clarity and communication.
+- The tool helps draft recommendations based on the summarized data, tailoring content to specific styles and price points.
+- By incorporating additional research content, Copilot refines recommendations to address consumer trends, such as preferences of middle-aged and younger consumers.
+
+##############################################
+
+=== Unlocking Efficiency: Copilot 365 in Action Part 4
+
+Unlocking Efficiency: Copilot 365 in Action Part 4 focuses on how Microsoft Copilot enhances productivity and transforms work processes.
+
+- Copilot helps generate interim results quickly, such as creating PowerPoint presentations from data files.
+- It provides targeted recommendations with data insights, like market focus areas and customer preferences.
+- Users need to review and edit AI-generated content to ensure it references specific company data and maintains accuracy.
+- Copilot can produce detailed presentations including speaker notes, images, tables, and recommendations, saving preparation time.
+- The tool supports clarity, persuasiveness, and efficiency in documents and presentations.
+- Embracing Copilot 365 represents a shift toward smarter, more effective work in the modern workplace.
+
+---
+
+##############################################
+
+---
+
+== Module 3
+
+=== Engineer your prompts to get the most out of Microsoft Copilot
+
+* We will do this, we will do that.
+
+##############################################
+
+---
+
+=== Elements of an Effective Prompt
+
+The video lecture focuses on the essentials of prompt engineering to effectively communicate with Microsoft Copilot for security tasks.
+
+- Role prompting involves instructing AI to act as a specific character or role to achieve a desired response, emphasizing tone and context.
+- Shot prompting includes zero-shot (command only), one-shot (one example), and few-shot (multiple examples) techniques to guide AI responses.
+- Chain-of-thought prompting structures prompts in multiple logical steps, using each AI response as input for the next.
+- Auto-validation prompts ask AI to re-evaluate or refine its responses for accuracy or tone.
+- Source evaluation prompts direct AI to use specific, reliable sources to reduce hallucinations and improve response relevance.
+- Best practices include sequencing questions strategically, testing prompt order, ensuring grammatical correctness, validating responses, avoiding multiple questions in one prompt, and minimizing acronyms.
+
+
+
+
+##############################################
+
+---
+
+=== Crafting Effective Prompts to O365 Copilot
+
+- The video focuses on improving interactions with Office 365 Copilot through effective prompt engineering.
+- Clear and specific prompts lead to better, more detailed responses from Copilot.
+- The Microsoft Copilot prompt 101 formula includes four parts: goal, context, sources, and expectations.
+- Example scenario: Writing a cover letter using the formula to guide Copilot in generating a tailored response.
+- Using natural conversational language helps Copilot understand intent and produce relevant drafts, such as emails.
+- Practice and iteration in prompt design enhance the quality of Copilot's responses, making prompt engineering a key skill.
+
+
+##############################################
+
+---
+
+
+##############################################
+
+---
+
+
+
+== Module 3
+

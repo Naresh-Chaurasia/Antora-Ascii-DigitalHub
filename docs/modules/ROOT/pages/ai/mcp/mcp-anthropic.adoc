@@ -14,6 +14,8 @@
 * You'll learn the three essential MCP primitives - tools, resources, and prompts - and understand when to use each one. Through hands-on implementation, you'll create your own MCP server with the Python SDK, defining tools that Claude can call autonomously, resources that provide data to your applications, and prompts that deliver professionally crafted workflows to end users.
 
 * By building both client and server components, you'll gain complete insight into how MCP enables seamless communication between AI models and external services. You'll work with the MCP Inspector to test your implementations, understand transport protocols, and see exactly how messages flow through the entire system. Whether you're building GitHub integrations, document management systems, or custom AI workflows, this course gives you the practical skills to leverage MCP's standardized approach and dramatically reduce your development burden.
+
+* https://www.coursera.org/learn/introduction-to-model-context-protocol
 ====
 
 ##############################################
@@ -21,86 +23,7 @@
 
 == ✔️ Module1
 
-=== Introducing MCP
 
-image::mcp/mcp1.png[MCP Architecture Diagram, 600, 400]
-
----
-
-image::mcp/mcp2.png[MCP Flow Diagram, 600, 400]
-
----
-
-* Model Context Protocol (MCP)
-  ** MCP is a communication layer that provides an AI model with context and tools.
-  ** It reduces the need for developers to write large amounts of integration code.
-  ** It simplifies connecting AI models with external services.
-
-* Core Components of MCP
-  ** Client
-  *** The application that interacts with the AI model.
-  *** Example: A chat interface used by a user.
-  ** Server
-  *** Hosts integrations with external systems.
-  *** Contains internal components such as tools, resources, and prompts.
-
-* Example Use Case: GitHub Chat Application
-  ** A chat interface allows a user to ask questions about their GitHub account.
-  ** Example query: “What open pull requests do I have across all repositories?”
-  ** The AI needs to access GitHub data to answer the question.
-
-* #Role of Tools#
-  ** Tools allow the AI to perform actions or retrieve data from external services.
-  ** Example: A tool that fetches open pull requests from GitHub.
-  ** Tools act as connectors between the AI model and external APIs.
-
-* Challenge Without MCP
-  ** Developers must manually create tools for every API feature.
-  ** Example: GitHub has many features.
-  *** Repositories
-  *** Pull requests
-  *** Issues
-  *** Projects
-  ** Each feature would require separate tool schemas and function implementations.
-  ** Developers must write, test, and maintain all this code.
-
-* How MCP Solves the Problem
-  ** MCP shifts tool definition and execution to an MCP server.
-  ** Developers no longer need to implement all tools themselves.
-  ** The MCP server provides ready-made tools for external services.
-
-* MCP Server Concept
-  ** An MCP server acts as an interface to an external service.
-  ** It wraps service functionality into tools.
-  ** Example: A GitHub MCP server exposes GitHub features as tools.
-
-* Benefits of MCP
-  ** Reduces development effort.
-  ** Eliminates the need to build and maintain many integrations.
-  ** Provides standardized access to external services.
-
-* Common Question: Who Builds MCP Servers
-  ** Anyone can create an MCP server.
-  ** Often created by service providers themselves.
-  *** Example: AWS could provide an official MCP server.
-  *** The server would include tools for interacting with AWS services.
-
-* Common Question: Why Use MCP Instead of Calling APIs Directly
-  ** Direct API usage requires developers to build tools themselves.
-  *** Define tool schemas.
-  *** Implement functions.
-  ** MCP servers provide these tools already implemented.
-  ** This saves development time and effort.
-
-* Common Misconception: MCP vs Tool Use
-  ** Some people think MCP and tool use are the same.
-  ** In reality, they are complementary concepts.
-  *** Tool use: AI calling functions to perform actions.
-  *** MCP: A system that provides pre-built tools.
-
-* Key Insight
-  ** MCP is about delegating the work of creating and maintaining tools.
-  ** Instead of developers building tools, MCP servers provide them.
 
 
 ##################################################

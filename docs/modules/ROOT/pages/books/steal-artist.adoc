@@ -1,4 +1,6 @@
-= Steal Like An Artist
+= Steal Like An Artist - Austin Kleon
+
+include::book-styles.adoc[]
 
 ##############################################
 
@@ -6,7 +8,7 @@
 
 include::books-header.adoc[]
 
-== 🎨 1. Steal Like an Artist
+== 🎨 1. Steal Like an Artist | ✔️
 
 
 Every artist gets asked the question,Where do you get your ideas? The honest artist answers,  **I steal them**.
@@ -34,9 +36,7 @@ What a good artist understands is that nothing comes from nowhere. **All creativ
       <li>Study the work of Marius & Elena, Basi y Deisy, Daniel Rosa.
         <div class="comment">Focus on their Shines !!!</div>
       </li>
-      <li>Take Routines from AwPra.
-        <div class="comment">Focus on their Routines !!!</div>
-      </li>
+      <li>Javier Escobar is on another level. Someday I will come back to him. For now, let me watch him move on the dance floor and enjoy.</li>
     </ul>
   </div>
 
@@ -44,13 +44,6 @@ What a good artist understands is that nothing comes from nowhere. **All creativ
 ++++
 
 ---
-
-[IMPORTANT]
-====
-* Study the work of Marius & Elena, Basi y Deisy, Daniel Rosa.
-
-* Javier Escobar is on another level. Someday I will come back to him. For now, let me watch him move on the dance floor and enjoy.
-====
 
 
 You don't get to pick your family, **but you can pick your teachers and you can pick your friends and you can pick the music you listen to and you can pick the books you read and you can pick the movies you see. You are, in fact, a mashup of what you choose to let into your life**. You are the sum of your influences. The German writer Goethe said, "We are shaped and fashioned by what we love."
@@ -76,7 +69,7 @@ Always be reading. Go to the library. **There's magic in being surrounded by boo
 
 
 
-== 🧭 2. Don't Wait Until You Know Who You Are to Get Started
+== 🧭 2. Don't Wait Until You Know Who You Are to Get Started | ✔️
 
 
 
@@ -101,11 +94,10 @@ Always be reading. Go to the library. **There's magic in being surrounded by boo
   <div class="card">
     <h3>🚀 Action Items | Dance</h3>
     <ul>
-      <li>Start using existing Routines.
-        <div class="comment">YouTube</div>
-      </li>
+      <li>Start with Shines Routines | You have enough content for Partner Work.</li>
       <li>Start Working on Musicality.
-        <div class="comment">2 Salsa and 2 Bachata in 1 Month is doable. Drill with Musicality</div>
+        <div class="comment">2 Salsa and 2 Bachata songs in 1 Month is doable. Drill with Musicality</div>
+        <div class="comment">Review existing content. Document it.</div>
       </li>
     </ul>
   </div>
@@ -154,7 +146,7 @@ So: Copy your heroes. Examine where you fall short. What's in there that makes y
 
 ##############################################
 
-== 📚 3. Write the Book You Want to Read
+== 📚 3. Write the Book You Want to Read | ✔️
 
 The best advice is not to write what you know, it's to write what you like. Write the kind of story you like best—write the story you want to read. The same principle applies to your life and your career: Whenever you're at a loss for what move to make next, just ask yourself, "What would make a better story?
 
@@ -170,8 +162,14 @@ When we love a piece of work, we're desperate for more. We crave sequels. Why no
     <h3>🎨 Key Concepts</h3>
     <ul>
       <li>Dance The Dance you want to see.
-        <div class="comment">Mix Up Things</div>
+        <div class="comment">Mix Up Things | Choreograph Your 1st Routine and Drill it.</div>
       </li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3>🚀 Action Items | Dance</h3>
+    <ul>
+      <li>3 Shines Attributed to me !!!</li>
     </ul>
   </div>
 </div>
@@ -180,7 +178,7 @@ When we love a piece of work, we're desperate for more. We crave sequels. Why no
 ##############################################
 
 
-== ✋ 4. Use Your Hands
+== ✋ 4. Use Your Hands | ✔️
 
 > Use More Paper
 
@@ -224,6 +222,8 @@ Do I need to make deliberate effort to bring them all together.
 
 
 == 🌐 6. The Secret: Do Good Work and Share It with People 📍
+
+
 
 This is actually a good thing, because you want attention only after you're doing really good work. **There's no pressure when you're unknown**. You can do what you want. Experiment. Do things just for the fun of it. When you're unknown, there's nothing to distract you from getting better. No public image to manage. No huge paycheck on the line. No stockholders. No e-mails from your agent. No hangers-on. You'll never get that freedom back again once people start paying you attention, and especially not once they start paying you money.
 
@@ -314,17 +314,9 @@ Occasionally, I have the good fortune to have something take off online, and for
 
 == 🧘 9. Be Boring (It's the Only Way to Get Work Done)
 
-{{< callout original >}}
 "Be regular and orderly in your life, so that you may be violent and original in your work."
-{{</callout>}}
 
 ---
-
-{{< callout comment >}}
-* On a regular day, I spend a lot of time, **re-arranging** things. If I a orderly in the first place, I will have bit more time, but a lot of peace of mind.
-* Later on it is more difficult and it takes more time, at least not less.
-{{</callout>}}
-
 
 "It’s better to burn out than to fade away."
 
@@ -332,21 +324,12 @@ The truth is that even if you’re lucky enough to make a living off doing what 
 
 The solution is really simple: Figure out what time you can carve out, what time you can steal, and stick to your routine. **Do the work every day, no matter what. No holidays, no sick days. Don’t stop. What you’ll probably find is that the corollary to Parkinson’s Law is usually true: Work gets done in the time available.**
 
-{{< callout original >}}
 What you’ll probably find is that the corollary to Parkinson’s Law is usually true: Work gets done in the time available.
-{{< /callout >}}
 
 The trick is to find a day job that pays decently, doesn’t make you want to vomit, and leaves you with enough energy to make things in your spare time. Good day jobs aren’t necessarily easy to find, but they’re out there.
 
-{{< callout original >}}
 Amassing a body of work or building a career is a lot about the slow accumulation of little bits of effort over time. **Writing a page each day doesn’t seem like much, but do it for 365 days and you have enough to fill a novel**. One successful client pitch is a small victory, but a few dozen of them can get you a promotion.
-{{< /callout >}}
 
----
-
-{{< callout comment >}}
-* One Pomodoro for my Certification, no matter what. Every thing will be counted, even Anki.
-{{< /callout >}}
 
 **Just keep at it and the chain will grow longer every day**. You’ll like seeing that chain, especially when you get a few weeks under your belt. Your only job next is to not break the chain.
 
@@ -358,15 +341,14 @@ Who you marry is the most important decision you’ll ever make. And "marry well
 
 == ➖ 10. Creativity Is Subtraction
 
-
-{{< callout note >}}
 In this age of information abundance and overload, those who get ahead will be the folks who **figure out what to leave out**, so they can concentrate on what’s really important to them. Nothing is more paralyzing than the idea of limitless possibilities. The idea that you can do anything is absolutely terrifying.
-{{< /callout >}}
+
+> Left Bollywood, Zumba
 
 The way to get over creative block is to simply place some constraints on yourself. It seems contradictory, but when it comes to creative work, limitations mean freedom. Write a song on your lunch break. Paint a painting with only one color. Start a business without any start-up capital. Shoot a movie with your iPhone and a few of your friends. Build a machine out of spare parts.
 
-{{< callout note >}}
-Don’t make excuses for not working—make things with the time, space, and materials you have, right now.
-{{< /callout >}}
+Don’t make excuses for not working—#make things with the time, space, and materials you have, right now#.
 
-The artist Saul Steinberg said, “What we respond to in any work of art is the artist’s struggle against his or her limitations.” It’s often what an artist chooses to leave out that makes the art interesting. What isn’t shown versus what is. It’s the same for people: What makes us interesting isn’t just what we’ve experienced, but also what we haven’t experienced. The same is true when you do your work: You must embrace your limitations and keep moving. In the end, creativity isn’t just the things we choose to put in, it’s the things we choose to leave out. Choose wisely. And have fun.
+> Start shooting. Looking Yourself in camera will help. You will know where you are making mistakes | Inch By Inch
+
+The artist Saul Steinberg said, “What we respond to in any work of art is the artist’s struggle against his or her limitations.” It’s often what an artist chooses to leave out that makes the art interesting. What isn’t shown versus what is. It’s the same for people: What makes us interesting isn’t just what we’ve experienced, but also what we haven’t experienced. The same is true when you do your work: You must embrace your limitations and keep moving. *In the end, creativity isn’t just the things we choose to put in, it’s the things we choose to leave out*. Choose wisely. And have fun.

@@ -1,0 +1,7 @@
+== Day 8 – Planning Strategies
+
+*Concept*
+* Static vs dynamic planning
+
+*Exercise*
+* Design a planner for a task (e.g., booking trip)

@@ -1,0 +1,92 @@
+= Day 1 – What is Agentic AI?
+:toc: right
+
+
+Agentic AI consists of autonomous systems that proactively solve problems by reasoning, making decisions, and using tools to achieve goals
+
+== Learning Objectives
+
+** Understand what defines an AI agent
+** Explain how agentic AI differs from traditional systems
+** Identify key capabilities of AI agents
+** Understand multi-agent systems and their benefits
+** Recognize when and why frameworks are used
+
+== What is Agentic AI
+
+
+** Autonomous systems
+** Make decisions and take actions independently
+** Goal-oriented behavior
+** Work towards a defined objective
+** Proactive nature
+** Do not wait for instructions, take initiative
+
+* *Core Capabilities of AI Agents*
+
+** Multi-step reasoning
+*** Break complex problems into smaller steps
+*** Example: solving a research problem step by step
+
+** *Decision-making*
+*** Evaluate options and choose best action
+
+** *Tool usage*
+*** Call APIs, external tools, or other agents
+*** Example: fetching data from a database
+
+** *Memory and context*
+*** Retain past interactions
+*** Improve continuity and accuracy over time
+
+---
+
+* *Reactive vs Agentic Systems*
+
+** *Reactive systems*
+*** Respond only when input is given
+*** Example: calculator
+** *Agentic systems*
+*** Understand goals and act continuously
+*** Example: research assistant completing a task end-to-end
+
+---
+
+* *Role of Frameworks*
+** Why not build from scratch
+** Complex infrastructure required
+* What frameworks provide
+** Memory management
+** Tool integration
+** Agent coordination
+** Analogy: Frameworks act like rails guiding development
+
+---
+
+* *Multi-Agent Systems*
+** Multiple agents working together
+** Similar to a software development team
+** Each agent has a specific role
+
+* *Benefits*
+** Specialization
+** Each agent focuses on one task
+** Parallel processing
+** Multiple agents work at the same time
+** Fault tolerance
+** System continues even if one agent fails
+** Scalability
+** Add more agents as complexity increases
+** Modularity
+** Easily update or replace individual agents
+
+---
+
+*Quick Revision Points*
+
+** AI agents are autonomous and goal-oriented
+** They perform reasoning, decision-making, and tool usage
+** Agentic AI is proactive, unlike reactive systems
+** Frameworks simplify building agent systems
+** Multi-agent systems improve efficiency through collaboration
+** Benefits include specialization, scalability, and modularity

@@ -1,0 +1,101 @@
+////
+Book Styles for Cards
+////
+
+++++
+<style>
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.card {
+  border-radius: 12px;
+  padding: 16px;
+  background: #2d3748;
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.card h3 {
+  margin-top: 0;
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffffff;
+  border-bottom: 1px solid #444;
+  padding-bottom: 8px;
+}
+
+.card ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.card li {
+  margin: 6px 0;
+}
+
+.badge {
+  font-size: 10px;
+  background: #ff6b6b;
+  color: #ffffff;
+  padding: 2px 6px;
+  border-radius: 6px;
+  margin-left: 6px;
+}
+
+.badge_action {
+  font-size: 10px;
+  background: #4caf50;
+  color: #ffffff;
+  padding: 2px 6px;
+  border-radius: 6px;
+  margin-left: 6px;
+}
+
+.badge_reading {
+  font-size: 10px;
+  background: #8bc34a;
+  color: #ffffff;
+  padding: 2px 6px;
+  border-radius: 6px;
+  margin-left: 6px;
+}
+
+.badge_done {
+  font-size: 10px;
+  background: #4caf50;
+  color: #ffffff;
+  padding: 2px 6px;
+  border-radius: 6px;
+  margin-left: 6px;
+}
+
+.badge_onhold {
+  font-size: 10px;
+  background: #ffffff;
+  color: #333333;
+  padding: 2px 6px;
+  border-radius: 6px;
+  margin-left: 6px;
+}
+
+.highlight {
+  color: #4caf50;
+}
+
+.comment {
+  font-size: 15px;
+  color: #9ca3af;
+  font-style: italic;
+  margin-top: 4px;
+  padding-left: 10px;
+}
+
+.card:nth-child(2) {
+  background: #4a5d3a;
+}
+</style>
+++++

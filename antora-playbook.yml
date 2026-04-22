@@ -12,7 +12,6 @@ ui:
   bundle:
     url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
     snapshot: true
-  supplemental_files: ./supplemental-ui
 
 output:
   dir: build/site
@@ -30,9 +29,6 @@ asciidoc:
     # ADD THIS
     source-highlighter: highlight.js
     highlightjs-theme: github
-    
-    # Custom CSS for book styles
-    stylesheet: css/custom.css
 
   extensions:
     - ./extensions/reel-extension.js

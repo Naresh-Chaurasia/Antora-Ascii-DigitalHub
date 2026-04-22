@@ -1,0 +1,13 @@
+= Book Journal
+
+== Active 
+
+link:./steal-artist.adoc[Steal Like An Artist]
+
+> Light | DeStress | Dance
+
+---
+
+link:./relationship/dating-robert-grover.adoc[Dating Essentials for Men]
+
+> Light | True | Relevant in Dance scenario

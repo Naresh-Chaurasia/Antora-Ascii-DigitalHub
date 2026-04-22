@@ -1,0 +1,115 @@
+= Case Study: Understanding Agentic AI with Stock Investment Example
+:toc: right
+
+== Scenario
+
+You have $100 and want to invest it in the US stock market.
+
+Instead of figuring everything out manually, you ask an Agentic AI system:
+
+"How should I invest my $100 in the US stock market?"
+
+== Goal
+
+The main goal is:
+
+* To get the best possible investment advice for $100
+
+== How Agentic AI Approaches the Problem
+
+=== Step 1: Goal Understanding
+
+The AI clearly understands the goal:
+
+* Provide the best investment strategy for $100
+
+Unlike traditional systems, it focuses on *what needs to be achieved*, not just *what task to perform*.
+
+=== Step 2: Planning Actions
+
+The AI creates a plan of actions to achieve the goal. For example:
+
+* Analyze top companies in the US stock market
+* Study current financial conditions (interest rates, inflation, etc.)
+* Evaluate global market trends
+* Assess risk vs return for small investments
+
+This step is important because the AI decides *what steps are needed* without human guidance.
+
+=== Step 3: Executing Actions
+
+The AI then performs the planned actions:
+
+* Collects stock data
+* Evaluates company performance
+* Analyzes market trends
+* Compares different investment options
+
+All of this happens:
+
+* With minimal human intervention
+* Automatically and continuously
+
+=== Step 4: Producing the Outcome
+
+Based on its analysis, the AI provides:
+
+* Recommended stocks or ETFs
+* Suggested allocation of $100
+* Reasoning behind the choices
+
+== Key Insight
+
+The entire process:
+
+* Does not require step-by-step human instructions
+* Is handled independently by the AI system
+
+This is what makes it *agentic*.
+
+== Definition of Agentic AI
+
+Agentic AI is a system that can:
+
+* Take or define a goal
+* Plan actions to achieve that goal
+* Execute those actions
+* Do all of this with minimal or no human intervention
+
+In simple words:
+
+*Agentic AI can think, act, and improve on its own.*
+
+== Key Characteristics of Agentic AI
+
+=== 1. Autonomy
+
+* Works independently
+* Requires little to no human involvement
+
+=== 2. Goal-Oriented
+
+* Focuses on achieving a goal
+* Not limited to predefined tasks
+
+=== 3. Adaptability
+
+* Learns from outcomes
+* Adjusts actions based on environment and results
+
+== Summary
+
+In this case study:
+
+* Goal → Invest $100 wisely
+* Plan → Analyze market, companies, trends
+* Execute → Gather and process data
+* Result → Provide investment advice
+
+This demonstrates how Agentic AI:
+
+* Thinks (plans)
+* Acts (executes)
+* Learns (adapts)
+
+All with minimal human intervention.

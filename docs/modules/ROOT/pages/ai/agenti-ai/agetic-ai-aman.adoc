@@ -1,0 +1,527 @@
+= Agentic AI for Beginner: Build AI Agents From Scratch - Aman
+:toc: right
+
+> Deploy on Cloud | Observability
+
+== Resources
+
+* https://github.com/UnfoldDataScience/Agentic_Ai_For_Beginner/tree/main
+* https://github.com/UnfoldDataScience/Agent_Observability_Agentic_AI_Course_Udemy
+
+== Setup
+
+* code: /Users/nareshchaurasia/nc/Python-TechHub/AI-ML-GenAI/Agentic-AI/Agentic-AI-Aman
+* virtual enviroment: /Users/nareshchaurasia/nc/Python-TechHub/AI-ML-GenAI/Agentic-AI/.vent_aman
+* /Users/nareshchaurasia/nc/Python-TechHub/AI-ML-GenAI/Agentic-AI/Agentic-AI-Aman/requirements.txt
+
+== Section 1
+
+> Built some agents, using tools.
+
+=== 2. Definition and Concept
+
+> Converted as case study in TechWizard
+
+.investing $100 in the US stock market
+[%collapsible]
+====
+
+* Agentic AI is an autonomous system that sets goals, plans actions, and executes them with minimal human intervention
+
+* Real-world example: investing $100 in the US stock market
+** Goal is to get the best investment advice for $100
+** AI analyzes companies, financial conditions, and global factors
+** AI plans and executes steps to reach the goal
+
+* Core workflow of Agentic AI
+** Goal setting
+*** Define objective clearly (e.g., best investment strategy)
+** Planning actions
+*** Identify steps like market analysis, financial review, trend evaluation
+** Executing actions
+*** Perform analysis and decision-making to achieve the goal
+
+* Key characteristics of Agentic AI
+** Autonomy
+*** Operates independently with little or no human intervention
+** Goal-based behavior
+*** Focuses on achieving outcomes rather than completing fixed tasks
+** Adaptability
+*** *Learns from environment and improves decisions over time*
+
+* Difference from traditional AI
+** Traditional AI is task-based
+*** Performs predefined tasks
+** Agentic AI is goal-driven
+*** Decides actions dynamically to achieve a goal
+
+====
+
+
+##############################################
+
+---
+
+=== 3. Traditional AI vs Agentic AI
+
+> Not Used.
+
+.Traditional AI is task-focused, while Agentic AI is goal-driven and autonomous in decision-making
+[%collapsible]
+====
+* Traditional AI is task-focused, while Agentic AI is goal-driven and autonomous in decision-making
+
+* Real-world example: self-driving cars
+** Both systems can be used but behave differently
+** Differences are clear in goal, adaptability, and autonomy
+
+* Difference in goals
+** Traditional AI
+*** Focuses on a specific task like object detection
+*** Identifies objects (e.g., person or obstacle on road)
+*** Alerts driver based on predefined rules
+** Agentic AI
+*** Focuses on a broader goal like route navigation
+*** Considers traffic, weather, obstacles, and external data
+*** Makes decisions to reach destination efficiently
+
+* Difference in adaptability
+** Traditional AI
+*** Limited to training data
+*** Fails to recognize unseen objects
+*** Does not learn in real time
+** Agentic AI
+*** Learns from new situations and past experiences
+*** Adapts to unexpected conditions
+*** Continuously improves decision-making
+
+* Difference in autonomy
+** Traditional AI
+*** Executes predefined instructions
+*** Example: detect object → send alert
+*** Requires human intervention in many cases
+** Agentic AI
+*** Plans and decides next actions independently
+*** Gathers additional data (traffic, weather, APIs)
+*** Takes dynamic decisions to achieve the goal
+
+====
+
+
+##############################################
+
+---
+
+=== 6. Your First Agent Logic: Understanding the ReAct Framework
+
+
+
+
+
+##############################################
+
+---
+
+
+== Section 2: Multi Agent AI Systems
+
+
+=== 12. How to think about Multi Agent System(MAS)
+
+* #Pending#: agetic-ai-aman/project-team-chef-nutritionist.adoc[]
+
+##############################################
+
+---
+
+=== 13,14. Multi Agent Architecture
+
+*CrewAI: Chain of Thoughts and Step-by-Step Execution*
+
+*Overview*
+
+*CrewAI orchestrates AI agents using Chain of Thoughts (CoT) - a sequential reasoning approach where agents think step-by-step before acting.*
+
+*Core Architecture*
+
+* *1. Flows* - Orchestration layer (Process Manager)
+* *2. #Crews#* - Collaboration layer (Team Management)  
+* *3. Agents* - Execution layer (Task Performers)
+
+*Two Execution Approaches*
+
+*Simple (Your Original):*
+*Crew starts directly with crew.kickoff()*
+*No orchestration layer*
+*Good for single workflow*
+
+[source,python]
+----
+# Direct Crew execution - no Flow layer
+crew = Crew(agents=[researcher, writer], tasks=[task1, task2])
+result = crew.kickoff()  # Crew starts directly
+----
+
+*Advanced (With Flow):*
+
+*Flow starts first with flow.start()*
+*Flow manages multiple Crews/steps*
+*Better for complex applications*
+
+[source,python]
+----
+# Flow orchestrates multiple Crews
+flow = Flow()
+flow.add_step(crew_execution_step)
+result = flow.start()  # Flow starts, then calls Crew
+----
+
+*Original code works perfectly without Flow* - Flow is optional and used when you need to orchestrate multiple workflows or add state management between different Crew executions.
+
+*Chain of Thoughts Process*
+
+Agents break down tasks into logical steps:
+
+1. *Analyze* - Understand the problem
+2. *Plan* - Create step-by-step approach
+3. *Execute* - Perform each step sequentially
+4. *Validate* - Check results before proceeding
+
+*Step-by-Step Execution Flow*
+
+```
+Flow Starts → Crew Assembles → Agents Execute (CoT) → Results Integrate → Flow Continues
+```
+
+*Agent Execution Example:*
+
+- "I need to analyze data. First, I'll examine the structure..."
+- "Data loaded. Next, I'll identify patterns..."
+- "Patterns found. Finally, I'll generate insights..."
+
+##############################################
+
+---
+
+=== 15,16 Designing Specialized Agents for Customer Support
+
+*Overview*
+
+A multi-agent system that creates and analyzes recipes for diabetic patients using CrewAI.
+
+*How It Works*
+
+* *Two agents work together:*
+* 1. Chef Agent - Creates 5 different recipes
+* 2. Nutritionist Agent - Analyzes and selects the best recipe for diabetics
+
+*Process Flow*
+
+* Input Ingredients → Chef Creates Recipes → Nutritionist Analyzes → Final Recommendation
+
+*Agent Roles*
+
+*Chef Agent:*
+
+- Creates 5 recipes using given ingredients
+- Includes cooking steps and nutritional info
+- Considers taste and presentation
+
+*Nutritionist Agent:*
+
+- Reviews all recipes for diabetic suitability
+- Selects the best recipe for diabetic patients
+- Explains why other recipes are not suitable
+
+*Code Example*
+
+```python
+# Create agents
+chef = Agent(role="chef", goal="Create recipes using {ingredients}")
+nutritionist = Agent(role="nutritionist", goal="Analyze recipes for diabetics")
+
+# Create tasks
+cook_task = Task(description="Create 5 recipes using {ingredients}", agent=chef)
+analyze_task = Task(description="Select best recipe for diabetics", agent=nutritionist)
+
+# Create crew and run
+crew = Crew(agents=[chef, nutritionist], tasks=[cook_task, analyze_task])
+result = crew.kickoff(inputs={"ingredients": "chicken"})
+```
+
+*What You Get*
+
+*A complete analysis including:*
+- Selected recipe with cooking instructions
+- Why it's good for diabetic patients
+- Reasons why other recipes were rejected
+- Final recommendation from nutritionist
+
+*Key Benefits*
+
+- *Specialized expertise* - Chef and nutritionist knowledge
+- *Quality control* - Medical validation of recipes
+- *Patient safety* - Evidence-based recommendations
+- *Easy to use* - Just provide ingredients
+
+*Use Cases*
+
+- Healthcare providers creating meal plans
+- Nutrition apps for diabetic patients
+- Educational tools for healthy cooking
+- Personal meal planning services
+
+*Technical Details*
+
+- Uses GPT-4 for smart reasoning
+- Sequential processing (chef first, then nutritionist)
+- Detailed logging for transparency
+- Context preservation between tasks
+
+*Conclusion*
+
+This system shows how AI agents can collaborate to solve real-world health problems. The chef creates options, and the nutritionist ensures medical safety - perfect for diabetic meal planning.
+
+##############################################
+
+---
+
+=== 24. Phidata Implementation: Constructing the Team
+
+A multi-agent investment analysis system that combines market sentiment analysis, financial data evaluation, and strategic investment recommendations using specialized AI agents.
+
+*System Architecture*
+
+*Agent Components:*
+
+* 1. Market Sentiment Evaluator - Analyzes financial news sentiment
+* 2. Financial Insights Agent - Extracts key financial metrics
+* 3. Deep Financial Analytics Agent - Comprehensive financial analysis
+* 4. Strategic Investment Advisor - Makes final investment decisions
+* 5. Investment Analysis Team - Coordinates all agents*
+
+*Implementation Details*
+
+*Core Dependencies:*
+```python
+from phi.agent import Agent
+from phi.model.openai import OpenAIChat
+from phi.tools.yfinance import YFinanceTools
+from phi.tools.googlesearch import GoogleSearch
+from phi.tools.calculator import Calculator
+```
+
+*Agent Configuration:*
+
+*Market Sentiment Bot:*
+```python
+market_sentiment_bot = Agent(
+    name="Market Sentiment Evaluator",
+    role="Analyze and interpret financial news articles",
+    model=OpenAIChat(id="gpt-4o"),
+    tools=[GoogleSearch(), YFinanceTools(company_news=True)],
+    instructions=[
+        "Identify relevant news articles and assess sentiment",
+        "Assign sentiment ratings from 1 (very negative) to 10 (very positive)",
+        "Provide specific sources and detailed reasoning"
+    ]
+)
+```
+
+*Financial Data Bot:*
+```python
+financial_data_bot = Agent(
+    name="Financial Insights Agent",
+    role="Extract and analyze company financial data",
+    model=OpenAIChat(id="gpt-4o"),
+    tools=[YFinanceTools(stock_price=True, company_info=True, stock_fundamentals=True)],
+    instructions=[
+        "Gather stock prices, analyst ratings, and key metrics",
+        "Structure data in tables with meaningful insights"
+    ]
+)
+```
+
+*Deep Analytics Bot:*
+```python
+deep_financials_bot = Agent(
+    name="Deep Financial Analytics Agent",
+    role="Extract extensive company financial data",
+    model=OpenAIChat(id="gpt-4o"),
+    tools=[YFinanceTools(company_info=True, key_financial_ratios=True, income_statements=True)],
+    instructions=[
+        "Gather financial ratios, income statements, balance sheets",
+        "Highlight company fundamentals and trends"
+    ]
+)
+```
+
+*Investment Strategy Bot:*
+```python
+investment_strategy_bot = Agent(
+    name="Strategic Investment Advisor",
+    role="Make data-driven investment decisions",
+    model=OpenAIChat(id="gpt-4o"),
+    instructions=[
+        "Verify outputs for accuracy and completeness",
+        "Analyze data holistically for final sentiment score",
+        "Provide clear BUY, SELL, or HOLD recommendation"
+    ]
+)
+```
+
+*Team Coordination:*
+```python
+investment_analysis_team = Agent(
+    model=OpenAIChat(id="gpt-4o"),
+    team=[market_sentiment_bot, financial_data_bot, deep_financials_bot, investment_strategy_bot],
+    instructions=[
+        "Integrate insights from all specialized agents",
+        "Structure findings in clear tables",
+        "Provide definitive investment recommendation"
+    ]
+)
+```
+
+*Workflow Process*
+
+```
+Input Companies → Sentiment Analysis → Financial Data → Deep Analytics → Investment Strategy → Final Recommendation
+```
+
+*Analysis Steps:*
+
+1. Sentiment Analysis - Search and interpret news articles
+2. Financial Data - Analyze stock prices and fundamentals
+3. Deep Analytics - Comprehensive financial ratio analysis
+4. Strategic Review - Holistic evaluation and recommendation
+
+*Sample Execution*
+
+*Input Request:*
+
+```
+"Analyze the sentiment for AMD, TSM for January 2025:
+1. Sentiment Analysis - Search news articles and interpret sentiment
+2. Financial Data - Analyze stock price and financial metrics
+3. Consolidated Analysis - Combine insights for final recommendation"
+```
+
+*Expected Output:*
+
+- Sentiment scores (1-10) with justification
+- Financial metrics and trends in table format
+- Final BUY/SELL/HOLD recommendation
+- Source references with publication dates
+
+*Key Features*
+
+*Multi-Agent Collaboration:*
+
+- Specialized agents for different analysis aspects
+- Coordinated team-based approach
+- Integrated insights from multiple sources
+
+*Data Sources:*
+
+- Real-time news search via Google
+- Comprehensive financial data via YFinance
+- Historical price and fundamental analysis
+
+*Analysis Capabilities:*
+
+- Sentiment scoring with justification
+- Financial ratio analysis
+- Trend identification
+- Risk assessment
+
+*Technical Details*
+
+*Model Configuration:*
+
+- Primary Model: GPT-4o for all agents
+- Tool Integration: YFinance, GoogleSearch, Calculator
+- Response Format: Markdown with structured tables
+
+*Data Processing:*
+
+- Real-time market data retrieval
+- News article sentiment analysis
+- Financial metric calculations
+- Cross-agent data sharing
+
+*Use Cases*
+
+*Investment Applications:*
+
+- Portfolio management decisions
+- Stock recommendation systems
+- Market research and analysis
+- Risk assessment and mitigation
+
+*Business Use Cases:*
+
+- Financial advisory services
+- Investment fund management
+- Corporate financial planning
+- Market intelligence gathering
+
+*Benefits*
+
+*Analytical Advantages:*
+
+- Comprehensive multi-perspective analysis
+- Data-driven investment decisions
+- Real-time market sentiment tracking
+- Structured, transparent methodology
+
+*Operational Benefits:*
+
+- Automated analysis workflow
+- Consistent evaluation criteria
+- Scalable to multiple companies
+- Reduced research time
+
+*Decision Quality:*
+
+- Holistic view of investment opportunities
+- Evidence-based recommendations
+- Risk-adjusted investment strategies
+- Professional-grade analysis
+
+*Best Practices*
+
+*Analysis Methodology:*
+
+- Cross-validate data from multiple sources
+- Maintain timestamp relevance
+- Provide clear justification for recommendations
+- Include source references
+
+*Team Coordination:*
+
+- Clear role separation between agents
+- Structured data sharing protocols
+- Consistent formatting and presentation
+- Quality assurance checkpoints
+
+*Conclusion*
+
+This Investment Analysis Agentic System demonstrates how specialized AI agents can collaborate to provide comprehensive, data-driven investment recommendations. By combining market sentiment analysis, financial data evaluation, and strategic investment planning, the system delivers professional-grade investment insights suitable for portfolio management and financial decision-making.
+
+
+
+##############################################
+
+---
+
+== Section 5
+
+
+
+=== 47. The Teenager Framework - Why Agents Need Observation
+
+link:./content/day-10-observability-u.adoc[Day 10 - Observability]
+
+
+

@@ -1,0 +1,295 @@
+= Model Context Protocol (MCP) – 20 Day Self-Paced Program
+:toc: right
+
+
+== Program Outcome
+
+By the end of this program, you will be able to:
+
+* Build and run an MCP server
+* Integrate MCP with tools like VS Code and GitHub
+* Design multi-tool AI systems
+* [.line-through]#Handle production challenges like latency and scaling#
+* Build a real-world MCP-based AI agent
+
+---
+
+== 📚 Course Content
+
+* ✔️*Day 1*: link:./content/day1-mcp-coursera-sg-introduction.adoc[Day 1 - Introduction to MCP]
+* ✔️*Day 3.1*: link:./content/day3.1-mcp-coursera-sg-client.adoc[Day 3.1 - MCP Client]
+
+
+##############################################
+
+---
+
+---
+
+== Day 2 – MCP Mental Model
+
+*Concept*
+
+* MCP as "USB-C for AI"
+* Standardized interface for tools
+
+*Exercise*
+
+* Draw MCP architecture (Client–Server–Tools)
+
+*Reflection*
+
+* How is MCP different from API Gateway?
+
+---
+
+== Day 3 – MCP Core Components
+
+*Concept*
+
+* Client
+* Server
+* Tools
+
+*Exercise*
+
+* Map real-world tools (GitHub, Filesystem) into MCP components
+
+---
+
+== Day 4 – Request-Response Lifecycle
+
+*Concept*
+
+* How requests flow
+* Tool invocation
+
+*Exercise*
+
+* Trace a request from AI → MCP → Tool → Response
+
+---
+
+== Day 5 – Setting Up MCP
+
+*Concept*
+
+* Installation
+* Basic configuration
+
+*Exercise*
+
+* Install MCP server locally
+* Run a sample server
+
+---
+
+== Day 6 – First MCP Tool
+
+*Concept*
+
+* Tool definition
+* Input/output schema
+
+*Exercise*
+
+* Create a simple tool (e.g., calculator)
+
+---
+
+== Day 7 – First Working Flow
+
+*Concept*
+
+* Connecting AI to MCP
+
+*Exercise*
+
+* Call your tool via MCP
+
+*Reflection*
+
+* What worked? What broke?
+
+---
+
+== Day 8 – Tool Design Patterns
+
+*Concept*
+
+* Idempotent tools
+* Stateless vs stateful
+
+*Exercise*
+
+* Refactor your tool for better design
+
+---
+
+== Day 9 – Error Handling
+
+*Concept*
+
+* Failures in tool execution
+
+*Exercise*
+
+* Introduce failure scenarios and handle them
+
+---
+
+== Day 10 – Integration with VS Code / GitHub
+
+*Concept*
+
+* Real-world tool integration
+
+*Exercise*
+
+* Connect MCP to one real tool (GitHub or file system)
+
+---
+
+== Day 11 – Multi-Tool Systems
+
+*Concept*
+
+* Multiple tools working together
+
+*Exercise*
+
+* Create 2 tools and orchestrate them
+
+---
+
+== Day 12 – Context Management
+
+*Concept*
+* Passing context across tools
+
+*Exercise*
+* Build a flow where output of one tool feeds another
+
+---
+
+== Day 13 – Multi-Server Composition
+
+*Concept*
+
+* Multiple MCP servers
+
+*Exercise*
+
+* Simulate 2 servers and route requests
+
+---
+
+== Day 14 – Performance Basics
+
+*Concept*
+
+* Latency issues
+* Bottlenecks
+
+*Exercise*
+
+* Measure response time of your tools
+
+---
+
+== Day 15 – Scaling MCP Systems
+
+*Concept*
+
+* Handling large data
+* Parallel execution
+
+*Exercise*
+
+* Simulate load (multiple requests)
+
+---
+
+== Day 16 – Production Failures
+
+*Concept*
+
+* Real-world breakdowns
+* Debugging mindset
+
+*Exercise*
+
+* Break your system intentionally and debug
+
+---
+
+== Day 17 – Capstone Project (Design)
+
+*Concept*
+
+* System design
+
+*Exercise*
+
+* Design an AI agent using MCP with:
+** File system tool
+** GitHub tool
+** Custom API
+
+---
+
+== Day 18 – Capstone Project (Build)
+
+*Exercise*
+
+* Implement the system
+
+---
+
+== Day 19 – Capstone Project (Enhance)
+
+*Concept*
+
+* Add error handling
+* Improve performance
+
+*Exercise*
+
+* Add logging and retries
+
+---
+
+== Day 20 – Finalization & Future
+
+*Concept*
+
+* Testing MCP systems
+* Future trends
+
+*Exercise*
+
+* Document your project
+* Publish on GitHub
+
+*Reflection*
+
+* What would you improve?
+
+---
+
+== Bonus Section
+
+* Anti-patterns in MCP
+* Common mistakes
+* Real-world lessons
+
+---
+
+== Final Note
+
+This program is designed to make you a practitioner, not just a learner.
+
+Focus on:
+* Building daily
+* Breaking systems
+* Learning from failures

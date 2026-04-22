@@ -1,0 +1,7 @@
+== Day 12 – Context Management
+
+*Concept*
+* Managing context window
+
+*Exercise*
+* Optimize prompts for better context

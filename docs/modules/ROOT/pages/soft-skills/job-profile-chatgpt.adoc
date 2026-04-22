@@ -1,0 +1,175 @@
+= Naresh Chaurasia
+Solution Architect | GenAI | Cloud | Banking | Microservices
+
+== Professional Summary
+
+Solution Architect with 20+ years of experience in enterprise engineering and 7+ years in architecture roles within BFSI domain. Specialized in designing scalable, cloud-native, and event-driven systems across core banking (Temenos), microservices, and emerging GenAI platforms.
+
+Strong expertise in building distributed architectures, API ecosystems, and AI-powered solutions including multi-agent systems, RAG, and workflow automation. Proven track record in leading cloud transformations, solution design, and architecture governance for large-scale enterprise systems.
+
+Experienced in stakeholder collaboration, architecture decision-making, and delivering high-performance, secure, and resilient systems.
+
+---
+
+== Key Skills
+
+* Solution Architecture & Design (HLD, LLD, NFRs)
+* Cloud Architecture (AWS, Azure)
+* Event-Driven Architecture (Kafka, Messaging Systems)
+* API & Microservices Architecture
+* GenAI, Agentic AI, RAG Systems
+* Integration Architecture (API, File, Queue-based)
+* Architecture Governance & Trade-off Analysis
+* Security Architecture (OAuth2, TLS, IAM)
+* DevOps & Cloud-Native Deployments (Docker, Kubernetes, EKS)
+
+---
+
+== Key Achievements
+
+* Designed enterprise banking architectures handling high-volume transaction systems
+* Led cloud transformation initiatives improving scalability and system resilience
+* Built reusable AI agent frameworks accelerating development and automation
+* Delivered event-driven microservices architectures improving system decoupling and performance
+* Influenced architecture decisions across cross-functional and distributed teams
+
+---
+
+== Architecture Experience
+
+=== GenAI & Agentic AI Solutions
+
+* Designed and implemented multi-agent AI systems using AutoGen for enterprise workflow automation
+* Built scalable agent orchestration patterns (Agent Factory, RoundRobin/Selector flows)
+* Enabled human-in-the-loop AI workflows using UserProxy interaction models
+* Integrated Model Context Protocol (MCP) to connect AI agents with enterprise systems (databases, APIs, Excel)
+* Applied context engineering and validation mechanisms to improve AI reliability and reduce hallucination
+* Developed reusable AI-driven solutions for automation, integration, and decision support
+
+---
+
+=== Temenos Transact (T24) – Cloud Architecture
+
+* Led cloud implementation of core banking systems on AWS/Azure using distributed 4-tier architecture
+* Designed scalable messaging architecture using Amazon Queue Mesh for high-volume transaction processing
+* Delivered resilience and recovery solutions for XA transactions improving system reliability
+* Architected API integration using Apache Camel with OAuth2 security via Keycloak
+* Contributed to RFP solutions for enterprise banking clients with API-first and event-driven architecture
+
+---
+
+=== Temenos Infinity – Digital Banking Architecture
+
+* Led reference architecture for digital banking platform including microservices and integration layers
+* Designed event-driven architecture using Kafka for real-time data streaming
+* Enabled seamless integration between core banking (Transact) and digital channels
+* Supported client onboarding, architecture consulting, and solution demonstrations
+
+---
+
+=== API & Microservices Architecture
+
+* Led API & Microservices Center of Excellence (COE)
+* Designed event-driven microservices using SAGA pattern and Kafka ecosystem
+* Implemented secure API architectures using OAuth2 and API Gateway patterns
+* Delivered cloud-native deployments using Kubernetes (EKS)
+* Improved system scalability, resilience, and deployment automation
+
+---
+
+== Professional Experience
+
+=== Cognizant, Pune
+*Architect*  
+Jun 2019 – Present
+
+==== Key Contributions
+
+* Leading solution architecture and integration strategy for enterprise banking and distributed systems
+* Designing microservices, API, and event-driven architectures for large-scale applications
+* Driving cloud adoption, DevOps practices, and architecture modernization initiatives
+* Mentoring teams and guiding architecture best practices
+
+---
+
+=== Credit Suisse
+*Solution Architect*  
+Jul 2020 – Dec 2021
+
+* Designed resilience and transaction recovery architecture for distributed systems
+* Implemented secure JBoss configurations (TLS/SSL, Elytron, credential stores)
+* Enabled DevOps automation and environment provisioning
+* Designed rule engine solutions using Drools for business logic processing
+
+---
+
+=== BDO, Manila
+*Integration Architect*  
+Jan 2023 – Aug 2024
+
+* Designed integration architecture for microservices and file-based systems
+* Built scalable and resilient integration solutions across enterprise systems
+* Optimized data flow and system interoperability
+
+---
+
+=== Telstra
+*Project Lead*  
+Sep 2024 – Jan 2025
+
+* Led technical design and architecture documentation
+* Delivered POCs and improved delivery efficiency
+* Enabled cross-skilling and team capability enhancement
+
+---
+
+=== Earlier Roles
+
+* Architect – Samlink  
+* Technical Consultant – PTC  
+* Technical Lead – Vignet  
+* Module Lead – BRT  
+* Senior Software Engineer – SABA, Golden Source, TCS  
+
+---
+
+== Trainer & Mentoring Experience
+
+* Delivered enterprise training in Java, Microservices, APIs, DevOps, and Automation
+* Trained 70+ engineers with hands-on, project-based learning approach
+* Created structured learning content including labs, notes, and real-world use cases
+* Mentored engineers and improved project readiness
+
+---
+
+== Certifications
+
+* AWS Certified Cloud Practitioner
+* Sun Certified Java Programmer
+* Sun Certified Web Component Developer
+* Oracle SQL Certified
+
+---
+
+== Education
+
+* Master of Computer Applications – Madras University
+* Bachelor of Science – Delhi University
+
+---
+
+== Technology Stack (Summary)
+
+*Languages:* Java, Python  
+*Frameworks:* Spring Boot, Microservices, Angular, React  
+*Integration:* Apache Camel, Kafka, Messaging Systems  
+*Cloud:* AWS (EC2, Lambda, EKS, S3)  
+*DevOps:* Docker, Kubernetes, Jenkins  
+*Security:* OAuth2, TLS, IAM  
+*Databases:* Oracle, MySQL, SQL Server  
+
+---
+
+== Positioning Statement
+
+Solution Architect bridging enterprise banking systems with AI-driven architectures, enabling scalable, secure, and future-ready platforms.

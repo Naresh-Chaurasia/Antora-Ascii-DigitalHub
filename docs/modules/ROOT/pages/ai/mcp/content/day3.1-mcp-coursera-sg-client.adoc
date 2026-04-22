@@ -1,0 +1,44 @@
+== MCP Client
+
+
+* MCP Client
+** The MCP client enables communication between your server and an MCP server.
+** It acts as the access point for all tools provided by the MCP server.
+** Your server interacts with tools through the MCP client.
+
+* Transport Agnostic Communication
+** MCP does not depend on a specific communication protocol.
+** Client and server can communicate using different transports.
+*** Standard Input / Output (stdio)
+**** Common when client and server run on the same machine.
+*** HTTP
+*** WebSockets
+*** Other communication protocols
+
+* Message-Based Communication
+** MCP client and server communicate by exchanging structured messages.
+** All message types are defined in the MCP specification.
+
+* Tool Discovery Messages
+** ListToolsRequest
+*** Sent from MCP client to MCP server.
+*** Requests a list of available tools.
+** ListToolsResult
+*** Sent from MCP server to MCP client.
+*** Contains the list of tools provided by the server.
+
+* Tool Execution Messages
+** CallToolRequest
+*** Sent from MCP client to MCP server.
+*** Requests execution of a specific tool with arguments.
+** CallToolResult
+*** Sent from MCP server to MCP client.
+*** Contains the output produced by the tool.
+
+* Key Insight
+** MCP separates responsibilities across multiple components.
+** The MCP client handles communication.
+** The MCP server handles tool execution.
+** External services provide the actual data.
+
+---

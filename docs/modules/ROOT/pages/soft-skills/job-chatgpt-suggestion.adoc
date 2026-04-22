@@ -1,0 +1,127 @@
+= Solution Architect Resume Feedback
+
+*Biggest Gap: Thinking Like an Engineer vs Architect*
+
+* Your content is:
+** Tool-heavy  
+** Framework-heavy  
+** Implementation-heavy  
+
+* Hiring managers expect:
+** Business impact  
+** Architecture decisions  
+** Scale, cost, performance  
+** Stakeholder influence  
+
+* Rule:
+** What problem did you solve, at what scale, and what was the outcome?
+
+---
+
+*Career Identity (Rewrite)*
+
+*Solution Architect with 15+ years of experience designing enterprise-scale banking and cloud-native systems across core banking (Temenos), microservices, and emerging GenAI platforms. Proven expertise in building distributed architectures, event-driven systems, and AI-powered workflows (multi-agent, RAG). Strong track record in leading cloud transformations, API ecosystems, and solution design for large-scale financial systems.*
+
+---
+
+*Structure Fix*
+
+* Current structure:
+** GenAI  
+** Transact  
+** Infinity  
+** Java  
+
+* Recommended structure:
+** Company / Role  
+*** Key Achievements  
+*** Architecture Contributions  
+*** Technologies  
+
+---
+
+*GenAI & Agentic AI Solutions*
+
+* Designed and implemented multi-agent AI systems using frameworks like AutoGen for automating workflows across APIs, databases, and enterprise tools  
+* Built scalable agent orchestration patterns (Agent Factory, RoundRobin/Selector flows) improving reuse and reducing development effort  
+* Enabled human-in-the-loop workflows using UserProxy for controlled AI decision-making  
+* Integrated Model Context Protocol (MCP) to connect AI agents with enterprise systems (MySQL, REST APIs, Excel)  
+* Applied context engineering and validation strategies to improve reliability and reduce hallucination in AI workflows  
+* Delivered AI-driven automation for enterprise use cases (add specific examples if available)
+
+---
+
+*Temenos Transact (T24) – Cloud Architecture*
+
+* Led cloud transformation of core banking systems on AWS/Azure with distributed 4-tier architecture  
+* Designed scalable messaging architecture using Amazon Queue Mesh for high-volume transaction processing  
+* Delivered resilient XA transaction recovery solution improving system reliability and reducing downtime  
+* Led API integration strategy using Apache Camel with OAuth2-based security using Keycloak  
+* Contributed to RFP solutions for large banking clients with API-first and event-driven architecture  
+* Add measurable impact (transaction volume, uptime, cost reduction)
+
+---
+
+*Temenos Infinity – Digital Banking Architecture*
+
+* Led reference architecture for digital banking platform including microservices, integration layers, and frontend channels  
+* Designed event-driven architecture using Apache Kafka for real-time data streaming  
+* Enabled seamless integration between core banking (Transact) and digital channels  
+* Supported client onboarding, demos, and architecture consulting for enterprise implementations  
+
+---
+
+*API & Microservices Architecture*
+
+* Led Center of Excellence (COE) for API and microservices adoption across projects  
+* Designed event-driven microservices using SAGA pattern and Kafka ecosystem  
+* Implemented secure API architectures using OAuth2 and API Gateway patterns  
+* Delivered cloud-native deployments using Kubernetes (EKS)  
+* Improved system scalability, resilience, and deployment automation  
+
+---
+
+*Key Achievements (Add Section)*
+
+* Designed architecture for large-scale banking system handling X+ transactions/day  
+* Led cloud migration reducing infrastructure cost by X%  
+* Built reusable AI agent frameworks accelerating development by X%  
+* Influenced architecture decisions across cross-functional teams  
+
+---
+
+*Keywords to Add (ATS Optimization)*
+
+* Architecture Governance  
+* Solution Design  
+* Trade-off Analysis  
+* High-Level Design (HLD) / Low-Level Design (LLD)  
+* Non-Functional Requirements (NFRs)  
+* Scalability / Reliability / Security  
+* Stakeholder Management  
+
+---
+
+*Formatting Guidelines*
+
+* Keep bullet points 1–2 lines max  
+* Start bullets with action verbs (Designed, Led, Delivered, Architected)  
+* Avoid overloading bullets with too many technologies  
+* Maintain consistent spacing  
+
+---
+
+*Unique Positioning*
+
+* Solution Architect bridging Enterprise Banking Systems with AI-driven architectures  
+
+---
+
+*Action Plan*
+
+* Rewrite summary (5–6 lines max)  
+* Convert sections into experience-based structure  
+* Add measurable achievements  
+* Reduce technical noise and increase architecture language  
+* Add metrics wherever possible  
+* Position GenAI as business value, not just experimentation  

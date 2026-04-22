@@ -1,0 +1,41 @@
+= Antora Journey
+:toc: right
+:toclevels: 5
+:sectnums: 5
+:sectnumlevels: 5
+
+> Find all the old documentation and document it here.
+
+* /Users/nareshchaurasia/nc/Awakening-The-Giant
+* /Users/nareshchaurasia/nc/KnowledgeBase-DigitalHub
+** technical-reference-library
+
+##############################################
+
+---
+
+== Resources
+
+* https://www.adoc-studio.app/blog/antora-guide
+
+
+##############################################
+
+---
+
+video::4_Qb7xkUHK8[youtube, width=600, height=350, caption="Video"]
+
+
+* This little element here now at this point it probably doesn't have a look a lot of meaning but what it does is that it allows you to have version documentation
+
+* Everything is listed under modules so here you can see that we have root is like the default or the main module and you can have one or you can have as many as you need root being the defaults.
+
+
+##############################################
+
+---
+
+== YouTube Tutorials
+
+* link:https://www.youtube.com/watch?v=3fIrbzwsp8g[Antora & AsciiDoc Overview]
+** Version Documentation

@@ -1,0 +1,91 @@
+== Day 2 – ReAct Framework
+:toc: right
+
+* Overall Summary
+** Understand how an agent works using the ReAct (Reasoning + Action) prompting approach, where the agent thinks, acts, and iterates to solve a problem using LLMs and tools
+
+* Learning Objectives
+** Understand what ReAct prompting is
+** Identify key components of an agentic system
+** Explain how an agent interacts with LLMs and tools
+** Describe the thought–action loop
+** Apply the concept to real-world agent workflows
+
+* Structured Concept Breakdown
+** Agentic System
+*** What it means
+**** A system where a user interacts with an agent instead of directly with an LLM
+*** Key components
+**** User
+***** Person asking the question
+**** Agent
+***** Middle layer that handles logic and execution
+**** LLM
+***** Used by agent for reasoning and generating responses
+**** Tools
+***** External capabilities (APIs, DB, calculators, etc.)
+**** Orchestration Framework
+***** Controls flow between agent, LLM, and tools
+
+** Traditional vs Agent-based Interaction
+*** Traditional flow
+**** User → LLM → Response
+*** Agent-based flow
+**** User → Agent → LLM + Tools → Agent → Response
+
+** ReAct Prompting Technique
+*** What it means
+**** A prompting style where the agent is guided to think and act step by step
+*** Full form
+**** Reasoning + Action
+*** Purpose
+**** Make LLM behave like a decision-making system
+
+** Thought–Action Loop
+*** Thought
+**** Agent decides what to do next
+**** Example: “I need to fetch stock price”
+*** Action
+**** Agent performs the task using LLM or tools
+**** Example: Call API
+*** Observation
+**** Result of action is received
+**** Example: “Stock price is $150”
+*** Loop continuation
+**** Thought → Action → Observation repeats until goal is achieved
+
+** Prompt-driven Behavior
+*** Agent behavior is controlled through prompts
+**** You instruct how to think
+**** You instruct how to act
+*** Prompts define structure
+**** When to think
+**** When to act
+**** How to respond
+
+* Step-by-Step Learning Flow
+** Step 1: Foundation concept
+*** Understand how users normally interact with LLMs
+*** Learn limitation: no structured reasoning or tool usage
+
+** Step 2: Core idea
+*** Introduce agent as an intermediary
+*** Agent uses LLM + tools to solve tasks
+
+** Step 3: Advanced understanding
+*** Learn ReAct pattern (Thought → Action → Observation loop)
+*** Understand iterative reasoning and execution
+
+** Step 4: Real-world application
+*** Build agents that can
+**** Fetch data from APIs
+**** Use tools like calculators or databases
+**** Make multi-step decisions before responding
+
+* Quick Revision Points
+** Agent sits between user and LLM
+** Agent can use tools in addition to LLM
+** ReAct = Reasoning + Action
+** Agent works in a loop: Thought → Action → Observation
+** Prompts control how the agent thinks and behaves
+** Agent-based systems are more powerful than direct LLM interaction

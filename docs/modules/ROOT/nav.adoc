@@ -1,14 +1,20 @@
-* xref:index.adoc[🏠 Home]
+* xref:index-all.adoc[🏠 Home]
+* xref:index-all-design.adoc[🏠 Home All]
 
 .🤖 Artificial Intelligence
 * xref:ai/index.adoc[Overview]
-* xref:ai/TechWizard-MCP.adoc[TechWizard MCP]
+* xref:ai/java-ai.adoc[Java AI]
 * Agentic AI
-** xref:ai/agenti-ai/agenti-ai-rahul-shetty.adoc[Agentic AI - Rahul Shetty]
+** xref:ai/agenti-ai/agetic-ai-aman.adoc[Agentic AI - Aman]
 ** xref:ai/agenti-ai/agentic-ai-mehmet.adoc[Agentic AI - Mehmet]
+** xref:ai/agenti-ai/agenti-ai-rahul-shetty.adoc[Agentic AI - Rahul Shetty]
+** xref:ai/agenti-ai/agentic-ai-self-learning-antora.adoc[Agentic AI - Self Learning (Antora)]
+** xref:ai/agenti-ai/agentic-ai-self-learning-git.adoc[Agentic AI - Self Learning (Git)]
 ** xref:ai/agenti-ai/mcp-agentic-ai.adoc[MCP - Agentic AI]
+
 * Content
 ** xref:ai/content/ai-content-google.adoc[AI Content - Google]
+
 * ChatGPT
 ** xref:ai/chatgpt/index.adoc[ChatGPT]
 ** xref:ai/chatgpt/systems-designs.adoc[Building Systems with the ChatGPT API]
@@ -18,16 +24,22 @@
 ** xref:ai/genai/sample.adoc[Sample GenAI Page]
 ** xref:ai/genai/ai-video-generation.adoc[AI Video Generation]
 * GitHub Copilot
-** xref:ai/github-copilot/mastering-github-copilot.adoc[Mastering GitHub Copilot]
+** xref:ai/github-copilot/co-pilot365.adoc[Co-Pilot 365]
 * MCP
 ** xref:ai/mcp/mcp-anthropic.adoc[MCP - Anthropic]
 ** xref:ai/mcp/mcp-flow.adoc[MCP - Flow]
 ** xref:ai/mcp/mcp-henry.adoc[MCP - Henry Habib]
 ** xref:ai/mcp/mcp-playbook.adoc[MCP - Playbook]
 ** xref:ai/mcp/mcp-summary.adoc[MCP - Summary]
+** xref:ai/mcp/mcp-self-learning-git.adoc[MCP - Self Learning Git]
+** xref:ai/mcp/mcp-self-learning-antora.adoc[MCP - Self Learning Antora]
 ** xref:ai/mcp/mcp-vs-code.adoc[MCP - VS Code]
 ** xref:ai/mcp/mcp-whiteboard.adoc[MCP - Whiteboard]
 ** xref:ai/mcp/mcp-yash.adoc[MCP - Yash Thakker]
+* TechWizard
+** xref:ai/TechWizard.adoc[TechWizard]
+** xref:ai/TechWizard-MCP.adoc[TechWizard MCP]
+** xref:ai/TechWizard-Sync.adoc[TechWizard Sync]
 
 ##############################################
 
@@ -37,15 +49,24 @@
 ##############################################
 
 .📚 Books
-* xref:books/feel-fearl.adoc[Feel the Fear and Do It Anyway]
-* xref:books/good-vibe.adoc[Good Vibe Good Life]
-* xref:books/kindle-list.adoc[Kindle List]
-* xref:books/show-your-work.adoc[Show Your Work]
-* xref:books/steal-artist.adoc[Steal Like An Artist]
+* Archive
+** xref:books/book-cards.adoc[Book Cards]
+** xref:books/feel-fearl.adoc[Feel the Fear and Do It Anyway]
+** xref:books/good-vibe.adoc[Good Vibe Good Life]
+** xref:books/hear-the-beat.adoc[Hear The Beat - James Joseph]
+** xref:books/kindle-list.adoc[Kindle List]
+** xref:books/show-your-work.adoc[Show Your Work]
+** xref:books/compound-effect.adoc[The Compound Effect]
+* Relationships
+** xref:books/relationship/dating-robert-grover.adoc[Dating Essentials for Men - Robert Grover]
+* xref:books/book-journal.adoc[Book Journal]
+* xref:books/steal-artist.adoc[Steal Like An Artist - Austin Kleon]
+
 
 ##############################################
 
 .🎥 Content
+* xref:content/capcut.adoc[Capcut]
 * xref:content/content-strategy.adoc[Content Strategy]
 * xref:content/content-creation.adoc[Content Creation]
 * xref:content/canva.adoc[Canva]
@@ -67,8 +88,8 @@
 * xref:dance/beast-mode.adoc[Beast Mode]
 * xref:dance/basi-deisy.adoc[Basi Y Deisy]
 * xref:dance/daniel-rosas.adoc[Daniel Rosas]
-* xref:dance/gidc-salsa.adoc[GIDC Salsa]
 * xref:dance/marius-elena.adoc[Marius & Elena]
+* xref:dance/dance-journal.adoc[Dance Journal]
 * xref:dance/sagar-prerna.adoc[Sagar & Prerna]
 * xref:dance/salsa.adoc[Salsa]
 
@@ -76,7 +97,7 @@
 
 .🚀 Getting Started
 * xref:getting-started/antora.adoc[Antora]
-* xref:getting-started/ascii-antora.adoc[Ascii Antora]
+* xref:getting-started/antora-journey.adoc[Antora Journey]
 * xref:getting-started/prompts-library.adoc[Prompts Library]
 * xref:getting-started/python.adoc[Python]
 * xref:getting-started/snapshot.adoc[Snapshot]
@@ -93,7 +114,6 @@
 .💡 Productivity
 * Journal
 ** xref:productivity/journal/journal-mar-26.adoc[Journal - Mar 26]
-
 * xref:productivity/ascii-template.adoc[Ascii Template]
 * xref:productivity/chrome.adoc[Chrome]
 * xref:productivity/mac.adoc[Macbook Pro]
@@ -104,6 +124,10 @@
 ##############################################
 
 .🤝 Soft Skills
+* Job
+** xref:soft-skills/job-profile-chatgpt.adoc[Job Profile - ChatGPT]
+** xref:soft-skills/job-1-page-executive-summary-chatgpt.adoc[1-Page Executive Summary - ChatGPT]
+** xref:soft-skills/job-chatgpt-suggestion.adoc[Job ChatGPT Suggestion]
 * xref:soft-skills/accelerate-your-job-search.adoc[Accelerate Your Job Search]
 * xref:soft-skills/developing-interpersonal.adoc[Developing Interpersonal Skills]
 

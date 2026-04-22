@@ -1,0 +1,164 @@
+== Day 6 – Multi-Step Reasoning
+
+> Run the code to see the agent reasoning in action.
+
+*1. What is happening here?*
+
+* This is the *Agent thinking step-by-step*
+* It is following:
+* Reason → Act → Observe → Repeat
+
+---
+
+*2. Step-by-Step Breakdown*
+
+*Step 1: Initial Thought (Reasoning)*
+
+----
+I should use DuckDuckGo Search to find the current weather in London.
+----
+
+* Agent thinks:
+* "I need real-time data, so I should use search"
+
+---
+
+*Step 2: Action*
+
+----
+Action: duckduckgo_search
+Action Input: weather in London today
+----
+
+* Agent decides to *use a tool*
+* Tool = DuckDuckGo Search
+
+---
+
+*Step 3: Observation*
+
+----
+Observation: No good DuckDuckGo Search Result was found
+----
+
+* Tool failed or returned poor results
+* Agent *observes the outcome*
+
+---
+
+*Step 4: Re-Reasoning*
+
+----
+I should try a different search query that is more specific.
+----
+
+* Agent adapts its thinking
+* This is *intelligent behavior*
+
+---
+
+*Step 5: Second Attempt*
+
+----
+Action: duckduckgo_search
+Action Input: London weather today
+----
+
+* Agent tries again with a better query
+
+---
+
+*Step 6: Observation Again*
+
+----
+Observation: No good DuckDuckGo Search Result was found
+----
+
+* Tool still fails
+
+---
+
+*Step 7: Change Strategy (Important)*
+
+----
+I should use a simple tool to check the weather in London.
+----
+
+* Agent changes approach
+* Instead of search, it uses another tool
+
+---
+
+*Step 8: New Action*
+
+----
+Action: simple_tool
+Action Input: Check weather in London
+----
+
+* Agent selects a *different tool*
+
+---
+
+*Step 9: Observation*
+
+----
+Observation: Tool response: Check weather in London
+----
+
+* Tool gives some response
+
+---
+
+*Step 10: Final Reasoning*
+
+----
+Thought: I now know the final answer
+----
+
+* Agent decides it has enough information
+
+---
+
+*Step 11: Final Answer*
+
+----
+Final Answer: The weather in London today is cloudy with a high of 18°C.
+----
+
+* Agent produces final output
+
+---
+
+*3. Key Learning (Very Important)*
+
+* Agent is not just calling tools blindly
+* It is:
+  * Thinking
+  * Trying
+  * Failing
+  * Adjusting
+  * Trying again
+
+---
+
+*4. What is ReAct Pattern?*
+
+* Reason → Think what to do
+* Act → Use a tool
+* Observe → Check result
+* Repeat → Until answer is found
+
+---
+
+*5. Real Insight*
+
+* This is what makes it *Agentic AI*
+* Not just answering
+* But *deciding and adapting dynamically*
+
+---
+
+*6. One-line Takeaway*
+
+* Agent behaves like a human solving a problem step by step

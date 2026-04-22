@@ -1,0 +1,20 @@
+= Model Context Protocol (MCP) – 20 Day Self-Paced Program
+:toc: right
+
+
+== Program Outcome
+
+By the end of this program, you will be able to:
+
+* Build and run an MCP server
+* Integrate MCP with tools like VS Code and GitHub
+* Design multi-tool AI systems
+* [.line-through]#Handle production challenges like latency and scaling#
+* Build a real-world MCP-based AI agent
+
+---
+
+== Day 1 – Why MCP?
+
+* ✔️*Day 1*: link:./content/day1-mcp-coursera-sg-introduction.html[Day 1 - Introduction to MCP]
+* ✔️*Day 3.1*: link:./content/day3.1-mcp-coursera-sg-client.html[Day 3.1 - MCP Client]

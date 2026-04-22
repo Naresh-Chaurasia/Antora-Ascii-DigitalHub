@@ -1,0 +1,218 @@
+= LLM-Powered Journaling System (AsciiDoc)
+
+== Overview
+
+This system is designed to combine:
+- Low-friction daily writing
+- Local-first data storage
+- LLM-powered reflection
+- Long-term searchability
+
+Goal:
+Turn journaling into a *self-coaching and decision-making system*
+
+---
+
+== 1. Folder Structure
+
+[source]
+----
+/journal/
+  2026/
+    04/
+      2026-04-20.adoc
+----
+
+Optional:
+[source]
+----
+/journal/reviews/
+  2026-W16.adoc
+----
+
+---
+
+== 2. Daily Journal Template
+
+[source]
+----
+= 2026-04-20
+
+== Raw Thoughts
+Write freely. No structure.
+
+== Events
+-
+
+== Decisions / Insights
+-
+
+== Emotional State
+-
+
+== Tags
+#career #dance #learning
+
+== LLM Reflection
+// Fill after LLM analysis
+----
+
+---
+
+== 3. Daily Workflow
+
+*Step 1: Write*
+- Open today's `.adoc` file
+- Write for 5–10 minutes
+- Focus on raw, honest thoughts
+
+*Step 2: Extract Insight*
+- Add at least 1 bullet in *Decisions / Insights*
+
+*Step 3 (Optional): LLM Reflection*
+- Copy content into LLM tool (Spidoc / Endora / local LLM)
+
+---
+
+== 4. LLM Prompt Template
+
+[source]
+----
+Analyze this journal entry:
+
+1. Summarize key points
+2. Identify emotional patterns
+3. Detect cognitive biases (if any)
+4. Suggest 2 actionable improvements
+5. Extract long-term themes
+----
+
+---
+
+== 5. LLM Reflection Section Format
+
+[source]
+----
+== LLM Reflection
+
+- Summary:
+- Patterns:
+- Cognitive Biases:
+- Improvements:
+- Long-term Themes:
+----
+
+---
+
+== 6. Tagging Strategy
+
+Use consistent tags for searchability:
+
+Examples:
+- #mood/anxiety
+- #confidence
+- #career
+- #dance
+- #learning/genai
+
+Benefits:
+- Easy grep/search
+- Pattern tracking over time
+
+---
+
+== 7. Weekly Review System
+
+Create a weekly file:
+
+[source]
+----
+= Weekly Review - 2026-W16
+
+== Entries Reviewed
+- 2026-04-14
+- 2026-04-15
+- 2026-04-16
+- 2026-04-17
+- 2026-04-18
+- 2026-04-19
+- 2026-04-20
+
+== LLM Analysis
+
+- Patterns Observed:
+- Repeating Issues:
+- Improvements Seen:
+- Key Decisions Made:
+
+== Next Week Focus
+
+- Focus 1:
+- Focus 2:
+- Focus 3:
+----
+
+---
+
+== 8. Weekly LLM Prompt
+
+[source]
+----
+Analyze these journal entries for the week:
+
+1. What patterns are repeating?
+2. Where am I avoiding action?
+3. What improved this week?
+4. What should I focus on next week?
+----
+
+---
+
+== 9. Advanced (Optional)
+
+Future enhancements:
+
+- Convert `.adoc` files into embeddings
+- Store in vector database
+- Query using LLM
+
+Example queries:
+- "When did I feel similar emotions?"
+- "What decisions improved my confidence?"
+- "What patterns exist in my dance journey?"
+
+---
+
+== 10. Rules for Consistency
+
+- Write daily (5–10 minutes)
+- Don’t over-structure
+- Don’t depend on LLM for writing
+- Use LLM only for reflection
+- Do weekly review (non-negotiable)
+
+---
+
+== 11. Key Principle
+
+Consistency > Tools
+
+This system works only if:
+- You write regularly
+- You reflect weekly
+
+Avoid:
+- Over-engineering
+- Tool switching
+- Complex workflows
+
+---
+
+== Final Outcome
+
+If followed consistently, this becomes:
+
+- Personal thinking system
+- Emotional awareness tracker
+- Decision intelligence engine
+- Long-term self-improvement archive

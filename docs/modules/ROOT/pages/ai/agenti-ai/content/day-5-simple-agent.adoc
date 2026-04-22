@@ -1,0 +1,7 @@
+== Day 5 – First Simple Agent
+
+*Concept*
+* Single-step agent
+
+*Exercise*
+* Build a simple agent that calls one tool

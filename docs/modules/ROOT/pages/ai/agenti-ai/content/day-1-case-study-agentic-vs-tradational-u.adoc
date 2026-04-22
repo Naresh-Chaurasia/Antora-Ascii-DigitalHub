@@ -1,0 +1,126 @@
+= Case Study: Agentic AI vs Traditional AI (Investing $100)
+:toc: right
+
+== Scenario
+
+You have $100 and want to invest in the US stock market.
+
+You ask:
+
+"How should I invest this $100?"
+
+Now let’s see how two different systems respond.
+
+== Approach 1: Traditional AI
+
+=== How It Works
+
+Traditional AI is *task-based*.
+
+It does only what you explicitly ask.
+
+=== Interaction Flow
+
+You → "Suggest some US stocks"
+
+AI → Gives a list of stocks
+
+You → "Analyze Apple stock"
+
+AI → Gives analysis
+
+You → "Compare with Tesla"
+
+AI → Gives comparison
+
+You → "Suggest allocation for $100"
+
+AI → Gives allocation
+
+=== Key Observation
+
+* You are driving every step
+* AI is only responding to instructions
+* No independent thinking or planning
+
+=== Summary
+
+*Traditional AI waits for instructions.*
+
+== Approach 2: Agentic AI
+
+=== How It Works
+
+Agentic AI is *goal-based*.
+
+It focuses on the outcome, not just tasks.
+
+=== Interaction Flow
+
+You → "How should I invest $100?"
+
+AI internally:
+
+* Understands the goal
+* Creates a plan
+* Executes the plan
+
+=== What AI Does Internally
+
+* Identifies possible investment options
+* Analyzes market conditions
+* Evaluates companies
+* Assesses risk vs return
+* Decides allocation strategy
+
+=== Final Output
+
+AI → 
+
+* Suggested stocks or ETFs
+* Allocation of $100
+* Explanation of decisions
+
+=== Key Observation
+
+* AI decides what steps are needed
+* AI executes them automatically
+* Minimal or no human intervention
+
+=== Summary
+
+*Agentic AI figures out what to do.*
+
+== Side-by-Side Comparison
+
+[cols="1,1", options="header"]
+|===
+| Traditional AI | Agentic AI
+
+| Task-based
+| Goal-based
+
+| Needs step-by-step instructions
+| Plans steps on its own
+
+| Reactive
+| Proactive
+
+| Human-driven
+| AI-driven
+
+| No planning capability
+| Has planning + execution capability
+|===
+
+== Final Insight
+
+Both systems use AI, but the difference is in control:
+
+* Traditional AI → You are the driver  
+* Agentic AI → AI becomes the driver  
+
+== One-Line Takeaway
+
+*Traditional AI helps you do tasks.*  
+*Agentic AI helps you achieve goals.*

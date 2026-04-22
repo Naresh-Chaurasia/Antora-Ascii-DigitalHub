@@ -1,0 +1,10 @@
+== Day 17 – Capstone Project (Design)
+
+*Concept*
+* Real-world system
+
+*Exercise*
+* Design an agent system:
+** Goal-driven
+** Multi-tool
+** Memory-enabled

@@ -1,0 +1,110 @@
+= MS Office
+
+
+* Microsoft Bookings  
+** *What*: Appointment scheduler  
+** *Use*: Let others book time with you (training sessions, calls)
+
+* Microsoft Calendar  
+** *What*: Schedule manager  
+** *Use*: Plan your day, block focus time
+
+* Microsoft Connections  
+** *What*: Company portal  
+** *Use*: Access org updates, tools, resources
+
+* Microsoft Engage  
+** *What*: Internal social network  
+** *Use*: Share ideas, post updates, interact with teams
+
+* Microsoft Excel  
+** *What*: Data & calculations  
+** *Use*: Track data, budgets, analysis
+
+* Microsoft Forms  
+** *What*: Surveys/quizzes  
+** *Use*: Collect feedback, run assessments
+
+* Microsoft Viva Insights  
+** *What*: Productivity analytics  
+** *Use*: Improve focus, track work habits
+
+* Microsoft Viva Learning  
+** *What*: Learning hub  
+** *Use*: Take courses, upskill
+
+* Microsoft Lists  
+** *What*: Structured lists  
+** *Use*: Track tasks, issues, inventory
+
+* Microsoft Loop  
+** *What*: Real-time collaboration  
+** *Use*: Brainstorm, co-create docs with team
+
+* Microsoft OneDrive  
+** *What*: File storage  
+** *Use*: Store & access files anywhere
+
+* Microsoft OneNote  
+** *What*: Digital notebook  
+** *Use*: Notes, diary writing
+
+* Microsoft Outlook  
+** *What*: Email + calendar  
+** *Use*: Manage communication and meetings
+
+* Microsoft People  
+** *What*: Contact manager  
+** *Use*: Store and organize contacts
+
+* Microsoft Planner  
+** *What*: Team task board  
+** *Use*: Manage projects (Kanban style)
+
+* Microsoft Power Apps  
+** *What*: Low-code app builder  
+** *Use*: Create internal tools
+
+* Microsoft Power Automate  
+** *What*: Workflow automation  
+** *Use*: Automate repetitive tasks
+
+* Microsoft Power BI  
+** *What*: Data dashboards  
+** *Use*: Visualize insights
+
+* Microsoft Power Pages  
+** *What*: Low-code website builder  
+** *Use*: Create business websites
+
+* Microsoft PowerPoint  
+** *What*: Presentation tool  
+** *Use*: Teaching, training slides
+
+* Microsoft SharePoint  
+** *What*: Content & document management  
+** *Use*: Share files, build internal portals
+
+* Microsoft Stream  
+** *What*: Video platform  
+** *Use*: Upload training/session recordings
+
+* Microsoft Teams  
+** *What*: Chat + meetings  
+** *Use*: Communication, classes, meetings
+
+* Microsoft To Do  
+** *What*: Personal task manager  
+** *Use*: Daily to-do tracking
+
+* Microsoft Visio  
+** *What*: Diagramming tool  
+** *Use*: Create architecture diagrams
+
+* Microsoft Viva  
+** *What*: Employee experience platform  
+** *Use*: Productivity, engagement, learning
+
+* Microsoft Whiteboard  
+** *What*: Collaborative whiteboard  
+** *Use*: Brainstorming, teaching sessions

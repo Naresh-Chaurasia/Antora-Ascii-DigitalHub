@@ -1,0 +1,87 @@
+= Home Page
+:toc: right
+
+include::index-all-styles.adoc[]
+
+##############################################
+
+== 🧠 Mental Chatter
+
+* [ ] Know everything about Gamma. Period.
+
+== 💻 Technical Bucket
+
+> Date is irrelevant | Keep Tracking Progress
+
+++++
+
+<div class="dashboard">
+
+  <div class="card">
+    <h3>🚀 Udemy | Technical </h3>
+    <ul>
+    <li>Agentic AI for Beginner: Build AI Agents From Scratch - Aman Kumar<span class="badge_inprogress">In Progress</span>
+        <div class="comment">
+        <ul>
+          <li>Need to get started with coding for Agents</li>
+          <li>So Far: Building Agents using tools | Agetns are failing</li>
+        </ul>
+        </div>
+      </li>
+      
+      <hr style="border: none; border-top: 1px dashed #666; margin: 16px 0;">
+    <li>Learn Agentic AI – Build Multi-Agent Automation Workflows - Rahul Shetty <span class="badge_done">Done</span>
+        <div class="comment">I have understood the concepts thoroughly. I can use them for notes and use case.</div>
+        <div class="comment">📍 Coding Pending !!!</div>
+      </li>
+      
+      <hr style="border: none; border-top: 1px dashed #666; margin: 16px 0;">
+      
+      <li>Architectures with Patterns, Frameworks and MCP - Mehmet Ozkaya <span class="badge_onhold">On Hold</span>
+        <div class="comment">Going to Coursera now</div>
+      </li>
+      <li>MCP Bootcamp: Build, Deploy & Secure Model Context Protocol
+      <span class="badge_onhold">On Hold</span>
+        <div class="comment">This is for deployment and security. But now I need to focus on Agentic AI</div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>🚀 Coursera</h3>
+    <ul>
+    <li>Introduction to Microsoft Copilot<span class="badge_inprogress">In Progress</span>
+        <div class="comment">
+        <ul>
+          <li>1st Iteration</li>
+        </ul>
+        </div>
+      </li>
+      
+      <hr style="border: none; border-top: 1px dashed #666; margin: 16px 0;">
+      </ul>
+
+      <ul>
+      <li>Agentic AI with LangGraph, CrewAI, AutoGen and BeeAI<span class="badge_inprogress">In Progress</span>
+          <div class="comment">
+          <ul>
+            <li>1st Iteration</li>
+          </ul>
+          </div>
+        </li>
+      </ul>
+  </div>
+
+</div>
+++++
+
+##############################################
+
+---
+
+== 🕺 Dance Bucket
+
+
+
+
+

@@ -1,0 +1,194 @@
+++++
+<div class="dashboard-grid">
+
+<div class="bucket">
+<strong>💼 Office Work</strong>
+
+<div class="section">
+<strong>Today</strong>
+<ul>
+<li> MS CoPilot365 <em class="priority-high">High</em></li>
+<div class="comment">
+<ul>
+<li>PPT is Good | Need to work on speaker notes</li>
+</ul>
+</div>
+<li> Review team pull requests <em class="priority-medium">Medium</em></li>
+<div class="comment">
+<ul>
+<li>Check for code quality and ensure proper documentation</li>
+</ul>
+</div>
+<li> Prepare for client meeting <em class="priority-high">High</em></li>
+<div class="comment">
+<ul>
+<li>Prepare presentation slides and gather all necessary metrics</li>
+</ul>
+</div>
+</ul>
+</div>
+
+<div class="section">
+<strong>Later</strong>
+<ul>
+<li> Complete project documentation <em class="priority-high">High</em></li>
+<div class="comment">
+<ul>
+<li>Document all API endpoints and create user guides</li>
+</ul>
+</div>
+<li> Update development environment <em class="priority-low">Low</em></li>
+<div class="comment">
+<ul>
+<li>Upgrade all dependencies and test compatibility</li>
+</ul>
+</div>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-header" onclick="toggleSection(this)">
+<strong>Some Day</strong>
+<span class="toggle-icon">▼</span>
+</div>
+<div class="section-content">
+<ul>
+<li> Learn new programming language <em class="priority-low">Low</em></li>
+<div class="comment">
+<ul>
+<li>Consider Rust or Go and focus on practical projects</li>
+</ul>
+</div>
+<li> Build personal website <em class="priority-medium">Medium</em></li>
+<div class="comment">
+<ul>
+<li>Use modern framework like Next.js with portfolio sections</li>
+</ul>
+</div>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- Separator between Office Work and Health buckets -->
+<div class="bucket-separator">
+<hr>
+<p class="separator-text">🔄 Switching to Health & Fitness</p>
+<hr>
+</div>
+
+<div class="bucket">
+<strong>🏃‍♂️ Health, Fitness & Dance</strong>
+
+<div class="section">
+<strong>Today</strong>
+<ul>
+<li> Morning yoga session - 30 mins <em class="priority-medium">Medium</em></li>
+<li> Evening dance practice - 45 mins <em class="priority-high">High</em></li>
+</ul>
+</div>
+
+<div class="section">
+<strong>Later</strong>
+<ul>
+<li>  Gym workout - Upper body <em class="priority-medium">Medium</em></li>
+<li>  Meal prep for the week <em class="priority-low">Low</em></li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-header" onclick="toggleSection(this)">
+<strong>Some Day</strong>
+<span class="toggle-icon">▼</span>
+</div>
+<div class="section-content">
+<ul>
+<li>  Run a marathon <em class="priority-low">Low</em></li>
+<li>  Learn salsa dancing <em class="priority-medium">Medium</em></li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- Separator between Health and Personal Relationships buckets -->
+<div class="bucket-separator">
+<hr>
+<p class="separator-text">💕 Switching to Personal Relationships</p>
+<hr>
+</div>
+
+<div class="bucket">
+<strong>❤️ Personal Relationships</strong>
+
+<div class="section">
+<strong>Today</strong>
+<ul>
+<li>  Call parents - weekly check-in <em class="priority-high">High</em></li>
+<li>  Date night planning <em class="priority-medium">Medium</em></li>
+</ul>
+</div>
+
+<div class="section">
+<strong>Later</strong>
+<ul>
+<li>  Friend's birthday gift <em class="priority-medium">Medium</em></li>
+<li>  Send thank you notes <em class="priority-low">Low</em></li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-header" onclick="toggleSection(this)">
+<strong>Some Day</strong>
+<span class="toggle-icon">▼</span>
+</div>
+<div class="section-content">
+<ul>
+<li>  Plan family reunion <em class="priority-low">Low</em></li>
+<li>  reconnect with old friends <em class="priority-medium">Medium</em></li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- Separator between Personal Relationships and Book Reading buckets -->
+<div class="bucket-separator">
+<hr>
+<p class="separator-text">📚 Switching to Book Reading</p>
+<hr>
+</div>
+
+<div class="bucket">
+<strong>📚 Book Reading</strong>
+
+<div class="section">
+<strong>Today</strong>
+<ul>
+<li>  "Atomic Habits" - Chapter 5 <em class="priority-medium">Medium</em></li>
+<li>  Book club meeting preparation <em class="priority-medium">Medium</em></li>
+</ul>
+</div>
+
+<div class="section">
+<strong>Later</strong>
+<ul>
+<li>  "The Lean Startup" - Finish Part 2 <em class="priority-high">High</em></li>
+<li>  Write review for "Deep Work" <em class="priority-low">Low</em></li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-header" onclick="toggleSection(this)">
+<strong>Some Day</strong>
+<span class="toggle-icon">▼</span>
+</div>
+<div class="section-content">
+<ul>
+<li>  Read "War and Peace" <em class="priority-low">Low</em></li>
+<li>  Start a book club <em class="priority-medium">Medium</em></li>
+</ul>
+</div>
+</div>
+</div>
+
+</div>
+++++

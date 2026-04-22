@@ -1,0 +1,287 @@
+= Kindle List
+
+* How to Talk to Anyone — Leil Lowndes
+
+* Feel the Fear and Do It Anyway — Susan Jeffers
+
+* The Unplugged Alpha — Richard Cooper
+
+* Fluent in 3 Months — Benny Lewis
+
+* Good Vibes, Good Life — Vex King
+
+* The Courage to Be Disliked — Ichiro Kishimi, Fumitake Koga
+
+* Show Your Work! — Austin Kleon
+
+* Make Your Bed — William H. McRaven
+
+* Steal Like an Artist — Austin Kleon
+
+* Hear the Beat, Feel the Music — James Joseph
+
+* The Compound Effect — Darren Hardy
+
+* Models — Mark Manson
+
+* Every Man's Survival Guide to Ballroom Dancing — James Joseph
+
+* Attached — Amir Levine, Rachel Heller
+
+* Communication: Golden Key Methods — Roes Ellis
+
+* Nonviolent Communication — Marshall B. Rosenberg
+
+* Attitude is Everything — Jeff Keller
+
+* The Rational Male — Rollo Tomassi
+
+* The Memory Book — Harry Lorayne, Jerry Lucas
+
+* Ruskin Bond: Collected Stories — Ruskin Bond
+
+* Dopamine Detox — Thibaut Meurisse
+
+* The 48 Laws of Power — Robert Greene
+
+* The Art of Seduction — Robert Greene
+
+* Master Your Emotions — Thibaut Meurisse
+
+* Relentless — Tim S. Grover
+
+* Winning in the Digital Age — Nitin Seth
+
+* The Only Skill That Matters — Jonathan A. Levi
+
+* Chanakya in You — Radhakrishnan Pillai
+
+* Meditations — Marcus Aurelius
+
+* Your Complete Guide to Building a Memory — Graham Best
+
+* Mind Map Mastery — Tony Buzan
+
+* What Got You Here Won’t Get You There — Marshall Goldsmith
+
+* You Can Heal Your Life — Louise L. Hay
+
+* Memory: How to Develop, Train and Use It — William Walker Atkinson
+
+* From Command to Empathy — Avik Chanda, Suman Ghose
+
+* Inner Engineering — Sadhguru
+
+* As a Man Thinketh — James Allen
+
+* Start with Why — Simon Sinek
+
+* The Power of Habit — Charles Duhigg
+
+* The Big Questions of Life — Om Swami
+
+* Dating Essentials for Men — Robert Glover
+
+* Bhagavad Gita — Traditional Hindu scripture
+
+* The 4-Hour Workweek — Timothy Ferriss
+
+* A Mind for Numbers — Barbara Oakley
+
+* Vedic Mathematics Made Easy — Dhaval Bathia
+
+* Can't Hurt Me — David Goggins
+
+* Don't Sweat the Small Stuff — Richard Carlson
+
+* Atomic Habits — James Clear
+
+* The Rudest Book Ever — Shwetabh Gangwar
+
+* Head First Object-Oriented Analysis and Design — Brett McLaughlin
+
+* Living Forward — Michael Hyatt, Daniel Harkavy
+
+* Start Writing Your Book Today — Morgan Gist MacDonald
+
+* The Monk Who Sold His Ferrari — Robin Sharma
+
+* Meditation and Mindfulness — Andy Puddicombe
+
+* Steve Jobs — Walter Isaacson
+
+* The Heartfulness Way — Kamlesh D. Patel
+
+* Pranayama: The Vedic Science of Breath — Advait
+
+* The One Thing — Gary Keller
+
+* Head First Java — Kathy Sierra, Bert Bates
+
+* 108 Questions & Answers on Mutual Funds & SIP — Yadnya Investment Academy
+
+* Think and Grow Rich — Napoleon Hill
+
+* Deep Work — Cal Newport
+
+* David and Goliath — Malcolm Gladwell
+
+* A Million Thoughts — Om Swami
+
+* When All Is Not Well — Om Swami
+
+* Daring Greatly — Brené Brown
+
+* Rejection Free — Scott Allan
+
+* Yoga for Beginners — Cory Martin
+
+* No More Mr. Nice Guy — Robert A. Glover
+
+* The Road to Recognition — Seth Price, Barry Feldman
+
+* Peace Is Every Step — Thich Nhat Hanh
+
+* Captivate — Vanessa Van Edwards
+
+* Man’s Search for Meaning — Viktor E. Frankl
+
+* The Subtle Art of Not Giving a F*ck — Mark Manson
+
+* The Lion Smiled at the Rabbit — Rashmi Bansal
+
+* Developing Emotional Intelligence — Dianne Coleman
+
+* Healing Back Pain — John E. Sarno
+
+* Get the Life You Want — Richard Bandler
+
+* How to Win Friends and Influence People — Dale Carnegie
+
+* Unlimited Memory — Kevin Horsley
+
+* Bigger Leaner Stronger — Michael Matthews
+
+* Chakras — Dylan Campbell
+
+* Autobiography of a Yogi — Paramahansa Yogananda
+
+* Your Life Can Be Better — Douglas A. Puryear
+
+* Emotional Intelligence — Ian Tuhovsky
+
+* Lateral Thinking — Edward de Bono
+
+* Ageless Memory — Harry Lorayne
+
+* Moonwalking with Einstein — Joshua Foer
+
+* The Power of Your Subconscious Mind — Joseph Murphy
+
+* How to Meditate — Pema Chödrön
+
+* Buddha in Blue Jeans — Tai Sheridan
+
+* The Manual: What Women Want and How to Give It to Them — W. Anton
+
+##############################################
+
+---
+
+[cols="1,1,1,1,2", options="header"]
+|===
+| Book | Author(s) | Category | Status | Notes
+
+| How to Talk to Anyone | Leil Lowndes | Communication |  | 
+| #Feel the Fear and Do It Anyway# | Susan Jeffers | Mindset |  | 
+| The Unplugged Alpha | Richard Cooper | Masculinity |  | 
+| Fluent in 3 Months | Benny Lewis | Learning |  | 
+| Good Vibes, Good Life | Vex King | Self-help |  | 
+| The Courage to Be Disliked | Ichiro Kishimi, Fumitake Koga | Philosophy |  | 
+| Show Your Work! | Austin Kleon | Creativity |  | 
+| Make Your Bed | William H. McRaven | Discipline |  | 
+| Steal Like an Artist | Austin Kleon | Creativity |  | 
+| Hear the Beat, Feel the Music | James Joseph | Dance |  | 
+| The Compound Effect | Darren Hardy | Productivity |  | 
+| Models | Mark Manson | Dating |  | 
+| Every Man's Survival Guide to Ballroom Dancing | James Joseph | Dance |  | 
+| Attached | Amir Levine, Rachel Heller | Relationships |  | 
+| Communication: Golden Key Methods | Roes Ellis | Communication |  | 
+| Nonviolent Communication | Marshall B. Rosenberg | Communication |  | 
+| Attitude is Everything | Jeff Keller | Mindset |  | 
+| The Rational Male | Rollo Tomassi | Masculinity |  | 
+| The Memory Book | Harry Lorayne, Jerry Lucas | Memory |  | 
+| Ruskin Bond: Collected Stories | Ruskin Bond | Literature |  | 
+| Dopamine Detox | Thibaut Meurisse | Productivity |  | 
+| The 48 Laws of Power | Robert Greene | Strategy |  | 
+| The Art of Seduction | Robert Greene | Strategy |  | 
+| Master Your Emotions | Thibaut Meurisse | Emotions |  | 
+| Relentless | Tim S. Grover | Performance |  | 
+| Winning in the Digital Age | Nitin Seth | Business |  | 
+| The Only Skill That Matters | Jonathan A. Levi | Learning |  | 
+| Chanakya in You | Radhakrishnan Pillai | Strategy |  | 
+| Meditations | Marcus Aurelius | Philosophy |  | 
+| Your Complete Guide to Building a Memory | Graham Best | Memory |  | 
+| Mind Map Mastery | Tony Buzan | Learning |  | 
+| What Got You Here Won’t Get You There | Marshall Goldsmith | Leadership |  | 
+| You Can Heal Your Life | Louise L. Hay | Self-help |  | 
+| Memory: How to Develop, Train and Use It | William Walker Atkinson | Memory |  | 
+| From Command to Empathy | Avik Chanda, Suman Ghose | Leadership |  | 
+| Inner Engineering | Sadhguru | Spirituality |  | 
+| As a Man Thinketh | James Allen | Mindset |  | 
+| Start with Why | Simon Sinek | Leadership |  | 
+| The Power of Habit | Charles Duhigg | Habits |  | 
+| The Big Questions of Life | Om Swami | Spirituality |  | 
+| Dating Essentials for Men | Robert Glover | Dating |  | 
+| Bhagavad Gita | Traditional | Spirituality |  | 
+| The 4-Hour Workweek | Timothy Ferriss | Lifestyle |  | 
+| A Mind for Numbers | Barbara Oakley | Learning |  | 
+| Vedic Mathematics Made Easy | Dhaval Bathia | Learning |  | 
+| Can't Hurt Me | David Goggins | Mental Toughness |  | 
+| Don't Sweat the Small Stuff | Richard Carlson | Mindset |  | 
+| Atomic Habits | James Clear | Habits |  | 
+| The Rudest Book Ever | Shwetabh Gangwar | Mindset |  | 
+| Head First Object-Oriented Analysis and Design | Brett McLaughlin | Tech |  | 
+| Living Forward | Michael Hyatt, Daniel Harkavy | Planning |  | 
+| Start Writing Your Book Today | Morgan Gist MacDonald | Writing |  | 
+| The Monk Who Sold His Ferrari | Robin Sharma | Spirituality |  | 
+| Meditation and Mindfulness | Andy Puddicombe | Mindfulness |  | 
+| Steve Jobs | Walter Isaacson | Biography |  | 
+| The Heartfulness Way | Kamlesh D. Patel | Spirituality |  | 
+| Pranayama: The Vedic Science of Breath | Advait | Spirituality |  | 
+| The One Thing | Gary Keller | Productivity |  | 
+| Head First Java | Kathy Sierra, Bert Bates | Tech |  | 
+| 108 Questions & Answers on Mutual Funds & SIP | Yadnya Investment Academy | Finance |  | 
+| Think and Grow Rich | Napoleon Hill | Wealth |  | 
+| Deep Work | Cal Newport | Productivity |  | 
+| David and Goliath | Malcolm Gladwell | Psychology |  | 
+| A Million Thoughts | Om Swami | Spirituality |  | 
+| When All Is Not Well | Om Swami | Spirituality |  | 
+| Daring Greatly | Brené Brown | Vulnerability |  | 
+| Rejection Free | Scott Allan | Mindset |  | 
+| Yoga for Beginners | Cory Martin | Health |  | 
+| No More Mr. Nice Guy | Robert A. Glover | Masculinity |  | 
+| The Road to Recognition | Seth Price, Barry Feldman | Marketing |  | 
+| Peace Is Every Step | Thich Nhat Hanh | Mindfulness |  | 
+| Man’s Search for Meaning | Viktor E. Frankl | Philosophy |  | 
+| The Subtle Art of Not Giving a F*ck | Mark Manson | Mindset |  | 
+| The Lion Smiled at the Rabbit | Rashmi Bansal | Stories |  | 
+| Developing Emotional Intelligence | Dianne Coleman | Emotions |  | 
+| Healing Back Pain | John E. Sarno | Health |  | 
+| Get the Life You Want | Richard Bandler | NLP |  | 
+| How to Win Friends and Influence People | Dale Carnegie | Communication |  | 
+| Unlimited Memory | Kevin Horsley | Memory |  | 
+| Bigger Leaner Stronger | Michael Matthews | Fitness |  | 
+| Chakras | Dylan Campbell | Spirituality |  | 
+| Autobiography of a Yogi | Paramahansa Yogananda | Spirituality |  | 
+| Your Life Can Be Better | Douglas A. Puryear | Self-help |  | 
+| Emotional Intelligence | Ian Tuhovsky | Emotions |  | 
+| Lateral Thinking | Edward de Bono | Thinking |  | 
+| Ageless Memory | Harry Lorayne | Memory |  | 
+| Moonwalking with Einstein | Joshua Foer | Memory |  | 
+| The Power of Your Subconscious Mind | Joseph Murphy | Mindset |  | 
+| How to Meditate | Pema Chödrön | Mindfulness |  | 
+| Buddha in Blue Jeans | Tai Sheridan | Spirituality |  | 
+| The Manual | W. Anton | Dating |  | 
+
+|===

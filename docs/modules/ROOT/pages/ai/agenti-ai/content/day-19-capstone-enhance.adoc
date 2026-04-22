@@ -1,0 +1,7 @@
+== Day 19 – Capstone Project (Enhance)
+
+*Concept*
+* Reliability improvements
+
+*Exercise*
+* Add retries, logging, monitoring

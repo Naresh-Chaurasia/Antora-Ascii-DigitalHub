@@ -1,15 +1,45 @@
 = Accelerate Your Job Search with AI
 :toc: right
-:toclevels: 5
-:sectnums:
-:sectnumlevels: 5
 
 
+* https://docs.google.com/spreadsheets/d/1rojtwdTseS9filAq7VNEQtfZ3vhURM_TqeIoX0twNmw/template/preview
 
 == Module 1
 
-=== Identify your transferable skills
+=== ✔️ Identify your transferable skills
 
+Based on our conversations, here are your *strong transferable skills* you can confidently mention in interviews:
+
+* *Communication*:
+You explain complex topics (Java, AI, architecture) in a simple, beginner-friendly way—very valuable for cross-team collaboration and leadership.
+
+* *Problem-Solving*:
+Your work in integration architecture and debugging shows strong ability to analyze issues and design effective solutions.
+
+* *Technical Adaptability*:
+You’ve worked across Java, Angular, AI tools, and cloud concepts—shows you can quickly learn and adapt to new technologies.
+
+* *Leadership & Mentoring*:
+You teach, create courses, and guide beginners—demonstrates mentoring and knowledge-sharing ability.
+
+* *Systems Thinking*:
+As an architect, you understand how different components (microservices, APIs, data) fit together—critical for solution design roles.
+
+* *Content Structuring & Clarity*:
+You organize complex information into structured learning (courses, AsciiDoc, plans)—useful for documentation and stakeholder communication.
+
+* *Continuous Learning Mindset*
+You actively explore new areas like GenAI, CrewAI, and MCP—shows growth mindset and curiosity.
+
+---
+
+*One-line interview summary:*
+“I bring strong communication, problem-solving, and system design skills, along with the ability to quickly adapt to new technologies and mentor others.”
+
+
+.Collapsible Resource
+[%collapsible]
+====
 *What Are Transferable Skills?*
 
 Transferable skills are abilities you develop in one situation that can be applied to a completely different context, such as a new job. These skills come from all kinds of life experiences, not just paid work.
@@ -94,13 +124,19 @@ You already have more job-ready skills than you might think. By recognizing and 
 *Conclusion*
 
 Transferable skills come from real life. When you identify them and align them with job requirements, you position yourself strongly for new roles—even in fields you haven’t worked in before.
+====
+
+
 
 ##############################################
 
 ---
 
-=== Mike: Identify your most valuable transferable skills
+=== ✔️ Mike: Identify your most valuable transferable skills
 
+.Collapsible Resource
+[%collapsible]
+====
 *Background*
 
 Mike is a Product Lead at the Google School for Leaders, where he leads teams building learning experiences for managers and leaders across Google. *He previously worked as a teacher*, and the skills he developed in the classroom now directly apply to his role as a product lead.
@@ -155,6 +191,7 @@ Skills developed in the classroom that translate to leadership roles include:
 *Key Takeaway*
 
 Your past experiences—no matter the role—have equipped you with valuable, transferable skills. When you can clearly explain how you use communication, problem-solving, adaptability, and emotional regulation, you present a more complete and compelling picture to employers.
+====
 
 ---
 
@@ -191,7 +228,7 @@ Your past experiences—no matter the role—have equipped you with valuable, tr
 
 * https://grow.google/career-dreamer/home/profile/experience/2
 
-[source, shell]
+[source,asciidoc, role="wrap"]
 ----
 I am a Principal Architect and Technical Trainer known for translating complex business needs into resilient, scalable software architectures. 
 
@@ -200,11 +237,11 @@ My impact extends to cultivating high-performing technical teams through mentors
 Driven by an innate curiosity and a commitment to personal and professional development, I actively explore and integrate emerging technologies, particularly within Generative AI, to craft intelligent solutions that augment human potential.
 ----
 
-
 ---
 
 *Prompts*
 
+[source,asciidoc, role="wrap"]
 ----
 You are a career coach and an expert at helping people achieve their career goals. Below is a JSON representation of my professional profile, exported from a companion app called Career Dreamer:
 
@@ -225,6 +262,10 @@ Topics should NOT contain the following
 
 Invite me to type the number of the topic (use the word “type”) that interests me in order to continue the conversation in that direction; also inform me that I am free to provide my own topic if I would like. Whenever applicable, subsequent responses should end with a similar numbered list of further discussion topics to choose from (and invitation to dictate my own topic if desired). Your tone should be neutral and matter-of-factly. Do not label the components of the output as I have described them here; integrate everything into a cohesive result. And always keep it concise and skimmable!
 ----
+
+
+=== 📍 Module 1 challenge
+
 
 
 ##############################################

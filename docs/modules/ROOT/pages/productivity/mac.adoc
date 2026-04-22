@@ -4,16 +4,6 @@
 :sectnums:
 :sectnumlevels: 5
 
-TIP: TIP
-
-IMPORTANT: IMPORTANT
-
-CAUTION: CAUTION
-
-WARNING: WARNING
-
-NOTE: NOTE
-
 == Macbook Pro
 
 === Apps
@@ -66,6 +56,7 @@ NOTE: NOTE
 * [ ] Games.app - Folder or launcher for games.
 * [ ] GarageBand.app - Music creation and recording tool.
 * [ ] Google Chrome.app - Popular web browser.
+* [ ] GifSki - Video to Gif / Images
 * [ ] ❌ Guitar Gravitas.app - Likely a guitar/music-related tool.
 * [ ] Habit.app - Habit tracking application.
 * [ ] Habitify.app - Habit tracking and productivity tool.
@@ -212,6 +203,55 @@ cd /Users/nareshchaurasia/Documents/project
 ##################################################
 
 ---
+
+=== Notes
+
+video::jfVrzZUQ47E[youtube, width=650, height=350, caption="Video", align="left"]
+
+* link: Add External Links
+* Cursor to bottom right corner for quick notes
+* Highlight text on Safari, and Right click and save to notes
+* Drag Drop Audio/Video etc.
+* Option to share things to Notes
+* PDF
+* Scan documents
+* tom cruise kind:notes
+
+##############################################
+
+---
+
+
+video::zdoKysc1ttk[youtube, width=650, height=350, caption="Video", align="left"]
+
+* [ ] Hide Folders / Show Folders
+
+---
+
+* [ ] Where are notes stored
+* [ ] setting / iCloud / Notes
+* [ ] Tags
+* [ ] Intro
+* [ ] Accounts
+* [ ] Quick Note: Fn + Q
+
+
+
+##############################################
+
+---
+
+=== Rectangle
+
+video::6gANKlnuVA8[youtube, width=650, height=350, caption="Video", align="left"]
+
+
+
+
+##############################################
+
+---
+
 
 
 === Sticky Notes

@@ -16,6 +16,17 @@
 
 ---
 
+video::4_Qb7xkUHK8[youtube, width=600, height=350, caption="Video"]
+
+---
+
+
+
+
+##############################################
+
+---
+
 == TOC No Numbers
 
 ----
@@ -39,6 +50,26 @@
 == Images
 
 image::mcp/mcp1.png[MCP Architecture Diagram, 600, 400]
+
+----
+1. Block Images
+A block image starts on a new line and is preceded and followed by an empty line. It is treated as a discrete element (like a paragraph or a code block).
+
+Macro Syntax: image::filename.ext[]
+
+Key Feature: Uses two colons (::).
+
+Usage: Best for large diagrams, screenshots, or photos that need to stand alone.
+
+2. Inline Images
+An inline image is placed directly within a line of text, such as inside a sentence or a list item.
+
+Macro Syntax: image:filename.ext[]
+
+Key Feature: Uses one colon (:).
+
+Usage: Best for icons, buttons, or small logos that need to flow with the text.
+----
 
 
 ##############################################
@@ -105,6 +136,10 @@ a|
 ##############################################
 
 == Emojis
+
+.Icons / Emojis
+[%collapsible]
+====
 
 [cols="1,2"]
 |===
@@ -177,4 +212,19 @@ a|
 😂 (Laugh) +
 😎 (Cool)
 
+| Bots
+a|
+🤖 (Robot)
+
 |===
+
+====
+
+
+
+##############################################
+
+---
+
+== Introduction to Antora
+

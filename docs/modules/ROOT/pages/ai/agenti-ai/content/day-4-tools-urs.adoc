@@ -1,0 +1,173 @@
+== Day 4 – Tool Usage in Agents
+:toc: right
+
+*1. Start with the Idea*
+
+* We are building an AI that can not just answer, but also *take help from tools*
+
+
+[source,asciidoc, role="wrap"]
+----
+# Define a simple tool
+def my_tool_function(query: str) -> str:
+    return f"Tool response: {query}"  # Return formatted response
+
+#creating tool from function
+my_tool = Tool.from_function(func=my_tool_function, name="simple_tool", description="A simple tool")  # Convert function to LangChain tool
+ddg_search = DuckDuckGoSearchRun()  # Initialize web search tool
+
+# Initialize the LLM and the agent
+llm = ChatOpenAI(model="gpt-3.5-turbo")  # Create LLM instance
+tools = [ddg_search,my_tool]  # Combine available tools
+
+# Create an agent
+agent = initialize_agent(tools, llm, agent_type=AgentType.ZERO_SHOT_REACT_DESCRIPTION, verbose=True)  # Setup zero-shot agent with reasoning
+
+# Use the agent
+response = agent.run("What's the weather like today in London?")  # Execute agent task
+print(response)  # Output: The agent will choose to use the tool or model to respond based on context
+----
+
+---
+
+*2. Define a Tool*
+
+[source, python]
+----
+def my_tool_function(query: str) -> str:
+    return f"Tool response: {query}"
+----
+
+*Explanation*
+
+* This is a *tool*
+* It is just a *function that does one job*
+* It does not think — it only executes
+
+---
+
+*3. Register the Tool*
+
+[source, python]
+----
+my_tool = Tool.from_function(
+    func=my_tool_function,
+    name="simple_tool",
+    description="A simple tool"
+)
+----
+
+*Explanation*
+
+* We are converting the function into a *tool*
+* Now the AI can use it when needed
+
+---
+
+*4. Add Another Tool*
+
+[source, python]
+----
+ddg_search = DuckDuckGoSearchRun()
+----
+
+*Explanation*
+
+* This tool can *search the internet*
+* Now AI has multiple capabilities
+
+---
+
+*5. Add the Brain (LLM)*
+
+[source, python]
+----
+llm = ChatOpenAI(model="gpt-3.5-turbo")
+----
+
+*Explanation*
+
+* This is the *brain*
+* It understands questions and reasons
+
+---
+
+*6. Combine Tools*
+
+[source, python]
+----
+tools = [ddg_search, my_tool]
+----
+
+*Explanation*
+
+* We are giving AI a list of *skills*
+
+---
+
+*7. Create the Agent (Most Important)*
+
+[source, python]
+----
+agent = initialize_agent(
+    tools,
+    llm,
+    agent_type=AgentType.ZERO_SHOT_REACT_DESCRIPTION,
+    verbose=True
+)
+----
+
+*Explanation*
+
+* Agent is the *decision maker*
+* It reads the question and decides:
+** Should I answer directly?
+** Should I use a tool?
+* REACT means:
+** Reason → Act → Observe → Repeat
+
+---
+
+*8. Run the Agent*
+
+[source, python]
+----
+response = agent.run("What's the weather like today in London?")
+print(response)
+----
+
+*Explanation*
+
+* Step 1: Agent reads the question
+* Step 2: Agent thinks — needs real-time data
+* Step 3: Agent chooses the search tool
+* Step 4: Tool gives result
+* Step 5: Agent returns final answer
+
+---
+
+*9. Key Concepts*
+
+* Tools → Do the work
+* LLM → Thinks
+* Agent → Decides what to do
+
+---
+
+*10. Analogy*
+
+* Office example
+
+* Tools → Employees
+* LLM → Intelligence
+* Agent → Manager
+
+* Manager decides who does the work
+* Employees execute
+* Manager gives final result
+
+---
+
+*11. Final Takeaway*
+
+* Agent makes AI smart enough to *use tools instead of just answering*

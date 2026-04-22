@@ -1,8 +1,115 @@
-= Gamma
+= Gamma Mastery
 :toc: right
-:toclevels: 5
-:sectnums:
-:sectnumlevels: 5
+
+== Week 1: Foundations
+
+=== Day 1: Gamma Mindset
+- [ ] Defined goal for a sample topic
+- [ ] Defined audience clearly
+- [ ] Defined expected outcome/action
+- [ ] Avoided opening Gamma directly
+
+---
+
+* Create an 8–10 slide training outline on MCP for fresh graduates joining a company. The goal is to help them understand concepts deeply and build a capstone project. Include examples, simple explanations, and project ideas.
+
+##############################################
+
+---
+
+=== Day 2: Prompting Basics
+- [ ] Used ChatGPT to generate slide outline
+- [ ] Practiced Instruction + Context + Output format
+- [ ] Converted 3 vague prompts into clear prompts
+- [ ] Created 1 clean outline (6–8 slides)
+
+=== Day 3: First Gamma Deck
+- [ ] Pasted outline into Gamma
+- [ ] Avoided “generate from topic”
+- [ ] Created first structured deck
+- [ ] Ensured each slide has 1 core idea
+
+=== Day 4: Iteration Skills
+- [ ] Used “make it more visual” prompt
+- [ ] Used “reduce text” prompt
+- [ ] Used “add examples” prompt
+- [ ] Iterated same deck at least 3 times
+
+=== Day 5: Card Design Thinking
+- [ ] Identified cluttered slides
+- [ ] Split 1 slide into multiple cards
+- [ ] Ensured 1 idea per card
+- [ ] Reduced unnecessary text
+
+=== Day 6: Visual Storytelling
+- [ ] Converted 1 concept into analogy
+- [ ] Created 1 simple framework
+- [ ] Used comparison (before/after or good/bad)
+- [ ] Improved clarity of 1 deck
+
+=== Day 7: Weekly Project
+- [ ] Created full deck: “Intro to GenAI for Business”
+- [ ] Maintained simple language
+- [ ] Ensured clean structure
+- [ ] Reviewed for clarity and flow
+
+---
+
+== Week 2: Advanced Usage
+
+=== Day 8: Advanced Prompting
+- [ ] Applied prompt chaining (structure → refine → enhance)
+- [ ] Improved an existing deck
+- [ ] Focused on clarity and visuals
+
+=== Day 9: Multi-Use Content
+- [ ] Converted deck into LinkedIn-style content
+- [ ] Simplified language for broader audience
+- [ ] Extracted key insights from deck
+
+=== Day 10: Tool Integration Workflow
+- [ ] Used ChatGPT for outline
+- [ ] Used Gamma for presentation
+- [ ] Used Supergrow for post creation
+- [ ] Used Emily for polishing
+- [ ] Completed end-to-end flow
+
+=== Day 11: Teaching Use Case
+- [ ] Created deck: “REST APIs for beginners”
+- [ ] Used real-world examples
+- [ ] Simplified technical concepts
+- [ ] Ensured beginner-friendly clarity
+
+=== Day 12: Speed Practice
+- [ ] Created a deck within 20 minutes
+- [ ] Focused on clarity over perfection
+- [ ] Avoided over-editing
+
+=== Day 13: Portfolio Creation
+- [ ] Created deck: GenAI for Business
+- [ ] Created deck: Java / REST APIs
+- [ ] Ensured both are high quality
+- [ ] Ready to share publicly
+
+=== Day 14: Final Optimization
+- [ ] Improved best deck visuals
+- [ ] Reduced text further
+- [ ] Strengthened storytelling
+- [ ] Final review completed
+
+---
+
+== Progress Summary
+
+- Total Days Completed: ___ / 14
+- Best Deck Created: ______________________
+- Key Learning: ___________________________
+- Improvement Areas: ______________________
+
+
+##############################################
+
+---
 
 
 > Workflow: Voice to Text => Use LLM to Convert to Bullet Points => Go Over the Video
@@ -11,11 +118,53 @@
 
 ---
 
-== Working with Images
+== Gamma
 
-video::5CrK7ytrRJk[youtube, width=800, height=450, caption="Video"]
+* Turn into Table
 
-.Video Summary
+##############################################
+
+---
+
+=== ✔️ Editing Content in PPT
+
+video::QOQiN9Kw23Q[youtube, width=600, height=350, caption="Editing content with AI", align="left"]
+
+
+.Editing content with AI
+[%collapsible]
+====
+* *AI-Powered Content Expansion*
+* [x] Use `++` to automatically extend or elaborate text.
+* [x] Repeating `++` continues increasing the content length.
+* *Each card includes a sparkle icon offering*
+* [x] *Make more specific* [ ] – adds clarity and detail.
+* [x] *Translate* [ ] – converts content to another language.
+* [x] *Make this more visual* [ ] – restructures into visual columns and adds images.
+* [x] *Try a different layout* [ ] – suggests alternate card formats.
+* [x] Revert to the original version.
+* [x] Accept changes via the checkmark.
+* [x] Provide feedback with thumbs up or down.
+* *Gamma Pro – #Edit All Cards at Once#*
+* [x] Translate the entire deck in one action.
+* [x] Accept all AI changes or revert all at once.
+* [x] Perform bulk operations, such as removing images from multiple cards.
+* *Generating New Cards with AI*
+* [x] Insert new cards using the sparkle icon between cards.
+* [x] Describe what you want, then choose a template or let *Magic* [x] decide.
+* [x] Further refine manually or using AI.
+====
+
+
+##############################################
+
+---
+
+=== ✔️ How to Add and Edit Images in Gamma
+
+video::5CrK7ytrRJk[youtube, width=600, height=350, caption="How to Add and Edit Images in Gamma", align="left"]
+
+.How to Add and Edit Images in Gamma
 [%collapsible]
 ====
 
@@ -30,40 +179,46 @@ video::5CrK7ytrRJk[youtube, width=800, height=450, caption="Video"]
 * [ ] Use #pictographic#, hand-drawn style illustrations for a creative touch
 * [ ] Search and add #icons# to emphasize points or explain concepts
 * [ ] Use #accent images# to match your theme and fill design spaces
-* [ ] Manage accent images directly from the theme editor
+* [ ] ❌ Manage accent images directly from the theme editor
 * [ ] Generate and insert #QR codes# to link to external resources
 * [ ] Add images while generating a new Gamma by selecting image sources in the prompt editor
 * [ ] Gamma automatically suggests and places relevant visuals during creation
 * [ ] Add images to an existing Gamma using the image icon in the insert menu
-
 * [ ] Drag and drop images directly into cards
-
 * [ ] Crop images to focus on important areas
-
 * [ ] Adjust image fit for better layout inside cards
-
 * [ ] Set focus points so images look good on all devices
-
 * [ ] Apply predefined styles to AI images (realistic, artistic, or custom)
-
 * [ ] Use AI-powered editing features like background removal, upscaling, vectorizing, and animation
-
 * [ ] Modify images using natural language (change colors, add/remove elements, refine details)
-
 * [ ] Gamma enables quick, flexible image editing without advanced design skills
-
 * [ ] Users can start for free at gamma.app to create visually rich content
 
 ====
-
-
-
 
 ##############################################
 
 ---
 
-video::r9VOYJM6nZc[youtube, width=800, height=450, caption="Video"]
+=== ✅ Introducing Gamma 3.0
+
+video::Lruw3yQeZDc[youtube, width=600, height=350, caption="Video", align="left"]
+
+---
+
+.Introducing Gamma 3.0
+[%collapsible]
+====
+* Gamma Agents 
+* Recreate this table to match my deck design. I can attach a pic containing table.
+* APIs
+====
+
+##############################################
+
+---
+
+video::r9VOYJM6nZc[youtube, width=600, height=350, caption="Video", align="left"]
 
 ---
 
@@ -75,26 +230,15 @@ video::r9VOYJM6nZc[youtube, width=800, height=450, caption="Video"]
 
 ====
 
-##############################################
 
----
-
-video::Lruw3yQeZDc[youtube, width=800, height=450, caption="Video"]
-
----
-
-[NOTE]
-====
-* Gamma Agents 
-* Recreate this table to match my deck design. I can attach a pic containing table.
-* APIs
-====
 
 ##############################################
 
 ---
 
-video::xGn2whCNObM[youtube, width=800, height=450, caption="Video"]
+== Create Docs with Custom Theme
+
+video::xGn2whCNObM[youtube, width=600, height=350, caption="Video", align="left"]
 
 ---
 
@@ -103,59 +247,21 @@ video::xGn2whCNObM[youtube, width=800, height=450, caption="Video"]
 
 ---
 
-video::5IdmTaR2AMg[youtube, width=800, height=450, caption="Video"]
+== How to add Custom Fonts in Gamma
 
----
+video::5IdmTaR2AMg[youtube, width=600, height=350, caption="Video", align="left"]
 
-##############################################
-
----
-
-video::5CrK7ytrRJk[youtube, width=800, height=450, caption="Video"]
-
----
-
-##############################################
-
----
-
-== Images
-
-
-* https://help.gamma.app/en/articles/11047176-how-do-i-generate-images-with-ai-in-gamma
-
----
-
-##############################################
-
-* [ ] link:https://www.youtube.com/watch?v=QOQiN9Kw23Q[Editing content with AI]
-
-* *AI-Powered Content Expansion*
-* [ ] Use `++` to automatically extend or elaborate text.
-* [ ] Repeating `++` continues increasing the content length.
-* *Each card includes a sparkle icon offering*
-* [ ] *Make more specific* [ ] – adds clarity and detail.
-* [ ] *Translate* [ ] – converts content to another language.
-* [ ] *Make this more visual* [ ] – restructures into visual columns and adds images.
-* [ ] *Try a different layout* [ ] – suggests alternate card formats.
-* [ ] Revert to the original version.
-* [ ] Accept changes via the checkmark.
-* [ ] Provide feedback with thumbs up or down.
-* *Gamma Pro – #Edit All Cards at Once#*
-* [ ] Translate the entire deck in one action.
-* [ ] Accept all AI changes or revert all at once.
-* [ ] Perform bulk operations, such as removing images from multiple cards.
-* *Generating New Cards with AI*
-* [ ] Insert new cards using the sparkle icon between cards.
-* [ ] Describe what you want, then choose a template or let *Magic* [ ] decide.
-* [ ] Further refine manually or using AI.
 
 ---
 
 ##############################################
 
 
+== Change Font in MS PPT
 
+video::5IdmTaR2AMg[youtube, width=600, height=350, caption="Video", align="left"]
+
+* [ ] Change Font in PPT
 
 
 ---

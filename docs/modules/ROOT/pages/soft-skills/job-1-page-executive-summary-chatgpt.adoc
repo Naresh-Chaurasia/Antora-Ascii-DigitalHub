@@ -1,0 +1,94 @@
+= Naresh Chaurasia
+Solution Architect | GenAI | Cloud | Banking | Microservices
+
+== Professional Summary
+
+Solution Architect with 20+ years of experience designing enterprise-scale systems in BFSI domain. Expert in cloud-native, event-driven, and microservices architectures with strong focus on scalability, resilience, and security.
+
+Specialized in bridging enterprise platforms with GenAI solutions (Agentic AI, RAG, multi-agent systems). Proven track record in leading architecture design, cloud transformation, and large-scale system modernization.
+
+---
+
+== Core Expertise
+
+* Solution Architecture (HLD, LLD, NFRs, Trade-offs)
+* Cloud Architecture (AWS, Azure)
+* Event-Driven Systems (Kafka, Messaging)
+* API & Microservices Architecture
+* GenAI, Agentic AI, RAG Systems
+* Integration Architecture (API, File, Queue)
+* Security (OAuth2, TLS, IAM)
+* DevOps & Kubernetes (EKS)
+
+---
+
+== Key Impact
+
+* Architected enterprise banking systems handling high-volume transactions
+* Led cloud transformation improving scalability, resilience, and deployment efficiency
+* Designed event-driven microservices architectures using Kafka and SAGA patterns
+* Built reusable AI agent frameworks enabling automation and faster solution delivery
+* Influenced architecture decisions across cross-functional teams and stakeholders
+
+---
+
+== Architecture Highlights
+
+*GenAI & Agentic AI*
+
+* Designed multi-agent AI systems for enterprise automation using AutoGen
+* Built reusable agent orchestration patterns and human-in-the-loop workflows
+* Integrated AI with enterprise systems via MCP (APIs, DB, Excel)
+
+*Temenos Transact (T24)*
+
+* Led cloud-based core banking architecture (AWS/Azure, 4-tier distributed systems)
+* Designed messaging architecture using Amazon Queue Mesh
+* Delivered resilience and XA transaction recovery solutions
+
+*Temenos Infinity*
+
+* Architected digital banking integration with event-driven Kafka-based systems
+* Enabled seamless integration between core banking and digital platforms
+
+*Microservices & APIs*
+
+* Led API & Microservices COE
+* Designed event-driven systems using Kafka, SAGA pattern, API Gateway
+* Delivered secure, scalable cloud-native deployments on Kubernetes (EKS)
+
+---
+
+== Professional Experience
+
+*Cognizant – Architect (2019–Present)*  
+Leading solution architecture, cloud transformation, and enterprise integration initiatives.
+
+*Credit Suisse – Solution Architect (2020–2021)*  
+Designed resilience, security, and DevOps architecture for distributed banking systems.
+
+*BDO – Integration Architect (2023–2024)*  
+Architected microservices and enterprise integration solutions.
+
+*Earlier Roles:* Architect | Technical Lead | Senior Engineer (TCS, SABA, PTC, others)
+
+---
+
+== Certifications
+
+* AWS Certified Cloud Practitioner  
+* Sun Certified Java Programmer  
+* Oracle SQL Certified  
+
+---
+
+== Education
+
+* MCA – Madras University  
+* B.Sc – Delhi University  
+
+---
+
+== Positioning
+
+Solution Architect specializing in enterprise banking and AI-driven architectures, enabling scalable, secure, and future-ready systems.

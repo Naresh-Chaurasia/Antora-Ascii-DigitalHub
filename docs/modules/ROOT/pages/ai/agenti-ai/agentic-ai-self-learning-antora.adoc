@@ -1,0 +1,32 @@
+= Agentic AI – Day Self-Paced Program
+:toc: right
+
+* urs - udemy_rahul_shetty
+* uak - udemy_aman_kumar
+
+
+== 📚 Course Content
+
+* ✔️*Day 1*: link:./content/day-1-what-agentic-ai-c.html[Day 1 - What is Agentic AI?]
+* ✔️*Day 1*: link:./content/day-1-case-study-invest-100-u.html[Day 1 - Case Study: Investing $100]
+* ✔️*Day 1*: link:./content/day-1-case-study-agentic-vs-tradational-u.html[Day 1 - Case Study: Agentic vs Traditional AI]
+* ✔️*Day 2*: link:./content/day-2-frameworks-c.html[Day 2 - Frameworks]
+* ✔️*Day 3*: link:./content/day-3-patterns-c.html[Day 3 - Patterns]
+* ✔️*Day 4*: link:./content/day-4-tools-urs.html[Day 4 - Tool Usage in Agents]
+* *Day 5*: link:./content/day-5-simple-agent.html[Day 5 - First Simple Agent]
+* ✔️*Day 6*: link:./content/day-6-reasoning.html[Day 6 - Multi-Step Reasoning]
+* *Day 7*: link:./content/day-7-loop.html[Day 7 - Agent Loop Implementation]
+* *Day 8*: link:./content/day-8-planning.html[Day 8 - Planning Strategies]
+* *Day 9*: link:./content/day-9-memory.html[Day 9 - Memory in Agents]
+* *Day 10*: link:./content/day-10-failures.html[Day 10 - Handling Failures]
+* ✔️*Day 10*: link:./content/day-10-observability-u.html[Day 10 - Observability]
+* ✔️*Day 11*: link:./content/day-11-multi-tools.html[Day 11 - Multi-Tool Agents]
+* *Day 12*: link:./content/day-12-context.html[Day 12 - Context Management]
+* *Day 13*: link:./content/day-13-multi-agents.html[Day 13 - Multi-Agent Systems]
+* *Day 14*: link:./content/day-14-coordination.html[Day 14 - Coordination Patterns]
+* *Day 15*: link:./content/day-15-performance.html[Day 15 - Performance & Cost]
+* *Day 16*: link:./content/day-16-safety.html[Day 16 - Safety & Guardrails]
+* *Day 17*: link:./content/day-17-capstone-design.html[Day 17 - Capstone Project (Design)]
+* *Day 18*: link:./content/day-18-capstone-build.html[Day 18 - Capstone Project (Build)]
+* *Day 19*: link:./content/day-19-capstone-enhance.html[Day 19 - Capstone Project (Enhance)]
+* *Day 20*: link:./content/day-20-finalization.html[Day 20 - Finalization & Future]

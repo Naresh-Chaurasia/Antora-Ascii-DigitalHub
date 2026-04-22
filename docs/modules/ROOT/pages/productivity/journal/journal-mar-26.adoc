@@ -1,11 +1,17 @@
-= Monthly Journal - March 2026
+= Monthly Journal - April 2026
 
 == 📅 Overview
 * Focus for this month:
-* Key goals:
-* Theme (optional):
+** Technology Stack
+*** Agentic AI
+*** MCP
+*** GitHub CoPilot Training
 
-'''
+
+
+* #Challenge#: Meditation
+** Lie down and Deep Breathing | Pre Post Dance
+* Theme (optional):
 
 == 🗓️ Daily Entries
 

@@ -1,0 +1,8 @@
+== Day 16 – Safety & Guardrails
+
+*Concept*
+* Hallucination
+* Safe execution
+
+*Exercise*
+* Add validation layer

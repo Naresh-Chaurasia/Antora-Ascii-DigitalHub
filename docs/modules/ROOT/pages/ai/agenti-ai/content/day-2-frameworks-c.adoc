@@ -1,0 +1,202 @@
+== Day 21 – Agent Frameworks
+:toc: right
+
+*Concept*
+
+* What frameworks are
+* Popular frameworks (LangChain, AutoGen, etc.)
+* Why use frameworks
+
+*Exercise*
+
+* Compare 3 frameworks
+
+*Reflection*
+
+* Which framework would you choose and why?
+
+---
+
+Agentic frameworks simplify building complex multi-agent systems by handling communication, coordination, and infrastructure
+
+* Learning Objectives
+** Understand challenges of building multi-agent systems from scratch
+** Identify how frameworks simplify agent development
+** Compare key agentic frameworks and their strengths
+** Recognize ideal use cases for each framework
+** Apply the right framework based on system needs
+
+---
+
+* *Challenges Without Frameworks*
+** *Communication complexity*
+*** Need to manage message protocols manually
+** *State management*
+*** Sync data across multiple agents manually
+** *Coordination logic*
+*** Write custom workflows for agent interaction
+** *Error handling*
+*** Handle failures across distributed agents
+*** *Monitoring and debugging*
+*** Difficult to trace issues in multi-agent systems
+
+---
+
+* *Role of Frameworks*
+** Simplification
+** Built-in communication protocols
+** Automatic state management
+** Predefined coordination patterns
+** Standardized error handling
+** Integrated monitoring and debugging tools
+
+---
+
+* *CrewAI*
+** Concept
+*** Simulates team-based collaboration
+** Key features
+*** Define agents with roles (researcher, writer, editor)
+*** Assign tasks to each agent
+*** Structured outputs for coordination
+** Example
+*** Writing a blog with multiple agents
+** Best use cases
+*** Content creation
+*** Collaborative workflows
+*** Rapid prototyping
+
+---
+
+* *LangGraph*
+** Concept
+*** Workflow control using directed graphs
+** Key features
+*** Nodes represent steps (LLM call, tool, decision)
+*** Edges define transitions and outcomes
+*** Fine-grained control over execution
+** Example
+*** Flowchart-like agent workflow
+** Best use cases
+*** Multi-step processes
+*** Document workflows
+*** Decision trees
+
+---
+
+* *AutoGen (AG2)*
+** Concept
+*** Conversation-driven agent collaboration
+** Key features
+*** Agent-to-agent and human interaction
+*** Real-time problem solving
+*** Supports human-in-the-loop
+*** Can execute code within conversations
+** Example
+*** Interactive coding assistant
+** Best use cases
+*** Education
+*** Technical support
+*** Collaborative coding
+
+---
+
+* *Pydantic AI*
+** Concept
+*** Structured and type-safe AI outputs
+** Key features
+*** Schema validation
+*** Reduces ambiguity and errors
+*** Modular design
+** Example
+*** API response validation
+** Best use cases
+*** Enterprise systems
+*** APIs and structured data
+*** Production environments
+
+---
+
+* *BeeAI*
+** Concept
+*** Flexible and enterprise-ready agent system
+** Key features
+*** Custom agent behavior design
+*** Integration with multiple tools (LLMs, APIs)
+*** Memory and state persistence
+*** Telemetry and logging
+*** Failure handling with exceptions
+** Example
+*** Enterprise automation workflows
+** Best use cases
+*** Scalable production systems
+*** Enterprise automation
+*** Complex integrations
+
+---
+
+* *Framework Comparison Insight*
+** Easy to start
+*** CrewAI and AutoGen
+**** Best for beginners and rapid prototyping
+** High control
+*** LangGraph and Pydantic AI
+**** Suitable for structured workflows and reliability
+** Enterprise scale
+*** BeeAI
+**** Designed for robustness and production systems
+
+---
+
+* *Real-World Applications*
+** CrewAI
+*** Content pipelines and reporting
+** LangGraph
+*** Document workflows and customer service
+** AutoGen
+*** Educational platforms and support systems
+** Pydantic AI
+*** API validation and structured outputs
+** BeeAI
+*** Enterprise automation systems
+
+---
+
+[source, asciidoc]
+[cols="1,1,2,2", options="header"]
+|===
+|Category |Framework |Strength |Best Use Case
+
+|Easy to Start |CrewAI |Simple onboarding, role-based collaboration |Beginners, rapid prototyping, content workflows
+|Easy to Start |AutoGen |Conversational, intuitive interaction |Education, collaborative coding, support systems
+|High Control |LangGraph |Fine-grained workflow control |Structured workflows, decision trees, document processing
+|High Control |Pydantic AI |Type-safe, structured outputs |APIs, data validation, production systems
+|Enterprise Scale |BeeAI |Scalable, robust, flexible architecture |Enterprise automation, large-scale systems
+|===
+
+---
+
+[source, asciidoc]
+[cols="1,2", options="header"]
+|===
+|Framework |Real-World Application
+
+|CrewAI |Content pipelines and automated reporting
+|LangGraph |Document workflows and customer service processes
+|AutoGen |Educational platforms and technical support systems
+|Pydantic AI |API validation and structured data handling
+|BeeAI |Enterprise automation systems
+
+|===
+
+---
+
+* Quick Revision Points
+** Multi-agent systems are complex without frameworks
+** Frameworks handle communication, state, and coordination
+** CrewAI is best for role-based collaboration
+** LangGraph is ideal for structured workflows
+** AutoGen excels in conversational systems
+** Pydantic AI ensures structured, reliable outputs
+** BeeAI is built for enterprise-grade scalability
+** Choose framework based on simplicity, control, or scale

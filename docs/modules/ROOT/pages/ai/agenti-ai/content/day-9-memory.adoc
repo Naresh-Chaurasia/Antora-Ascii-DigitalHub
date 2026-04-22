@@ -1,0 +1,7 @@
+== Day 9 – Memory in Agents
+
+*Concept*
+* Short-term vs long-term memory
+
+*Exercise*
+* Add memory to your agent

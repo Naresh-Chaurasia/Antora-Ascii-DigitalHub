@@ -1,0 +1,88 @@
+== Day 10 – Observability
+
+* Overall Summary
+** Agent observability means tracking and understanding every action an AI agent takes so you can improve, control, and trust its behavior
+
+* Learning Objectives
+** Understand what agent observability is and why it matters
+** Identify what data should be tracked in an agent system
+** Learn how observability improves performance, cost, and reliability
+** Apply observability thinking when designing or debugging agents
+
+* Structured Concept Breakdown
+** Agent Observability
+*** What it means
+**** Tracking everything an agent does step by step
+**** Knowing how decisions are made internally
+*** Why it is important
+**** Agents are autonomous and unpredictable
+**** You are responsible for agent behavior
+
+** Human Analogy (Teenager Example)
+*** Rules and guardrails
+**** Teenagers operate within house rules
+**** Agents must operate within defined boundaries
+*** Monitoring behavior
+**** Parents observe actions and correct mistakes
+**** Developers must observe agent actions
+*** Ownership
+**** Parents own mistakes of their child
+**** Developers must own agent failures
+
+** What to Observe in an Agent
+*** Step-by-step execution
+**** What was done first, second, third
+**** Full sequence of actions
+*** Inputs and outputs
+**** What data was given
+**** What result was produced
+**** Helps identify failures
+*** Cost and latency
+**** Time taken for each step
+**** Cost incurred for each call
+**** Helps optimize system
+*** Token usage
+**** Number of tokens used in LLM calls
+**** Detect unnecessary or wasteful usage
+*** Tool and LLM calls
+**** Which tools were invoked
+**** How frequently and why
+
+** Benefits of Observability
+*** Debugging
+**** Identify exactly where failure happened
+*** Optimization
+**** Reduce cost and improve speed
+*** Transparency
+**** Clear explanation of agent behavior
+**** Useful for audits and regulators
+*** Improvement
+**** Identify weak areas in agent performance
+**** Refine prompts, tools, and workflows
+
+* Step-by-Step Learning Flow
+** Step 1: Foundation concept
+*** Understand that agents act independently
+*** Accept that you must monitor them
+
+** Step 2: Core idea
+*** Track every step the agent takes
+*** Capture input, output, cost, and time
+
+** Step 3: Advanced understanding
+*** Analyze patterns in agent behavior
+*** Optimize token usage, latency, and flow
+*** Ensure guardrails are working
+
+** Step 4: Real-world application
+*** Implement logging and tracing in your agent
+*** Review logs to debug failures
+*** Use insights to improve performance and reliability
+
+* Quick Revision Points
+** Agent observability = visibility into agent actions
+** Treat agent like a teenager with rules and supervision
+** Track inputs, outputs, cost, latency, and sequence
+** Helps in debugging, optimization, and compliance
+** You are responsible for agent behavior, not the agent
+** Observability makes agents predictable and trustworthy

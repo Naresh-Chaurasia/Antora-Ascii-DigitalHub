@@ -1,0 +1,7 @@
+== Day 7 – Agent Loop Implementation
+
+*Concept*
+* Iterative execution
+
+*Exercise*
+* Build loop: Think → Act → Observe

@@ -1,0 +1,74 @@
+= Day 3 – Design Patterns
+:toc: right
+
+* Overall Summary
+
+Learn three core AI workflow patterns—sequential (prompt chaining), routing, and parallelization
+
+* Learning Objectives
+** Understand how LLM workflows are structured using state, nodes, and edges
+** Apply sequential chaining to break complex tasks into steps
+** Build routing logic to dynamically choose the right agent
+** Implement parallel execution to improve speed and efficiency
+** Design real-world AI workflows
+
+---
+
+== Sequential Pattern (Prompt Chaining)
+
+* Concept
+** Passing output of one LLM as input to the next
+* Why it works
+** Breaks complex problems into smaller steps
+** Each agent focuses on a specialized task
+* Example
+** Resume summary → Cover letter generation
+*** First agent extracts key qualifications
+*** Second agent writes a tailored cover letter
+* Implementation idea
+** State variables store intermediate outputs
+** Nodes represent each task
+** Directed edges define execution order
+
+---
+
+== Routing Pattern
+
+* Concept
+** Dynamically selecting the correct agent based on input
+* Key components
+** Router agent decides task type
+** Conditional edges direct flow
+* Example
+** Input → Decide: summarize or translate
+*** Route to appropriate node
+* Implementation idea
+** State includes input, task type, output
+** LLM structured output determines routing
+** Conditional edges connect router to target nodes
+
+---
+
+== Parallelization Pattern
+
+* Concept
+** Running multiple LLM tasks at the same time
+* Why it matters
+** Improves speed and throughput
+** Handles independent tasks efficiently
+* Example
+** Translate text into multiple languages simultaneously
+*** French, Spanish, Japanese
+*** Aggregator combines results
+* Implementation idea
+** Multiple nodes run in parallel
+** All connect to an aggregator node
+** Final output merges all results
+
+---
+
+*Quick Revision Points*
+
+* Sequential pattern = step-by-step processing
+* Routing pattern = decision-based execution
+* Parallelization = simultaneous processing

@@ -1,0 +1,562 @@
+= TechWizard: MCP and Integration
+:toc: right
+:toclevels: 5
+:sectnums: 5
+:sectnumlevels: 5
+
+* https://gitlabs.cognizant-academy.com/techwizard/MCP-Reference-Implementations
+* https://gitlabs.cognizant-academy.com/techwizard/document_portal
+* https://cognizantonline.sharepoint.com/sites/NACampusHireCognizant/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FNACampusHireCognizant%2FShared%20Documents%2FGeneral%2FCurriculum%2F2026%20GenC%20Onsite%20Curriculum%2FTechWizard&viewid=9a326e15%2Dec7a%2D4fa0%2Db07c%2Dc8e924ff535b&csf=1&ovuser=de08c407%2D19b9%2D427d%2D9fe8%2Dedf254300ca7%2C794827%40cognizant%2Ecom&OR=Teams%2DHL&CT=1775043182446&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIxNDE1LzI2MDIyNzA0MjE1IiwiSGFzRmVkZXJhdGVkVXNlciI6ZmFsc2V9&CID=e5af05a2%2D9080%2D7000%2D19d3%2D196cda180410&cidOR=SPO&FolderCTID=0x012000585C9FE04258F641A6D865D6E4E97C4C[TechWizard SharePoint]
+
+== #01# Copilot Context Engineering
+
+=== Purpose
+
+Hands-on capstone program focused on building a *VS Code Extension* that enhances
+*GitHub Copilot* using:
+
+* Retrieval Augmented Generation (RAG)
+* Persistent / custom context
+* MCP (Model Context Protocol) connections
+
+=== Learning Outcomes (4 Sessions)
+
+By the end of the program, participants will:
+
+* Build a RAG-based VS Code Extension
+* Implement persistent context using `copilot-instructions.md`
+* Configure MCP connections for additional context
+* Apply prompt engineering best practices
+* Demonstrate a working MVP to colleagues
+
+=== Session Breakdown
+
+==== Session 1
+
+* Introduction: goals and deliverables
+* Capstone overview: VS Code Extension with RAG
+* Demo: Persistent context using `.github/copilot-instructions.md`
+
+Sprint 1 activities:
+
+* Environment setup
+* Extension shell creation
+* Image context support
+* Testing
+
+==== Session 2
+
+Demo:
+
+* Configure VS Code and GitHub Copilot
+* `settings.json` for:
+** Commit message generation
+** Pull request description context
+
+Sprint 2 activities:
+
+* Create RAG service
+* Build and run ChromaDB vector store (Docker)
+* Ingest documents and generate embeddings
+* Build FastAPI-based RAG service
+* Verify indexing and retrieval strategy
+
+==== Session 3
+
+Demo:
+
+* MCP connections in VS Code
+** GitHub repositories
+** SQL data sources
+
+Sprint 3 activities:
+
+* Integration and infrastructure
+* Create handlers
+* Add commands to command palette
+* Debugging
+
+Concept discussion:
+
+* Evolution of retail automation
+* AI-driven automation
+* Generative AI capabilities
+* Prediction and forecasting
+* AI integration for retail optimization
+
+==== Day 4
+
+Demo:
+
+* Productivity shortcuts
+** Slash commands
+** Participants
+
+Sprint 4 activities:
+
+* Complete features and functionality
+* Testing
+* Local deployment
+* Final demo preparation
+
+=== Core Concept: Persistent / Custom Context
+
+File location:
+
+----
+.github/copilot-instructions.md
+----
+
+What it is:
+
+* Project-specific instructions
+* Read by GitHub Copilot with *every* prompt
+
+Why it matters:
+
+* Without instructions: generic suggestions
+* With instructions: project-aligned, consistent code
+
+=== Benefits of Copilot Instructions
+
+* Context awareness of tech stack and libraries
+* Enforced architecture patterns
+* Security and coding standards
+* Consistent suggestions across the team
+
+=== Essential Sections in copilot-instructions.md
+
+* Project Context
+* Architecture Patterns
+* Coding Standards
+* Domain Context
+* Security Requirements
+* Common Patterns (with examples)
+
+=== Formatting Best Practices
+
+* Use clear section headers
+* Use language-tagged code blocks
+* Use bullet points for lists
+* Bold **critical** rules
+* Keep examples concise (10–20 lines)
+* Avoid overly long files (practical ~2000-word limit)
+
+=== Capstone Project
+
+Project name:
+
+*DevOps Context Assistant*
+
+Type:
+
+* VS Code Extension
+
+=== High-Level Architecture
+
+[source]
+----
+[ VS Code Extension ]
+    - Chat interface
+    - Command palette commands
+
+        |
+        v
+
+[ RAG Service ]
+    - Searches vector store
+    - Retrieves relevant context
+
+        |
+        v
+
+[ Vector Database (ChromaDB / Qdrant in Docker) ]
+    - Document ingestion
+    - Embeddings
+    - Semantic similarity search
+
+        |
+        v
+
+[ GitHub Copilot LLMs ]
+    - Receives prompt + context
+    - Produces grounded responses
+----
+
+=== Key Design Principle
+
+*Separation of concerns*:
+
+* Extension handles user interaction
+* RAG service handles retrieval
+* Vector database handles storage and similarity search
+
+=== Final Takeaways
+
+* RAG significantly improves LLM relevance
+* Context is critical for Copilot quality
+* `copilot-instructions.md` is foundational
+* The capstone delivers a practical DevOps Context Assistant
+
+##############################################
+
+---
+
+== 📍 VS Code Project: DevOps Context Assistant 
+
+* *Python Version*
+
+=== Overview
+
+This document describes an intermediate, ~8-hour project to build a VS Code extension that provides DevOps/IT infrastructure help using a fully local Retrieval-Augmented Generation (RAG) setup
+
+The LLM is GitHub Copilot (via VS Code’s `vscode.lm`), while retrieval is handled locally with a Python service and ChromaDB.
+
+=== Target Users / Use Cases
+
+The extension provides context-aware assistance for:
+
+* Azure resources (App Service, Functions, AKS, Cosmos DB, Key Vault)
+* Security patterns (Managed Identity, Key Vault integration, network security)
+* CI/CD pipelines (Azure DevOps, GitHub Actions, deployment strategies)
+* Infrastructure-as-Code (Bicep, ARM, Terraform)
+* Monitoring & logging (Application Insights, Log Analytics)
+* Troubleshooting (runbooks, common issues, best practices)
+
+=== ✔️ What You Build
+
+* Sample infrastructure documentation corpus (templates, best practices, policies)
+* Local Python RAG service (FastAPI) for indexing and vector search (no LLM calls)
+* VS Code extension that retrieves context from the RAG service and queries Copilot
+* Fully local operation with no external API keys (Copilot subscription required)
+
+=== Tech Stack
+
+* VS Code extension: TypeScript
+* RAG service: Python + FastAPI + LangChain (retrieval only)
+* Vector DB: ChromaDB
+* Embeddings: local Python embedding service using Sentence Transformers
+* Infra parsing (optional/mentioned): `pybicep`, `python-terraform-parser`
+
+=== Architecture Summary
+
+Flow:
+
+* User query in VS Code extension
+* Extension calls local RAG service over HTTP (localhost:8000)
+* RAG service generates embeddings by calling a local embedding service (localhost:5001)
+* RAG service searches ChromaDB and returns top context chunks
+* Extension sends context + question to GitHub Copilot via `vscode.lm` and streams response
+
+Key points:
+
+* No Azure/OpenAI keys required; everything is local except Copilot.
+* Pattern: Retrieve context -> pass to LLM -> generate answer.
+
+=== Sprint 1: Extension Shell (2–3 hours)
+
+==== Step 1.1: Configure GitHub Copilot (15 min)
+
+Purpose: create project-specific Copilot guidance so code generation follows your architecture and conventions.
+
+Actions:
+
+* Create workspace folder: `Devops-Context-Assistant`
+* Add `.github/copilot-instructions.md` documenting:
+  - Tech stack (TypeScript extension, Python FastAPI RAG, ChromaDB, `vscode.lm`)
+  - Python standards (PEP8, type hints, async FastAPI, Pydantic, structlog, pathlib)
+  - “Critical” LLM call pattern: call RAG first, then call Copilot via `vscode.lm`
+
+==== Step 1.1 (continued): VS Code Workspace Settings
+
+Purpose: ensure consistent formatting and Copilot behavior.
+
+Actions:
+* Create `.vscode/settings.json` enabling:
+  - format on save
+  - Prettier for TypeScript (tab size 2)
+  - Black for Python (tab size 4)
+  - Bicep formatter and Terraform formatter (tab size 2)
+  - `github.copilot.chat.codeGeneration.useInstructionFiles: true`
+
+==== Step 1.2: Setup Local Python Embedding Service (25–45 min)
+
+Goal: run embeddings locally with Sentence Transformers (no keys).
+
+Service requirements:
+* FastAPI on port 5001
+* Endpoints:
+  - `GET /` health check
+  - `POST /embeddings` with `{ "text": "..." }` -> `{ "embedding": [...], "model": "...", "dimension": 384 }`
+  - `POST /embeddings/batch` for batch requests
+* Model: `all-MiniLM-L6-v2` (384-dim); mention alternative `all-mpnet-base-v2` in README
+* Clear logging that it’s local/no keys
+
+Setup/run instructions (high level):
+* Create venv, install requirements, run `python app.py`
+* Validate with curl health check and a sample embedding request
+* Keep this service running for the RAG service to use
+
+==== Step 1.3: Create VS Code Extension (45 min)
+
+Goal: scaffold the full extension (TypeScript) with bundling and a chat UI.
+
+Key requirements:
+* Webpack bundling -> `dist/extension.js`
+* Source layout includes:
+  - `extension.ts`
+  - commands
+  - `providers/ChatViewProvider.ts`
+  - `services/RagServiceClient.ts`
+  - `utils/FileTypeDetector.ts`
+* Features:
+  - Activity bar sidebar with webview chat
+  - Commands (Ask Question, Review File, Find Pattern, Check Security)
+  - Context menu actions for `.bicep`, `.tf`, `.yaml`
+  - HTTP client calling the Python RAG API at `http://localhost:8000` (critical: not 5000)
+
+
+
+##############################################
+
+---
+
+== #03# VS Code DevOps Assistant
+
+*Day 3: Integration & Infrastructure Features (2 hours)*
+
+=== Objectives
+
+This day adds integration and infrastructure-focused capabilities to a VS Code DevOps assistant extension using RAG (vector search) + GitHub Copilot (Claude Sonnet).
+
+==== Step 3.1: Infrastructure Query Integration (30 min)
+
+*Goal:* Implement the core RAG flow: fetch context from a service, pass it to Claude Sonnet, and show the answer in the extension UI.
+
+* Flow
+** POST to `http://localhost:8000/api/search` with `{ query: userQuestion, topK: 5 }`
+** Extract context from `response.data.results`
+** Call `vscode.lm.selectChatModels(...)` to use Copilot / Claude Sonnet
+** Build a prompt with the retrieved context + the user question
+** Stream the model response
+** Display the response in the webview chat
+
+==== Step 3.2: Bicep/Terraform Review (40 min)
+
+*Goal:* Add a command to review `.bicep` / `.tf` files for security violations and best practices, surfacing results in VS Code.
+
+* Features
+** Add a command: *DevOps: Review This File*
+** Parse the current infrastructure file and extract resource definitions
+** POST to `http://localhost:8000/api/security/check` for compliance checks
+** Show violations in the Problems panel using VS Code diagnostics
+* *Provide quick fixes (code actions) for common issues
+** Optionally display compliant examples from the vector database
+
+* Enhancement: Diagnostics integration
+** Register a diagnostic collection
+** On file save, run checks and highlight problematic lines
+** Set severity (error/warning/info)
+** Provide code actions to fix issues
+
+==== Step 3.3: Deployment Troubleshooting (20 min)
+
+*Goal:* Help users debug deployment failures by searching for similar errors and suggested fixes using RAG + Claude Sonnet.
+
+* Flow
+** Add a command: *DevOps: Troubleshoot Deployment*
+** Parse Azure DevOps / GitHub Actions logs (clipboard or terminal)
+** Extract error messages
+** POST to `http://localhost:8000/api/search` with the error context
+** Use Claude Sonnet to explain the error and propose a fix
+** Show relevant runbook sections
+
+
+
+##############################################
+
+---
+
+
+##############################################
+
+---
+
+
+##############################################
+
+---
+
+
+##############################################
+
+---
+
+
+== 📍 #03# MCP and Integration
+
+=== ✔️ Objectives
+
+By the end of this session, you will be able to:
+
+* Implement MCP connections in VS Code
+* Configure GitHub repository connections
+* Use Participants effectively
+* Set up SQL connections
+* Integrate a VS Code Extension with:
+** GitHub Copilot Chat
+** RAG Service / Qdrant Vector DB
+
+=== Agenda
+
+* Demo 3: Configure MCP Connections in VS Code (30 min)
+** GitHub Repo Connections
+** SQL Connections
+* Sprint 3: Integration & Infrastructure Features (90 min)
+** Create handlers
+*** In the context of your presentation and VS Code extension work, *handlers are code components inside a VS Code extension that receive a user request and execute the corresponding logic*** They sit between commands / Copilot prompts and the actual implementation (GitHub, MCP tools, RAG services, databases, etc.).
+This meaning is implied—but not formally defined—in the Sprint 3 section of the deck, where handlers are listed as a required integration building block alongside commands and MCP connections.
+** Add commands to Command Palette
+** Debugging
+
+=== MCP Connections
+
+=== What is Model Context Protocol (MCP)?
+
+*MCP* (Model Context Protocol) is a standard protocol for connecting AI assistants to external data sources.
+
+Key points:
+
+* Gives GitHub Copilot access to repositories, databases, and APIs
+* Built-in MCP servers:
+** GitHub
+** GitLab
+** Azure DevOps
+* Supports custom MCP servers:
+** Database connections
+** Internal documentation
+* Requires VS Code 1.99+ for full support
+
+In practical terms, MCP allows GitHub Copilot to read from real systems instead of relying solely on its training data** This enables more accurate, relevant, and maintainable suggestions.
+
+=== Benefits of Model Context Protocol (MCP)
+
+* Reference real implementations instead of copy-paste code
+* Always up-to-date by reading from live repositories
+* Context-aware understanding of actual file structures
+* Learn from working code and proven patterns
+* Team knowledge sharing through internal repositories
+
+The biggest advantage of MCP is that Copilot reasons over *real, working implementations*, not hypothetical examples.
+
+=== Setting Up GitHub Model Context Protocol (MCP)
+
+Steps:
+
+** Open Command Palette (`Cmd/Ctrl + Shift + P`)
+** Search for *GitHub Copilot: Manage Model Context Protocols*
+** Click *Add MCP Server*
+** Select *GitHub*
+** Authenticate with your GitHub account (if prompted)
+
+Verification:
+
+* Open Copilot Chat
+* Type `@github`
+* Repository suggestions should appear
+* A green checkmark indicates a successful connection
+
+This is a one-time configuration per environment.
+
+=== @Participants
+
+=== What is a Participant?
+
+Participants are special keywords that give Copilot scoped access to specific contexts.
+
+Common Participants:
+
+* `@workspace` – Access local project files
+* `@github` – Access GitHub repositories via MCP
+* `@terminal` – Generate or reason about terminal commands
+
+Using Participants reduces ambiguity and significantly improves response quality.
+
+=== Participant Usage
+
+Standard usage pattern for GitHub:
+
+```
+
+@github owner/repo-name <your question or task>
+
+```
+
+Specifying the repository ensures Copilot reasons over the correct codebase** This is especially effective for:
+
+* Architecture discussions
+* Integration approaches
+* Specific implementation details
+
+=== Participant Examples
+
+Examples:
+
+```
+
+@github microsoft/vscode
+How do extension webviews handle messages?
+
+```
+```
+
+@github VS-Code-Extension-RAG/Devops-Context-Assistant-Dotnet
+Show me the RAG service integration pattern
+
+```
+```
+
+@github owner/repo
+Reference the pattern from InfrastructureQuestionHandler.ts
+for calling the RAG service
+
+```
+
+These examples demonstrate how precise context leads to targeted, implementation-level guidance rather than generic answers.
+
+=== Sprint 3: MCP and Integration
+
+=== VS Code Extension Project – Sprint 3
+
+Goals for the capstone MVP:
+
+* Add MCP connections
+* Add handlers
+* Add commands
+* Connect the extension to a RAG service
+
+At this stage, the extension becomes fully functional—accepting user input, routing requests through commands and handlers, and enriching responses using retrieved context.
+
+=== Wrap-Up & Discussion
+
+Discussion topics:
+
+* Which MCP connections were configured successfully
+* How Participants improved Copilot interactions
+* Where integration friction occurred
+* Debugging lessons learned
+
+Sharing prompts and experiences helps reinforce best practices across the team.
+
+=== Conclusion
+
+Key takeaways:
+
+* MCP brings in external context
+* Participants improve prompt quality
+* Reference MCP connections directly in prompts
+
+This approach enables Copilot to act as a context-aware, enterprise-ready assistant grounded in real code and data.
+
+=== Thank You!
+

@@ -1,0 +1,9 @@
+= Day 13 – Multi-Agent Systems
+:title: Multi-Agent Systems
+
+* [x] *Concept*: Agents collaborating
+* [x] *Exercise*: Understanding how agents work together.
+
+== Usecase1 (Aman): Project Team / Chef and Nutritionist
+
+include::../agetic-ai-aman/project-team-chef-nutritionist.adoc[]

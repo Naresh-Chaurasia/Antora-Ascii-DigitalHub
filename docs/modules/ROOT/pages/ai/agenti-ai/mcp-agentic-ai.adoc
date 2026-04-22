@@ -1,4 +1,5 @@
 = Hands-on Agentic AI: Building Intelligent Agents Specialization
+:toc: right
 
 
 == Module 1
@@ -1242,7 +1243,9 @@ This design is production-ready and extensible.
 
 ---
 
-=== Reflecting on Your MCP Resource Schema Design
+=== 🤖 Reflecting on Your MCP Resource Schema Design
+
+> 📌 How to make it scalable?
 
 *Introduction*
 
@@ -1255,9 +1258,11 @@ Topics covered:
 * Structuring Resource Definitions
 * Considering Scalability and Usability
 
+##############################################
+
 ---
 
-== Understanding Resource Schemas
+*Understanding Resource Schemas*
 
 *Coach Question*
 
@@ -1336,9 +1341,11 @@ Why are resource schemas important?
 
 * Resource schemas act as a *contract between AI systems and external systems*
 
+##############################################
+
 ---
 
-== Designing URI Patterns
+*Designing URI Patterns*
 
 *Naresh Approach*
 
@@ -1371,9 +1378,11 @@ deals://customer/{customerId}
   * Predictable
   * Hierarchical (support relationships)
 
+##############################################
+
 ---
 
-== Structuring Resource Definitions
+*Structuring Resource Definitions*
 
 *Improved Customer Schema*
 
@@ -1404,9 +1413,11 @@ deals://customer/{customerId}
 * deals → pipeline (aggregation)
 * all resources → insights
 
+##############################################
+
 ---
 
-== Practical Benefits for AI Systems
+*Practical Benefits for AI Systems*
 
 A well-structured schema helps:
 
@@ -1417,9 +1428,11 @@ A well-structured schema helps:
 * Improve performance
 * Enforce security
 
+##############################################
+
 ---
 
-== Scalability and Usability
+*Scalability and Usability*
 
 *Scalability Principles*
 
@@ -1435,9 +1448,11 @@ A well-structured schema helps:
 * Use meaningful field names
 * Support composability for AI workflows
 
+##############################################
+
 ---
 
-== Final Feedback
+*Final Feedback*
 
 *Strengths*
 
@@ -1458,4 +1473,239 @@ A well-structured schema helps:
 * You have demonstrated strong foundational understanding of MCP schema design.
 * With deeper reasoning and explanation of design choices, you can move toward expert-level thinking.
 
-Keep up the good work!
+##############################################
+
+---
+
+== Module 3: Building Secure MCP Servers
+
+=== MCP Security Architecture: Building Trust in AI Integration
+
+> This talks about what needs to be done for Security (Design Document). I need to figure out how it needs to be done.
+
+.Collapsible Resource
+[%collapsible]
+====
+
+* MCP security is essential for enterprise readiness and must be designed from the start, not added later
+
+* A secure MCP implementation combines authentication, authorization, data protection, and network security
+
+* Security as a foundational requirement
+** MCP must be secure to pass enterprise production standards
+*** Functional success is not enough without security validation
+** Security should be built into the design, not added later
+*** Late fixes are costly and risky
+
+---
+
+* Authentication strategies in MCP
+** API key authentication
+*** Suitable for service-to-service communication
+*** *MCP Server Validate the API keys.*
+*** Maps keys to permissions
+
+** OAuth 2.0 integration
+*** Used for user-based access / *AI System acts on behalf of a user*.
+*** Enforces authorization scopes
+** Custom authentication
+*** Integrates with enterprise identity systems
+*** Supports LDAP, SAML, or custom providers
+
+---
+
+* Authorization and access control
+** Resource-level permissions
+*** Restrict access based on role
+*** Example: limit AI from accessing financial data
+** Dynamic filtering
+*** Same resource returns different data based on user permissions
+** Principle of least privilege
+*** Grant only necessary access to AI systems
+
+---
+
+* Monitoring and audit
+** Audit trails
+*** Log all interactions for compliance
+*** Helps in security monitoring and analysis
+
+---
+
+* Securing communication
+** TLS encryption
+*** Use TLS 1.3 or higher
+*** Protects data in transit
+** Certificate validation
+*** Prevents man-in-the-middle attacks
+** Network segmentation
+*** Deploy servers in secure zones
+*** Apply strict firewall rules
+
+---
+
+* Secure error handling and input protection
+** Sanitized error messages
+*** Avoid exposing internal system details
+*** Show generic errors externally
+** Input validation
+*** Validate all incoming data against schema
+*** Reject malformed or suspicious requests
+** Rate limiting
+*** Prevent abuse and denial-of-service attacks
+
+* Enterprise security best practices
+** Security by design
+*** Integrate security from the beginning
+** Defense in depth
+*** Use multiple layers of protection
+*** Combine authentication, authorization, encryption, and monitoring
+** Regular security reviews
+*** Conduct audits and penetration testing
+** Incident response plan
+*** Prepare for quick action during security breaches
+
+* Real-world implementation example
+** Financial services company case
+*** Initial failure due to weak security architecture
+*** Implemented OAuth 2.0 and role-based access
+*** Added TLS 1.3 with certificate pinning
+*** Enabled dynamic filtering and audit logging
+** Outcome
+*** Achieved security approval
+*** Handles millions of secure AI interactions
+
+* Key takeaways for production MCP
+** Use layered security approach
+*** Combine authentication, authorization, data control, and network security
+** Enable dynamic filtering
+*** Ensure correct data access without complex resource design
+** Ensure production readiness
+*** Include encryption, error handling, and logging
+
+====
+
+##############################################
+
+---
+
+=== Production MCP Deployment: Performance and Reliability Patterns
+
+.Collapsible Resource
+[%collapsible]
+====
+* H2
+* http://localhost:8080/h2-console (user/password)
+====
+
+* MCP production readiness requires performance, scalability, and reliability by design
+
+* Strong patterns like caching, async processing, and monitoring ensure stable systems at scale
+
+* Production performance challenges
+** Systems may fail when exposed to real production data
+*** Large datasets increase response time drastically
+** Development success does not guarantee production readiness
+*** Real-world load introduces new bottlenecks
+
+* Core areas for production-ready MCP servers
+** *Connection management*
+*** Prevent resource exhaustion and system crashes
+
+** *Caching*
+*** Reduce database load and improve response time
+
+** *Asynchronous processing*
+*** Avoid blocking operations and improve responsiveness
+
+** *Monitoring and observability*
+*** Track performance and detect issues early
+
+** *Scalability*
+*** Ensure system can handle increasing demand
+
+---
+
+* Connection management patterns
+** Connection pooling
+*** Reuse database connections
+*** Reduce overhead and improve speed
+** Connection limits
+*** Prevent system overload
+*** Monitor and adjust based on usage
+** Graceful degradation
+*** Provide partial functionality under heavy load
+*** Example: serve cached data instead of failing
+
+* Caching strategies
+** Resource caching
+*** Store frequently accessed data in memory
+*** Use proper cache invalidation rules
+** Query result caching
+*** Cache expensive queries
+*** Useful in read-heavy systems
+** Schema caching
+*** Cache resource schemas and tool definitions
+*** Reduce repeated processing
+
+* Asynchronous processing patterns
+** Async tool execution
+*** Run long tasks in the background
+*** Keep users informed with progress updates
+** Background processing
+*** Use job queues for non-critical tasks
+** Request timeouts
+*** Prevent resource leaks
+*** Stop long-running operations safely
+
+* Monitoring and observability
+** Performance metrics
+*** Track response time, error rates, and resource usage
+** Health checks
+*** Ensure system and dependencies are functioning
+** Distributed tracing
+*** Trace requests across services
+*** Identify bottlenecks in complex systems
+
+* Scalability patterns
+** Horizontal scaling
+*** Run multiple instances behind a load balancer
+** Stateless design
+*** Avoid dependency on session state
+*** Simplifies scaling
+** Database optimization
+*** Optimize queries
+*** Use read replicas for heavy read loads
+
+* Production readiness best practices
+** Load testing
+*** Use production-scale data and realistic queries
+** Resource monitoring
+*** Track CPU, memory, and database usage
+** Circuit breakers
+*** Prevent cascading failures when dependencies fail
+** Design for peak load
+*** Prepare for worst-case scenarios
+
+* Deployment checklist
+** Connection pooling and resource management in place
+** Caching strategy implemented
+** Monitoring and alerting configured
+** Health checks and graceful degradation enabled
+** Security audits and penetration testing completed
+** Disaster recovery and backup plans ready
+
+* Real-world outcome
+** Startup failure due to lack of performance planning
+*** System crashed under production load
+** Improvements implemented
+*** Added pooling, caching, and monitoring
+** Result
+*** Handled 10x load with better performance and reliability
+
+* Key takeaways
+** Performance must be designed, not assumed
+** Use proven patterns for stability and scalability
+** Test with real data to avoid production failures
+
+

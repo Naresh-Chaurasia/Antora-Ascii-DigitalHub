@@ -1,0 +1,152 @@
+= Book Cards
+
+++++
+
+<style>
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.card {
+  border-radius: 12px;
+  padding: 16px;
+  background: #2d3748;
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.card h3 {
+  margin-top: 0;
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffffff;
+  border-bottom: 1px solid #444;
+  padding-bottom: 8px;
+}
+
+.card ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.card li {
+  margin: 6px 0;
+}
+
+.badge {
+  font-size: 10px;
+  background: #ff6b6b;
+  color: #ffffff;
+  padding: 2px 6px;
+  border-radius: 6px;
+  margin-left: 6px;
+}
+
+.highlight {
+  color: #4caf50;
+}
+
+.comment {
+  font-size: 15px;
+  color: #9ca3af;
+  font-style: italic;
+  margin-top: 4px;
+  padding-left: 10px;
+}
+
+.card:nth-child(2) {
+  background: #4a5d3a;
+}
+</style>
+
+++++
+
+##############################################
+
+== Steal Like an Artist
+
+=== 🎨 1. Steal Like an Artist
+
+++++
+<div class="dashboard">
+
+  <div class="card">
+    <h3>🎨 Key Concepts</h3>
+    <ul>
+      <li>What a good artist understands is that nothing comes from nowhere. All creative work builds on what came before. Nothing is completely original. <b>Every new idea is just a mashup or a remix of one or more previous ideas</b>
+      </li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>🚀 Action Items | Dance</h3>
+    <ul>
+      <li>Study the work of Marius & Elena, Basi y Deisy, Daniel Rosa.
+        <div class="comment">Focus on their Shines !!!</div>
+      </li>
+      <li>Take Routines from AwPra.
+        <div class="comment">Focus on their Routines !!!</div>
+      </li>
+    </ul>
+  </div>
+
+</div>
+++++
+
+---
+
+##############################################
+
+=== 🧭 2. Don't Wait Until You Know Who You Are to Get Started
+
+++++
+<div class="dashboard">
+
+  <div class="card">
+    <h3>🎨 Key Concepts</h3>
+    <ul>
+      <li>If I'd waited to know who I was or what I was about before I started "being creative," well, I'd still be sitting around trying to figure myself out instead of making things. In my experience, it's in the act of making things and doing our work that we figure out who we are.
+      </li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>🚀 Action Items | Dance</h3>
+    <ul>
+      <li>Start using existing Routines.
+        <div class="comment">YouTube</div>
+      </li>
+      <li>Start Working on Musicality.
+        <div class="comment">2 Salsa and 2 Bachata in 1 Month is doable. Drill with Musicality</div>
+      </li>
+    </ul>
+  </div>
+
+</div>
+++++
+
+---
+
+##############################################
+
+=== 📚 3. Write the Book You Want to Read
+
+++++
+<div class="dashboard">
+  <div class="card">
+    <h3>🎨 Key Concepts</h3>
+    <ul>
+      <li>Dance The Dance you want to see.
+        <div class="comment">Mix Up Things</div>
+      </li>
+    </ul>
+  </div>
+</div>
+++++
+
+##############################################
+
+---
