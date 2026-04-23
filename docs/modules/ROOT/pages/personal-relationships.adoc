@@ -1,0 +1,38 @@
+include::index-all-design-combined-html.adoc[]
+
+++++
+
+<div class="bucket" id="personal-relationships">
+<strong>❤️ Personal Relationships</strong>
+
+<div class="section" id="relationships-today">
+<strong>Today</strong>
+<ul>
+<li>  Call parents - weekly check-in <em class="priority-high">High</em> <span class="status status-done">Done</span></li>
+<li>  Date night planning <em class="priority-medium">Medium</em> <span class="status status-in-progress">In Progress</span></li>
+</ul>
+</div>
+
+<div class="section" id="relationships-later">
+<strong>Later</strong>
+<ul>
+<li>  Friend's birthday gift <em class="priority-medium">Medium</em> <span class="status status-pending">Pending</span></li>
+<li>  Send thank you notes <em class="priority-low">Low</em> <span class="status status-blocked">Blocked</span></li>
+</ul>
+</div>
+
+<div class="section" id="relationships-some-day">
+<div class="section-header" onclick="toggleSection(this)">
+<strong>Some Day</strong>
+<span class="toggle-icon">▼</span>
+</div>
+<div class="section-content">
+<ul>
+<li>  Plan family reunion <em class="priority-low">Low</em></li>
+<li>  reconnect with old friends <em class="priority-medium">Medium</em></li>
+</ul>
+</div>
+</div>
+
+++++
+</div>

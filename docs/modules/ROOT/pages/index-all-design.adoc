@@ -1,4 +1,5 @@
 = Life Dashboard
+:toc: right
 
 [.dashboard-header]
 🌟 Life Dashboard

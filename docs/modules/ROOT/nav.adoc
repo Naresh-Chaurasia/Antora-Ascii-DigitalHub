@@ -1,5 +1,5 @@
 * xref:index-all.adoc[🏠 Home]
-* xref:index-all-design.adoc[🏠 Home All]
+* xref:index-all-design-combined.adoc[🏠 Home All]
 
 .🤖 Artificial Intelligence
 * xref:ai/index.adoc[Overview]
@@ -25,6 +25,7 @@
 ** xref:ai/genai/ai-video-generation.adoc[AI Video Generation]
 * GitHub Copilot
 ** xref:ai/github-copilot/co-pilot365.adoc[Co-Pilot 365]
+** xref:ai/github-copilot/co-pilot365-prompts-demo.adoc[Co-Pilot 365 Prompts Demo]
 * MCP
 ** xref:ai/mcp/mcp-anthropic.adoc[MCP - Anthropic]
 ** xref:ai/mcp/mcp-flow.adoc[MCP - Flow]
@@ -110,6 +111,14 @@
 * xref:genc/sample.adoc[Sample]
 
 ##############################################
+
+.👨‍💻 Health & Fitness
+* xref:health-fitness/juices.adoc[Juices]
+* xref:health-fitness/massage.adoc[Massage]
+
+
+##############################################
+
 
 .💡 Productivity
 * Journal

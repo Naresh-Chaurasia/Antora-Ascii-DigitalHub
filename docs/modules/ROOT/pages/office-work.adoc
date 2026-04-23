@@ -1,0 +1,76 @@
+include::index-all-design-combined-html.adoc[]
+
+++++
+
+<div class="bucket" id="office-work">
+<strong>💼 Office Work</strong>
+
+<div class="section" id="office-work-today">
+<strong>Today</strong>
+<ul>
+<li> MS CoPilot365 <em class="priority-high">High</em> <span class="status status-done">Done</span></li>
+<div class="comment">
+<ul>
+<li>PPT is Good | Get Demo Ready | Done</li>
+</ul>
+</div>
+
+<li> MCP - Next Big Item <em class="priority-medium">Medium</em> <span class="status status-in-progress">In Progress</span></li>
+<div class="comment">
+<ul>
+<li>Formalise a plan else this will take lot of time.</li>
+</ul>
+</div>
+
+<li> SLF4J <em class="priority-medium">Medium</em> <span class="status status-pending">Pending</span></li>
+<div class="comment">
+<ul>
+<li>PPT | Code</li>
+</ul>
+</div>
+</ul>
+</div>
+
+<div class="section" id="office-work-later">
+<strong>Later</strong>
+<ul>
+<li> Complete project documentation <em class="priority-high">High</em> <span class="status status-pending">Pending</span></li>
+<div class="comment">
+<ul>
+<li>Document all API endpoints and create user guides</li>
+</ul>
+</div>
+<li> Update development environment <em class="priority-low">Low</em> <span class="status status-blocked">Blocked</span></li>
+<div class="comment">
+<ul>
+<li>Upgrade all dependencies and test compatibility</li>
+</ul>
+</div>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-header" onclick="toggleSection(this)" id="office-work-some-day">
+<strong>Some Day</strong>
+<span class="toggle-icon">▼</span>
+</div>
+<div class="section-content">
+<ul>
+<li> Learn new programming language <em class="priority-low">Low</em></li>
+<div class="comment">
+<ul>
+<li>Consider Rust or Go and focus on practical projects</li>
+</ul>
+</div>
+<li> Build personal website <em class="priority-medium">Medium</em></li>
+<div class="comment">
+<ul>
+<li>Use modern framework like Next.js with portfolio sections</li>
+</ul>
+</div>
+</ul>
+</div>
+</div>
+</div>
+
+++++

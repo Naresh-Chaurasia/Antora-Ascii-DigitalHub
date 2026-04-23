@@ -1,0 +1,38 @@
+include::index-all-design-combined-html.adoc[]
+
+++++
+
+<div class="bucket" id="health-fitness-dance">
+<strong>🏃‍♂️ Health, Fitness & Dance</strong>
+
+<div class="section" id="health-fitness-today">
+<strong>Today</strong>
+<ul>
+<li> Morning yoga session - 30 mins <em class="priority-medium">Medium</em> <span class="status status-done">Done</span></li>
+<li> Evening dance practice - 45 mins <em class="priority-high">High</em> <span class="status status-pending">Pending</span></li>
+</ul>
+</div>
+
+<div class="section" id="health-fitness-later">
+<strong>Later</strong>
+<ul>
+<li>  Gym workout - Upper body <em class="priority-medium">Medium</em> <span class="status status-pending">Pending</span></li>
+<li>  Meal prep for the week <em class="priority-low">Low</em> <span class="status status-blocked">Blocked</span></li>
+</ul>
+</div>
+
+<div class="section" id="health-fitness-some-day">
+<div class="section-header" onclick="toggleSection(this)">
+<strong>Some Day</strong>
+<span class="toggle-icon">▼</span>
+</div>
+<div class="section-content">
+<ul>
+<li>  Run a marathon <em class="priority-low">Low</em></li>
+<li>  Learn salsa dancing <em class="priority-medium">Medium</em></li>
+</ul>
+</div>
+</div>
+
+++++
+</div>

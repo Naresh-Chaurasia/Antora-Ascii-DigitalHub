@@ -1,0 +1,47 @@
+include::index-all-design-combined-html.adoc[]
+
+++++
+
+<!-- Separator between Personal Relationships and Book Reading buckets -->
+<div class="bucket-separator">
+<hr>
+<p class="separator-text">📚 Switching to Book Reading</p>
+<hr>
+</div>
+
+
+
+<div class="bucket" id="book-reading">
+<strong>📚 Book Reading</strong>
+
+<div class="section" id="reading-today">
+<strong>Today</strong>
+<ul>
+<li>  "Atomic Habits" - Chapter 5 <em class="priority-medium">Medium</em> <span class="status status-done">Done</span></li>
+<li>  Book club meeting preparation <em class="priority-medium">Medium</em> <span class="status status-in-progress">In Progress</span></li>
+</ul>
+</div>
+
+<div class="section" id="reading-later">
+<strong>Later</strong>
+<ul>
+<li>  "The Lean Startup" - Finish Part 2 <em class="priority-high">High</em> <span class="status status-pending">Pending</span></li>
+<li>  Write review for "Deep Work" <em class="priority-low">Low</em> <span class="status status-blocked">Blocked</span></li>
+</ul>
+</div>
+
+<div class="section" id="reading-some-day">
+<div class="section-header" onclick="toggleSection(this)">
+<strong>Some Day</strong>
+<span class="toggle-icon">▼</span>
+</div>
+<div class="section-content">
+<ul>
+<li>  Read "War and Peace" <em class="priority-low">Low</em></li>
+<li>  Start a book club <em class="priority-medium">Medium</em></li>
+</ul>
+</div>
+</div>
+</div>
+
+++++

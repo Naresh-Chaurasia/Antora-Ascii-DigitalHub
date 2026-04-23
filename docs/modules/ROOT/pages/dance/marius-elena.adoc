@@ -5,28 +5,64 @@
 ---
 
 * [x] This page will only contain Marius&Elena
-* [x] Easiest and long term solution will be to copy and paste the content from here to Anki | Whatever works best
+* [ ] 5 routines | 4 bars only
+* [ ] Routine1: 180/360 | 
+
+##############################################
+
+---
+
+== Bachata Tutorials by Marius&Elena
+
+* [ ] https://www.youtube.com/watch?v=jF9gEK3HDkg&list=PL7iSzWmAf8tvF_mvfSs8lXsI0tUBhDjh8
+** Bachata Tutorial 01: Basic Step by Marius&Elena
+** Hip Movement
+** Eye Contact
+** Ordinary Room / Settings
+** Very Young Couple | Raw Video
+** Jun 14, 2017
+
+---
+
+* [ ] https://www.youtube.com/watch?v=ZJ9XGPNglEc&list=PL7iSzWmAf8tvF_mvfSs8lXsI0tUBhDjh8
+** Bachata Tutorial 02: Basic Forward by Marius&Elena
+
+---
+
+* [ ] https://www.youtube.com/watch?v=1dNg1Ge_Ho8&list=PL7iSzWmAf8tvF_mvfSs8lXsI0tUBhDjh8
+** #Actionable#: Studio is same. Just by Changing one wall, it looks awesome.
+
+
+---
+
+* [ ] https://www.youtube.com/watch?v=1dNg1Ge_Ho8&list=PL7iSzWmAf8tvF_mvfSs8lXsI0tUBhDjh8
+** Beginner Bachata Tutorial #19 : 180 & 360 (part I) | by Marius&Elena
+** Turn with *Right Leg: In Place*
+
+---
+
+* [ ] https://www.youtube.com/watch?v=ZWcNMC44Fv8&list=PL7iSzWmAf8tvF_mvfSs8lXsI0tUBhDjh8
+** #Actionable#: Video Edit the side Walls
+
+
+##############################################
 
 ---
 
 == Bachata Drills | Marius & Elena
 
-<details>
-<summary>📍 Modern Bachata Marius & Elena</summary>
-
-* <mark>Practice Spot Turn</mark>
-* 180 Degree Turn | <mark>360 Degree Turn</mark>
-* Ladies Hair Comb with Window | <mark>Change Position of Hand Pending</mark>
+* Practice Spot Turn
+* 180 Degree Turn | 360 Degree Turn
+* Ladies Hair Comb with Window | Change Position of Hand Pending
 * Gent's Hair Comb | Try Both Sides
 * Normal Hammerlock. Both hands, Both sides.
-* <mark>Back/Behind Hammerlock</mark>
-* <mark>Men's Turn (wrap on follower's hand)</mark>
-* <mark>Single Hand Hammer Lock</mark> | Lead | Follow
+* Back/Behind Hammerlock
+* Men's Turn (wrap on follower's hand)
+* Single Hand Hammer Lock | Lead | Follow
 * Swipe Floor - Embedded
-* <mark>Rebound</mark>
+* Rebound
 * Change Positions | 1234 Diagonal and Change Position with Partner
 
-</details>
 
 ---
 

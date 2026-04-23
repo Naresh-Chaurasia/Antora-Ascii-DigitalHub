@@ -1,16 +1,55 @@
 ++++
 <div class="dashboard-grid">
 
-<div class="bucket">
+<!-- Table of Contents -->
+<div class="toc-container">
+<h2>📋 Table of Contents</h2>
+<div class="toc">
+<div class="toc-bucket">
+<a href="#office-work">💼 Office Work</a>
+<ul>
+<li><a href="#office-work-today">Today</a></li>
+<li><a href="#office-work-later">Later</a></li>
+<li><a href="#office-work-some-day">Some Day</a></li>
+</ul>
+</div>
+<div class="toc-bucket">
+<a href="#health-fitness-dance">🏃‍♂️ Health, Fitness & Dance</a>
+<ul>
+<li><a href="#health-fitness-today">Today</a></li>
+<li><a href="#health-fitness-later">Later</a></li>
+<li><a href="#health-fitness-some-day">Some Day</a></li>
+</ul>
+</div>
+<div class="toc-bucket">
+<a href="#personal-relationships">❤️ Personal Relationships</a>
+<ul>
+<li><a href="#relationships-today">Today</a></li>
+<li><a href="#relationships-later">Later</a></li>
+<li><a href="#relationships-some-day">Some Day</a></li>
+</ul>
+</div>
+<div class="toc-bucket">
+<a href="#book-reading">📚 Book Reading</a>
+<ul>
+<li><a href="#reading-today">Today</a></li>
+<li><a href="#reading-later">Later</a></li>
+<li><a href="#reading-some-day">Some Day</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="bucket" id="office-work">
 <strong>💼 Office Work</strong>
 
-<div class="section">
+<div class="section" id="office-work-today">
 <strong>Today</strong>
 <ul>
 <li> MS CoPilot365 <em class="priority-high">High</em></li>
 <div class="comment">
 <ul>
-<li>PPT is Good | Need to work on speaker notes</li>
+<li>PPT is Good | Get Demo Ready | Done</li>
 </ul>
 </div>
 <li> Review team pull requests <em class="priority-medium">Medium</em></li>
@@ -28,7 +67,7 @@
 </ul>
 </div>
 
-<div class="section">
+<div class="section" id="office-work-later">
 <strong>Later</strong>
 <ul>
 <li> Complete project documentation <em class="priority-high">High</em></li>
@@ -77,10 +116,10 @@
 <hr>
 </div>
 
-<div class="bucket">
+<div class="bucket" id="health-fitness-dance">
 <strong>🏃‍♂️ Health, Fitness & Dance</strong>
 
-<div class="section">
+<div class="section" id="health-fitness-today">
 <strong>Today</strong>
 <ul>
 <li> Morning yoga session - 30 mins <em class="priority-medium">Medium</em></li>
@@ -88,15 +127,14 @@
 </ul>
 </div>
 
-<div class="section">
+<div class="section" id="health-fitness-later">
 <strong>Later</strong>
 <ul>
 <li>  Gym workout - Upper body <em class="priority-medium">Medium</em></li>
-<li>  Meal prep for the week <em class="priority-low">Low</em></li>
 </ul>
 </div>
 
-<div class="section">
+<div class="section" id="health-fitness-some-day">
 <div class="section-header" onclick="toggleSection(this)">
 <strong>Some Day</strong>
 <span class="toggle-icon">▼</span>
@@ -117,10 +155,10 @@
 <hr>
 </div>
 
-<div class="bucket">
+<div class="bucket" id="personal-relationships">
 <strong>❤️ Personal Relationships</strong>
 
-<div class="section">
+<div class="section" id="relationships-today">
 <strong>Today</strong>
 <ul>
 <li>  Call parents - weekly check-in <em class="priority-high">High</em></li>
@@ -128,7 +166,7 @@
 </ul>
 </div>
 
-<div class="section">
+<div class="section" id="relationships-later">
 <strong>Later</strong>
 <ul>
 <li>  Friend's birthday gift <em class="priority-medium">Medium</em></li>
@@ -136,7 +174,7 @@
 </ul>
 </div>
 
-<div class="section">
+<div class="section" id="relationships-some-day">
 <div class="section-header" onclick="toggleSection(this)">
 <strong>Some Day</strong>
 <span class="toggle-icon">▼</span>
@@ -157,10 +195,10 @@
 <hr>
 </div>
 
-<div class="bucket">
+<div class="bucket" id="book-reading">
 <strong>📚 Book Reading</strong>
 
-<div class="section">
+<div class="section" id="reading-today">
 <strong>Today</strong>
 <ul>
 <li>  "Atomic Habits" - Chapter 5 <em class="priority-medium">Medium</em></li>
@@ -168,7 +206,7 @@
 </ul>
 </div>
 
-<div class="section">
+<div class="section" id="reading-later">
 <strong>Later</strong>
 <ul>
 <li>  "The Lean Startup" - Finish Part 2 <em class="priority-high">High</em></li>
@@ -176,7 +214,7 @@
 </ul>
 </div>
 
-<div class="section">
+<div class="section" id="reading-some-day">
 <div class="section-header" onclick="toggleSection(this)">
 <strong>Some Day</strong>
 <span class="toggle-icon">▼</span>

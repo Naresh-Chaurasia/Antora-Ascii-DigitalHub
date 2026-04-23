@@ -1,0 +1,222 @@
+= Co-Pilot 365 Prompts Demo
+:toc: right
+
+
+== Word
+
+* *Draft documents with Microsoft Copilot Pro*
+
+** [x] Draft a 1-page business proposal for [project/product]/Agentic AI for [customer/audience]/ Bank of America. Include problem, solution, scope, timeline, pricing assumptions, and next steps.
+** Write a professional project charter for [project] with objectives, stakeholders, milestones, risks, and success metrics.
+
+---
+
+* *Draft documents with outlines with Microsoft Copilot*
+
+** [x] Create a detailed outline for a [report/policy/strategy]/ Implementation Strategy In your organization for [topic] using Microsoft Copilot with H1/H2 headings and suggested bullet points under each section.
+** Turn this into an outline with clear sections and sub-sections: [paste rough notes].
+
+---
+
+* *Edit text in Word and change tone with Microsoft Copilot*
+*(Select a paragraph, then prompt:)*
+
+**  Rewrite this to sound more executive and concise, keeping the meaning the same.
+**  Make this friendlier and more customer-focused, remove jargon.
+** [x] Rewrite this for a technical audience; add 2 clarifying sentences where needed.
+
+---
+
+* *Transform text in Word into a table*
+*(Select a list, then prompt:)*
+
+** [x] Write a short white paper of 2 pages to compre llms: claude, coilot and chatgpt
+** Convert this into a table with columns: Item, Owner, Due date, Status, Notes.
+** [x] Turn this into a comparison table with columns Feature, Option A, Option B, Recommendation.
+
+* *Ask questions on Word documents*
+
+** Summarize this document in 5 bullets and call out any decisions and action items.
+** What are the key risks mentioned, and where (which section) are they discussed?
+** Create a 10-question FAQ based on this document, with short answers.
+
+* *Revise edits to your Word documents*
+
+** Suggest improvements for clarity and structure across the document, then provide a revised version of the introduction.
+** Identify repetition and rewrite to remove redundancy while keeping all key details.
+** Proofread for grammar and tighten sentences—don't change technical terms.
+
+* *Create output artifacts with Microsoft Copilot*
+
+** Create meeting minutes from this content with sections: Attendees, Agenda, Discussion, Decisions, Action items (Owner + Due).
+** Generate a one-page executive summary plus a slide-style outline (8 slide titles with 3 bullets each).
+** Create a RACI matrix from this text and present it as a table.
+
+##############################################
+
+---
+
+
+== Excel
+
+
+* Open excel and give following prompts
+
+[source,asciidoc, role="wrap"]
+----
+Date | Event | Category | Region | Revenue | Cost | Status
+Can you create 10 records for this table? Name the sheet as 01_Raw_Data.
+----
+
+
+##############################################
+
+---
+
+
+[source,asciidoc, role="wrap"]
+----
+02_General_Analysis
+03_Data_QA
+04_Filtering_Basic
+05_Filtering_Advanced
+06_Data_Formatting
+07_Data_Manipulation
+08_Data_Sorting
+09_Data_Visualisation
+10_Copilot_Use_Cases
+
+Can you create sheets with data from 01_Raw_Data. Full copy (static): Copy the entire EventsTable into each sheet as values (independent copies).
+----
+
+##############################################
+
+---
+
+
+* *02_General_Analysis*: `Analyse this dataset and summarise key trends, anomalies, and insights`.
+* *03_Data_QA*: `What is the total and average revenue by region?`.
+* *04_Filtering_Basic*: `Filter the data to show only records where revenue > 100000`.
+* *05_Filtering_Advanced*: `Filter the data to include Region = APAC AND Status = Completed, but exclude low revenue records`.
+* *06_Data_Formatting*: `Format this data as a clean, presentation-ready table`.
+* *07_Data_Manipulation*: `Create a new calculated column for profit using revenue and cost`.
+* *08_Data_Sorting*: `Sort this data by revenue in descending order`.
+* *09_Data_Visualisation*: `Create a dashboard-style summary with 2–3 key visuals`.
+* *10_Copilot_Use_Cases*: `Summarise this workbook in 5 executive-level bullet points`.
+
+
+
+##############################################
+
+---
+
+
+== PowerPoint
+
+* *Create presentations from scratch with Microsoft Copilot Pro*
+
+** Create a presentation about [topic] for [audience]. Include a slide about how to evaluate impact.
+** Create a 7-slide presentation on [topic] with the following flow: Problem, Current State, Proposed Solution, Benefits, Risks, Timeline, Next Steps.
+** Create a client-ready presentation on [initiative or project] with speaker notes and a clear narrative.
+
+---
+
+* *Create presentations from templates*
+
+** Using this template, generate a [QBR / Project Update / Proposal] deck for [client or team]. Keep the template structure and branding intact.
+** Fill this template with content for [topic]. Use concise headings and limit to 3 bullet points per slide.
+** Rewrite all slide titles to be action-oriented and under 6 words.
+
+---
+
+* *Create presentations from Word documents*
+
+** Convert this Word document into a PowerPoint presentation.
+** Create a presentation from this Word file with a maximum of 8 slides and include speaker notes.
+** Add an executive summary slide at the beginning based on the Word document.
+
+---
+
+* *Add a slide with Microsoft Copilot Pro*
+
+** Add a slide on [topic] with 3 key points and 1 example.
+** Add a slide explaining [concept] for a non-technical audience using a simple analogy.
+** Add a slide titled "Key Takeaways" summarising the top 5 points from this deck.
+
+---
+
+* *Edit a slide in PowerPoint using Copilot*
+
+** Rewrite this slide to sound more executive and concise.
+** Turn this paragraph into 3 crisp bullet points with a strong headline.
+** Reduce text density across the deck by 30 percent without losing meaning.
+** Make all fonts in the presentation the same.
+** Change all headings to blue and ensure consistent formatting.
+
+---
+
+* *Ask questions about presentations*
+
+** Summarise this presentation in 5 bullet points.
+** What is the main message of this deck in one sentence?
+** List the decisions, assumptions, and open questions covered in this presentation.
+** Which slide is weakest for an executive audience and how can it be improved?
+
+---
+
+* *Summarise and organise presentations with Microsoft Copilot*
+
+** Organise this presentation into logical sections for maximum storytelling impact.
+** Create an agenda slide based on the structure of this deck.
+** Generate speaker notes for each slide in a professional business tone.
+** Summarise this presentation and identify key takeaways and next actions.
+
+##############################################
+
+---
+
+
+== Outlook
+
+
+* *Microsoft Copilot in Outlook – Demo Prompts**
+** *(Use Copilot inside Outlook for drafting, summarising, and replying to emails)*
+
+* *Draft emails with Microsoft Copilot for Microsoft 365**
+** Draft a professional email to **\[client/team]** about **\[topic]**, requesting next steps and timelines
+** Write a concise status update email summarising progress, risks, and asks for leadership
+** Draft a polite follow‑up email reminding the recipient about a pending action from last week
+** Write an email announcing **\[event/initiative]** with a clear call to action
+
+* *Summarise email threads in Outlook**
+** Summarise this email thread in 5 bullet points
+** Summarise this conversation and highlight decisions and open items
+** Identify what actions are expected from me in this email thread
+** Give a one‑paragraph executive summary of this email chain
+
+* *Reply to emails using Microsoft Copilot**
+** Draft a reply acknowledging receipt and confirming next steps
+** Reply to this email agreeing with the proposal and adding one clarification
+** Write a polite but firm response declining the request with a brief explanation
+** Reply to this email on my behalf in a professional and collaborative tone
+
+* *Improve tone and clarity in email replies**
+** Rewrite this reply to sound more executive and concise
+** Make this response more empathetic and customer‑focused
+** Shorten this email without losing key points
+** Rewrite this to sound confident but not aggressive
+
+* *Action‑oriented email assistance**
+** Identify action items and owners from this email conversation
+** Create a task list from this email thread with owners and due dates
+** Suggest a clear response that moves this conversation forward
+
+* *Recommended 3‑minute demo flow**
+** Open a long email thread and ask Copilot to summarise the thread and highlight action items
+** Click Reply and ask Copilot to draft a professional response confirming next steps
+** Refine the reply by asking Copilot to make it more executive and concise
+
+
+
+
+

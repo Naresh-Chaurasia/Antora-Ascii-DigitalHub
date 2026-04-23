@@ -1,0 +1,62 @@
+include::index-all-design-combined-html.adoc[]
+
+++++
+
+<div class="bucket" id="mental-chatter">
+<strong>🧠 Mental Chatter</strong>
+
+<div class="section" id="mental-chatter-today">
+<strong>Today</strong>
+<ul>
+<li> ANKI <em class="priority-high">High</em> <span class="status status-pending">Pending</span></li>
+<div class="comment">
+<ul>
+<li>Names</li>
+</ul>
+</div>
+<li> Learning How to Learn <em class="priority-medium">Medium</em> <span class="status status-in-progress">In Progress</span></li>
+<div class="comment">
+<ul>
+<li>Focus on memory techniques and learning strategies</li>
+</ul>
+</div>
+</ul>
+</div>
+
+<div class="section" id="mental-chatter-later">
+<strong>Later</strong>
+<ul>
+<li> Harry Lorrayne <em class="priority-medium">Medium</em> <span class="status status-pending">Pending</span></li>
+<div class="comment">
+<ul>
+<li>Study memory techniques and mnemonic systems</li>
+</ul>
+</div>
+<li> Anki <em class="priority-low">Low</em> <span class="status status-blocked">Blocked</span></li>
+<div class="comment">
+<ul>
+<li>Wait for ANKI setup completion before starting</li>
+</ul>
+</div>
+</ul>
+</div>
+
+<div class="section" id="mental-chatter-some-day">
+<div class="section-header" onclick="toggleSection(this)">
+<strong>Some Day</strong>
+<span class="toggle-icon">▼</span>
+</div>
+<div class="section-content">
+<ul>
+<li> Job Change <em class="priority-high">High</em> <span class="status status-pending">Pending</span></li>
+<div class="comment">
+<ul>
+<li>Research opportunities and update resume/portfolio</li>
+</ul>
+</div>
+</ul>
+</div>
+</div>
+</div>
+
+++++
