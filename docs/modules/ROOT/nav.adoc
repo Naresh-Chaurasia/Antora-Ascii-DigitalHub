@@ -112,7 +112,7 @@
 
 ##############################################
 
-.👨‍💻 Health & Fitness
+.💪 Health & Fitness
 * xref:health-fitness/juices.adoc[Juices]
 * xref:health-fitness/massage.adoc[Massage]
 
