@@ -1,0 +1,105 @@
+= Claude AI and Prompting for Everyone
+:toc: right
+:toclevels: 5
+:sectnums: 5
+:sectnumlevels: 5
+
+> Claude AI and Prompting for Everyone Edureka
+
+== Module 1: Understanding Claude & Safety
+
+=== Specialization Introduction
+
+* #There are other things, but at this point it is not relevant.#
+
+* Step-by-Step Learning Flow
+
+** Step 1: Foundation — Understand How Claude Works
+*** Learn how Claude reasons through problems and interprets instructions
+*** Study Constitutional AI and how safety principles shape responses
+*** Recognise why prompt structure directly affects output quality
+
+** Step 2: Core Skill — Design Effective Prompts and Use the API
+*** Practice prompting techniques using structure, context, roles, and tone
+*** Make API requests and manage multi-turn conversations programmatically
+*** Generate structured outputs in JSON for reliable downstream processing
+
+** Step 3: Advanced Capability — Build RAG Pipelines and MCP Servers
+*** Implement chunking, embedding, retrieval, and re-ranking for RAG
+*** Set up MCP servers that expose tools and resources to Claude agents
+*** Build task-based mini-agents that solve focused real-world problems
+
+** Step 4: Real-World Application — Design and Deploy Agent Systems
+*** Create multi-agent workflows with shared resources and coordinated planning
+*** Connect RAG, MCP, and tools into end-to-end automated pipelines
+*** Optimise for reliability, cost, and scale in production environments
+
+* Quick Revision Points
+** Claude evaluates structure, roles, and intent — not just raw text
+** Good prompts = clear structure + context + role + tone
+** Constitutional AI embeds safety and ethics into every response
+** The Claude API turns Claude from a chat tool into a system component
+** Structured outputs in JSON ensure consistency for production systems
+** RAG grounds responses in real data through chunking, embedding, and retrieval
+** Re-ranking improves retrieval quality by prioritising the most relevant content
+** MCP standardises how agents connect to external tools and data sources
+** Multi-agent systems collaborate through workflows rather than single prompts
+** End-to-end automation combines RAG, MCP, and tools into production-ready pipelines
+
+##############################################
+
+---
+
+=== How Claude Handles Long Documents
+
+* Structured Concept Breakdown
+
+** Best Practices for Long Documents
+*** Upload Full Files
+**** Claude performs best with complete information rather than fragments
+**** Full documents give Claude the context needed to produce accurate analysis
+*** Ask Targeted Questions
+**** Specific requests produce more accurate and relevant responses
+**** Narrow the scope of each question to a single focused intent
+*** Use Summaries First
+**** Request a summary before diving into detailed analysis of large documents
+**** Summaries help Claude build a solid understanding of the full content
+**** A summary-first approach creates a foundation for deeper follow-up questions
+
+** Common Mistakes to Avoid
+*** Overloading a Single Prompt
+**** Too many tasks in one prompt can confuse the analysis
+**** Break complex requests into separate focused prompts
+*** *Mixing Unrelated Documents*
+**** Combining unrelated documents in one prompt reduces clarity
+**** Keep themes focused so Claude can maintain coherent analysis
+*** Using Ambiguous Instructions
+**** Vague or unclear asks lead to unpredictable results
+**** Clear and direct instructions always produce better output
+
+##############################################
+
+---
+
+=== Hands-on: Summarizing Documents
+
+* “Summarise this document in 5 bullet points. Focus on the main goal, key features, and expected impact.”
+* “Create a structured summary of this document with the headings: purpose, key points, risks, and next steps.”
+* “Summarise this document for a non-technical manager in 5 simple sentences.”
+* “Now summarise the same document for a technical teammate. Include key implementation details and any constraints.”
+* “Find the section with recommendations or next steps and summarise only that section in four bullet points.”
+
+##############################################
+
+---
+
+=== Hands-on: Comparing Two Documents
+
+
+##############################################
+
+---
+
+== Moduel 2: Core Prompting Techniques
+
+

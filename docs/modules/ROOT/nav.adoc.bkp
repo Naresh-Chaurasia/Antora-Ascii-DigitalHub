@@ -4,10 +4,6 @@
 .🤖 Artificial Intelligence
 * xref:ai/index.adoc[Overview]
 * xref:ai/java-ai.adoc[Java AI]
-* xref:ai/claude-coursera-edureka.adoc[Claude AI and Prompting]
-* Prompt Engineering
-** xref:ai/prompt-engineering/prompts-library.adoc[Prompts Library]
-** xref:ai/prompt-engineering/prompts-engineering-library.adoc[Prompts Engineering Library]
 * Agentic AI
 ** xref:ai/agenti-ai/agetic-ai-aman.adoc[Agentic AI - Aman]
 ** xref:ai/agenti-ai/agentic-ai-mehmet.adoc[Agentic AI - Mehmet]
@@ -64,7 +60,6 @@
 ** xref:books/compound-effect.adoc[The Compound Effect]
 * Relationships
 ** xref:books/relationship/dating-robert-grover.adoc[Dating Essentials for Men - Robert Grover]
-** xref:books/relationship/case-study1.adoc[Case Study 1]
 * xref:books/book-journal.adoc[Book Journal]
 * xref:books/steal-artist.adoc[Steal Like An Artist - Austin Kleon]
 
@@ -126,27 +121,14 @@
 
 
 .💡 Productivity
-* Tools
-** xref:productivity/tools/chrome.adoc[Chrome Browser]
-** xref:productivity/tools/iphone.adoc[iPhone Tips]
-** xref:productivity/tools/mac.adoc[Macbook Pro]
-* Learning
-** xref:productivity/learning/anki-for-learning.adoc[Using Anki for Learning]
-* Development
-** xref:productivity/development/visual-studio.adoc[Visual Studio]
-* 🤖 AI
-** xref:productivity/AI/ms-copilot365-how-to.adoc[MS 365 Copilot Chat Organisation]
-* Courses
-** xref:productivity/courses/notion-coursera.adoc[Notion - Coursera]
-** xref:productivity/courses/antora-notion-todoist.adoc[Antora | Notion | Todoist]
-** xref:productivity/courses/productivity-coursera.adoc[Productivity Simplified]
-** xref:productivity/courses/productivity-coursera-goal-setting.adoc[Goal Setting System]
-* Templates
-** xref:productivity/templates/ascii-template.adoc[Ascii Template]
-** xref:productivity/templates/melting-pot.adoc[Melting Pot]
 * Journal
-** xref:productivity/journal/journal.adoc[Journaling System]
-** xref:productivity/journal/journal-mar-26.adoc[Monthly Journal]
+** xref:productivity/journal/journal-mar-26.adoc[Journal - Mar 26]
+* xref:productivity/ascii-template.adoc[Ascii Template]
+* xref:productivity/chrome.adoc[Chrome]
+* xref:productivity/mac.adoc[Macbook Pro]
+* xref:productivity/melting-pot.adoc[Melting Pot]
+* xref:productivity/anki-for-learning.adoc[Using Anki for Learning]
+* xref:productivity/visual-studio.adoc[Visual Studio]
 
 ##############################################
 

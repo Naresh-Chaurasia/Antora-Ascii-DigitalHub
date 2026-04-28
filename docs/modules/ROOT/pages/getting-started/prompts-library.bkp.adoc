@@ -4,6 +4,24 @@
 :sectnums: 5
 :sectnumlevels: 5
 
+== Claude
+
+[source,asciidoc, role="wrap"]
+----
+Instagram 9:16 vertical background, warm Latin dance studio aesthetic.
+
+A textured exposed brick wall with natural colour variation (burnt orange, soft brown, earthy red tones), subtle imperfections for realism.
+
+Warm ambient string lights hanging across the top of the wall, soft golden glow, evenly spaced bulbs.
+
+Clean wooden studio floor with gentle reflections near the base of the wall.
+Minimal, uncluttered composition with no people, no text, no logos, designed as a dance video background.
+
+Soft studio lighting, cosy evening vibe, cinematic but minimal,non‑distracting, professional Latin dance studio look.
+
+Photorealistic, high quality, shallow depth of field, realistic texture detail.
+----
+
 
 == Content Creation
 
@@ -74,6 +92,88 @@ Please analyze the provided code/notebook and generate documentation following t
 ##################################################
 
 === Convert to Self Paced Learning
+
+
+.Self Paced Learning Claude
+[%collapsible]
+====
+
+** Objective
+*** Convert the given article into structured, self-paced learning content that a learner can follow independently
+
+** Instructions
+*** Identify the main concepts, supporting ideas, and practical insights
+*** Transform the content into a guided learning format
+*** Ensure the learner can understand, apply, and practice the topic step by step
+
+** Output Structure
+
+*** Overall Summary
+**** Provide a single-line explanation of the entire concept
+
+*** Learning Objectives
+**** List 5–7 clear outcomes the learner will achieve
+**** Each objective should start with an action verb (Understand, Design, Build, Implement, Create, Develop)
+
+*** Structured Concept Breakdown
+**** Group related ideas into named topic areas
+**** Use the hierarchy:
+***** `*` Topic area title
+***** `**` Sub-topic
+***** `***` Explanation or detail point
+**** Each topic area should contain 2–4 sub-topics
+**** Each sub-topic should have 1–3 short explanation points
+**** Remove filler and repetition
+**** Preserve useful examples, analogies, and distinctions
+
+*** Step-by-Step Learning Flow
+**** Organise into exactly 4 steps:
+***** Step 1: Foundation concept
+***** Step 2: Core idea
+***** Step 3: Advanced understanding
+***** Step 4: Real-world application
+**** Each step should have 2–3 actionable sub-points
+
+*** Quick Revision Points
+**** Summarise 7–10 key takeaways
+**** Each point should be one short, memorable sentence
+**** Use the pattern: subject + action/insight
+***** Example: "Good prompts = clear structure + context + role"
+
+** Formatting Rules
+*** Use AsciiDoc-style bullet hierarchy only:
+**** `*` for section titles and top-level topic areas
+**** `**` for sub-sections, topic areas, and content items
+**** `***` for sub-topics and step details
+**** `****` for explanations and detail points
+*** Section titles (Overall Summary, Learning Objectives, etc.) appear at the `*` level
+*** Keep sentences short and simple — one idea per line
+*** Do NOT use markdown headings (`#`, `##`, `###`)
+*** Do NOT use asciidoc headings (`=`, `==`, `===`)
+*** Do NOT use bold, italic, or inline formatting
+*** Focus on clarity and usability for self-paced learning
+*** Ensure content is actionable, not just descriptive
+
+** Output Requirements
+*** Output only bullet-structured content using the hierarchy above
+*** Ensure it is clean and ready to paste into AsciiDoc notes or documentation tools
+*** No introductory or closing commentary — just the structured content
+
+
+====
+
+
+
+##############################################
+
+---
+
+
+##############################################
+
+---
+
+
 
 .Self Paced Learning
 [%collapsible]

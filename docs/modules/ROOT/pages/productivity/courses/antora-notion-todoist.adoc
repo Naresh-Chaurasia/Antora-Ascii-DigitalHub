@@ -1,0 +1,212 @@
+= Antora | Notion | TODOist
+:toc: right
+:toclevels: 3
+
+This page defines where different kinds of work should live.
+
+My system has **three clearly separated workspaces**:
+
+* Notion — thinking and capture
+* Todoist — planning and tracking (execution)
+* Antora (AsciiDoc) — knowledge and documentation
+
+Each has a clear responsibility.
+
+== The Three Workspaces
+
+=== 1. Notion — Thinking & Capture
+
+Use Notion when the content is:
+
+* Fast
+* Personal
+* Unstructured
+* Exploratory
+* Contextual or emotional
+
+Typical examples:
+
+* Quick ideas
+* Brain dumps
+* Rough notes
+* Draft thoughts
+* Journaling
+* Explorations
+
+Notion is a *cognitive scratchpad*.
+It is **not** a knowledge base.
+
+---
+
+=== 2. Todoist — Planning & Tracking (Execution)
+
+Planning and tracking are neither thinking nor knowledge.
+They are about *execution*.
+
+Use Todoist when the content is:
+
+* Time-bound
+* Actionable
+* Status-driven
+* Continuously changing
+* Measured by completion
+
+Typical examples:
+
+* Tasks
+* Projects
+* Goals
+* Habits
+* Learning plans with deadlines
+* Reviews (weekly or monthly)
+
+Todoist answers the question:
+
+*What should I do next?*
+
+Tasks never become documents.
+If a task needs explanation, the explanation lives elsewhere.
+
+---
+
+=== 3. Antora (AsciiDoc) — Knowledge & Documentation
+
+Use Antora when the content is:
+
+* Long-lived
+* Structured
+* Teachable
+* Referential
+* Reusable
+
+Typical examples:
+
+* Canonical notes
+* Teaching material
+* Architecture documentation
+* Integration patterns
+* Learning paths
+* Principles and systems
+* Decision records
+
+There is **no standalone AsciiDoc**.
+All AsciiDoc is published via Antora.
+
+Antora answers the question:
+
+*What do I know?*
+
+== Decision Flowchart
+
+[mermaid]
+----
+flowchart TD
+  A["Where should I write this?"] --> B{"Is this quick, personal, or exploratory?"}
+
+  B -->|Yes| N1["Notion<br/>Capture and thinking"]
+  B -->|No| C{"Is this about execution or status?"}
+
+  C -->|Yes| T1["Todoist<br/>Tasks, projects, goals"]
+  C -->|No| D{"Is this long-term knowledge?"}
+
+  D -->|Yes| A1["Antora (AsciiDoc)<br/>Canonical documentation"]
+  D -->|No| N2["Notion<br/>Temporary or contextual notes"]
+----
+
+== When to Use What
+
+[cols="2,3,3,3", options="header"]
+|===
+|Use Case
+|Notion (Thinking)
+|Todoist (Planning)
+|Antora (Knowledge)
+
+|Quick ideas
+|✅ Yes
+|❌ No
+|❌ No
+
+|Brain dumps
+|✅ Yes
+|❌ No
+|❌ No
+
+|Personal journaling
+|✅ Yes
+|❌ No
+|❌ No
+
+|Tasks and to‑dos
+|❌ No
+|✅ Yes
+|❌ No
+
+|Project tracking
+|❌ No
+|✅ Yes
+|❌ No
+
+|Goals and habits
+|❌ No
+|✅ Yes
+|❌ No
+
+|Temporary exploration
+|✅ Yes
+|❌ No
+|❌ No
+
+|Long‑term notes
+|❌ No
+|❌ No
+|✅ Yes
+
+|Teaching material
+|⚠️ Draft only
+|❌ No
+|✅ Canonical
+
+|Architecture documentation
+|❌ No
+|❌ No
+|✅ Always
+
+|Reference knowledge
+|❌ No
+|❌ No
+|✅ Always
+|===
+
+== Diagram Policy (Antora‑First)
+
+All diagrams are published via Antora, so stability matters.
+
+*Decision and thinking diagrams*
+* Plain text or simple Mermaid
+
+*Teaching explanations*
+* Mermaid is acceptable
+* Keep syntax ASCII-only and simple
+
+*Architecture and systems*
+* Prefer PlantUML (via Kroki)
+* Deterministic and long-term stable
+
+Mermaid is a *visual aid*, not a source of truth.
+
+== Practical Rules
+
+* Fast and messy → Notion
+* Time-bound and status-driven → Todoist
+* Clear and teachable → Antora
+* If it must survive 6–12 months → Antora
+* If progress matters more than insight → Todoist
+
+== One-Line System Definition
+
+Notion is for thinking.  
+Todoist is for execution.  
+Antora is for knowledge.
+
+This separation keeps the system clean, scalable, and low-friction over time.

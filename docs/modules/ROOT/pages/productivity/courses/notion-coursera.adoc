@@ -1,0 +1,10 @@
+= Use Notion Databases Like a Pro
+:toc: right
+:toclevels: 5
+
+* Within every formula cell, we can only access the data from the same record. ​Formula cannot get data from records below or above
+* if(question, yes-case, no-case)
+** if(prop("Check"),"Yes", "No")
+** if(prop("Status") = "Done", "Completed", "Pending")
+** if(prop("Status") = "✅", "Completed", "Pending")
+

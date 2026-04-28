@@ -2,11 +2,18 @@
 :toc: right
 
 
-== Word
+
+link:https://cognizantonline-my.sharepoint.com/my?id=%2Fpersonal%2F794827%5Fcognizant%5Fcom%2FDocuments%2FOneDrive%2FAI%2DCarnival%2FAi%2DDemo%2D27%2EApr%2E2026&sortField=Modified&isAscending=false&viewid=aabb1c62%2Da7f0%2D4594%2Da7a0%2D6ee5850f5a7d[AI-Demo-27.Apr.2026]
+
+
+== ✔️ Word
 
 * *Draft documents with Microsoft Copilot Pro*
 
 ** [x] Draft a 1-page business proposal for [project/product]/Agentic AI for [customer/audience]/ Bank of America. Include problem, solution, scope, timeline, pricing assumptions, and next steps.
+
+** [x] #(1) Draft a 1-page business proposal for using Microsoft CoPilot for Bank of America. Include problem, solution, scope, timeline, pricing assumptions, and next steps#.
+
 ** Write a professional project charter for [project] with objectives, stakeholders, milestones, risks, and success metrics.
 
 ---
@@ -30,41 +37,33 @@
 * *Transform text in Word into a table*
 *(Select a list, then prompt:)*
 
-** [x] Write a short white paper of 2 pages to compre llms: claude, coilot and chatgpt
-** Convert this into a table with columns: Item, Owner, Due date, Status, Notes.
-** [x] Turn this into a comparison table with columns Feature, Option A, Option B, Recommendation.
+** [x] #(2) Write a short white paper of 2 pages to compre llms: claude, coilot and chatgpt for technical audience#.
+
+** [x] #(3) Rewrite this content to make it simple and easy to understand for non-technical readers. Keep the original content intact, and divide it into 2 sections, technical and not technical#.
 
 * *Ask questions on Word documents*
 
-** Summarize this document in 5 bullets and call out any decisions and action items.
+** #Summarize# this document in 5 bullets and call out any decisions and action items.
 ** What are the key risks mentioned, and where (which section) are they discussed?
 ** Create a 10-question FAQ based on this document, with short answers.
 
-* *Revise edits to your Word documents*
 
-** Suggest improvements for clarity and structure across the document, then provide a revised version of the introduction.
-** Identify repetition and rewrite to remove redundancy while keeping all key details.
-** Proofread for grammar and tighten sentences—don't change technical terms.
 
-* *Create output artifacts with Microsoft Copilot*
-
-** Create meeting minutes from this content with sections: Attendees, Agenda, Discussion, Decisions, Action items (Owner + Due).
-** Generate a one-page executive summary plus a slide-style outline (8 slide titles with 3 bullets each).
-** Create a RACI matrix from this text and present it as a table.
 
 ##############################################
 
 ---
 
 
-== Excel
+== ✔️ Excel
 
 
-* Open excel and give following prompts
+* #(1)#. Open excel and give following prompts
 
 [source,asciidoc, role="wrap"]
 ----
 Date | Event | Category | Region | Revenue | Cost | Status
+
 Can you create 10 records for this table? Name the sheet as 01_Raw_Data.
 ----
 
@@ -73,6 +72,7 @@ Can you create 10 records for this table? Name the sheet as 01_Raw_Data.
 
 ---
 
+* #(2)#.
 
 [source,asciidoc, role="wrap"]
 ----
@@ -94,30 +94,31 @@ Can you create sheets with data from 01_Raw_Data. Full copy (static): Copy the e
 ---
 
 
+
 * *02_General_Analysis*: `Analyse this dataset and summarise key trends, anomalies, and insights`.
 * *03_Data_QA*: `What is the total and average revenue by region?`.
-* *04_Filtering_Basic*: `Filter the data to show only records where revenue > 100000`.
+* #(3)#. *04_Filtering_Basic*: `Filter the data to show only records where revenue > 100000`.
 * *05_Filtering_Advanced*: `Filter the data to include Region = APAC AND Status = Completed, but exclude low revenue records`.
 * *06_Data_Formatting*: `Format this data as a clean, presentation-ready table`.
 * *07_Data_Manipulation*: `Create a new calculated column for profit using revenue and cost`.
 * *08_Data_Sorting*: `Sort this data by revenue in descending order`.
-* *09_Data_Visualisation*: `Create a dashboard-style summary with 2–3 key visuals`.
+* #(4)#. *09_Data_Visualisation*: `Create a dashboard-style summary with 2–3 key visuals`.
 * *10_Copilot_Use_Cases*: `Summarise this workbook in 5 executive-level bullet points`.
-
-
 
 ##############################################
 
 ---
 
 
-== PowerPoint
+== ✔️ PowerPoint
 
 * *Create presentations from scratch with Microsoft Copilot Pro*
 
 ** Create a presentation about [topic] for [audience]. Include a slide about how to evaluate impact.
+** #(1) PPT-1,2. Create a presentation about microsoft copilot 365 for non-technical audience. Keep the presentation under 10 slides. Use simple language and avoid technical jargon#.
 ** Create a 7-slide presentation on [topic] with the following flow: Problem, Current State, Proposed Solution, Benefits, Risks, Timeline, Next Steps.
 ** Create a client-ready presentation on [initiative or project] with speaker notes and a clear narrative.
+** #(2) PPT-1,2. Can you add speacker notes#.
 
 ---
 
@@ -131,7 +132,7 @@ Can you create sheets with data from 01_Raw_Data. Full copy (static): Copy the e
 
 * *Create presentations from Word documents*
 
-** Convert this Word document into a PowerPoint presentation.
+** #(3) PPT-3.2. Convert this Word document into a PowerPoint presentation#.
 ** Create a presentation from this Word file with a maximum of 8 slides and include speaker notes.
 ** Add an executive summary slide at the beginning based on the Word document.
 
@@ -157,7 +158,7 @@ Can you create sheets with data from 01_Raw_Data. Full copy (static): Copy the e
 
 * *Ask questions about presentations*
 
-** Summarise this presentation in 5 bullet points.
+** #(4) PPT-3.3 Summarise this presentation in 3 bullet points. Add bullets to the slides at the end of presentation#.
 ** What is the main message of this deck in one sentence?
 ** List the decisions, assumptions, and open questions covered in this presentation.
 ** Which slide is weakest for an executive audience and how can it be improved?
@@ -167,56 +168,52 @@ Can you create sheets with data from 01_Raw_Data. Full copy (static): Copy the e
 * *Summarise and organise presentations with Microsoft Copilot*
 
 ** Organise this presentation into logical sections for maximum storytelling impact.
-** Create an agenda slide based on the structure of this deck.
+** #(5) PPT-3.3 Create an agenda slide based on the structure of this deck#.
 ** Generate speaker notes for each slide in a professional business tone.
 ** Summarise this presentation and identify key takeaways and next actions.
+
+
+*Design Suggestion*
+
+
+
 
 ##############################################
 
 ---
 
 
-== Outlook
+== ✔️ Outlook
 
+* https://www.youtube.com/watch?v=FwPSBcx6zIg
 
-* *Microsoft Copilot in Outlook – Demo Prompts**
-** *(Use Copilot inside Outlook for drafting, summarising, and replying to emails)*
+** Click Outlook Icon / Click Copilot Icon
 
-* *Draft emails with Microsoft Copilot for Microsoft 365**
-** Draft a professional email to **\[client/team]** about **\[topic]**, requesting next steps and timelines
-** Write a concise status update email summarising progress, risks, and asks for leadership
-** Draft a polite follow‑up email reminding the recipient about a pending action from last week
-** Write an email announcing **\[event/initiative]** with a clear call to action
+** Scan my entire inbox for today and show me what deserves my attention first. Identify the five emails that matter most based on importance, urgency, sender, and relevance to my goals. Summarize what each is about, what action is required, and what I can safely ignore or delegate.
 
-* *Summarise email threads in Outlook**
-** Summarise this email thread in 5 bullet points
-** Summarise this conversation and highlight decisions and open items
-** Identify what actions are expected from me in this email thread
-** Give a one‑paragraph executive summary of this email chain
+** List unread email threads that I received in the last 48 hours and that you think need my reply — prioritize where I'm on To/CC, @mentioned, or there are open requests, deadlines, leadership or customer involvement. Exclude automated messages. Only show the ones that are urgent or important, then list them out in a concise table. If there are no unread emails that require reply, say "I didn't find any unread threads that require a reply."
 
-* *Reply to emails using Microsoft Copilot**
-** Draft a reply acknowledging receipt and confirming next steps
-** Reply to this email agreeing with the proposal and adding one clarification
-** Write a polite but firm response declining the request with a brief explanation
-** Reply to this email on my behalf in a professional and collaborative tone
+** When is my next meeting, and what are the key topics or action items I should prepare for?
 
-* *Improve tone and clarity in email replies**
-** Rewrite this reply to sound more executive and concise
-** Make this response more empathetic and customer‑focused
-** Shorten this email without losing key points
-** Rewrite this to sound confident but not aggressive
+** Can you go over the mails for last 3 months that has reference to Tech Wizards. can you summarise the mails for me in bullet points and identify the actionable items for me.
 
-* *Action‑oriented email assistance**
-** Identify action items and owners from this email conversation
-** Create a task list from this email thread with owners and due dates
-** Suggest a clear response that moves this conversation forward
+** Compose Replies to emails
 
-* *Recommended 3‑minute demo flow**
-** Open a long email thread and ask Copilot to summarise the thread and highlight action items
-** Click Reply and ask Copilot to draft a professional response confirming next steps
-** Refine the reply by asking Copilot to make it more executive and concise
+##############################################
 
+---
 
+== ✔️ Teams
 
+Let's start with Teams. I'd like to use Copilot in a meeting. So first off, I need to join a meeting. 
 
+* I joined this meeting a little bit late: I'll type in my prompt, what's been covered so far. This gets me up to speed really fast on what's been covered so far. 
 
+* Although, I do want to know who brought up the idea of expansion
+in the first place. So down below, I can also ask specific questions about the transcript. In the text field, I'll type in who originally brought up the idea that we should expand our factory tours, and let's see who brought that up. 
+
+* Once the meeting is over, I can go back and I can review a recap, as well as a transcript of the meeting. 
+
+* You can also use Copilot outside of meetings in both channels and also in chats. I'm currently in a channel, and there's a long thread about our factory tour expansion plans. So,
+
+* Now, one of my favorite tips, you can enter in a *forward slash*. The beautiful thing is Copilot knows all about your people, your files, your meetings, and also your emails, and you can reference any of those in your prompts. One thing to note, though, *Copilot can access all of the Microsoft 365 content that you have access to. If you don't have access to it, neither will Copilot.* 

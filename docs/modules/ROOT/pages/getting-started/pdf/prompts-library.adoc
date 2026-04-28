@@ -1,0 +1,409 @@
+= Prompts Library
+:toc: right
+:toclevels: 5
+:sectnums: 5
+:sectnumlevels: 5
+
+== Claude
+
+[source,asciidoc, role="wrap"]
+----
+Instagram 9:16 vertical background, warm Latin dance studio aesthetic.
+
+A textured exposed brick wall with natural colour variation (burnt orange, soft brown, earthy red tones), subtle imperfections for realism.
+
+Warm ambient string lights hanging across the top of the wall, soft golden glow, evenly spaced bulbs.
+
+Clean wooden studio floor with gentle reflections near the base of the wall.
+Minimal, uncluttered composition with no people, no text, no logos, designed as a dance video background.
+
+Soft studio lighting, cosy evening vibe, cinematic but minimal,non‑distracting, professional Latin dance studio look.
+
+Photorealistic, high quality, shallow depth of field, realistic texture detail.
+----
+
+
+== Content Creation
+
+##############################################
+
+---
+
+=== Explain the code
+
+.Convert the following code into well-structured AsciiDoc documentation
+[%collapsible]
+====
+
+[source,asciidoc, role="wrap"]
+----
+Convert the following code into well-structured AsciiDoc documentation.
+
+Requirements:
+1. Remove all AsciiDoc headers (=, ==, ===) and replace with bold formatting using asterisks (*)
+2. Keep it concise and focused - avoid excessive detail
+3. Use simple, clear language suitable for documentation
+4. Include these main sections:
+- Overview (brief description)
+- System Architecture (components and their roles)
+- Implementation Details (key code examples)
+- Workflow Process (how it works)
+- Sample Execution (real example if available)
+- Key Features (main capabilities)
+- Technical Details (dependencies, configuration)
+- Use Cases (practical applications)
+- Benefits (advantages)
+- Conclusion (summary)
+
+1. Format guidelines:
+- Use *bold* for all section headers
+- Use bullet points with hyphens (-) for main lists
+- Use numbered lists with asterisks (*) for sub-items (like: * 1. Item - description)
+- Keep code blocks with [source,language] tags
+- Include JSON examples where relevant
+- Add simple ASCII diagrams for workflows
+- Keep paragraphs short and focused
+
+2. Content focus:
+- Explain what the code does
+- Highlight key components and their roles
+- Show practical examples
+- Emphasize benefits and use cases
+- Avoid technical jargon where possible
+
+3. Length target:
+- Aim for 100-150 lines maximum
+- Focus on essential information only
+- Remove redundant explanations
+
+4. Specific formatting rules:
+- Main sections: *Section Name*
+- Subsections: *Subsection Name:*
+- Main bullet points: - Point description
+- Numbered sub-points: * 1. Item - description
+- Code blocks: `python code here`
+
+Please analyze the provided code/notebook and generate documentation following these guidelines exactly.
+----
+
+
+====
+
+##################################################
+
+=== Convert to Self Paced Learning
+
+
+.Self Paced Learning Claude
+[%collapsible]
+====
+
+** Objective
+*** Convert the given article into structured, self-paced learning content that a learner can follow independently
+
+** Instructions
+*** Identify the main concepts, supporting ideas, and practical insights
+*** Transform the content into a guided learning format
+*** Ensure the learner can understand, apply, and practice the topic step by step
+
+** Output Structure
+
+*** Overall Summary
+**** Provide a single-line explanation of the entire concept
+
+*** Learning Objectives
+**** List 5–7 clear outcomes the learner will achieve
+**** Each objective should start with an action verb (Understand, Design, Build, Implement, Create, Develop)
+
+*** Structured Concept Breakdown
+**** Group related ideas into named topic areas
+**** Use the hierarchy:
+***** `*` Topic area title
+***** `**` Sub-topic
+***** `***` Explanation or detail point
+**** Each topic area should contain 2–4 sub-topics
+**** Each sub-topic should have 1–3 short explanation points
+**** Remove filler and repetition
+**** Preserve useful examples, analogies, and distinctions
+
+*** Step-by-Step Learning Flow
+**** Organise into exactly 4 steps:
+***** Step 1: Foundation concept
+***** Step 2: Core idea
+***** Step 3: Advanced understanding
+***** Step 4: Real-world application
+**** Each step should have 2–3 actionable sub-points
+
+*** Quick Revision Points
+**** Summarise 7–10 key takeaways
+**** Each point should be one short, memorable sentence
+**** Use the pattern: subject + action/insight
+***** Example: "Good prompts = clear structure + context + role"
+
+** Formatting Rules
+*** Use AsciiDoc-style bullet hierarchy only:
+**** `*` for section titles and top-level topic areas
+**** `**` for sub-sections, topic areas, and content items
+**** `***` for sub-topics and step details
+**** `****` for explanations and detail points
+*** Section titles (Overall Summary, Learning Objectives, etc.) appear at the `*` level
+*** Keep sentences short and simple — one idea per line
+*** Do NOT use markdown headings (`#`, `##`, `###`)
+*** Do NOT use asciidoc headings (`=`, `==`, `===`)
+*** Do NOT use bold, italic, or inline formatting
+*** Focus on clarity and usability for self-paced learning
+*** Ensure content is actionable, not just descriptive
+
+** Output Requirements
+*** Output only bullet-structured content using the hierarchy above
+*** Ensure it is clean and ready to paste into AsciiDoc notes or documentation tools
+*** No introductory or closing commentary — just the structured content
+
+
+====
+
+
+
+##############################################
+
+---
+
+
+##############################################
+
+---
+
+
+
+.Self Paced Learning
+[%collapsible]
+====
+
+[source,asciidoc, role="wrap"]
+----
+
+*Objective:*
+Convert the given article into structured, self-paced learning content that a learner can follow independently.
+
+*Instructions:*
+
+* Identify the main concepts, supporting ideas, and practical insights
+* Transform the content into a guided learning format
+* Ensure the learner can *understand, apply, and practice* the topic step by step
+
+*Output Structure:*
+
+* Overall Summary (1–2 lines)
+** Provide a concise explanation of the entire concept
+
+* Learning Objectives
+** Clearly state what the learner will be able to do after completing this content
+
+* Structured Concept Breakdown
+** Use the hierarchy:
+*** Main concept
+**** Sub concept
+***** Explanation / example
+
+** Keep each point short and clear
+** Remove filler and repetition
+** Preserve useful examples and analogies
+
+* Step-by-Step Learning Flow
+** Step 1: Foundation concept
+** Step 2: Core idea
+** Step 3: Advanced understanding
+** Step 4: Real-world application
+
+* Quick Revision Points
+** Summarize key takeaways in bullet points
+
+*Formatting Rules:*
+
+* Do NOT use headings or section titles
+* Use only bullet structure for organization
+* Use:
+** * for main bullets
+** ** for sub-bullets
+** *** for deeper levels
+* Keep sentences short and simple
+* Focus on clarity and usability for self-learning
+* Ensure content is actionable, not just descriptive
+
+*Output Requirements:*
+
+* Output only bullet-structured content
+* Ensure it is clean and ready to paste into notes or documentation tools
+
+----
+
+====
+
+##############################################
+
+---
+
+
+=== Convert Text to AsciiDoc
+
+
+.Convert the following text into clean AsciiDoc format
+[%collapsible]
+====
+
+[source,asciidoc]
+----
+Convert the following text into clean AsciiDoc format.
+
+Extract the key ideas from the following text and convert them into a structured bullet-point summary.
+
+*Instructions:*
+
+- Identify the main concepts and supporting ideas.
+- Organize the summary hierarchically.
+- Use bullet levels to represent the structure of ideas.
+
+*Formatting rules:*
+
+- Use the following bullet hierarchy:
+
+* Main idea
+** Sub idea
+*** Deeper explanation or example
+
+- Each bullet should contain one clear idea.
+- Keep sentences short and easy to read.
+- Remove filler text, repetition, and conversational phrases.
+- Preserve important examples or analogies if they help understanding.
+- Maintain logical grouping of ideas.
+
+Output requirements:
+- Output only the bullet summary.
+- Ensure the format is clean so it can be copied with one click and pasted into notes or documentation tools.
+- Explain the entire concept in 1-2 lines as overall summary.
+
+
+Refer Above Article
+----
+
+
+====
+
+##################################################
+
+---
+
+== GenC
+
+
+
+.10 Core Java interview questions
+[%collapsible]
+====
+
+[source,asciidoc]
+----
+Create a list of 10 Core Java interview questions focused on Object-Oriented Programming concepts (such as inheritance, polymorphism, encapsulation, and abstraction) suitable for college-level students. Include a mix of basic and intermediate questions. 
+
+Give output in asciidoc single click copy format.
+----
+
+====
+
+
+##################################################
+
+---
+
+== Job
+
+.Principal Architect and Technical Trainer
+[%collapsible]
+====
+
+
+[source,asciidoc, role="wrap"]
+----
+You are a career coach and an expert at helping people achieve their career goals. Below is a JSON representation of my professional profile, exported from a companion app called Career Dreamer:
+
+{"experiences":[{"title":"Principal Architect and Technical Trainer","organization":"IT Industry","tasks":["Design and oversee complex software architectures that align with organizational goals and industry best practices.","Develop and deliver comprehensive technical training programs to elevate the skills of development teams.","Mentor and guide junior architects and engineers, fostering their technical growth and problem-solving abilities.","Collaborate with stakeholders to translate business requirements into scalable and robust technical solutions.","Establish and enforce coding standards and architectural patterns to ensure system quality and maintainability.","Research and evaluate emerging technologies to identify opportunities for innovation and strategic implementation."]}],"education":[{"level":"Master's degree","fieldOfStudy":"Computer"}],"skills":[{"basis":"Principal Architect and Technical Trainer at IT Industry","name":"Technical Leadership","rationale":"In a Principal Architect role, you presumably guided technical teams, made critical architectural decisions, and set technical direction, demonstrating significant technical leadership."},{"basis":"Principal Architect and Technical Trainer at IT Industry","name":"Complex System Design","rationale":"Your experience as a Principal Architect implies you were responsible for the design of intricate and robust IT systems, suggesting a deep understanding of complex system design."},{"basis":"Principal Architect and Technical Trainer at IT Industry","name":"Mentoring And Coaching","rationale":"By training others, you probably honed your abilities in mentoring and coaching individuals to improve their technical understanding and performance."},{"basis":"Principal Architect and Technical Trainer at IT Industry","name":"Problem Solving","rationale":"Architects and trainers frequently encounter and resolve complex technical challenges and learning obstacles, so you likely possess strong problem-solving capabilities."},{"basis":"Master's degree in Computer","name":"Programming Proficiency","rationale":"As a Master's degree holder in Computer, you likely possess a deep understanding of one or more programming languages, enabling you to write, debug, and maintain complex software. This would stem from extensive coursework and project work involving the practical application of coding principles."},{"basis":"Master's degree in Computer","name":"System Design","rationale":"Your advanced coursework might have included modules on designing and evaluating computer systems, suggesting you have an aptitude for understanding and architecting complex technological solutions."},{"name":"Generative Artificial Intelligence","manual":true}],"interests":[{"interest":"Latin Dance, Fitness, Self Help Books, Learning","motivations":["I want to continuously improve myself and expand my knowledge base.","I value personal growth and the pursuit of self-betterment."]},{"interest":"Generative AI","motivations":["I want to contribute to the development of intelligent systems that can augment human capabilities.","I value the process of learning and adapting to rapidly evolving technological landscapes."]}]}
+
+And here is a career that I was recommended to look into based on my profile:
+
+AI Solutions Architect - Designs and implements AI-driven solutions, bridging the gap between business needs and AI capabilities. This involves understanding complex systems, selecting appropriate AI technologies, and ensuring scalability and integration.
+
+I would like to discuss this further with you. Start with a note about Career Dreamer and how we are continuing the journey I started there. Next, write a short paragraph description of the role. Finally, provide a numbered list of further discussion topics to choose from. The list should be phrased as “here are some things you can ask me”, and topics should satisfy the following criteria:
+-Written in the first person (i.e., containing “I” and “my”), as if I am asking them to you
+-Consist of three questions
+-Contain a mixture of inquiries about the role itself (e.g., typical day-to-day) and inquiries that seek to understand the role in relation to my profile
+
+Topics should NOT contain the following
+-Open-ended reflections (e.g., “What interests me about this role?”)
+-Solicitations of opinions (e.g., “Do you think I am a good fit for this role?””)
+
+Invite me to type the number of the topic (use the word “type”) that interests me in order to continue the conversation in that direction; also inform me that I am free to provide my own topic if I would like. Whenever applicable, subsequent responses should end with a similar numbered list of further discussion topics to choose from (and invitation to dictate my own topic if desired). Your tone should be neutral and matter-of-factly. Do not label the components of the output as I have described them here; integrate everything into a cohesive result. And always keep it concise and skimmable!
+----
+
+
+
+====
+
+
+
+##################################################
+
+---
+
+
+
+
+
+== Dance
+
+.Deep, thoughtful, and structured discussion about dance as an art form
+[%collapsible]
+====
+
+[source,asciidoc]
+----
+I want to have a deep, thoughtful, and structured discussion about dance as an art form.
+
+Treat dance not just as movement, but as a form of expression, communication, and identity.
+
+Guide the discussion step-by-step using thought-provoking questions, reflections, and insights. Push me to think deeper rather than giving surface-level answers.
+
+Focus on areas like:
+
+* Dance as self-expression vs performance
+* The role of musicality and emotion in dance
+* Connection (with self, partner, and audience)
+* Technique vs artistry
+* Improvisation vs choreography
+* Masculine and feminine energy in dance
+* Presence, confidence, and storytelling through movement
+* The difference between social dancing and performing
+* What makes a dancer “memorable” vs just “good”
+
+Also:
+
+* Challenge my assumptions when needed
+* Ask follow-up questions based on my responses
+* Bring examples from styles like Salsa and Bachata where relevant
+* Help me connect these ideas to my own dance journey (practice, teaching, performing)
+
+Start with one deep question and then continue the discussion interactively based on my responses.
+
+----
+
+====
+
+
+##################################################
+
+== Gamma + Instagram
+
+> I want to create thought of the day from the book i read and put it on Instagram.
+
+If I’d waited to know who I was or what I was about before I started "being creative," well, I’d still be sitting around trying to figure myself out instead of making things. In my experience, it’s in the act of making things and doing our work that we figure out who we are.
+
+

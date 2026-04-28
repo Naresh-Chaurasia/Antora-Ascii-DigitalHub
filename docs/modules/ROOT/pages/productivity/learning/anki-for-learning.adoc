@@ -1,0 +1,247 @@
+= Anki for Learning
+
+> This is Anki entry point. Coding, Ideas etc.
+
+== ✅ Minimal Starter Setup (Recommended for First 2 Weeks)
+
+Use ONE main deck and organise people by *context*.
+
+[source]
+----
+📂 People & Names
+  ├── 💼 Work
+  ├── 💃 Salsa
+  ├── 🕺 Bachata
+  └── 📸 Instagram
+----
+
+* This structure is:
+** Easy to maintain
+** *Matches how your brain recalls people*
+** Scales naturally as you meet more people
+
+---
+
+== 💼 Work
+
+[source]
+----
+📂 Work
+----
+Use this for:
+
+* Cognizant colleagues
+* Clients
+* Professional contacts
+
+(You can split later into subfolders like *Close Collaborators* or *Leadership* if needed.)
+
+---
+
+== 💃 Dance – Salsa
+
+
+Include:
+
+* Instructors
+* Regular partners
+* Social dancers you meet often
+
+Card context examples:
+
+* Batch / day
+* Partner role (Lead / Follow)
+* Any memorable dance cue
+
+---
+
+== 🕺 Dance – Bachata
+
+
+Include:
+
+* Bachata-only friends
+* Advanced / social dancers
+* Friends you mainly meet on the dance floor
+
+Avoid duplicates:
+If someone is both Instagram + Bachata, keep them here.
+
+---
+
+== 📸 Instagram Friends
+
+
+Include:
+
+* Friends you mainly know online
+* College / travel / social circle
+* Light‑context connections
+
+Keep cards simple:
+
+* Photo
+* Name
+* One short context line
+
+---
+
+== 🧠 Golden Rules
+
+* **1 Person = 1 Note**
+* One note can generate **multiple cards**
+* #Organise by *where you know them from*, not importance#
+* Start simple — refine later
+* Avoid alphabetical or over‑detailed folders early
+
+---
+
+== ✅ Final Advice
+
+Start with just these four folders:
+
+[source]
+----
+People & Names
+  ├── Work
+  ├── Salsa
+  ├── Bachata
+  └── Instagram
+----
+
+Once the habit sticks, optimise further.
+
+##############################################
+
+---
+
+
+== 🃏 Sample Anki Cards – People & Names
+
+All samples follow the same rule:
+* **Front:** Photo (face recognition)
+* **Back:** Name + Context (short & memorable)
+
+---
+
+== 💼 Work (Cognizant)
+
+=== Sample Card
+
+Front::
+📸 Photo of person (Teams / LinkedIn)
+
+Back::
+Abinaya R  
+Contractor – Cognizant  
+Top collaborator on GenAI & training initiatives
+
+Notes:
+* Keep work context professional
+* Mention team, project, or collaboration
+* #Avoid too much detail#
+
+---
+
+== 💃 Dance – Salsa
+
+=== Sample Card
+
+Front::
+📸 Photo from class or social
+
+Back::
+* Rahul
+* Salsa lead – Tuesday batch  
+* Tall dancer, smooth turns, good timing
+
+Notes:
+
+* Dance role (Lead / Follow) helps quick recall
+* Batch/day is a strong cue
+* Physical or style cue works very well
+
+---
+
+== 🕺 Dance – Bachata
+
+=== Sample Card
+
+Front::
+📸 Photo from class / Instagram
+
+Back::
+Pooja  
+Bachata follow – Sunday socials  
+Expressive style, great musicality 🎶
+
+Notes:
+* Keep it light and fun
+* Musical or movement-based cues stick well
+* Emojis are fine here 🙂
+
+---
+
+== 📸 Instagram Friends
+
+=== Sample Card
+
+Front::
+📸 Instagram profile photo
+
+Back::
+Vijay Kumar  
+College friend – Bhopal  
+Travels a lot, posts nature photos 🌄
+
+Notes:
+* Low-pressure cards
+* Just name + how you know them
+* One fun or visual cue is enough
+
+---
+
+== 🎓 Students / New Joiners
+
+=== Sample Card
+
+Front::
+📸 Photo from onboarding session
+
+Back::
+Shruti Patil  
+Full Stack trainee – April batch  
+Strong in Java, asks good questions
+
+Notes:
+* Batch name is very useful
+* One skill or behaviour cue is enough
+
+---
+
+== 🤝 Clients (Optional)
+
+=== Sample Card
+
+Front::
+📸 Photo from LinkedIn or meeting invite
+
+Back::
+Mark Thompson  
+Client – Payment platform programme  
+UK timezone, calm communicator
+
+Notes:
+* Timezone / country helps
+* Communication style is a good cue
+
+---
+
+== ✅ Key Reminder
+
+* You are **NOT writing biographies**
+* Aim for **instant recognition**, not completeness
+* If card creation feels heavy → simplify the back
+
+Rule of thumb:
+Name + Context + 1 Cue = Perfect card ✅

@@ -1,0 +1,314 @@
+= Using Microsoft 365 Copilot with Antora as My Knowledge Base
+:toc:
+:toclevels: 3
+
+== Core Rule (Non‑Negotiable)
+
+*Antora is my system of record.*
+
+Copilot is used for:
+
+* Thinking
+* Drafting
+* Exploring
+* Explaining
+
+Antora is used for:
+
+* Storing
+* Structuring
+* Publishing
+* Long‑term knowledge
+
+If something matters long‑term, it goes to Antora.
+Copilot never replaces Antora.
+
+---
+
+== Mental Model (Very Important)
+
+* Copilot = temporary thinking space
+* Antora = permanent knowledge base
+
+Copilot helps me *create* knowledge.
+Antora helps me *retain* knowledge.
+
+---
+
+== How Notebook and Library Fit When Antora Is Primary
+
+=== Notebook (Copilot)
+
+Notebook answers the question:
+"What am I thinking or working on right now?"
+
+Use notebooks for:
+
+* Course learning
+* Research
+* Draft notes
+* Questions
+* Iteration
+
+Notebook content is:
+
+* Temporary
+* Messy
+* Replaceable
+
+Most notebook content will never be saved.
+
+---
+
+=== Library (Copilot)
+
+Library answers the question:
+"Is this worth converting to Antora?"
+
+Use Library only as a *staging area* before Antora.
+
+Library content should be:
+* Minimal
+* Final
+* High quality
+
+Rule:
+If it stays useful → move it to Antora → optionally delete from Library.
+
+---
+
+== My Actual Workflow (Step by Step)
+
+=== Step 1: Think and Draft in Copilot
+
+I start everything in Copilot.
+
+Examples:
+
+* Watching a Udemy or Coursera course
+* Doing technical research
+* Reading a book
+* Designing an architecture
+* Creating a dance routine
+* Asking health or exercise questions
+
+I use:
+
+* Chat for individual questions
+* Notebooks to keep related thinking together
+
+Nothing here needs to be perfect.
+
+---
+
+=== Step 2: Decide What Is Worth Keeping
+
+After thinking, I ask one question:
+
+"Will I refer to this again in 1 month?"
+
+If NO:
+
+* Do nothing
+* Let the chat die
+
+If YES:
+
+* Convert it into Antora notes
+
+---
+
+=== Step 3: Move Final Knowledge to Antora
+
+Antora is where I:
+
+* Rewrite content cleanly
+* Structure it properly
+* Link it with other notes
+* Publish it
+
+Copilot output is never pasted blindly.
+I always:
+
+* Clean it
+* Simplify it
+* Make it mine
+
+---
+
+== Examples Mapped to My Real Life
+
+=== Online Courses (Udemy / Coursera)
+
+Copilot:
+
+* Summarise lectures
+* Explain concepts
+* Compare courses
+* Generate draft notes
+
+Antora:
+
+* Final course summary
+* Module‑wise notes
+* Key takeaways
+* My own explanations
+
+Example:
+----
+Copilot Notebook:
+  Udemy – Spring Boot – Module 3 Notes (draft)
+
+Antora:
+  modules/spring-boot/pages/module-3.adoc
+----
+
+---
+
+=== Technical Research & Development
+
+Copilot:
+
+* Explore Agentic AI
+* Draft architectures
+* Ask "why" and "how"
+* Validate assumptions
+
+Antora:
+
+* Final architecture docs
+* Patterns and decisions
+* Reference diagrams
+* Stable explanations
+
+Example:
+----
+Copilot:
+  RAG Architecture – First Draft
+
+Antora:
+  modules/architecture/pages/rag-reference-architecture.adoc
+----
+
+---
+
+=== Productivity Courses and Systems
+
+Copilot:
+
+* Explore productivity ideas
+* Compare methods
+* Design workflows
+
+Antora:
+
+* My final productivity system
+* Checklists
+* Repeatable routines
+
+Example:
+----
+Copilot:
+  Inbox Zero Ideas
+
+Antora:
+  modules/productivity/pages/email-management-system.adoc
+----
+
+---
+
+=== Books and Reading Notes
+
+Copilot:
+
+* Summarise chapters
+* Extract ideas
+* Ask for examples
+
+Antora:
+
+* My personal book notes
+* Key frameworks
+* Links to my work
+
+Example:
+----
+Copilot:
+  Atomic Habits – Chapter 2 Summary
+
+Antora:
+  modules/books/pages/atomic-habits.adoc
+----
+
+---
+
+=== Dance, Health, and Fitness
+
+Copilot:
+
+* Ask dance questions
+* Create routines
+* Explore exercises
+* Understand nutrition
+
+Antora:
+
+* Final routines
+* Weekly plans
+* Health notes I actually follow
+
+Example:
+----
+Copilot:
+  Bachata Practice Ideas
+
+Antora:
+  modules/lifestyle/pages/bachata-practice-routine.adoc
+----
+
+---
+
+== Clear Rules I Follow
+
+* Copilot is never my archive
+* Library is never my primary storage
+* Antora is always the final home
+
+If Antora disappeared tomorrow:
+* I would still have all my knowledge
+
+If Copilot disappeared tomorrow:
+* I would lose convenience, not knowledge
+
+---
+
+== When I Use Library (Rarely)
+
+I use Copilot Library only when:
+* I am about to move content to Antora
+* I want to polish it once more
+* I want to reuse it immediately
+
+Library is optional.
+Antora is mandatory.
+
+---
+
+== Final Decision Checklist
+
+Before saving anything, I ask:
+
+* Is this final?
+* Is this reusable?
+* Will future‑me thank me?
+
+If YES → Antora  
+If MAYBE → Copilot Notebook  
+If NO → Ignore
+
+---
+
+== One Sentence Summary
+
+*Copilot helps me think.*
+*Antora helps me remember.*

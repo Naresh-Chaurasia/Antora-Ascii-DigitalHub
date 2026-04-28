@@ -3,16 +3,38 @@
 
 > I am short | Old | Not good looking | Less Hair
 
+
+== Case Studies
+
+[cols="1,2"]
+|===
+| One | Two
+
+| Foo
+a|
+- Bar
+- Baz
+|===
+
+##############################################
+
+---
+
 == Introduction
 
 This time around, in my forties, I realized I would have to learn to do things a lot differently.
 
-*Actionable*
+=== Actionable — 40s
 
-* [ ] Identify 1 behavior I will do differently today (e.g., start a conversation instead of avoiding)
-* [ ] Do something intentionally outside my comfort zone today
-** [ ] Basic conversation with Bachata | Kizomba | Fatso and Whatever.
-** [ ] Tea and Anki are good combination.
+* [ ]  Identify 1 behavior I will do differently today
+** [ ] _e.g., start a conversation instead of avoiding_
+** [x] _Let then do the hard work(ppt), I will do the smart work(demo)_
+** [x] _I stopped talking to Anjali, and it gave different results. Good Observation_
+** [x] _CaseStudy-1_
+** [x] _CaseStudy-2_
+
+
+The top two bullets are stable and repeatable. The sub-bullets under the second one are your rotating daily examples — swap them out each day as your situation changes. Does this work?
 
 ---
 
@@ -28,7 +50,7 @@ Then, most importantly, I began *applying those principles* to see what worked a
 - [ ] I overthink instead of testing in real situations
 - [ ] I don’t consistently evaluate what worked vs what didn’t
 
-*Actionable*
+=== Actionable Experiment
 
 - [ ] Treat each interaction as an experiment (no emotional labeling)
 - [ ] After each interaction, note: what worked / what didn’t
@@ -48,6 +70,30 @@ Two Types of Men: Men who have never dated well, had few real girlfriends, and h
 * Face your fears and soothe your anxiety. 
 * Learn new, effective skills for dating, mating, and breaking up. 
 * Challenge yourself to act and practice new skills.
+
+
+---
+
+*Information*
+- There are men who struggle with dating due to lack of experience
+- Dating improvement involves goal clarity, facing fears, learning skills, and practice
+
+*This is me*
+
+- [ ] I have limited success/experience in dating
+- [ ] I feel anxiety or hesitation in dating situations
+- [ ] I lack clarity on what I want from dating
+
+*Actionable*
+
+- [ ] Define my dating goal (e.g., casual dating / serious relationship)
+- [ ] Take 1 action daily that challenges my fear
+- [ ] Practice 1 specific skill (conversation, eye contact, asking out)
+
+
+##############################################
+
+---
 
 *Two core areas of dating:*
 

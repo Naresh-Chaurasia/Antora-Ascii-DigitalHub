@@ -1,7 +1,7 @@
 
-echo "Building Antora site..."
+echo "Skip Building Antora site..."
 sleep 1
-npm run build
+# npm run build
 
 echo "Adding all files to git staging..."
 sleep 1

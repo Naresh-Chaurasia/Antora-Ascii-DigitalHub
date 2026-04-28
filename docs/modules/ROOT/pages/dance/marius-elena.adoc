@@ -5,14 +5,48 @@
 ---
 
 * [x] This page will only contain Marius&Elena
-* [ ] 5 routines | 4 bars only
-* [ ] Routine1: 180/360 | 
+* [ ] 5 routines | 4 bars/steps only
+
 
 ##############################################
 
 ---
 
 == Bachata Tutorials by Marius&Elena
+
+=== Routines
+
+#*Follow the Routine Order*#
+
+#*Marius & Elena*#
+
+* [ ] *Bachata Introduction*:   
+
+* [ ] *Basic Routine1*: 180/360 | Back Hammerlock | Gent Hair Comb | Ladies Hair Comb | 
+
+* [ ] *Routine2*: In & out 180 | Slide & wave | Hammerlock hip roll | In & out to back wave | Delayed to right turn 
+
+* [ ] *Titanic and Bridge Routine3*:
+
+* [ ] *Routine4 (Brij)*: Prep Turn, Criss Cross, 
+
+* [ ] *Hammerlock Routine*: 
+
+
+
+---
+
+#*Sagar & Prerna*#
+
+* [ ] *007 | Mens Hammer Lock | Pretzel Dip | Hand Roll*
+
+* [ ] *Shadow Position Wave Routine*: 
+
+* [ ] *4 Hands*: Left Right, Left Left, Right Right, Right Left | Interrupt
+
+##############################################
+
+---
 
 * [ ] https://www.youtube.com/watch?v=jF9gEK3HDkg&list=PL7iSzWmAf8tvF_mvfSs8lXsI0tUBhDjh8
 ** Bachata Tutorial 01: Basic Step by Marius&Elena
@@ -30,19 +64,43 @@
 ---
 
 * [ ] https://www.youtube.com/watch?v=1dNg1Ge_Ho8&list=PL7iSzWmAf8tvF_mvfSs8lXsI0tUBhDjh8
-** #Actionable#: Studio is same. Just by Changing one wall, it looks awesome.
-
-
----
-
-* [ ] https://www.youtube.com/watch?v=1dNg1Ge_Ho8&list=PL7iSzWmAf8tvF_mvfSs8lXsI0tUBhDjh8
 ** Beginner Bachata Tutorial #19 : 180 & 360 (part I) | by Marius&Elena
+** #Actionable#: Studio is same. Just by Changing one wall, it looks awesome.
 ** Turn with *Right Leg: In Place*
 
 ---
 
 * [ ] https://www.youtube.com/watch?v=ZWcNMC44Fv8&list=PL7iSzWmAf8tvF_mvfSs8lXsI0tUBhDjh8
+** Bachata Tutorial 21 : Back Hammerlock | by Marius&Elena
 ** #Actionable#: Video Edit the side Walls
+** When behind, cross legs | Extends Your Hands. Don't pull her.
+
+
+---
+
+* [ ] https://www.youtube.com/watch?v=YJzapKnfPc8&list=PL7iSzWmAf8tvF_mvfSs8lXsI0tUBhDjh8
+** Bachata Basics | 5 Ways to Improve FAST in 2019 ! by Marius
+** Roll the Feet
+** Dance with Soft Knees 
+** Make your hips fluid | find the sweet spot
+** Move the chest in the opposite direction of Hips
+
+---
+
+* [ ] https://www.youtube.com/watch?v=by20fFSwLv0&list=PL7iSzWmAf8tvF_mvfSs8lXsI0tUBhDjh8
+** Bachata Tutorial 24 : Slide & Wave | by Marius&Elena (2019)
+** 4 is Prep | 56 Slide | 78 is wave
+
+---
+
+* [ ] https://www.youtube.com/watch?v=K9YCJs6BqVE&list=PL7iSzWmAf8tvF_mvfSs8lXsI0tUBhDjh8
+** Bachata Tutorial 31 : 5 Intermediate Moves | by Marius&Elena (2019)
+* [ ] In & out 180 | Slide & wave | Hammerlock hip roll | Delayed to right turn | In & out to back wave
+
+
+##############################################
+
+---
 
 
 ##############################################
